@@ -74,7 +74,7 @@
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp MINUS               &kp EQUAL       &kp N7          &kp N8          &kp N9          &kp N0
                 &kp LSHFT       &kp LWIN        &mt LALT LT     &mt LCTRL N5    &kp GRAVE               &kp SQT         &mt LCTRL N6    &mt LALT GT     &mt LWIN COLON  &mt RSHFT BSLH
-                                                                &mt LWIN ESC    &lt RED ENTER           &trans          &mt RALT DEL
+                                                                &mt LWIN ESC    &trans                  &lt GRN SPACE   &mt RALT DEL
             >;
         };
 
@@ -83,7 +83,7 @@
                 &none           &none           &none           &none           &kp MINUS               &kp EQUAL       &none           &none           &none           &none
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp LSHFT       &kp LWIN        &kp LALT        &mt LCTRL F11   &none                   &none           &mt LCTRL F12   &kp LALT        &kp LWIN        &kp RSHFT
-                                                                &kp LWIN        &trans                  &mo GRN         &none
+                                                                &kp LWIN        &mo RED                 &trans          &none
             >;
         };
 
