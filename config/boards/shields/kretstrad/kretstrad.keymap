@@ -94,7 +94,7 @@
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp LSC(B)              &kp LCA(UP)     &kp F7          &kp F8          &kp F9          &kp F10
-                &kp LSHFT       &kp LWIN        &kp LALT        &mt LCTRL F5    &kp LC(ESC)             &kp LCA(DOWN)   &mt LCTRL F6    &kp LALT        &kp LWIN        &kp RSHFT
+                &kp LSHFT       &kp LWIN        &kp LALT        &mt LCTRL F5    &kp LS(ESC)             &kp LCA(DOWN)   &mt LCTRL F6    &kp LALT        &kp LWIN        &kp RSHFT
                                                                 &mt LWIN ESC    &lt GRN ENTER           &trans          &mt RALT BSPC
             >;
         };
@@ -129,6 +129,14 @@
 
     combos {
         compatible = "zmk,combos";
+
+// CAPS-WORD 
+        combo_caps_word {
+            timeout-ms = <50>;
+            key-positions = <30 33>;
+            bindings = <&caps_word>;
+            layers = <DEF GRN>;
+        };
 
 // F11 i F12  
         combo_f11 {
@@ -199,14 +207,6 @@
             key-positions = <16 17>;
             bindings = <&kp DEL>;
             layers = <DEF GRN RED>;
-        };
-
-// CAPS-WORD 
-        combo_caps_word {
-            timeout-ms = <50>;
-            key-positions = <20 29>;
-            bindings = <&caps_word>;
-            layers = <DEF GRN>;
         };
 
 // wyjście z narzędzia magnifier (Win+Esc)        
