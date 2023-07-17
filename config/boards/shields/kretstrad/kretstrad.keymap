@@ -83,7 +83,7 @@
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp F1          &kp F2          &kp F3          &kp F4          &none                   &none           &kp F7          &kp F8          &kp F9          &kp F10
                 &kp LSHFT       &kp LWIN        &kp LALT        &mt LCTRL F5    &none                   &none           &mt LCTRL F6    &kp LALT        &kp LWIN        &kp RSHFT
-                                                                &mt LWIN ESC    &lt GRN ENTER           &trans          &none
+                                                                &mt LWIN ESC    &lt GRN ENTER           &trans          &mt RALT BSPC
             >;
         };
 
@@ -92,7 +92,7 @@
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &none           &kp LG(LS(S))   &kp PSCRN       &none           &kp LG(MINUS)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &kp ENTER
                 &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(EQUAL)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp RSHFT
-                                                                &kp LWIN        &trans                  &trans          &kp BSPC
+                                                                &mt LWIN ESC    &trans                  &trans          &mt RALT BSPC
             >;
         };
 
@@ -119,14 +119,14 @@
         compatible = "zmk,combos";
 
 // F11 i F12  
-        combo_tab {
+        combo_f11 {
             timeout-ms = <50>;
             key-positions = <13 23>;
             bindings = <&kp F11>;
             layers = <RED>;
         };
 
-        combo_tab {
+        combo_f12 {
             timeout-ms = <50>;
             key-positions = <16 26>;
             bindings = <&kp F12>;
@@ -134,7 +134,7 @@
         };
 
 // STAR (mnożenie) 
-        combo_tab {
+        combo_star {
             timeout-ms = <50>;
             key-positions = <25 26>;
             bindings = <&kp STAR>;
@@ -142,7 +142,7 @@
         };
 
 // UNDER (podkreślenie) 
-        combo_tab {
+        combo_underscore {
             timeout-ms = <50>;
             key-positions = <23 24>;
             bindings = <&kp UNDER>;
@@ -158,7 +158,7 @@
         };
 
 // DEL 
-        combo_tab {
+        combo_del {
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp DEL>;
