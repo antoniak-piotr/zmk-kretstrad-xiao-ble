@@ -65,7 +65,7 @@
                 &lt CFG Q       &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
                 &mt LSHFT Z     &mt LWIN X      &mt LALT C      &mt LCTRL V     &kp B                   &kp N           &mt LCTRL M     &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT SLASH
-                                                                &mt LWIN TAB    &lt RED ENTER           &lt GRN SPACE   &mt RALT BKSP
+                                                                &mt LWIN TAB    &lt GRN ENTER           &lt RED SPACE   &mt RALT BKSP
             >;
         };
 
@@ -74,7 +74,7 @@
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp MINUS               &kp EQUAL       &kp N7          &kp N8          &kp N9          &kp N0
                 &kp LSHFT       &kp LWIN        &mt LALT LT     &mt LCTRL N5    &kp GRAVE               &kp SQT         &mt LCTRL N6    &mt LALT GT     &mt LWIN COLON  &mt RSHFT BSLH
-                                                                &mt LWIN ESC    &trans                  &lt GRN SPACE   &mt RALT DEL
+                                                                &mt LWIN ESC    &trans                  &lt RED SPACE   &mt RALT DEL
             >;
         };
 
@@ -83,7 +83,7 @@
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp LSHFT       &kp LWIN        &kp LALT        &mt LCTRL F11   &none                   &none           &mt LCTRL F12   &kp LALT        &kp LWIN        &kp RSHFT
-                                                                &kp LWIN        &mo RED                 &trans          &none
+                                                                &kp LWIN        &mo GRN                 &trans          &none
             >;
         };
 
@@ -98,8 +98,8 @@
 
         cfg_layer {
             bindings = <
-                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_PRV              &none           &none           &none           &none           &none
-                &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &bt BT_NXT              &none           &none           &none           &none           &none
+                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none                   &none           &none           &none           &none           &none
+                &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none                   &none           &none           &none           &none           &none
                 &none           &bt BT_SEL 6    &bt BT_SEL 7    &bt BT_SEL 8    &none                   &none           &none           &none           &none           &none
                                                                 &bt BT_CLR      &none                   &none           &none
             >;
@@ -118,65 +118,14 @@
     combos {
         compatible = "zmk,combos";
 
-// CAPS-WORD i podkreślenie
+// CAPS-WORD 
         combo_caps_word {
             timeout-ms = <50>;
             key-positions = <20 29>;
             bindings = <&caps_word>;
             layers = <DEF>;
         };
-//        combo_caps_word1 {
-//            timeout-ms = <50>;
-//            key-positions = <30 33>;
-//            bindings = <&caps_word>;
-//            layers = <DEF>;
-//        };
-//        combo_back_underscore {
-//            timeout-ms = <50>;
-//            key-positions = <31 32>;
-//            bindings = <&kp UNDER>;
-//            layers = <DEF>;
-//        };
 
-// kursory
-/*
-        combo_up {
-            timeout-ms = <50>;
-            key-positions = <7 17>;
-            bindings = <&kp UP>;
-            layers = <DEF GRN>;
-        };
-        combo_down {
-            timeout-ms = <50>;
-            key-positions = <17 27>;
-            bindings = <&kp DOWN>;
-            layers = <DEF GRN>;
-        };
-        combo_left {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp LEFT>;
-            layers = <DEF GRN>;
-        };
-        combo_right {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RIGHT>;
-            layers = <DEF GRN>;
-        };
-        combo_home {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp HOME>;
-            layers = <DEF GRN>;
-        };
-        combo_end {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp END>;
-            layers = <DEF GRN>;
-        };
-*/
 // wyjście z narzędzie magnifier (Win+Esc)        
         combo_magnifier_exit {
             timeout-ms = <50>;
@@ -186,6 +135,18 @@
         };
 
 // nawiasy        
+        combo_lbrc {
+            timeout-ms = <50>;
+            key-positions = <11 21>;
+            bindings = <&kp LBRC>;
+            layers = <DEF GRN>;
+        };
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <12 22>;
+            bindings = <&kp LBKT>;
+            layers = <DEF GRN>;
+        };
         combo_lpar {
             timeout-ms = <50>;
             key-positions = <13 23>;
@@ -198,27 +159,15 @@
             bindings = <&kp RPAR>;
             layers = <DEF GRN>;
         };
-        combo_lbkt {
-            timeout-ms = <50>;
-            key-positions = <14 24>;
-            bindings = <&kp LBKT>;
-            layers = <DEF GRN>;
-        };
         combo_rbkt {
             timeout-ms = <50>;
-            key-positions = <15 25>;
+            key-positions = <17 27>;
             bindings = <&kp RBKT>;
-            layers = <DEF GRN>;
-        };
-        combo_lbrc {
-            timeout-ms = <50>;
-            key-positions = <23 24>;
-            bindings = <&kp LBRC>;
             layers = <DEF GRN>;
         };
         combo_rbrc {
             timeout-ms = <50>;
-            key-positions = <25 26>;
+            key-positions = <18 28>;
             bindings = <&kp RBRC>;
             layers = <DEF GRN>;
         };
