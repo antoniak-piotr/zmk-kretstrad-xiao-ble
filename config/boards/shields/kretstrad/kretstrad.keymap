@@ -185,6 +185,14 @@
             layers = <DEF GRN>;
         };
 
+// SLASH (dzielenie) 
+        combo_slash {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp STAR>;
+            layers = <DEF GRN>;
+        };
+
 // UNDER (podkreślenie) 
         combo_underscore {
             timeout-ms = <50>;
