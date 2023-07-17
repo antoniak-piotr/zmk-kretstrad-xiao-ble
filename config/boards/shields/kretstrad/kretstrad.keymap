@@ -65,7 +65,7 @@
                 &lt CFG Q       &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
                 &mt LSHFT Z     &mt LWIN X      &mt LALT C      &mt LCTRL V     &kp B                   &kp N           &mt LCTRL M     &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT SLASH
-                                                                &mt LWIN TAB    &lt GRN ENTER           &lt RED SPACE   &mt RALT BKSP
+                                                                &mt LWIN ESC    &lt GRN ENTER           &lt RED SPACE   &mt RALT BKSP
             >;
         };
 
@@ -73,7 +73,7 @@
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp MINUS               &kp EQUAL       &kp N7          &kp N8          &kp N9          &kp N0
-                &kp LSHFT       &kp LWIN        &mt LALT LT     &mt LCTRL N5    &kp GRAVE               &kp SQT         &mt LCTRL N6    &mt LALT GT     &mt LWIN COLON  &mt RSHFT BSLH
+                &kp LSHFT       &kp LWIN        &mt LALT COLON  &mt LCTRL N5    &kp GRAVE               &kp SQT         &mt LCTRL N6    &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT BSLH
                                                                 &mt LWIN ESC    &trans                  &lt RED SPACE   &mt RALT DEL
             >;
         };
@@ -83,7 +83,7 @@
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp LSHFT       &kp LWIN        &kp LALT        &mt LCTRL F11   &none                   &none           &mt LCTRL F12   &kp LALT        &kp LWIN        &kp RSHFT
-                                                                &kp LWIN        &mo GRN                 &trans          &none
+                                                                &mt LWIN ESC    &lt GRN ENTER           &trans          &none
             >;
         };
 
@@ -118,6 +118,14 @@
     combos {
         compatible = "zmk,combos";
 
+// TAB 
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp TAB>;
+            layers = <DEF GRN>;
+        };
+
 // CAPS-WORD 
         combo_caps_word {
             timeout-ms = <50>;
@@ -126,7 +134,7 @@
             layers = <DEF>;
         };
 
-// wyjście z narzędzie magnifier (Win+Esc)        
+// wyjście z narzędzia magnifier (Win+Esc)        
         combo_magnifier_exit {
             timeout-ms = <50>;
             key-positions = <14 24>;
