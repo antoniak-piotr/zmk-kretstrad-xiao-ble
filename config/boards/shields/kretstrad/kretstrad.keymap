@@ -90,7 +90,7 @@
         bth_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &none           &kp LG(LS(S))   &kp PSCRN       &none           &kp LG(MINUS)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &kp ENTER
+                &none           &kp LG(LS(S))   &kp PSCRN       &none           &kp LG(MINUS)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
                 &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(EQUAL)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp RSHFT
                                                                 &mt LWIN ESC    &trans                  &trans          &mt RALT BSPC
             >;
@@ -131,6 +131,22 @@
             key-positions = <16 26>;
             bindings = <&kp F12>;
             layers = <RED>;
+        };
+
+// AT 
+        combo_star {
+            timeout-ms = <50>;
+            key-positions = <14 24>;
+            bindings = <&kp AT>;
+            layers = <DEF GRN>;
+        };
+
+// CARET 
+        combo_star {
+            timeout-ms = <50>;
+            key-positions = <15 25>;
+            bindings = <&kp CARET>;
+            layers = <DEF GRN>;
         };
 
 // STAR (mnożenie) 
