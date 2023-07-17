@@ -189,7 +189,7 @@
         combo_slash {
             timeout-ms = <50>;
             key-positions = <23 24>;
-            bindings = <&kp STAR>;
+            bindings = <&kp SLASH>;
             layers = <DEF GRN>;
         };
 
@@ -205,7 +205,7 @@
         combo_plus {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            bindings = <&kp UNDER>;
+            bindings = <&kp PLUS>;
             layers = <DEF GRN>;
         };
 
