@@ -125,20 +125,21 @@
             bindings = <&caps_word>;
             layers = <DEF>;
         };
-        combo_caps_word1 {
-            timeout-ms = <50>;
-            key-positions = <30 33>;
-            bindings = <&caps_word>;
-            layers = <DEF>;
-        };
-        combo_back_underscore {
-            timeout-ms = <50>;
-            key-positions = <31 32>;
-            bindings = <&kp UNDER>;
-            layers = <DEF>;
-        };
+//        combo_caps_word1 {
+//            timeout-ms = <50>;
+//            key-positions = <30 33>;
+//            bindings = <&caps_word>;
+//            layers = <DEF>;
+//        };
+//        combo_back_underscore {
+//            timeout-ms = <50>;
+//            key-positions = <31 32>;
+//            bindings = <&kp UNDER>;
+//            layers = <DEF>;
+//        };
 
 // kursory
+/*
         combo_up {
             timeout-ms = <50>;
             key-positions = <7 17>;
@@ -175,7 +176,7 @@
             bindings = <&kp END>;
             layers = <DEF GRN>;
         };
-
+*/
 // wyjście z narzędzie magnifier (Win+Esc)        
         combo_magnifier_exit {
             timeout-ms = <50>;
@@ -211,13 +212,13 @@
         };
         combo_lbrc {
             timeout-ms = <50>;
-            key-positions = <13 14>;
+            key-positions = <23 24>;
             bindings = <&kp LBRC>;
             layers = <DEF GRN>;
         };
         combo_rbrc {
             timeout-ms = <50>;
-            key-positions = <15 16>;
+            key-positions = <25 26>;
             bindings = <&kp RBRC>;
             layers = <DEF GRN>;
         };
