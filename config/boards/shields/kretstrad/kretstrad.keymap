@@ -16,6 +16,18 @@
 #define BTH 3           // aktywne oba modyfikatory (RED + GRN)
 #define CFG 4           // konfiguracja Bluetooth
 
+#define LSC(KEY) LS(LC(KEY))
+#define LCA(KEY) LC(LA(KEY))
+#define LSCA(KEY) LS(LC(LA(KEY)))
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+        combo_##NAME { \
+            timeout-ms = <TERM>; \
+            bindings = <BINDINGS>; \
+            key-positions = <KEYPOS>; \
+            layers = <LAYERS>; \
+        };
+
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
@@ -81,8 +93,8 @@
         red_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &kp F1          &kp F2          &kp F3          &kp F4          &none                   &none           &kp F7          &kp F8          &kp F9          &kp F10
-                &kp LSHFT       &kp LWIN        &kp LALT        &mt LCTRL F5    &none                   &none           &mt LCTRL F6    &kp LALT        &kp LWIN        &kp RSHFT
+                &kp F1          &kp F2          &kp F3          &kp F4          &kp LSC(B)              &kp LCA(UP)     &kp F7          &kp F8          &kp F9          &kp F10
+                &kp LSHFT       &kp LWIN        &kp LALT        &mt LCTRL F5    &kp LC(ESC)             &kp LCA(DOWN)   &mt LCTRL F6    &kp LALT        &kp LWIN        &kp RSHFT
                                                                 &mt LWIN ESC    &lt GRN ENTER           &trans          &mt RALT BSPC
             >;
         };
@@ -133,6 +145,14 @@
             layers = <RED>;
         };
 
+// BSLH (Back Slash)  
+        combo_f11 {
+            timeout-ms = <50>;
+            key-positions = <19 29>;
+            bindings = <&kp BSLH>;
+            layers = <DEF>;
+        };
+
 // AT 
         combo_at {
             timeout-ms = <50>;
@@ -170,7 +190,7 @@
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp TAB>;
-            layers = <DEF GRN>;
+            layers = <DEF GRN RED>;
         };
 
 // DEL 
@@ -178,7 +198,7 @@
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp DEL>;
-            layers = <DEF GRN>;
+            layers = <DEF GRN RED>;
         };
 
 // CAPS-WORD 
@@ -186,7 +206,7 @@
             timeout-ms = <50>;
             key-positions = <20 29>;
             bindings = <&caps_word>;
-            layers = <DEF>;
+            layers = <DEF GRN>;
         };
 
 // wyjście z narzędzia magnifier (Win+Esc)        
