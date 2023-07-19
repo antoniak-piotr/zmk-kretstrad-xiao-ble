@@ -102,8 +102,8 @@
         bth_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &none           &kp LG(LS(S))   &kp PSCRN       &none           &kp LG(MINUS)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
-                &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(EQUAL)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp RSHFT
+                &none           &kp LG(LS(S))   &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
+                &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(MINUS)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp RSHFT
                                                                 &mt LWIN ESC    &trans                  &trans          &mt RALT BSPC
             >;
         };
