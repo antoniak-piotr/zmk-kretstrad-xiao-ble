@@ -132,7 +132,7 @@
 
 // CAPS-WORD 
         combo_caps_word {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <30 33>;
             bindings = <&caps_word>;
             layers = <DEF GRN>;
@@ -140,14 +140,14 @@
 
 // F11 i F12  
         combo_f11 {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <13 23>;
             bindings = <&kp F11>;
             layers = <RED>;
         };
 
         combo_f12 {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <16 26>;
             bindings = <&kp F12>;
             layers = <RED>;
@@ -155,7 +155,7 @@
 
 // BSLH (Back Slash)  
         combo_bslh {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <19 29>;
             bindings = <&kp BSLH>;
             layers = <DEF>;
@@ -163,7 +163,7 @@
 
 // AT 
         combo_at {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <14 24>;
             bindings = <&kp AT>;
             layers = <DEF GRN>;
@@ -171,7 +171,7 @@
 
 // CARET 
         combo_caret {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <15 25>;
             bindings = <&kp CARET>;
             layers = <DEF GRN>;
@@ -179,7 +179,7 @@
 
 // STAR (mnożenie) 
         combo_star {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <25 26>;
             bindings = <&kp STAR>;
             layers = <DEF GRN>;
@@ -187,7 +187,7 @@
 
 // SLASH (dzielenie) 
         combo_slash {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <23 24>;
             bindings = <&kp SLASH>;
             layers = <DEF GRN>;
@@ -195,7 +195,7 @@
 
 // UNDER (podkreślenie) 
         combo_underscore {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <13 14>;
             bindings = <&kp UNDER>;
             layers = <DEF GRN>;
@@ -203,23 +203,23 @@
 
 // PLUS
         combo_plus {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <15 16>;
             bindings = <&kp PLUS>;
             layers = <DEF GRN>;
         };
 
 // STAB 
-        combo_stab {
-            timeout-ms = <50>;
-            key-positions = <11 12 13>;
+        combo_shift_tab {
+            timeout-ms = <100>;
+            key-positions = <11 13>;
             bindings = <&kp LS(TAB)>;
             layers = <DEF GRN>;
         };
 
 // TAB 
         combo_tab {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <12 13>;
             bindings = <&kp TAB>;
             layers = <DEF GRN>;
@@ -227,14 +227,14 @@
 
 // DEL 
         combo_del {
-            timeout-ms = <50>;
-            key-positions = <16 17 18>;
+            timeout-ms = <100>;
+            key-positions = <16 18>;
             bindings = <&kp DEL>;
             layers = <DEF GRN>;
         };
 // BSPC 
         combo_bspc {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <16 17>;
             bindings = <&kp BSPC>;
             layers = <DEF GRN>;
@@ -242,7 +242,7 @@
 
 // wyjście z narzędzia magnifier (Win+Esc)        
         combo_magnifier_exit {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <14 24>;
             bindings = <&kp LG(ESC)>;
             layers = <BTH>;
@@ -250,37 +250,37 @@
 
 // nawiasy        
         combo_lbrc {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <11 21>;
             bindings = <&kp LBRC>;
             layers = <DEF GRN>;
         };
         combo_lbkt {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <12 22>;
             bindings = <&kp LBKT>;
             layers = <DEF GRN>;
         };
         combo_lpar {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <13 23>;
             bindings = <&kp LPAR>;
             layers = <DEF GRN>;
         };
         combo_rpar {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <16 26>;
             bindings = <&kp RPAR>;
             layers = <DEF GRN>;
         };
         combo_rbkt {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <17 27>;
             bindings = <&kp RBKT>;
             layers = <DEF GRN>;
         };
         combo_rbrc {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <18 28>;
             bindings = <&kp RBRC>;
             layers = <DEF GRN>;
