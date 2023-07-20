@@ -85,7 +85,7 @@
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp MINUS               &kp EQUAL       &kp N7          &kp N8          &kp N9          &kp N0
-                &kp LSHFT       &kp LWIN        &mt LALT COLON  &mt LCTRL N5    &kp GRAVE               &kp SQT         &mt LCTRL N6    &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT BSLH
+                &kp LSHFT       &mt LWIN COLON  &mt LALT EQUAL  &mt LCTRL N5    &kp GRAVE               &kp SQT         &mt LCTRL N6    &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT BSLH
                                                                 &mt LWIN ESC    &trans                  &lt RED SPACE   &mt RALT BSPC
             >;
         };
@@ -209,20 +209,35 @@
             layers = <DEF GRN>;
         };
 
+// STAB 
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <11 12 13>;
+            bindings = <&kp LS(TAB)>;
+            layers = <DEF GRN>;
+        };
+
 // TAB 
         combo_tab {
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp TAB>;
-            layers = <DEF GRN RED>;
+            layers = <DEF GRN>;
         };
 
 // DEL 
         combo_del {
             timeout-ms = <50>;
-            key-positions = <16 17>;
+            key-positions = <16 17 18>;
             bindings = <&kp DEL>;
-            layers = <DEF GRN RED>;
+            layers = <DEF GRN>;
+        };
+// DEL 
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp BSPC>;
+            layers = <DEF GRN>;
         };
 
 // wyjście z narzędzia magnifier (Win+Esc)        
