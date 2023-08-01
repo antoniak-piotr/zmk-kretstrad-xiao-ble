@@ -130,6 +130,45 @@
     combos {
         compatible = "zmk,combos";
 
+// nawiasy        
+        combo_lbrc {
+            timeout-ms = <100>;
+            key-positions = <11 21>;
+            bindings = <&kp LBRC>;
+            layers = <DEF GRN>;
+        };
+        combo_lbkt {
+            timeout-ms = <100>;
+            key-positions = <12 22>;
+            bindings = <&kp LBKT>;
+            layers = <DEF GRN>;
+        };
+        combo_lpar {
+            timeout-ms = <100>;
+            key-positions = <13 23>;
+            bindings = <&kp LPAR>;
+            layers = <DEF GRN>;
+        };
+        combo_rpar {
+            timeout-ms = <100>;
+            key-positions = <16 26>;
+            bindings = <&kp RPAR>;
+            layers = <DEF GRN>;
+        };
+        combo_rbkt {
+            timeout-ms = <100>;
+            key-positions = <17 27>;
+            bindings = <&kp RBKT>;
+            layers = <DEF GRN>;
+        };
+        combo_rbrc {
+            timeout-ms = <100>;
+            key-positions = <18 28>;
+            bindings = <&kp RBRC>;
+            layers = <DEF GRN>;
+        };
+    };
+
 // CAPS-WORD 
         combo_caps_word {
             timeout-ms = <100>;
@@ -247,43 +286,4 @@
             bindings = <&kp LG(ESC)>;
             layers = <BTH>;
         };
-
-// nawiasy        
-        combo_lbrc {
-            timeout-ms = <100>;
-            key-positions = <11 21>;
-            bindings = <&kp LBRC>;
-            layers = <DEF GRN>;
-        };
-        combo_lbkt {
-            timeout-ms = <100>;
-            key-positions = <12 22>;
-            bindings = <&kp LBKT>;
-            layers = <DEF GRN>;
-        };
-        combo_lpar {
-            timeout-ms = <100>;
-            key-positions = <13 23>;
-            bindings = <&kp LPAR>;
-            layers = <DEF GRN>;
-        };
-        combo_rpar {
-            timeout-ms = <100>;
-            key-positions = <16 26>;
-            bindings = <&kp RPAR>;
-            layers = <DEF GRN>;
-        };
-        combo_rbkt {
-            timeout-ms = <100>;
-            key-positions = <17 27>;
-            bindings = <&kp RBKT>;
-            layers = <DEF GRN>;
-        };
-        combo_rbrc {
-            timeout-ms = <100>;
-            key-positions = <18 28>;
-            bindings = <&kp RBRC>;
-            layers = <DEF GRN>;
-        };
-    };
 };
