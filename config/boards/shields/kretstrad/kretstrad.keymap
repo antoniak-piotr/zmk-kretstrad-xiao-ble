@@ -130,46 +130,50 @@
     combos {
         compatible = "zmk,combos";
 
-// nawiasy        
+        // nawiasy        
         combo_lbrc {
             timeout-ms = <100>;
             key-positions = <11 21>;
             bindings = <&kp LBRC>;
             layers = <DEF GRN>;
         };
+
         combo_lbkt {
             timeout-ms = <100>;
             key-positions = <12 22>;
             bindings = <&kp LBKT>;
             layers = <DEF GRN>;
         };
+
         combo_lpar {
             timeout-ms = <100>;
             key-positions = <13 23>;
             bindings = <&kp LPAR>;
             layers = <DEF GRN>;
         };
+
         combo_rpar {
             timeout-ms = <100>;
             key-positions = <16 26>;
             bindings = <&kp RPAR>;
             layers = <DEF GRN>;
         };
+
         combo_rbkt {
             timeout-ms = <100>;
             key-positions = <17 27>;
             bindings = <&kp RBKT>;
             layers = <DEF GRN>;
         };
+
         combo_rbrc {
             timeout-ms = <100>;
             key-positions = <18 28>;
             bindings = <&kp RBRC>;
             layers = <DEF GRN>;
         };
-    };
 
-// CAPS-WORD 
+        // CAPS-WORD 
         combo_caps_word {
             timeout-ms = <100>;
             key-positions = <13 16>;
@@ -177,7 +181,7 @@
             layers = <DEF GRN>;
         };
 
-// F11 i F12  
+        // F11 i F12  
         combo_f11 {
             timeout-ms = <100>;
             key-positions = <13 23>;
@@ -192,7 +196,7 @@
             layers = <RED>;
         };
 
-// BSLH (Back Slash)  
+        // BSLH (Back Slash)  
         combo_bslh {
             timeout-ms = <100>;
             key-positions = <19 29>;
@@ -200,7 +204,7 @@
             layers = <DEF>;
         };
 
-// AT 
+       // AT 
         combo_at {
             timeout-ms = <100>;
             key-positions = <14 24>;
@@ -208,7 +212,7 @@
             layers = <DEF GRN>;
         };
 
-// CARET 
+       // CARET 
         combo_caret {
             timeout-ms = <100>;
             key-positions = <15 25>;
@@ -216,7 +220,7 @@
             layers = <DEF GRN>;
         };
 
-// STAR (mnożenie) 
+       // STAR (mnożenie) 
         combo_star {
             timeout-ms = <100>;
             key-positions = <25 26>;
@@ -224,15 +228,15 @@
             layers = <DEF GRN>;
         };
 
-// SLASH (dzielenie) 
+        // SLASH (dzielenie) 
         combo_slash {
             timeout-ms = <100>;
             key-positions = <23 24>;
             bindings = <&kp SLASH>;
             layers = <DEF GRN>;
         };
-
-// UNDER (podkreślenie) 
+    
+        // UNDER (podkreślenie) 
         combo_underscore {
             timeout-ms = <100>;
             key-positions = <13 14>;
@@ -240,7 +244,7 @@
             layers = <DEF GRN>;
         };
 
-// PLUS
+        // PLUS
         combo_plus {
             timeout-ms = <100>;
             key-positions = <15 16>;
@@ -248,7 +252,7 @@
             layers = <DEF GRN>;
         };
 
-// STAB 
+        // STAB 
         combo_shift_tab {
             timeout-ms = <100>;
             key-positions = <11 13>;
@@ -256,7 +260,7 @@
             layers = <DEF GRN>;
         };
 
-// TAB 
+        // TAB 
         combo_tab {
             timeout-ms = <100>;
             key-positions = <12 13>;
@@ -264,14 +268,15 @@
             layers = <DEF GRN>;
         };
 
-// DEL 
+        // DEL 
         combo_del {
             timeout-ms = <100>;
             key-positions = <16 18>;
             bindings = <&kp DEL>;
             layers = <DEF GRN>;
         };
-// BSPC 
+
+       // BSPC 
         combo_bspc {
             timeout-ms = <100>;
             key-positions = <16 17>;
@@ -279,11 +284,12 @@
             layers = <DEF GRN>;
         };
 
-// wyjście z narzędzia magnifier (Win+Esc)        
+        // wyjście z narzędzia magnifier (Win+Esc)        
         combo_magnifier_exit {
             timeout-ms = <100>;
             key-positions = <14 24>;
             bindings = <&kp LG(ESC)>;
             layers = <BTH>;
         };
+    };    
 };
