@@ -252,14 +252,6 @@
             layers = <DEF GRN>;
         };
 
-        // STAB 
-        combo_shift_tab {
-            timeout-ms = <100>;
-            key-positions = <11 13>;
-            bindings = <&kp LS(TAB)>;
-            layers = <DEF GRN>;
-        };
-
         // TAB 
         combo_tab {
             timeout-ms = <100>;
@@ -271,16 +263,8 @@
         // DEL 
         combo_del {
             timeout-ms = <100>;
-            key-positions = <16 18>;
-            bindings = <&kp DEL>;
-            layers = <DEF GRN>;
-        };
-
-       // BSPC 
-        combo_bspc {
-            timeout-ms = <100>;
             key-positions = <16 17>;
-            bindings = <&kp BSPC>;
+            bindings = <&kp DEL>;
             layers = <DEF GRN>;
         };
 
