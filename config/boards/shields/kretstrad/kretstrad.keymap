@@ -163,11 +163,11 @@
         COMBO(apos, &kp APOS, 15 25, DEF, 100)             // '
         COMBO(bslh, &kp BSLH, 19 29, DEF, 100)             // \
 
+        COMBO(minus, &kp MINUS, 13 14, DEF GRN, 100)       // -
+        COMBO(plus, &kp PLUS, 15 16, DEF GRN, 100)         // +
+
         COMBO(slash, &kp SLASH, 23 24, DEF GRN, 100)       // /
         COMBO(star, &kp STAR, 25 26, DEF GRN, 100)         // *
-
-        COMBO(minus, &kp MINUS, 15 16, DEF GRN, 100)       // -
-        COMBO(plus, &kp PLUS, 13 14, DEF GRN, 100)         // +
 
         // TAB i ESC
         COMBO(tab, &kp TAB, 12 13, DEF GRN, 100)           // TAB
