@@ -75,7 +75,7 @@
         grn_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &kp N1          &kp N2          &kp N3          &kp N4          &kp MINUS               &kp EQUAL       &kp N7          &kp N8          &kp N9          &kp N0
+                &kp N1          &kp N2          &kp N3          &kp N4          &kp TILDE               &kp DQT         &kp N7          &kp N8          &kp N9          &kp N0
                 &kp LSHFT       &mt LWIN COLON  &mt LALT EQUAL  &mt LCTRL N5    &kp GRAVE               &kp SQT         &mt LCTRL N6    &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT BSLH
                                                                 &mt LWIN ENTER  &trans                  &lt RED SPACE   &mt RALT ENTER
             >;
@@ -129,6 +129,10 @@
             layers = <LAYERS>; \
         };
 
+        // CAPS-WORD i UNDER (podkreślenie)
+        COMBO(caps, &caps_word, 20 29, DEF GRN, 100)      // CAPS WORD
+        COMBO(undr, &kp UNDER, 23 26, DEF GRN, 100)       // _
+
         // nawiasy
         COMBO(lbrc, &kp LBRC, 11 21, DEF GRN, 100)        // {
         COMBO(lbkt, &kp LBKT, 12 22, DEF GRN, 100)        // [
@@ -137,37 +141,26 @@
         COMBO(rbkt, &kp RBKT, 17 27, DEF GRN, 100)        // ]
         COMBO(rbrc, &kp RBRC, 18 28, DEF GRN, 100)        // }
 
-        // CAPS-WORD i UNDER (podkreślenie)
-        COMBO(caps, &caps_word, 20 29, DEF GRN, 100)      // CAPS WORD
-        COMBO(undr, &kp UNDER, 23 26, DEF GRN, 100)       // _
-
-        // F11 i F12
-        COMBO(f11, &kp F11, 13 23, RED, 100)              // F11
-        COMBO(f12, &kp F12, 16 26, RED, 100)              // F12
-
         // symbole
-        COMBO(excl, &kp EXCL, 0 10, DEF, 100)              // !
-        COMBO(at, &kp AT, 1 11, DEF, 100)                  // @
-        COMBO(hash, &kp HASH, 2 12, DEF, 100)              // #
-        COMBO(dllr, &kp DLLR, 3 13, DEF, 100)              // $
-        COMBO(prcn, &kp PRCNT, 4 14, DEF, 100)             // %
+        COMBO(at, &kp AT, 3 13, DEF GRN, 100)              // @
+        COMBO(hash, &kp HASH, 12 13, DEF GRN, 100)         // #
+        COMBO(dllr, &kp DLLR, 22 23, DEF GRN, 100)         // $
+        
+        COMBO(caret, &kp CARET, 6 16, DEF GRN, 100)        // ^
+        COMBO(colon, &kp COLON, 17 18, DEF GRN, 100)       // :
+        COMBO(equal, &kp EQUAL, 27 28, DEF GRN, 100)       // =
 
-        COMBO(caret, &kp CARET, 5 15, DEF, 100)            // ^
-        COMBO(equal, &kp EQUAL, 6 16, DEF, 100)            // =
-        COMBO(lt, &kp LT, 7 17, DEF, 100)                  // <
-        COMBO(gt, &kp GT, 8 18, DEF, 100)                  // >
-        COMBO(colon, &kp COLON, 9 19, DEF, 100)            // :
-
-        COMBO(amps, &kp AMPS, 10 20, DEF, 100)             // &
-        COMBO(grave, &kp GRAVE, 14 24, DEF, 100)           // `
-        COMBO(apos, &kp APOS, 15 25, DEF, 100)             // '
-        COMBO(bslh, &kp BSLH, 19 29, DEF, 100)             // \
-
+        // plus, minus, mnożenie i dzielenie
         COMBO(minus, &kp MINUS, 13 14, DEF GRN, 100)       // -
-        COMBO(plus, &kp PLUS, 15 16, DEF GRN, 100)         // +
-
         COMBO(slash, &kp SLASH, 23 24, DEF GRN, 100)       // /
+        COMBO(plus, &kp PLUS, 15 16, DEF GRN, 100)         // +
         COMBO(star, &kp STAR, 25 26, DEF GRN, 100)         // *
+
+        // tylda, odwrotny i zwykły apostrof oraz cudzysłów
+        COMBO(tilde, &kp TILDE, 4 14, DEF, 100)            // ~
+        COMBO(grave, &kp GRAVE, 14 24, DEF, 100)           // `
+        COMBO(dqt, &kp DQT, 5 15, DEF, 100)                // "
+        COMBO(sqt, &kp SQT, 15 25, DEF, 100)               // '
 
         // TAB i ESC
         COMBO(tab, &kp TAB, 12 13, DEF RED GRN BTH, 100)   // TAB
@@ -176,6 +169,10 @@
         // BSPC i DEL 
         COMBO(bsp, &kp BSPC, 16 17, DEF RED GRN BTH, 100)  // TAB
         COMBO(del, &kp DEL, 26 27, DEF RED GRN BTH, 100)   // ESC
+
+        // F11 i F12
+        COMBO(f11, &kp F11, 13 23, RED, 100)              // F11
+        COMBO(f12, &kp F12, 16 26, RED, 100)              // F12
 
         // wyjście z narzędzia magnifier (Win+Esc)        
         COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)         // ESC
