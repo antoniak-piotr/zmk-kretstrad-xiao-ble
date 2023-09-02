@@ -137,53 +137,15 @@
         COMBO(rbkt, &kp RBKT, 17 27, DEF GRN, 100)        // ]
         COMBO(rbrc, &kp RBRC, 18 28, DEF GRN, 100)        // }
 
-/*
-        // nawiasy        
-        combo_lbrc {
-            timeout-ms = <100>;
-            key-positions = <11 21>;
-            bindings = <&kp LBRC>;
-            layers = <DEF GRN>;
-        };
-
-        combo_lbkt {
-            timeout-ms = <100>;
-            key-positions = <12 22>;
-            bindings = <&kp LBKT>;
-            layers = <DEF GRN>;
-        };
-
-        combo_lpar {
-            timeout-ms = <100>;
-            key-positions = <13 23>;
-            bindings = <&kp LPAR>;
-            layers = <DEF GRN>;
-        };
-
-        combo_rpar {
-            timeout-ms = <100>;
-            key-positions = <16 26>;
-            bindings = <&kp RPAR>;
-            layers = <DEF GRN>;
-        };
-
-        combo_rbkt {
-            timeout-ms = <100>;
-            key-positions = <17 27>;
-            bindings = <&kp RBKT>;
-            layers = <DEF GRN>;
-        };
-
-        combo_rbrc {
-            timeout-ms = <100>;
-            key-positions = <18 28>;
-            bindings = <&kp RBRC>;
-            layers = <DEF GRN>;
-        };
-*/
-
         // CAPS-WORD i UNDER (podkreślenie)
-        combo_caps_word {
+        COMBO(caps, &caps_word, 20 29, DEF GRN, 100)      // CAPS WORD
+        COMBO(undr, &kp UNDER, 23 26, DEF GRN, 100)       // _
+
+        // F11 i F12
+        COMBO(f11, &kp F11, 13 23, RED, 100)              // F11
+        COMBO(f12, &kp F12, 16 26, RED, 100)              // F12
+
+/*        combo_caps_word {
             timeout-ms = <100>;
             key-positions = <20 29>;
             bindings = <&caps_word>;
@@ -211,6 +173,7 @@
             bindings = <&kp F12>;
             layers = <RED>;
         };
+*/
 
        // EXCLAMATION 
         combo_excl {
