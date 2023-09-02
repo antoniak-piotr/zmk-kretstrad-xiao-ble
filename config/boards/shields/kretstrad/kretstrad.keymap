@@ -158,115 +158,26 @@
         COMBO(gt, &kp GT, 8 18, DEF, 100)                  // >
         COMBO(colon, &kp COLON, 9 19, DEF, 100)            // :
 
-        COMBO(amps, &kp AMPS, 10 20, DEF, 100)                  // &
-        COMBO(grave, &kp GRAVE, 14 24, DEF, 100)            // `
-        COMBO(apos, &kp APOS, 15 25, DEF, 100)                  // '
-        COMBO(bslh, &kp BSLH, 19 29, DEF, 100)            // \
-/*
-        // AMPS 
-        combo_amps {
-            timeout-ms = <100>;
-            key-positions = <10 20>;
-            bindings = <&kp AMPS>;
-            layers = <DEF>;
-        };
+        COMBO(amps, &kp AMPS, 10 20, DEF, 100)             // &
+        COMBO(grave, &kp GRAVE, 14 24, DEF, 100)           // `
+        COMBO(apos, &kp APOS, 15 25, DEF, 100)             // '
+        COMBO(bslh, &kp BSLH, 19 29, DEF, 100)             // \
 
-        // GRAVE 
-        combo_grave {
-            timeout-ms = <100>;
-            key-positions = <14 24>;
-            bindings = <&kp GRAVE>;
-            layers = <DEF>;
-        };
+        COMBO(slash, &kp SLASH, 23 24, DEF GRN, 100)       // /
+        COMBO(star, &kp STAR, 25 26, DEF GRN, 100)         // *
 
-        // APOS 
-        combo_apos {
-            timeout-ms = <100>;
-            key-positions = <15 25>;
-            bindings = <&kp APOS>;
-            layers = <DEF>;
-        };
+        COMBO(minus, &kp MINUS, 15 16, DEF GRN, 100)       // -
+        COMBO(plus, &kp PLUS, 13 14, DEF GRN, 100)         // +
 
-        // BSLH (Back Slash)  
-        combo_bslh {
-            timeout-ms = <100>;
-            key-positions = <19 29>;
-            bindings = <&kp BSLH>;
-            layers = <DEF>;
-        };
-*/
-        // STAR i SLASH (mnożenie i dzielenia)
-        combo_slash {
-            timeout-ms = <100>;
-            key-positions = <23 24>;
-            bindings = <&kp SLASH>;
-            layers = <DEF GRN>;
-        };
-    
-        combo_star {
-            timeout-ms = <100>;
-            key-positions = <25 26>;
-            bindings = <&kp STAR>;
-            layers = <DEF GRN>;
-        };
-
-        // PLUS i MINUS (dodawanie i odejmowanie)
-        combo_minus {
-            timeout-ms = <100>;
-            key-positions = <13 14>;
-            bindings = <&kp MINUS>;
-            layers = <DEF GRN>;
-        };
-
-        combo_plus {
-            timeout-ms = <100>;
-            key-positions = <15 16>;
-            bindings = <&kp PLUS>;
-            layers = <DEF GRN>;
-        };
-
-/*        // TAB i ESC
-        combo_tab {
-            timeout-ms = <100>;
-            key-positions = <12 13>;
-            bindings = <&kp TAB>;
-            layers = <DEF GRN>;
-        };
-
-        combo_esc {
-            timeout-ms = <100>;
-            key-positions = <22 23>;
-            bindings = <&kp ESC>;
-            layers = <DEF GRN>;
-        };
-*/
         // TAB i ESC
-        COMBO(tab, &kp TAB, 12 13, DEF GRN, 100)              // TAB
-        COMBO(esc, &kp ESC, 22 23, DEF GRN, 100)              // ESC
+        COMBO(tab, &kp TAB, 12 13, DEF GRN, 100)           // TAB
+        COMBO(esc, &kp ESC, 22 23, DEF GRN, 100)           // ESC
 
         // BSPC i DEL 
-        COMBO(bsp, &kp BSPC, 16 17, DEF GRN, 100)              // TAB
-        COMBO(del, &kp DEL, 26 27, DEF GRN, 100)              // ESC
-/*        combo_bspc {
-            timeout-ms = <100>;
-            key-positions = <16 17>;
-            bindings = <&kp BSPC>;
-            layers = <DEF GRN>;
-        };
+        COMBO(bsp, &kp BSPC, 16 17, DEF GRN, 100)          // TAB
+        COMBO(del, &kp DEL, 26 27, DEF GRN, 100)           // ESC
 
-        combo_del {
-            timeout-ms = <100>;
-            key-positions = <26 27>;
-            bindings = <&kp DEL>;
-            layers = <DEF GRN>;
-        };
-*/
         // wyjście z narzędzia magnifier (Win+Esc)        
-        combo_magnifier_exit {
-            timeout-ms = <100>;
-            key-positions = <14 24>;
-            bindings = <&kp LG(ESC)>;
-            layers = <BTH>;
-        };
+        COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)         // ESC
     };    
 };
