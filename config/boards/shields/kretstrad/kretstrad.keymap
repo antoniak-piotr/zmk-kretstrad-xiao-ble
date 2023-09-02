@@ -146,54 +146,19 @@
         COMBO(f12, &kp F12, 16 26, RED, 100)              // F12
 
         // symbole
-        COMBO(f11, &kp EXCL, 0 10, DEF, 100)              // !
-        COMBO(f11, &kp AT, 1 11, DEF, 100)                // @
-        COMBO(f11, &kp HASH, 2 12, DEF, 100)              // #
-        COMBO(f11, &kp DLLR, 3 13, DEF, 100)              // $
-        COMBO(f11, &kp PRCNT, 4 14, DEF, 100)             // %
-        
-/*       // EXCLAMATION 
-        combo_excl {
-            timeout-ms = <100>;
-            key-positions = <0 10>;
-            bindings = <&kp EXCL>;
-            layers = <DEF>;
-        };
+        COMBO(excl, &kp EXCL, 0 10, DEF, 100)              // !
+        COMBO(at, &kp AT, 1 11, DEF, 100)                  // @
+        COMBO(hash, &kp HASH, 2 12, DEF, 100)              // #
+        COMBO(dllr, &kp DLLR, 3 13, DEF, 100)              // $
+        COMBO(prcn, &kp PRCNT, 4 14, DEF, 100)             // %
 
-        // AT 
-        combo_at {
-            timeout-ms = <100>;
-            key-positions = <1 11>;
-            bindings = <&kp AT>;
-            layers = <DEF>;
-        };
+        COMBO(caret, &kp CARET, 5 15, DEF, 100)            // ^
+        COMBO(equal, &kp EQUAL, 6 16, DEF, 100)            // =
+        COMBO(lt, &kp LT, 7 17, DEF, 100)                  // <
+        COMBO(gt, &kp GT, 8 18, DEF, 100)                  // >
+        COMBO(colon, &kp COLON, 9 19, DEF, 100)            // :
 
-        // HASH 
-        combo_hash {
-            timeout-ms = <100>;
-            key-positions = <2 12>;
-            bindings = <&kp HASH>;
-            layers = <DEF>;
-        };
-
-        // DOLLAR 
-        combo_dllr {
-            timeout-ms = <100>;
-            key-positions = <3 13>;
-            bindings = <&kp DLLR>;
-            layers = <DEF GRN>;
-        };
-        
-        // PRCNT 
-        combo_prcnt {
-            timeout-ms = <100>;
-            key-positions = <4 14>;
-            bindings = <&kp PRCNT>;
-            layers = <DEF>;
-        };
-*/
-
-        // CARET 
+  /*      // CARET 
         combo_caret {
             timeout-ms = <100>;
             key-positions = <5 15>;
@@ -231,7 +196,7 @@
             bindings = <&kp COLON>;
             layers = <DEF>;
         };
-
+*/
         // AMPS 
         combo_amps {
             timeout-ms = <100>;
