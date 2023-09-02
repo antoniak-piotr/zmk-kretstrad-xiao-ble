@@ -14,6 +14,7 @@
 #define BTH 3           // aktywne oba modyfikatory (RED + GRN)
 #define CFG 4           // konfiguracja Bluetooth
 
+#define LGS(KEY) LG(LS(KEY))
 #define LSC(KEY) LS(LC(KEY))
 #define LCA(KEY) LC(LA(KEY))
 #define LSCA(KEY) LS(LC(LA(KEY)))
@@ -100,7 +101,7 @@
         bth_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &none           &kp LG(LS(S))   &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &kp HOME        &kp UP          &kp END         &none
+                &none           &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &kp HOME        &kp UP          &kp END         &none
                 &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(MINUS)           &kp PG_DN       &kp LEFT        &kp DOWN        &kp RIGHT       &kp RSHFT
                                                                 &mt LWIN ENTER  &trans                  &trans          &mt RALT ENTER
             >;
@@ -127,6 +128,18 @@
 
     combos {
         compatible = "zmk,combos";
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+        combo_##NAME { \
+            timeout-ms = <TERM>; \
+            bindings = <BINDINGS>; \
+            key-positions = <KEYPOS>; \
+            layers = <LAYERS>; \
+        };
+
+        // nawiasy
+        COMBO(lbrc_TST, &kp LBRC, 11 21, DEF GRN, 100)
+
 
         // nawiasy        
         combo_lbrc {
