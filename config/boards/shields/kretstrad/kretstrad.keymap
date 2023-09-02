@@ -35,13 +35,13 @@
 
 &lt {
     flavor = "tap-preferred";
-1    tapping-term-ms = <200>;
+    tapping-term-ms = <200>;
     quick-tap-ms = <125>;
     global-quick-tap;
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 BSPC DEL>;
+    continue-list = <UNDERSCORE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 BSPC DEL ESC>;
 };
 
 / {
@@ -171,7 +171,7 @@
             layers = <DEF GRN>;
         };
 
-        // CAPS-WORD 
+        // CAPS-WORD i UNDER (podkreślenie)
         combo_caps_word {
             timeout-ms = <100>;
             key-positions = <20 29>;
@@ -179,10 +179,9 @@
             layers = <DEF GRN>;
         };
 
-        // UNDER (podkreślenie) 
         combo_underscore {
             timeout-ms = <100>;
-            key-positions = <9 19>;
+            key-positions = <31 32>;
             bindings = <&kp UNDER>;
             layers = <DEF GRN>;
         };
@@ -270,6 +269,14 @@
             timeout-ms = <100>;
             key-positions = <8 18>;
             bindings = <&kp GT>;
+            layers = <DEF>;
+        };
+
+        // COLON
+        combo_colon {
+            timeout-ms = <100>;
+            key-positions = <9 19>;
+            bindings = <&kp COLON>;
             layers = <DEF>;
         };
 
