@@ -158,45 +158,11 @@
         COMBO(gt, &kp GT, 8 18, DEF, 100)                  // >
         COMBO(colon, &kp COLON, 9 19, DEF, 100)            // :
 
-  /*      // CARET 
-        combo_caret {
-            timeout-ms = <100>;
-            key-positions = <5 15>;
-            bindings = <&kp CARET>;
-            layers = <DEF>;
-        };
-
-        // EQUAL 
-        combo_equal {
-            timeout-ms = <100>;
-            key-positions = <6 16>;
-            bindings = <&kp EQUAL>;
-            layers = <DEF>;
-        };
-
-        // LT i GT 
-        combo_lt {
-            timeout-ms = <100>;
-            key-positions = <7 17>;
-            bindings = <&kp LT>;
-            layers = <DEF>;
-        };
-
-        combo_gt {
-            timeout-ms = <100>;
-            key-positions = <8 18>;
-            bindings = <&kp GT>;
-            layers = <DEF>;
-        };
-
-        // COLON
-        combo_colon {
-            timeout-ms = <100>;
-            key-positions = <9 19>;
-            bindings = <&kp COLON>;
-            layers = <DEF>;
-        };
-*/
+        COMBO(amps, &kp AMPS, 10 20, DEF, 100)                  // &
+        COMBO(grave, &kp GRAVE, 14 24, DEF, 100)            // `
+        COMBO(apos, &kp APOS, 15 25, DEF, 100)                  // '
+        COMBO(bslh, &kp BSLH, 19 29, DEF, 100)            // \
+/*
         // AMPS 
         combo_amps {
             timeout-ms = <100>;
@@ -228,7 +194,7 @@
             bindings = <&kp BSLH>;
             layers = <DEF>;
         };
-
+*/
         // STAR i SLASH (mnożenie i dzielenia)
         combo_slash {
             timeout-ms = <100>;
