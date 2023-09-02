@@ -234,7 +234,7 @@
         };
         
         // PRCNT 
-        combo_caret {
+        combo_prcnt {
             timeout-ms = <100>;
             key-positions = <4 14>;
             bindings = <&kp PRCNT>;
