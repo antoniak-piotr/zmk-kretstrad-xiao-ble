@@ -19,14 +19,6 @@
 #define LCA(KEY) LC(LA(KEY))
 #define LSCA(KEY) LS(LC(LA(KEY)))
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
-        combo_##NAME { \
-            timeout-ms = <TERM>; \
-            bindings = <BINDINGS>; \
-            key-positions = <KEYPOS>; \
-            layers = <LAYERS>; \
-        };
-
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
@@ -138,9 +130,14 @@
         };
 
         // nawiasy
-        COMBO(lbrc_TST, &kp LBRC, 11 21, DEF GRN, 100)
+        COMBO(lbrc, &kp LBRC, 11 21, DEF GRN, 100)        // {
+        COMBO(lbkt, &kp LBKT, 12 22, DEF GRN, 100)        // [
+        COMBO(lpar, &kp LPAR, 13 23, DEF GRN, 100)        // (
+        COMBO(rpar, &kp RPAR, 16 26, DEF GRN, 100)        // )
+        COMBO(rbkt, &kp RBKT, 17 27, DEF GRN, 100)        // ]
+        COMBO(rbrc, &kp RBRC, 18 28, DEF GRN, 100)        // }
 
-
+/*
         // nawiasy        
         combo_lbrc {
             timeout-ms = <100>;
@@ -183,6 +180,7 @@
             bindings = <&kp RBRC>;
             layers = <DEF GRN>;
         };
+*/
 
         // CAPS-WORD i UNDER (podkreślenie)
         combo_caps_word {
