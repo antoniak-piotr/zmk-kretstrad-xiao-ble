@@ -4,8 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-// https://caksoylar.github.io/keymap-drawer?keymap_yaml=H4sIAAAAAAAC_61XbXPSQBD-zq84rRq1tJIABeLLSEOgVVqQpNa3GmmJwhgSJk2nU536291c9nJLw7U4I19277nnnk129-5CML6KLhKzxFgUJ9PIC_IxY-eLYJaYLIkvfD6Oo8tzk1W5fxYFF_MQhnU-TKYX81MYGXw0iaOFt5iFP6_Iag7OwtCPESxBLD8-T2N17G5qtthviKe908psCtbq9rRrDmvHWmZttCO0LtqPaI_Q7qMdoB1qJanfRv2-03VFAAeJHbRdtD20e2jfoH2Ltq9J3eegCznQTLA8wCgLIBkfROTj_UOMzHFL4O2-S_H3ArfcPsUPFHhZobN9M66cctu7ioeyD117hHMju0OnnGHbsnGqN1patesMxduMsqeAOeBk9dU0teHLtzCHHtV8ieCmqJZSRa7Rcc29YrH5vIHzrylYRXCDgjUEH1DwG4J_KAi_DL1P0QaCjyjYRPApBVsIPqZgBcEnIqviRbAB06pJ9gtFB9RR5aGic3Zw_qti_pVC11R3lu1Y_9hZVwvfZFM_mBBux-4vtRNEgElYdXdDrWtksK6-4mjoGuJMqAqnJpy6cHaE0xBOUzgtjQaoLEe4WcQswXSBrqhIVzeKM2R5Llrskxt55ltYpCNLrrfWjtUO2r0tccL2joZrJTp7czx1nb2Bq7ENdjwLN53p7Huy6aCcY40KsTbzWJ08XXYulscf7ff2BAittlxi68hVHcKD4UdFlw_bjmuvyPbe4EDcSJ3B8WEes7NW3ouF4IdnWgK4-kwVx_V0LXcN6ValW5NuXbo70m1It0lL_z821P-ils6i-WkE3weQhYXJPjfKTG-clNlPk9e6zAIA4cuhnF4vJ9eCpu8QHm8PJTNVbCIza5rbqEYNqbzUKqZRJUzeH0pmDZh1ZKY9UyDmzCYwW8j0JA-QsclOoySJ5mUWmayybeTyoK6L57A_7It3w81N1PUKqFeQ-YmoXy8xjBUMEl-Sa4S8u1KuDowqMg5XMlokNc_uZHxBxnLJWiTKs7sempKp3BI5Z1fJKz6-tRNz0SdKGi3UZyULcqaL9z0psjaYCGpAUF0tJ4m0pW9V1El__C4Q4fQOZ_4iSuJf_mnoQ7LYfDxPYxOJJqnW9doSJ9ryU-gi50721XpbDnSR-Duo9LTAb1fZbKtp2SdJoeGMNKHiOLHaQ2fNjWqkbcLXkl0OB7MlosBlsFqgVJrE40vvLAq_z36k9wU_MT24pfR6PrqEf2UtGJ3Px0HgLcYTkzXS4TSGP2je5Wzie4H_ww8n6Z-5v0GH_v8PDgAA
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -77,7 +75,7 @@
                 &lt CFG Q       &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
                 &mt LSHFT Z     &mt LWIN X      &mt LALT C      &mt LCTRL V     &kp B                   &kp N           &mt LCTRL M     &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT SLASH
-                                                                &mt LWIN ESC    &lt GRN BSPC            &lt RED SPACE   &mt RALT ENTER
+                                                                &mt LWIN ENTER  &lt GRN SPACE           &lt RED SPACE   &mt RALT ENTER
             >;
         };
 
@@ -86,7 +84,7 @@
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp MINUS               &kp EQUAL       &kp N7          &kp N8          &kp N9          &kp N0
                 &kp LSHFT       &mt LWIN COLON  &mt LALT EQUAL  &mt LCTRL N5    &kp GRAVE               &kp SQT         &mt LCTRL N6    &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT BSLH
-                                                                &mt LWIN ESC    &trans                  &lt RED SPACE   &mt RALT ENTER
+                                                                &mt LWIN ENTER  &trans                  &lt RED SPACE   &mt RALT ENTER
             >;
         };
 
@@ -95,7 +93,7 @@
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp LSC(B)              &kp LCA(UP)     &kp F7          &kp F8          &kp F9          &kp F10
                 &kp LSHFT       &kp LWIN        &kp LALT        &mt LCTRL F5    &kp LS(ESC)             &kp LCA(DOWN)   &mt LCTRL F6    &kp LALT        &kp LWIN        &kp RSHFT
-                                                                &mt LWIN ESC    &lt GRN BSPC            &trans          &mt RALT ENTER
+                                                                &mt LWIN ENTER  &lt GRN SPACE           &trans          &mt RALT ENTER
             >;
         };
 
@@ -104,7 +102,7 @@
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &none           &kp LG(LS(S))   &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
                 &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(MINUS)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp RSHFT
-                                                                &mt LWIN ESC    &trans                  &trans          &mt RALT ENTER
+                                                                &mt LWIN ENTER  &trans                  &trans          &mt RALT ENTER
             >;
         };
 
@@ -176,8 +174,16 @@
         // CAPS-WORD 
         combo_caps_word {
             timeout-ms = <100>;
-            key-positions = <13 16>;
+            key-positions = <20 29>;
             bindings = <&caps_word>;
+            layers = <DEF GRN>;
+        };
+
+        // UNDER (podkreślenie) 
+        combo_underscore {
+            timeout-ms = <100>;
+            key-positions = <23 26>;
+            bindings = <&kp UNDER>;
             layers = <DEF GRN>;
         };
 
@@ -236,15 +242,7 @@
             layers = <DEF GRN>;
         };
     
-        // UNDER (podkreślenie) 
-        combo_underscore {
-            timeout-ms = <100>;
-            key-positions = <13 14>;
-            bindings = <&kp UNDER>;
-            layers = <DEF GRN>;
-        };
-
-        // PLUS
+        // PLUS i MINUS
         combo_plus {
             timeout-ms = <100>;
             key-positions = <15 16>;
@@ -252,7 +250,15 @@
             layers = <DEF GRN>;
         };
 
-        // TAB i STAB
+        // PLUS 
+        combo_minus {
+            timeout-ms = <100>;
+            key-positions = <13 14>;
+            bindings = <&kp PLUS>;
+            layers = <DEF GRN>;
+        };
+
+        // TAB i ESC
         combo_tab {
             timeout-ms = <100>;
             key-positions = <12 13>;
@@ -260,10 +266,10 @@
             layers = <DEF GRN>;
         };
 
-        combo_stab {
+        combo_esc {
             timeout-ms = <100>;
             key-positions = <22 23>;
-            bindings = <&kp LS(TAB)>;
+            bindings = <&kp ESC>;
             layers = <DEF GRN>;
         };
 
