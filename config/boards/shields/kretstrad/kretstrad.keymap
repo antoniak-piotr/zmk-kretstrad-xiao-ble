@@ -35,7 +35,7 @@
 
 &lt {
     flavor = "tap-preferred";
-    tapping-term-ms = <200>;
+1    tapping-term-ms = <200>;
     quick-tap-ms = <125>;
     global-quick-tap;
 };
@@ -100,8 +100,8 @@
         bth_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &none           &kp LG(LS(S))   &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
-                &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(MINUS)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp RSHFT
+                &none           &kp LG(LS(S))   &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &kp HOME        &kp UP          &kp END         &none
+                &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(MINUS)           &kp PG_DN       &kp LEFT        &kp DOWN        &kp RIGHT       &kp RSHFT
                                                                 &mt LWIN ENTER  &trans                  &trans          &mt RALT ENTER
             >;
         };
@@ -182,7 +182,7 @@
         // UNDER (podkreślenie) 
         combo_underscore {
             timeout-ms = <100>;
-            key-positions = <23 26>;
+            key-positions = <9 19>;
             bindings = <&kp UNDER>;
             layers = <DEF GRN>;
         };
@@ -202,6 +202,101 @@
             layers = <RED>;
         };
 
+       // EXCLAMATION 
+        combo_excl {
+            timeout-ms = <100>;
+            key-positions = <0 10>;
+            bindings = <&kp EXCL>;
+            layers = <DEF>;
+        };
+
+        // AT 
+        combo_at {
+            timeout-ms = <100>;
+            key-positions = <1 11>;
+            bindings = <&kp AT>;
+            layers = <DEF>;
+        };
+
+        // HASH 
+        combo_hash {
+            timeout-ms = <100>;
+            key-positions = <2 12>;
+            bindings = <&kp HASH>;
+            layers = <DEF>;
+        };
+
+        // DOLLAR 
+        combo_dllr {
+            timeout-ms = <100>;
+            key-positions = <3 13>;
+            bindings = <&kp DLLR>;
+            layers = <DEF GRN>;
+        };
+        
+        // PRCNT 
+        combo_caret {
+            timeout-ms = <100>;
+            key-positions = <4 14>;
+            bindings = <&kp PRCNT>;
+            layers = <DEF>;
+        };
+
+        // CARET 
+        combo_caret {
+            timeout-ms = <100>;
+            key-positions = <5 15>;
+            bindings = <&kp CARET>;
+            layers = <DEF>;
+        };
+
+        // EQUAL 
+        combo_equal {
+            timeout-ms = <100>;
+            key-positions = <6 16>;
+            bindings = <&kp EQUAL>;
+            layers = <DEF>;
+        };
+
+        // LT i GT 
+        combo_lt {
+            timeout-ms = <100>;
+            key-positions = <7 17>;
+            bindings = <&kp LT>;
+            layers = <DEF>;
+        };
+
+        combo_gt {
+            timeout-ms = <100>;
+            key-positions = <8 18>;
+            bindings = <&kp GT>;
+            layers = <DEF>;
+        };
+
+        // AMPS 
+        combo_amps {
+            timeout-ms = <100>;
+            key-positions = <10 20>;
+            bindings = <&kp AMPS>;
+            layers = <DEF>;
+        };
+
+        // GRAVE 
+        combo_grave {
+            timeout-ms = <100>;
+            key-positions = <14 24>;
+            bindings = <&kp GRAVE>;
+            layers = <DEF>;
+        };
+
+        // APOS 
+        combo_apos {
+            timeout-ms = <100>;
+            key-positions = <15 25>;
+            bindings = <&kp APOS>;
+            layers = <DEF>;
+        };
+
         // BSLH (Back Slash)  
         combo_bslh {
             timeout-ms = <100>;
@@ -210,31 +305,7 @@
             layers = <DEF>;
         };
 
-       // AT 
-        combo_at {
-            timeout-ms = <100>;
-            key-positions = <14 24>;
-            bindings = <&kp AT>;
-            layers = <DEF GRN>;
-        };
-
-       // CARET 
-        combo_caret {
-            timeout-ms = <100>;
-            key-positions = <15 25>;
-            bindings = <&kp CARET>;
-            layers = <DEF GRN>;
-        };
-
-       // STAR (mnożenie) 
-        combo_star {
-            timeout-ms = <100>;
-            key-positions = <25 26>;
-            bindings = <&kp STAR>;
-            layers = <DEF GRN>;
-        };
-
-        // SLASH (dzielenie) 
+        // STAR i SLASH (mnożenie i dzielenia)
         combo_slash {
             timeout-ms = <100>;
             key-positions = <23 24>;
@@ -242,18 +313,24 @@
             layers = <DEF GRN>;
         };
     
-        // PLUS i MINUS
-        combo_plus {
+        combo_star {
             timeout-ms = <100>;
-            key-positions = <15 16>;
-            bindings = <&kp PLUS>;
+            key-positions = <25 26>;
+            bindings = <&kp STAR>;
             layers = <DEF GRN>;
         };
 
-        // PLUS 
+        // PLUS i MINUS (dodawanie i odejmowanie)
         combo_minus {
             timeout-ms = <100>;
             key-positions = <13 14>;
+            bindings = <&kp MINUS>;
+            layers = <DEF GRN>;
+        };
+
+        combo_plus {
+            timeout-ms = <100>;
+            key-positions = <15 16>;
             bindings = <&kp PLUS>;
             layers = <DEF GRN>;
         };
