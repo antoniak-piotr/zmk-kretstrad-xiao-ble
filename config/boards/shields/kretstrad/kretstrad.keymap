@@ -146,39 +146,13 @@
         COMBO(f12, &kp F12, 16 26, RED, 100)              // F12
 
         // symbole
-
-
-/*        combo_caps_word {
-            timeout-ms = <100>;
-            key-positions = <20 29>;
-            bindings = <&caps_word>;
-            layers = <DEF GRN>;
-        };
-
-        combo_underscore {
-            timeout-ms = <100>;
-            key-positions = <31 32>;
-            bindings = <&kp UNDER>;
-            layers = <DEF GRN>;
-        };
-
-        // F11 i F12  
-        combo_f11 {
-            timeout-ms = <100>;
-            key-positions = <13 23>;
-            bindings = <&kp F11>;
-            layers = <RED>;
-        };
-
-        combo_f12 {
-            timeout-ms = <100>;
-            key-positions = <16 26>;
-            bindings = <&kp F12>;
-            layers = <RED>;
-        };
-*/
-
-       // EXCLAMATION 
+        COMBO(f11, &kp EXCL, 0 10, DEF, 100)              // !
+        COMBO(f11, &kp AT, 1 11, DEF, 100)                // @
+        COMBO(f11, &kp HASH, 2 12, DEF, 100)              // #
+        COMBO(f11, &kp DLLR, 3 13, DEF, 100)              // $
+        COMBO(f11, &kp PRCNT, 4 14, DEF, 100)             // %
+        
+/*       // EXCLAMATION 
         combo_excl {
             timeout-ms = <100>;
             key-positions = <0 10>;
@@ -217,6 +191,7 @@
             bindings = <&kp PRCNT>;
             layers = <DEF>;
         };
+*/
 
         // CARET 
         combo_caret {
