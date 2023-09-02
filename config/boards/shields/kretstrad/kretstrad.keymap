@@ -145,6 +145,9 @@
         COMBO(f11, &kp F11, 13 23, RED, 100)              // F11
         COMBO(f12, &kp F12, 16 26, RED, 100)              // F12
 
+        // symbole
+
+
 /*        combo_caps_word {
             timeout-ms = <100>;
             key-positions = <20 29>;
@@ -316,7 +319,7 @@
             layers = <DEF GRN>;
         };
 
-        // TAB i ESC
+/*        // TAB i ESC
         combo_tab {
             timeout-ms = <100>;
             key-positions = <12 13>;
@@ -330,9 +333,15 @@
             bindings = <&kp ESC>;
             layers = <DEF GRN>;
         };
+*/
+        // TAB i ESC
+        COMBO(tab, &kp TAB, 12 13, DEF GRN, 100)              // TAB
+        COMBO(esc, &kp ESC, 22 23, DEF GRN, 100)              // ESC
 
         // BSPC i DEL 
-        combo_bspc {
+        COMBO(bsp, &kp BSPC, 16 17, DEF GRN, 100)              // TAB
+        COMBO(del, &kp DEL, 26 27, DEF GRN, 100)              // ESC
+/*        combo_bspc {
             timeout-ms = <100>;
             key-positions = <16 17>;
             bindings = <&kp BSPC>;
@@ -345,7 +354,7 @@
             bindings = <&kp DEL>;
             layers = <DEF GRN>;
         };
-
+*/
         // wyjście z narzędzia magnifier (Win+Esc)        
         combo_magnifier_exit {
             timeout-ms = <100>;
