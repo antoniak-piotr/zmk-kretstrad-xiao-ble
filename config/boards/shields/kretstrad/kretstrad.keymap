@@ -72,7 +72,7 @@
             >;
         };
 
-        grn_layer {
+/*        grn_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
@@ -80,8 +80,8 @@
                                                                 &mt LWIN ESC    &trans                  &lt RED SPACE   &mt RALT ENTER
             >;
         };
-
-/*        red_layer {
+*/
+        red_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
@@ -89,8 +89,8 @@
                                                                 &mt LWIN ESC    &lt GRN TAB             &trans          &mt RALT ENTER
             >;
         };
-*/
-        bth_layer {
+
+/*        bth_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &none           &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &none           &kp UP          &none           &none
@@ -99,7 +99,7 @@
             >;
         };
 
-/*        cfg_layer {
+        cfg_layer {
             bindings = <
                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none                   &none           &none           &none           &none           &none
                 &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none                   &none           &none           &none           &none           &none
@@ -127,7 +127,6 @@
                 ╰────────╯ ╰────────╯         */
 /*    combos {
         compatible = "zmk,combos";
-
 
         // CAPS-WORD i UNDER (podkreślenie)
         COMBO(caps, &caps_word, 20 29, DEF, 100)              // CAPS WORD
