@@ -159,8 +159,8 @@
         // TAB, ESC, BACKSPACE i DELETE
         COMBO(tab, &kp TAB, 12 13, DEF GRN, 100)              // TAB
         COMBO(esc, &kp ESC, 22 23, DEF GRN, 100)              // ESC
-        COMBO(bsp, &kp BSPC, 17 18, DEF GRN BTH, 100)         // BSPC
-        COMBO(del, &kp DEL, 27 28, DEF GRN BTH, 100)          // DEL
+        COMBO(bsp, &kp BSPC, 16 17, DEF GRN BTH, 100)         // BSPC
+        COMBO(del, &kp DEL, 26 27, DEF GRN BTH, 100)          // DEL
         
         // wyjście z narzędzia magnifier (Win+Esc)        
         COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
