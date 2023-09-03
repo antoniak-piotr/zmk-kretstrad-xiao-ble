@@ -128,6 +128,12 @@
     combos {
         compatible = "zmk,combos";
 
+        // nawigacja (HOME, END, PGUP i PGDOWN)
+        COMBO(home, &kp HOME, 16 26, BTH, 100)                // HOME
+        COMBO(end, &kp END, 18 28, BTH, 100)                  // END
+        COMBO(pgup, &kp PG_UP, 7 17, BTH, 100)                // PGUP
+        COMBO(pgdn, &kp PG_DN, 17 27, BTH, 100)               // PGDOWN
+
         // CAPS-WORD i UNDER (podkreślenie)
         COMBO(caps, &caps_word, 20 29, DEF, 100)              // CAPS WORD
         COMBO(undr, &kp UNDER, 23 26, DEF, 100)               // _
@@ -163,13 +169,7 @@
         COMBO(bsp, &kp BSPC, 16 17, DEF GRN BTH, 100)         // BSPC
         COMBO(del, &kp DEL, 26 27, DEF GRN BTH, 100)          // DEL
 
-        // HOME, END, PGUP i PGDOWN
-        COMBO(home, &kp HOME, 16 26, BTH, 100)                // HOME
-        COMBO(end, &kp END, 18 28, BTH, 100)                  // END
-        COMBO(pgup, &kp PG_UP, 7 17, BTH, 100)                // PGUP
-        COMBO(pgdn, &kp PG_DN, 17 27, BTH, 100)               // PGDOWN
-
         // wyjście z narzędzia magnifier (Win+Esc)        
-        // COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
+        COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
     };
 };
