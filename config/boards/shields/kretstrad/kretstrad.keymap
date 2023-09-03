@@ -71,7 +71,7 @@
                                                                 &mt LWIN ESC    &lt GRN TAB             &lt RED SPACE   &mt RALT ENTER
             >;
         };
-
+/*
         grn_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
@@ -106,7 +106,7 @@
                 &none           &bt BT_SEL 6    &bt BT_SEL 7    &bt BT_SEL 8    &none                   &none           &none           &none           &none           &none
                                                                 &bt BT_CLR      &none                   &none           &none
             >;
-        };
+        };  */
     };
 
 
