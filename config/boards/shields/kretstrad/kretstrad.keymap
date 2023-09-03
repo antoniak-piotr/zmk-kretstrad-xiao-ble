@@ -75,8 +75,8 @@
         grn_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &kp N1          &kp N2          &kp N3          &kp N4          &kp TILDE               &kp DQT         &kp N7          &kp N8          &kp N9          &kp N0
-                &kp LSHFT       &mt LWIN COLON  &mt LALT EQUAL  &mt LCTRL N5    &kp GRAVE               &kp SQT         &mt LCTRL N6    &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT BSLH
+                &kp N1          &kp N2          &kp N3          &kp N4          &kp GRAVE               &kp SQT         &kp N7          &kp N8          &kp N9          &kp N0
+                &kp LSHFT       &mt LWIN COLON  &mt LALT EQUAL  &mt LCTRL N5    &kp TILDE               &kp DQT         &mt LCTRL N6    &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT BSLH
                                                                 &mt LWIN ESC    &trans                  &lt RED SPACE   &mt RALT ENTER
             >;
         };
@@ -93,7 +93,7 @@
         bth_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &none           &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &kp HOME        &kp UP          &kp END         &none
+                &none           &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &none           &kp UP          &none           &none
                 &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(MINUS)           &kp PG_DN       &kp LEFT        &kp DOWN        &kp RIGHT       &kp RSHFT
                                                                 &mt LWIN ESC    &trans                  &trans          &mt RALT ENTER
             >;
@@ -130,49 +130,48 @@
         };
 
         // CAPS-WORD i UNDER (podkreślenie)
-        COMBO(caps, &caps_word, 20 29, DEF GRN, 100)      // CAPS WORD
-        COMBO(undr, &kp UNDER, 23 26, DEF GRN, 100)       // _
+        COMBO(caps, &caps_word, 20 29, DEF GRN, 100)           // CAPS WORD
+        COMBO(undr, &kp UNDER, 23 26, DEF GRN, 100)            // _
 
         // F11 i F12
-        COMBO(f11, &kp F11, 13 23, RED, 100)               // F11
-        COMBO(f12, &kp F12, 16 26, RED, 100)               // F12
+        COMBO(f11, &kp F11, 13 23, RED, 100)                   // F11
+        COMBO(f12, &kp F12, 16 26, RED, 100)                   // F12
 
         // nawiasy
-        COMBO(lbrc, &kp LBRC, 11 21, DEF GRN, 100)        // {
-        COMBO(lbkt, &kp LBKT, 12 22, DEF GRN, 100)        // [
-        COMBO(lpar, &kp LPAR, 13 23, DEF GRN, 100)        // (
-        COMBO(rpar, &kp RPAR, 16 26, DEF GRN, 100)        // )
-        COMBO(rbkt, &kp RBKT, 17 27, DEF GRN, 100)        // ]
-        COMBO(rbrc, &kp RBRC, 18 28, DEF GRN, 100)        // }
+        COMBO(lbrc, &kp LBRC, 11 21, DEF GRN, 100)            // {
+        COMBO(lbkt, &kp LBKT, 12 22, DEF GRN, 100)            // [
+        COMBO(lpar, &kp LPAR, 13 23, DEF GRN, 100)            // (
+        COMBO(rpar, &kp RPAR, 16 26, DEF GRN, 100)            // )
+        COMBO(rbkt, &kp RBKT, 17 27, DEF GRN, 100)            // ]
+        COMBO(rbrc, &kp RBRC, 18 28, DEF GRN, 100)            // }
 
         // symbole
-        COMBO(at, &kp AT, 3 13, DEF GRN, 100)              // @
-        COMBO(hash, &kp HASH, 11 12, DEF GRN, 100)         // #
-        COMBO(dllr, &kp DLLR, 21 22, DEF GRN, 100)         // $
-        
-        COMBO(caret, &kp CARET, 6 16, DEF GRN, 100)        // ^
-        COMBO(equal, &kp EQUAL, 17 18, DEF GRN, 100)       // =
-        COMBO(colon, &kp COLON, 27 28, DEF GRN, 100)       // :
+        COMBO(at, &kp AT, 3 13, DEF GRN, 100)                 // @
+        COMBO(hash, &kp HASH, 11 12, DEF GRN, 100)            // #
+        COMBO(dllr, &kp DLLR, 21 22, DEF GRN, 100)            // $  
+        COMBO(caret, &kp CARET, 6 16, DEF GRN, 100)           // ^
+        COMBO(equal, &kp EQUAL, 16 17, DEF GRN, 100)          // =
+        COMBO(colon, &kp COLON, 17 18, DEF GRN, 100)          // :
 
         // plus, minus, mnożenie i dzielenie
-        COMBO(minus, &kp MINUS, 13 14, DEF GRN, 100)       // -
-        COMBO(slash, &kp SLASH, 23 24, DEF GRN, 100)       // /
-        COMBO(plus, &kp PLUS, 15 16, DEF GRN, 100)         // +
-        COMBO(star, &kp STAR, 25 26, DEF GRN, 100)         // *
+        COMBO(minus, &kp MINUS, 4 14, DEF GRN, 100)           // -
+        COMBO(slash, &kp SLASH, 14 24, DEF GRN, 100)          // /
+        COMBO(plus, &kp PLUS, 5 15, DEF GRN, 100)             // +
+        COMBO(star, &kp STAR, 15 25, DEF GRN, 100)            // *
 
         // tylda, odwrotny i zwykły apostrof oraz cudzysłów
-        COMBO(tilde, &kp TILDE, 4 14, DEF, 100)            // ~
-        COMBO(grave, &kp GRAVE, 14 24, DEF, 100)           // `
-        COMBO(dqt, &kp DQT, 5 15, DEF, 100)                // "
-        COMBO(sqt, &kp SQT, 15 25, DEF, 100)               // '
-
-        // TAB, ESC, BACKSPACE i DELETE
-        COMBO(tab, &kp TAB, 12 13, DEF RED GRN BTH, 100)   // TAB
-        COMBO(esc, &kp ESC, 22 23, DEF RED GRN BTH, 100)   // ESC
-        COMBO(bsp, &kp BSPC, 16 17, DEF RED GRN BTH, 100)  // TAB
-        COMBO(del, &kp DEL, 26 27, DEF RED GRN BTH, 100)   // ESC
-
+        COMBO(grave, &kp GRAVE, 13 14, DEF, 100)              // `
+        COMBO(tilde, &kp TILDE, 23 24, DEF, 100)              // ~
+        COMBO(sqt, &kp SQT, 15 16, DEF, 100)                  // '
+        COMBO(dqt, &kp DQT, 25 26, DEF, 100)                  // "
+        
+        // BACKSPACE, DELETE, HOME i END
+        COMBO(bsp, &kp BSPC, 12 13, DEF RED GRN BTH, 100)     // BSPC
+        COMBO(del, &kp DEL, 22 23, DEF RED GRN BTH, 100)      // DEL
+        COMBO(home, &kp HOME, 26 27, DEF RED GRN BTH, 100)    // HOME
+        COMBO(end, &kp END, 27 28, DEF RED GRN BTH, 100)      // END
+        
         // wyjście z narzędzia magnifier (Win+Esc)        
-        COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)         // ESC
+        COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
     };    
 };
