@@ -72,25 +72,25 @@
             >;
         };
 
-/*        grn_layer {
+        grn_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                &kp LSHFT       &mt LWIN        &mt LALT        &mt LCTRL       &kp GRAVE               &kp SQT         &mt LCTRL       &mt LALT        &mt LWIN        &mt RSHFT
+                &kp LSHFT       &kp LWIN        &kp LALT        &kp LCTRL       &kp GRAVE               &kp SQT         &kp LCTRL       &kp LALT        &kp LWIN        &mt RSHFT BSLH
                                                                 &mt LWIN ESC    &trans                  &lt RED SPACE   &mt RALT ENTER
             >;
         };
-*/
+
         red_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
-                &kp LSHFT       &kp LWIN        &kp LALT        &mt LCTRL       &kp F11                 &kp F12         &mt LCTRL       &kp LALT        &kp LWIN        &kp RSHFT
+                &kp LSHFT       &kp LWIN        &kp LALT        &kp LCTRL       &kp F11                 &kp F12         &kp LCTRL       &kp LALT        &kp LWIN        &kp RSHFT
                                                                 &mt LWIN ESC    &lt GRN TAB             &trans          &mt RALT ENTER
             >;
         };
 
-/*        bth_layer {
+        bth_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &none           &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &none           &kp UP          &none           &none
@@ -106,7 +106,7 @@
                 &none           &bt BT_SEL 6    &bt BT_SEL 7    &bt BT_SEL 8    &none                   &none           &none           &none           &none           &none
                                                                 &bt BT_CLR      &none                   &none           &none
             >;
-        };  */
+        }; 
     };
 
 
