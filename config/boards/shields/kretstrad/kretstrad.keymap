@@ -125,7 +125,7 @@
     │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
     ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
                 ╰────────╯ ╰────────╯         */
-/*    combos {
+    combos {
         compatible = "zmk,combos";
 
         // CAPS-WORD i UNDER (podkreślenie)
@@ -164,6 +164,5 @@
         
         // wyjście z narzędzia magnifier (Win+Esc)        
         COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
-    };    
-*/
+    };
 };
