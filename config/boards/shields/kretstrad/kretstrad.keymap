@@ -160,10 +160,10 @@
         COMBO(star, &kp STAR, 15 25, DEF GRN, 100)            // *
 
         // tylda, odwrotny i zwykły apostrof oraz cudzysłów
-        COMBO(grave, &kp GRAVE, 13 14, DEF, 100)              // `
-        COMBO(tilde, &kp TILDE, 23 24, DEF, 100)              // ~
-        COMBO(sqt, &kp SQT, 15 16, DEF, 100)                  // '
-        COMBO(dqt, &kp DQT, 25 26, DEF, 100)                  // "
+        COMBO(grave, &kp GRAVE, 13 14, DEF GRN, 100)          // `
+        COMBO(tilde, &kp TILDE, 23 24, DEF GRN, 100)          // ~
+        COMBO(sqt, &kp SQT, 15 16, DEF GRN, 100)              // '
+        COMBO(dqt, &kp DQT, 25 26, DEF GRN, 100)              // "
         
         // BACKSPACE, DELETE, HOME i END
         COMBO(bsp, &kp BSPC, 12 13, DEF RED GRN BTH, 100)     // BSPC
