@@ -110,6 +110,14 @@
     };
 
 
+    #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+        combo_##NAME { \
+            timeout-ms = <TERM>; \
+            bindings = <BINDINGS>; \
+            key-positions = <KEYPOS>; \
+            layers = <LAYERS>; \
+        };
+
     /*                KEY POSITIONS
     ╭────────────────────╮ ╭────────────────────╮
     │  0   1   2   3   4 │ │  5   6   7   8   9 │
@@ -117,17 +125,9 @@
     │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
     ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
                 ╰────────╯ ╰────────╯         */
-
-    combos {
+/*    combos {
         compatible = "zmk,combos";
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
-        combo_##NAME { \
-            timeout-ms = <TERM>; \
-            bindings = <BINDINGS>; \
-            key-positions = <KEYPOS>; \
-            layers = <LAYERS>; \
-        };
 
         // CAPS-WORD i UNDER (podkreślenie)
         COMBO(caps, &caps_word, 20 29, DEF, 100)              // CAPS WORD
@@ -166,4 +166,5 @@
         // wyjście z narzędzia magnifier (Win+Esc)        
         COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
     };    
+*/
 };
