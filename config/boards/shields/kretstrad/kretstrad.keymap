@@ -93,8 +93,8 @@
         bth_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &none           &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &kp PG_UP       &none           &kp UP          &none           &none
-                &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(MINUS)           &kp PG_DN       &kp LEFT        &kp DOWN        &kp RIGHT       &kp RSHFT
+                &none           &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &none           &none           &kp UP          &none           &none
+                &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(MINUS)           &none           &kp LEFT        &kp DOWN        &kp RIGHT       &kp RSHFT
                                                                 &mt LWIN ESC    &trans                  &trans          &mt RALT ENTER
             >;
         };
@@ -162,7 +162,13 @@
         COMBO(esc, &kp ESC, 22 23, DEF GRN, 100)              // ESC
         COMBO(bsp, &kp BSPC, 16 17, DEF GRN BTH, 100)         // BSPC
         COMBO(del, &kp DEL, 26 27, DEF GRN BTH, 100)          // DEL
-        
+
+        // HOME, END, PGUP i PGDOWN
+        COMBO(home, &kp HOME, 16 26, BTH, 100)                // HOME
+        COMBO(end, &kp END, 18 28, BTH, 100)                  // END
+        COMBO(pgup, &kp PGUP, 7 17, BTH, 100)                 // PGUP
+        COMBO(pgdn, &kp PGDOWN, 17 27, BTH, 100)              // PGDOWN
+
         // wyjście z narzędzia magnifier (Win+Esc)        
         // COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
     };
