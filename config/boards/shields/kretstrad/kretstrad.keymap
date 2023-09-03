@@ -133,28 +133,29 @@
         COMBO(undr, &kp UNDER, 23 26, DEF, 100)               // _
 
         // nawiasy
-        COMBO(lbkt, &kp LBKT, 12 22, DEF GRN, 100)            // [
-        COMBO(lpar, &kp LPAR, 13 23, DEF GRN, 100)            // (
-        COMBO(rpar, &kp RPAR, 16 26, DEF GRN, 100)            // )
-        COMBO(rbkt, &kp RBKT, 17 27, DEF GRN, 100)            // ]
+        COMBO(lbkt, &kp LBKT, 6 16, DEF, 100)                 // (
+        COMBO(lpar, &kp LPAR, 7 17, DEF, 100)                 // )
+        COMBO(rpar, &kp RPAR, 16 26, DEF, 100)                // [
+        COMBO(rbkt, &kp RBKT, 17 27, DEF, 100)                // ]
 
         // symbole
-        COMBO(at, &kp AT, 3 13, DEF, 100)                     // @
-        COMBO(hash, &kp HASH, 11 12, DEF, 100)                // #
-        COMBO(dllr, &kp DLLR, 21 22, DEF, 100)                // $  
-        COMBO(caret, &kp CARET, 6 16, DEF, 100)               // ^
-        COMBO(equal, &kp EQUAL, 17 18, DEF, 100)              // =
-        COMBO(colon, &kp COLON, 27 28, DEF, 100)              // :
-
+        COMBO(hash, &kp HASH, 2 12, DEF, 100)                 // #
+        COMBO(dllr, &kp DLLR, 3 13, DEF, 100)                 // $  
+        COMBO(at, &kp AT, 4 14, DEF, 100)                     // @
+        COMBO(caret, &kp CARET, 5 15, DEF, 100)               // ^
+        COMBO(colon, &kp COLON, 17 18, DEF, 100)              // :
+        COMBO(equal, &kp EQUAL, 27 28, DEF, 100)              // =
+        
         // plus, minus, mnożenie i dzielenie
         COMBO(minus, &kp MINUS, 13 14, DEF, 100)              // -
         COMBO(slash, &kp SLASH, 23 24, DEF, 100)              // /
         COMBO(plus, &kp PLUS, 15 16, DEF, 100)                // +
         COMBO(star, &kp STAR, 25 26, DEF, 100)                // *
 
-        // odwrotny i zwykły apostrof (GRAVE i APOS)
+        // odwrotny i zwykły apostrof oraz backslash (GRAVE, APOS i BSLH)
         COMBO(grave, &kp GRAVE, 14 24, DEF, 100)              // `
         COMBO(apos, &kp APOS, 15 25, DEF, 100)                // '
+        COMBO(bslh, &kp BSLH, 19 29, DEF, 100)                // \
         
         // TAB, ESC, BACKSPACE i DELETE
         COMBO(tab, &kp TAB, 12 13, DEF GRN, 100)              // TAB
@@ -163,6 +164,6 @@
         COMBO(del, &kp DEL, 26 27, DEF GRN BTH, 100)          // DEL
         
         // wyjście z narzędzia magnifier (Win+Esc)        
-        COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
+        // COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
     };
 };
