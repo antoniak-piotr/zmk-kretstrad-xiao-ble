@@ -89,7 +89,7 @@
                                                                 &mt LWIN ESC    &lt GRN TAB             &trans          &mt RALT ENTER
             >;
         };
-
+*/
         bth_layer {
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
@@ -99,7 +99,7 @@
             >;
         };
 
-        cfg_layer {
+/*        cfg_layer {
             bindings = <
                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none                   &none           &none           &none           &none           &none
                 &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none                   &none           &none           &none           &none           &none
