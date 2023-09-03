@@ -160,16 +160,16 @@
         COMBO(star, &kp STAR, 25 26, DEF GRN, 100)            // *
 
         // tylda, odwrotny i zwykły apostrof oraz cudzysłów
-        COMBO(grave, &kp GRAVE, 4 14, DEF GRN, 100)          // `
-        COMBO(tilde, &kp TILDE, 14 24, DEF GRN, 100)         // ~
-        COMBO(sqt, &kp SQT, 5 15, DEF GRN, 100)              // '
-        COMBO(dqt, &kp DQT, 15 25, DEF GRN, 100)             // "
+        COMBO(grave, &kp GRAVE, 4 14, DEF GRN, 100)           // `
+        COMBO(tilde, &kp TILDE, 14 24, DEF GRN, 100)          // ~
+        COMBO(sqt, &kp SQT, 5 15, DEF GRN, 100)               // '
+        COMBO(dqt, &kp DQT, 15 25, DEF GRN, 100)              // "
         
         // BACKSPACE, DELETE, HOME i END
-        COMBO(bsp, &kp BSPC, 12 13, DEF RED GRN BTH, 100)     // BSPC
-        COMBO(del, &kp DEL, 22 23, DEF RED GRN BTH, 100)      // DEL
-        COMBO(home, &kp HOME, 26 27, DEF RED GRN BTH, 100)    // HOME
-        COMBO(end, &kp END, 27 28, DEF RED GRN BTH, 100)      // END
+        COMBO(bsp, &kp BSPC, 12 13, DEF GRN BTH, 100)         // BSPC
+        COMBO(del, &kp DEL, 22 23, DEF GRN BTH, 100)          // DEL
+        COMBO(home, &kp HOME, 26 27, DEF GRN BTH, 100)        // HOME
+        COMBO(end, &kp END, 27 28, DEF GRN BTH, 100)          // END
         
         // wyjście z narzędzia magnifier (Win+Esc)        
         COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
