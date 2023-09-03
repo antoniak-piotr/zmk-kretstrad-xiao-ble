@@ -133,9 +133,9 @@
         COMBO(undr, &kp UNDER, 23 26, DEF, 100)               // _
 
         // nawiasy
-        COMBO(lbkt, &kp LBKT, 6 16, DEF, 100)                 // (
-        COMBO(lpar, &kp LPAR, 7 17, DEF, 100)                 // )
-        COMBO(rpar, &kp RPAR, 16 26, DEF, 100)                // [
+        COMBO(lpar, &kp LPAR, 6 16, DEF, 100)                 // (
+        COMBO(rpar, &kp RPAR, 7 17, DEF, 100)                 // )
+        COMBO(lbkt, &kp LBKT, 16 26, DEF, 100)                // [
         COMBO(rbkt, &kp RBKT, 17 27, DEF, 100)                // ]
 
         // symbole
