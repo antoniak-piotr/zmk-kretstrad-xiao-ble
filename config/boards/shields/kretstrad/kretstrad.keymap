@@ -8,11 +8,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define DEF 0       
-#define GRN 1        
-#define RED 2
-#define BTH 3           // aktywne oba modyfikatory (RED + GRN)
-#define CFG 4           // konfiguracja Bluetooth
+#define DEF 0           // podstawowa
+#define GRN 1           // liczby i klawisze funkcyjne
+#define RED 2           // nawigacja
+#define CFG 3           // konfiguracja Bluetooth
 
 #define LGS(KEY) LG(LS(KEY))
 #define LSC(KEY) LS(LC(KEY))
@@ -34,7 +33,7 @@
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 BSPC DEL ESC>;
+    continue-list = <UNDERSCORE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 BSPC DEL>;
 };
 
 / {
@@ -48,16 +47,16 @@
 };
 
 / {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods";
-            #binding-cells = <2>;
-            tapping_term_ms = <225>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
+    // behaviors {
+    //     hm: homerow_mods {
+    //         compatible = "zmk,behavior-hold-tap";
+    //         label = "homerow mods";
+    //         #binding-cells = <2>;
+    //         tapping_term_ms = <225>;
+    //         flavor = "tap-preferred";
+    //         bindings = <&kp>, <&kp>;
+    //     };
+    // };
 
     keymap {
         compatible = "zmk,keymap";
@@ -67,35 +66,26 @@
             bindings = <
                 &lt CFG Q       &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
-                &mt LSHFT Z     &mt LWIN X      &mt LALT C      &mt LCTRL V     &kp B                   &kp N           &mt LCTRL M     &mt LALT COMMA  &mt LWIN DOT    &mt RSHFT SLASH
+                &mt LSHFT Z     &mt LCTRL X     &kp C           &mt LALT V      &kp B                   &kp N           &mt LALT M      &kp COMMA       &mt RCTRL DOT   &mt RSHFT SLASH
                                                                 &mt LWIN ESC    &lt GRN TAB             &lt RED SPACE   &mt RALT ENTER
             >;
         };
 
         grn_layer {
             bindings = <
-                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                &kp LSHFT       &kp LWIN        &kp LALT        &kp LCTRL       &kp GRAVE               &kp SQT         &kp LCTRL       &kp LALT        &kp LWIN        &mt RSHFT BSLH
-                                                                &mt LWIN ESC    &trans                  &lt RED SPACE   &mt RALT ENTER
+                &kp F1          &kp F2          &kp F3          &kp F4          &KP F5                  &none           &kp N7          &kp N8          &kp N9          &none
+                &kp F6          &kp F7          &kp F8          &kp F9          &kp F10                 &none           &kp N4          &kp N5          &kp N6          &kp N0
+                &kp LSHFT       &kp LCTRL       &kp F11         &mt LALT F12    &none                   &none           &mt LALT N1     &kp N2          &mt RCTRL N3    &kp RSHFT
+                                                                &mt LWIN ESC    &trans                  &kp SPACE       &mt RALT ENTER
             >;
         };
 
         red_layer {
             bindings = <
-                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
-                &kp LSHFT       &kp LWIN        &kp LALT        &kp LCTRL       &kp F11                 &kp F12         &kp LCTRL       &kp LALT        &kp LWIN        &kp RSHFT
-                                                                &mt LWIN ESC    &lt GRN TAB             &trans          &mt RALT ENTER
-            >;
-        };
-
-        bth_layer {
-            bindings = <
-                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &none           &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &none           &none           &kp UP          &none           &none
-                &kp LSHFT       &mt LWIN LC(X)  &mt LALT LC(C)  &mt LCTRL LC(V) &kp LG(MINUS)           &none           &kp LEFT        &kp DOWN        &kp RIGHT       &kp RSHFT
-                                                                &mt LWIN ESC    &trans                  &trans          &mt RALT ENTER
+                &none           &none           &none           &none           &kp LG(EQUAL)           &none           &none           &none           &none           &none
+                &none           &kp LGS(S)      &kp PSCRN       &none           &kp LG(MINUS)           &none           &kp LEFT        &kp UP          &kp RIGHT       &none
+                &kp LSHFT       &kp LCTRL       &none           &kp LALT        &none                   &none           &kp HOME        &kp DOWN        &kp END         &kp RSHFT
+                                                                &mt LWIN ESC    &kp TAB                 &trans          &mt RALT ENTER
             >;
         };
 
@@ -103,20 +93,20 @@
             bindings = <
                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none                   &none           &none           &none           &none           &none
                 &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none                   &none           &none           &none           &none           &none
-                &none           &bt BT_SEL 6    &bt BT_SEL 7    &bt BT_SEL 8    &none                   &none           &none           &none           &none           &none
+                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                                                                 &bt BT_CLR      &none                   &none           &none
             >;
-        }; 
+        };
     };
 
 
-    #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
-        combo_##NAME { \
-            timeout-ms = <TERM>; \
-            bindings = <BINDINGS>; \
-            key-positions = <KEYPOS>; \
-            layers = <LAYERS>; \
-        };
+    // #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+    //     combo_##NAME { \
+    //         timeout-ms = <TERM>; \
+    //         bindings = <BINDINGS>; \
+    //         key-positions = <KEYPOS>; \
+    //         layers = <LAYERS>; \
+    //     };
 
     /*                KEY POSITIONS
     ╭────────────────────╮ ╭────────────────────╮
@@ -128,48 +118,55 @@
     combos {
         compatible = "zmk,combos";
 
+       // CAPS-WORD i UNDER (podkreślenie)
+        caps    {key-positions = <20 29>; bindings = <&caps_word>; layers = <DEF>; timeout-ms = <100>;};            // CAPS WORD
+        under   {key-positions = <23 26>; bindings = <&kp UNDER>; layers = <DEF>; timeout-ms = <100>;};             // _
+
         // TAB, ESC, BACKSPACE i DELETE
-        COMBO(tab, &kp TAB, 12 13, DEF GRN, 100)              // TAB
-        COMBO(esc, &kp ESC, 22 23, DEF GRN, 100)              // ESC
-        COMBO(bsp, &kp BSPC, 16 17, DEF GRN BTH, 100)         // BSPC
-        COMBO(del, &kp DEL, 26 27, DEF GRN BTH, 100)          // DEL
-
-        // nawigacja (HOME, END, PGUP i PGDOWN)
-        COMBO(home, &kp HOME, 16 26, BTH, 100)                // HOME
-        COMBO(end, &kp END, 18 28, BTH, 100)                  // END
-        COMBO(pgup, &kp PG_UP, 7 17, BTH, 100)                // PGUP
-        COMBO(pgdn, &kp PG_DN, 17 27, BTH, 100)               // PGDOWN
-
-        // CAPS-WORD i UNDER (podkreślenie)
-        COMBO(caps, &caps_word, 20 29, DEF, 100)              // CAPS WORD
-        COMBO(undr, &kp UNDER, 23 26, DEF, 100)               // _
+        esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF GRN>; timeout-ms = <150>;};             // ESC
+        tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF GRN>; timeout-ms = <150>;};           // TAB
+        del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF GRN RED>; timeout-ms = <150>;};         // DEL
+        bsp     {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF GRN RED>; timeout-ms = <150>;};      // BSPC
 
         // nawiasy
-        COMBO(lpar, &kp LPAR, 6 16, DEF, 100)                 // (
-        COMBO(rpar, &kp RPAR, 7 17, DEF, 100)                 // )
-        COMBO(lbkt, &kp LBKT, 16 26, DEF, 100)                // [
-        COMBO(rbkt, &kp RBKT, 17 27, DEF, 100)                // ]
+        lbkt    {key-positions = <6 16>; bindings = <&kp LBKT>; layers = <DEF>; timeout-ms = <100>;};               // [{
+        rbkt    {key-positions = <7 17>; bindings = <&kp RBKT>; layers = <DEF>; timeout-ms = <100>;};               // ]}
+        lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF>; timeout-ms = <100>;};              // (
+        rpar    {key-positions = <17 27>; bindings = <&kp RPAR>; layers = <DEF>; timeout-ms = <100>;};              // )
 
         // symbole
-        COMBO(hash, &kp HASH, 2 12, DEF, 100)                 // #
-        COMBO(dllr, &kp DLLR, 3 13, DEF, 100)                 // $  
-        COMBO(at, &kp AT, 4 14, DEF, 100)                     // @
-        COMBO(caret, &kp CARET, 5 15, DEF, 100)               // ^
-        COMBO(colon, &kp COLON, 17 18, DEF, 100)              // :
-        COMBO(equal, &kp EQUAL, 27 28, DEF, 100)              // =
-        
-        // plus, minus, mnożenie i dzielenie
-        COMBO(minus, &kp MINUS, 13 14, DEF, 100)              // -
-        COMBO(slash, &kp SLASH, 23 24, DEF, 100)              // /
-        COMBO(plus, &kp PLUS, 15 16, DEF, 100)                // +
-        COMBO(star, &kp STAR, 25 26, DEF, 100)                // *
+        // slsh    {key-positions = <9 19>; bindings = <&kp SLASH>; layers = <DEF>; timeout-ms = <100>;};              // /?
+        // bslh    {key-positions = <0 10>; bindings = <&kp BSLH>; layers = <DEF>; timeout-ms = <100>;};               // \|
 
-        // odwrotny i zwykły apostrof oraz backslash (GRAVE, APOS i BSLH)
-        COMBO(grave, &kp GRAVE, 14 24, DEF, 100)              // `
-        COMBO(apos, &kp APOS, 15 25, DEF, 100)                // '
-        COMBO(bslh, &kp BSLH, 19 29, DEF, 100)                // \
-        
-        // wyjście z narzędzia magnifier (Win+Esc)        
-        COMBO(magex, &kp LG(ESC), 14 24, BTH, 100)            // Win + ESC
+        at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF>; timeout-ms = <100>;};                 // @
+        hash    {key-positions = <2 12>; bindings = <&kp HASH>; layers = <DEF>; timeout-ms = <100>;};               // #
+        dllr    {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <DEF>; timeout-ms = <100>;};               // $
+        prcnt   {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <DEF>; timeout-ms = <100>;};              // %
+        amps    {key-positions = <5 15>; bindings = <&kp AMPS>; layers = <DEF>; timeout-ms = <100>;};               // &
+        caret   {key-positions = <8 18>; bindings = <&kp CARET>; layers = <DEF>; timeout-ms = <100>;};              // ^
+        equal   {key-positions = <18 28>; bindings = <&kp EQUAL>; layers = <DEF>; timeout-ms = <200>;};             // =+
+        exclm   {key-positions = <0 1>; bindings = <&kp EXCL>; layers = <DEF>; timeout-ms = <100>;};                // !
+        quot    {key-positions = <8 9>; bindings = <&kp QMARK>; layers = <DEF>; timeout-ms = <100>;};               // ?
+
+        // plus, minus, mnożenie i dzielenie
+        slash   {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF>; timeout-ms = <200>;};               // /
+        star    {key-positions = <5 6>; bindings = <&kp STAR>; layers = <DEF>; timeout-ms = <200>;};                // *
+        minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF>; timeout-ms = <200>;};             // -
+        plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF>; timeout-ms = <200>;};              // +
+
+        // odwrotny oraz zwykły apostrof (GRAVE, APOS)
+        grave   {key-positions = <13 24>; bindings = <&kp GRAVE>; layers = <DEF>; timeout-ms = <100>;};              // `~
+        apos    {key-positions = <16 25>; bindings = <&kp APOS>; layers = <DEF>; timeout-ms = <100>;};               // '"
+
+        // klawiatura numeryczna
+        ndiv    {key-positions = <6 16>; bindings = <&kp KP_DIVIDE>; layers = <GRN>; timeout-ms = <100>;};          // /
+        nmul    {key-positions = <7 17>; bindings = <&kp KP_MULTIPLY>; layers = <GRN>; timeout-ms = <100>;};        // *
+        nsub    {key-positions = <8 18>; bindings = <&kp KP_MINUS>; layers = <GRN>; timeout-ms = <100>;};           // -
+        nadd    {key-positions = <18 25>; bindings = <&kp KP_PLUS>; layers = <GRN>; timeout-ms = <100>;};           // +
+        nsep    {key-positions = <16 23>; bindings = <&kp DOT>; layers = <GRN>; timeout-ms = <100>;};               // .
+        ncom    {key-positions = <17 24>; bindings = <&kp COMMA>; layers = <GRN>; timeout-ms = <100>;};             // ,
+
+        // wyjście z narzędzia magnifier (Win+Esc)
+        zexit   {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <RED>; timeout-ms = <100>;};            // Win + ESC
     };
 };

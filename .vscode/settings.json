@@ -1,0 +1,12 @@
+{
+    "workbench.colorCustomizations": {
+        "editorIndentGuide.background": "#00000000",
+        "editorIndentGuide.activeBackground": "#ff910083",
+        "[Material Theme Darker]": {
+            "statusBar.debuggingBackground": "#212121"
+        },
+        "activityBar.background": "#0B350D",
+        "titleBar.activeBackground": "#0F4B12",
+        "titleBar.activeForeground": "#F4FDF5"
+    }
+}
