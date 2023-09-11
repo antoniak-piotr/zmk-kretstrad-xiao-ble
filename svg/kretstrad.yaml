@@ -10,26 +10,26 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LWIN}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
-  - {t: Z, h: LSHFT}
-  - {t: X, h: LCTRL}
+  - {t: J, h: RSHFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: LALT}
+  - {t: ;, h: RWIN}
+  - Z
+  - X
   - C
-  - {t: V, h: LALT}
+  - V
   - B
   - N
-  - {t: M, h: LALT}
+  - M
   - ','
-  - {t: ., h: RCTRL}
-  - {t: /, h: RSHFT}
+  - .
+  - /
   - {t: ESC, h: LWIN}
   - {t: TAB, h: grn}
   - {t: SPACE, h: red}
@@ -45,34 +45,34 @@ layers:
   - '8'
   - '9'
   - ''
-  - F6
-  - F7
-  - F8
-  - F9
+  - {t: F6, h: LWIN}
+  - {t: F7, h: LALT}
+  - {t: F8, h: LCTRL}
+  - {t: F9, h: LSHFT}
   - F10
   - ''
-  - '4'
-  - '5'
-  - '6'
-  - '0'
-  - LSHFT
-  - LCTRL
+  - {t: '4', h: RSHFT}
+  - {t: '5', h: RCTRL}
+  - {t: '6', h: LALT}
+  - {t: '0', h: RWIN}
+  - ''
+  - ''
   - F11
-  - {t: F12, h: LALT}
+  - F12
   - ''
   - ''
   - {t: '1', h: LALT}
   - '2'
-  - {t: '3', h: RCTRL}
-  - RSHFT
+  - '3'
+  - ''
   - {t: ESC, h: LWIN}
   - {type: held}
   - SPACE
   - {t: ENTER, h: RALT}
   red:
   - ''
-  - ''
-  - ''
+  - LG(LS(S))
+  - PSCRN
   - ''
   - LG(EQUAL)
   - ''
@@ -80,26 +80,26 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - LG(LS(S))
-  - PSCRN
-  - ''
+  - LWIN
+  - LALT
+  - LCTRL
+  - LSHFT
   - LG(MINUS)
   - ''
   - LEFT
   - UP
   - RIGHT
   - ''
-  - LSHFT
-  - LCTRL
   - ''
-  - LALT
+  - LC(X)
+  - LC(C)
+  - LC(V)
   - ''
   - ''
   - HOME
   - DOWN
   - END
-  - RSHFT
+  - ''
   - {t: ESC, h: LWIN}
   - TAB
   - {type: held}
