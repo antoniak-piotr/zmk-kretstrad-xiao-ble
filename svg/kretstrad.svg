@@ -323,8 +323,8 @@ path.combo {
 <text x="644" y="63" class="combo tap">^</text>
 </g>
 <g class="combo combopos-17">
-<rect rx="6" ry="6" x="654" y="34" width="35" height="17" class="combo"/>
-<text x="672" y="42" class="combo tap">?</text>
+<rect rx="6" ry="6" x="682" y="68" width="35" height="17" class="combo"/>
+<text x="700" y="77" class="combo tap">?</text>
 </g>
 <g class="combo combopos-18">
 <rect rx="6" ry="6" x="626" y="110" width="35" height="17" class="combo"/>
