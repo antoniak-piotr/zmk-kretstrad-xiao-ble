@@ -75,7 +75,7 @@
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &none           &kp N7          &kp N8          &kp N9          &none
                 &hm LWIN F6     &hm LALT F7     &hm LCTRL F8    &hm LSHFT F9    &kp F10                 &none           &hm RSHFT N4    &hm RCTRL N5    &hm LALT N6     &hm RWIN N0
-                &none           &none           &kp F11         &kp F12         &none                   &none           &mt LALT N1     &kp N2          &kp N3          &none
+                &none           &none           &kp F11         &kp F12         &none                   &none           &kp N1          &kp N2          &kp N3          &none
                                                                 &mt LWIN ESC    &trans                  &kp SPACE       &mt RALT ENTER
             >;
         };
@@ -160,6 +160,6 @@
         nsep    {key-positions = <17 27>; bindings = <&kp DOT>; layers = <GRN>; timeout-ms = <100>;};               // .
 
         // wyjście z narzędzia magnifier (Win+Esc)
-        zexit   {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <RED>; timeout-ms = <100>;};            // Win + ESC
+        zexit   {key-positions = <4 14>; bindings = <&kp LG(ESC)>; layers = <RED>; timeout-ms = <100>;};            // Win + ESC
     };
 };
