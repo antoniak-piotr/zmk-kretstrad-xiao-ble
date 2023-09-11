@@ -148,8 +148,8 @@
         plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF>; timeout-ms = <200>;};              // +
 
         // odwrotny oraz zwykły apostrof (GRAVE, APOS)
-        grave   {key-positions = <13 24>; bindings = <&kp GRAVE>; layers = <DEF>; timeout-ms = <100>;};             // `~
-        apos    {key-positions = <16 25>; bindings = <&kp APOS>; layers = <DEF>; timeout-ms = <100>;};              // '"
+        grave   {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF>; timeout-ms = <100>;};             // `~
+        apos    {key-positions = <15 25>; bindings = <&kp APOS>; layers = <DEF>; timeout-ms = <100>;};              // '"
 
         // klawiatura numeryczna
         ndiv    {key-positions = <6 16>; bindings = <&kp KP_DIVIDE>; layers = <GRN>; timeout-ms = <100>;};          // /
