@@ -145,9 +145,9 @@
 
         amps    {key-positions = <5 15>; bindings = <&kp AMPS>; layers = <DEF>; timeout-ms = <100>;};               // &
         caret   {key-positions = <8 18>; bindings = <&kp CARET>; layers = <DEF>; timeout-ms = <100>;};              // ^
-        qmark   {key-positions = <8 9>; bindings = <&kp QMARK>; layers = <DEF>; timeout-ms = <100>;};               // ?
+        qmark   {key-positions = <9 19>; bindings = <&kp QMARK>; layers = <DEF>; timeout-ms = <100>;};              // ?
         equal   {key-positions = <18 28>; bindings = <&kp EQUAL>; layers = <DEF>; timeout-ms = <100>;};             // =+
-        bslash  {key-positions = <19 29>; bindings = <&kp BSLH>; layers = <DEF>; timeout-ms = <100>;};               // \|
+        bslash  {key-positions = <19 29>; bindings = <&kp BSLH>; layers = <DEF>; timeout-ms = <100>;};              // \|
 
         // plus, minus, mnożenie i dzielenie
         slash   {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF>; timeout-ms = <200>;};               // /
