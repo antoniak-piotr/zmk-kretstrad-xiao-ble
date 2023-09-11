@@ -1,2 +1,4 @@
 draw_config:
-  layout: {qmk_keyboard: k34}
+  combo_h: 17
+  combo_w: 35
+  small_pad: 7
