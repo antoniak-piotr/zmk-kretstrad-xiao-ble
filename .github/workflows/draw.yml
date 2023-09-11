@@ -16,5 +16,5 @@ jobs:
       keymap_patterns: "config/boards/shields/kretstrad/*.keymap"        # path to the keymaps to parse
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "svg"                      # path to save produced SVG and keymap YAML files
-      draw_args: "--qmk-keyboard 'k34'"
+      # draw_args: "-k k34"
       # draw_args: "layout: {qmk_keyboard: k34}"
