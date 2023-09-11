@@ -6,7 +6,7 @@ on:
       - "config/boards/shields/kretstrad/*.keymap"
       - "config/boards/shields/kretstrad/*.dtsi"
       - "keymap_drawer.config.yaml"
-      - "layout.json"
+      - "config/layout.json"
 
 jobs:
   draw:
@@ -18,5 +18,5 @@ jobs:
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "svg"                      # path to save produced SVG and keymap YAML files
       # parse_args: "-k k34"
-      draw_args: "'--qmk-layout k34'"
+      # draw_args: "'--qmk-layout k34'"
       # draw_args: "layout: {qmk_keyboard: k34}"
