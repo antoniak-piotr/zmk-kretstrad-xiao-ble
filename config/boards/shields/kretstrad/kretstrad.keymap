@@ -136,17 +136,18 @@
 
         // symbole
         // slsh    {key-positions = <9 19>; bindings = <&kp SLASH>; layers = <DEF>; timeout-ms = <100>;};              // /?
-        // bslh    {key-positions = <0 10>; bindings = <&kp BSLH>; layers = <DEF>; timeout-ms = <100>;};               // \|
 
+        exclm   {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF>; timeout-ms = <100>;};               // !
         at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF>; timeout-ms = <100>;};                 // @
         hash    {key-positions = <2 12>; bindings = <&kp HASH>; layers = <DEF>; timeout-ms = <100>;};               // #
         dllr    {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <DEF>; timeout-ms = <100>;};               // $
         prcnt   {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <DEF>; timeout-ms = <100>;};              // %
+
         amps    {key-positions = <5 15>; bindings = <&kp AMPS>; layers = <DEF>; timeout-ms = <100>;};               // &
         caret   {key-positions = <8 18>; bindings = <&kp CARET>; layers = <DEF>; timeout-ms = <100>;};              // ^
-        equal   {key-positions = <18 28>; bindings = <&kp EQUAL>; layers = <DEF>; timeout-ms = <200>;};             // =+
-        exclm   {key-positions = <0 1>; bindings = <&kp EXCL>; layers = <DEF>; timeout-ms = <100>;};                // !
-        quot    {key-positions = <8 9>; bindings = <&kp QMARK>; layers = <DEF>; timeout-ms = <100>;};               // ?
+        qmark   {key-positions = <8 9>; bindings = <&kp QMARK>; layers = <DEF>; timeout-ms = <100>;};               // ?
+        equal   {key-positions = <18 28>; bindings = <&kp EQUAL>; layers = <DEF>; timeout-ms = <100>;};             // =+
+        bslash  {key-positions = <19 29>; bindings = <&kp BSLH>; layers = <DEF>; timeout-ms = <100>;};               // \|
 
         // plus, minus, mnożenie i dzielenie
         slash   {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF>; timeout-ms = <200>;};               // /
@@ -155,16 +156,16 @@
         plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF>; timeout-ms = <200>;};              // +
 
         // odwrotny oraz zwykły apostrof (GRAVE, APOS)
-        grave   {key-positions = <13 24>; bindings = <&kp GRAVE>; layers = <DEF>; timeout-ms = <100>;};              // `~
-        apos    {key-positions = <16 25>; bindings = <&kp APOS>; layers = <DEF>; timeout-ms = <100>;};               // '"
+        grave   {key-positions = <13 24>; bindings = <&kp GRAVE>; layers = <DEF>; timeout-ms = <100>;};             // `~
+        apos    {key-positions = <16 25>; bindings = <&kp APOS>; layers = <DEF>; timeout-ms = <100>;};              // '"
 
         // klawiatura numeryczna
         ndiv    {key-positions = <6 16>; bindings = <&kp KP_DIVIDE>; layers = <GRN>; timeout-ms = <100>;};          // /
         nmul    {key-positions = <7 17>; bindings = <&kp KP_MULTIPLY>; layers = <GRN>; timeout-ms = <100>;};        // *
         nsub    {key-positions = <8 18>; bindings = <&kp KP_MINUS>; layers = <GRN>; timeout-ms = <100>;};           // -
-        nadd    {key-positions = <18 25>; bindings = <&kp KP_PLUS>; layers = <GRN>; timeout-ms = <100>;};           // +
-        nsep    {key-positions = <16 23>; bindings = <&kp DOT>; layers = <GRN>; timeout-ms = <100>;};               // .
-        ncom    {key-positions = <17 24>; bindings = <&kp COMMA>; layers = <GRN>; timeout-ms = <100>;};             // ,
+        nadd    {key-positions = <18 28>; bindings = <&kp KP_PLUS>; layers = <GRN>; timeout-ms = <100>;};           // +
+        ncom    {key-positions = <16 26>; bindings = <&kp COMMA>; layers = <GRN>; timeout-ms = <100>;};             // ,
+        nsep    {key-positions = <17 27>; bindings = <&kp DOT>; layers = <GRN>; timeout-ms = <100>;};               // .
 
         // wyjście z narzędzia magnifier (Win+Esc)
         zexit   {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <RED>; timeout-ms = <100>;};            // Win + ESC
