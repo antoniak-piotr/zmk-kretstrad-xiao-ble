@@ -10,7 +10,7 @@
 
 #define DEF 0           // podstawowa
 #define GRN 1           // liczby i klawisze funkcyjne
-#define RED 2           // nawigacja
+#define RED 2           // nawigacja`
 #define CFG 3           // konfiguracja Bluetooth
 
 #define LGS(KEY) LG(LS(KEY))
@@ -53,6 +53,8 @@
             label = "homerow mods";
             #binding-cells = <2>;
             tapping_term_ms = <225>;
+            quick-time-ms = <125>;
+            global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
