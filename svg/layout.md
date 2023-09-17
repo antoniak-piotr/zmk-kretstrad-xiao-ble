@@ -1,1 +1,0 @@
-![](kretstrad.svg)
