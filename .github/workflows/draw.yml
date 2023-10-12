@@ -16,7 +16,7 @@ jobs:
     permissions:
       contents: write
     with:
-      keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
+      keymap_patterns: "config/boards/shields/kretstrad/*.keymap"        # path to the keymaps to parse
       # config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       config_path: "antoniak-piotr/zmk-hummingbird-xiao-ble/keymap_drawer.config.yaml"
       output_folder: "svg"                      # path to save produced SVG and keymap YAML files
