@@ -80,17 +80,17 @@ layers:
   - '8'
   - '9'
   - {type: none}
-  - F12
+  - {type: none}
   - {t: F4, h: LALT}
   - {t: F5, h: LCTRL}
   - {t: F6, h: LSHFT}
-  - F10
+  - {type: none}
   - {t: ',', h: .}
   - {t: '4', h: RSHFT}
   - {t: '5', h: RCTRL}
   - {t: '6', h: LALT}
   - '0'
-  - F11
+  - {type: none}
   - F1
   - F2
   - F3
@@ -272,6 +272,15 @@ combos:
   l: [NUM]
 - p: [26, 27]
   k: .
+  l: [NUM]
+- p: [11, 21]
+  k: F10
+  l: [NUM]
+- p: [12, 22]
+  k: F11
+  l: [NUM]
+- p: [13, 23]
+  k: F12
   l: [NUM]
 - p: [16, 26]
   k: PGUP

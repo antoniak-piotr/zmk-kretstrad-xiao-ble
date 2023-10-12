@@ -79,8 +79,8 @@
         NUM_layer {
             bindings = <
                 &none           &kp F7          &kp F8          &kp F9          &none                   &none           &kp N7          &kp N8          &kp N9          &none
-                &kp F12         &hm LALT F4     &hm LCTRL F5    &hm LSHFT F6    &kp F10                 &mt DOT COMMA   &hm RSHFT N4    &hm RCTRL N5    &hm LALT N6     &kp N0
-                &kp F11         &kp F1          &kp F2          &kp F3          &none                   &none           &kp N1          &kp N2          &kp N3          &none
+                &none           &hm LALT F4     &hm LCTRL F5    &hm LSHFT F6    &none                   &mt DOT COMMA   &hm RSHFT N4    &hm RCTRL N5    &hm LALT N6     &kp N0
+                &none           &kp F1          &kp F2          &kp F3          &none                   &none           &kp N1          &kp N2          &kp N3          &none
                                                                 &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
@@ -175,6 +175,11 @@
         ne      {key-positions = <7 17>; bindings = <&kp E>; layers = <NUM>; SHORT;};                           // E
         nf      {key-positions = <8 18>; bindings = <&kp F>; layers = <NUM>; SHORT;};                           // F
         ndot    {key-positions = <26 27>; bindings = <&kp DOT>; layers = <NUM>; SHORT;};                        // .
+
+        // klawisze funkcyjne
+        f10     {key-positions = <11 21>; bindings = <&kp F10>; layers = <NUM>; SHORT;};                        // F10
+        f11     {key-positions = <12 22>; bindings = <&kp F11>; layers = <NUM>; SHORT;};                        // F11
+        f12     {key-positions = <13 23>; bindings = <&kp F12>; layers = <NUM>; SHORT;};                        // F12
 
         // page up i page down w warstwie NAV
         pgup    {key-positions = <16 26>; bindings = <&kp PG_UP>; layers = <NAV>; LONG;};                       // PAGE UP
