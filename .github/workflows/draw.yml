@@ -8,7 +8,7 @@ on:
       - "config/boards/shields/kretstrad/*.keymap"
       - "config/boards/shields/kretstrad/*.dtsi"
       # - "keymap_drawer.config.yaml"
-      - "antoniak-piotr/zmk-hummingbird-xiao-ble/keymap_drawer.config.yaml"
+      - "keymap_drawer.config.yaml"
 
 jobs:
   draw:
@@ -17,8 +17,7 @@ jobs:
       contents: write
     with:
       keymap_patterns: "config/boards/shields/kretstrad/*.keymap"        # path to the keymaps to parse
-      # config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
-      config_path: "antoniak-piotr/zmk-hummingbird-xiao-ble/keymap_drawer.config.yaml"
+      config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "svg"                      # path to save produced SVG and keymap YAML files
       amend_commit: true                        # whether to amend the commit or create a new one
       install_branch: main                      # trying new features: svg_extra_style

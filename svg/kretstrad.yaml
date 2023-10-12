@@ -74,67 +74,67 @@ layers:
   - F7
   - F8
   - F9
-  - ''
-  - ''
+  - {type: none}
+  - {type: none}
   - '7'
   - '8'
   - '9'
-  - ''
+  - {type: none}
   - {t: F11, h: LSHFT}
   - {t: F4, h: LALT}
   - F5
   - {t: F6, h: LCTRL}
   - F10
-  - ''
+  - {type: none}
   - {t: '4', h: RCTRL}
   - '5'
   - {t: '6', h: LALT}
   - RSHFT
-  - ''
+  - {type: none}
   - F1
   - F2
   - F3
-  - ''
-  - ''
+  - {type: none}
+  - {type: none}
   - '1'
   - '2'
   - '3'
-  - ''
+  - {type: none}
   - {t: ESC, h: LWIN}
   - {type: held}
   - {t: '0', h: NAV}
   - '0'
   NAV:
-  - LS(LC(Z))
-  - LG(LS(S))
-  - PSCRN
-  - ''
-  - LG(EQUAL)
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: LC(Z), h: LSHFT}
+  - {t: REDO, h: '$$mdi:redo$$'}
+  - {t: SNIP, h: '$$mdi:crop$$'}
+  - {t: PSCRN, h: '$$mdi:crop$$'}
+  - {type: none}
+  - {t: ZOOM+, h: '$$mdi:magnify$$'}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: UNDO, h: LSHFT}
   - LALT
-  - ''
+  - {type: none}
   - LCTRL
-  - LG(MINUS)
-  - ''
-  - LEFT
-  - UP
-  - RIGHT
-  - ''
-  - ''
-  - LC(X)
-  - LC(C)
-  - LC(V)
-  - ''
-  - ''
-  - HOME
-  - DOWN
-  - END
-  - ''
+  - {t: ZOOM-, h: '$$mdi:magnify$$'}
+  - {type: none}
+  - {t: LEFT, h: '$$mdi:chevron-left$$'}
+  - {t: UP, h: '$$mdi:chevron-up$$'}
+  - {t: RIGHT, h: '$$mdi:chevron-right$$'}
+  - {type: none}
+  - {type: none}
+  - {t: CUT, h: '$$mdi:content-cut$$'}
+  - {t: COPY, h: '$$mdi:content-copy$$'}
+  - {t: PASTE, h: '$$mdi:content-paste$$'}
+  - {type: none}
+  - {type: none}
+  - {t: HOME, h: '$$mdi:page-first$$'}
+  - {t: DOWN, h: '$$mdi:chevron-down$$'}
+  - {t: END, h: '$$mdi:page-last$$'}
+  - {type: none}
   - {t: ESC, h: LWIN}
   - TAB
   - {type: held}
@@ -144,51 +144,53 @@ layers:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
-  - OUT TOG
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR
+  - {t: BLE/USB, h: '$$mdi:toggle-switch-outline$$'}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: BT, h: CLR}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - {t: BT, h: '5'}
-  - COL
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&sys_reset'
-  - '&bootloader'
-  - ''
-  - ''
+  - {t: COLEMAK, h: '$$mdi:toggle-switch-outline$$'}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: RESET, h: '$$mdi:power$$'}
+  - {t: BOOT, h: '$$mdi:cloud-download-outline$$'}
+  - {type: none}
+  - {type: none}
 combos:
 - p: [13, 16]
-  k: '&caps_word'
+  k: CAPS
   l: [DEF, COL]
+  a: top
+  o: -0.1
 - p: [12, 13]
   k: TAB
   l: [DEF, COL, NUM]
 - p: [16, 17]
-  k: {t: BSPC, s: DEL}
+  k: BSPC
   l: [DEF, COL, NUM, NAV]
 - p: [6, 16]
-  k: {t: (, s: '['}
+  k: ([{
   l: [DEF, COL]
 - p: [7, 17]
-  k: {t: ), s: ']'}
+  k: '}])'
   l: [DEF, COL]
 - p: [3, 4]
   k: /
@@ -263,11 +265,11 @@ combos:
   k: F
   l: [NUM]
 - p: [16, 26]
-  k: PG UP
+  k: PGUP
   l: [NAV]
 - p: [18, 28]
-  k: PG DN
+  k: PGDN
   l: [NAV]
 - p: [4, 14]
-  k: LG(ESC)
+  k: EXIT
   l: [NAV]
