@@ -5,6 +5,8 @@ on:
     paths:
       - "config/*.keymap"
       - "config/*.dtsi"
+      - "config/boards/shields/kretstrad/*.keymap"
+      - "config/boards/shields/kretstrad/*.dtsi"
       # - "keymap_drawer.config.yaml"
       - "antoniak-piotr/zmk-hummingbird-xiao-ble/keymap_drawer.config.yaml"
 
