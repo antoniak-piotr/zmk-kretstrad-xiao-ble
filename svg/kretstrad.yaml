@@ -105,7 +105,7 @@ layers:
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   NAV:
-  - {t: REDO, h: '$$mdi:redo$$'}
+  - {type: none}
   - {t: SNIP, h: '$$mdi:crop$$'}
   - {t: PSCRN, h: '$$mdi:crop$$'}
   - {type: none}
@@ -288,6 +288,6 @@ combos:
 - p: [18, 28]
   k: PGDN
   l: [NAV]
-- p: [4, 14]
+- p: [14, 24]
   k: EXIT
   l: [NAV]
