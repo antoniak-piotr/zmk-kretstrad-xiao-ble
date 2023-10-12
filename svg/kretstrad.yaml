@@ -107,8 +107,8 @@ layers:
   NAV:
   - {type: none}
   - {type: none}
-  - {t: PSCRN, h: '$$mdi:crop$$'}
-  - LG(LS(s))
+  - {type: none}
+  - {t: SNIP, h: PSCRN}
   - {type: none}
   - {type: none}
   - {type: none}
