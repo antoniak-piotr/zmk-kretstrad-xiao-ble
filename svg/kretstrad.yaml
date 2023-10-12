@@ -10,16 +10,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LSHFT}
+  - A
   - {t: S, h: LALT}
-  - D
-  - {t: F, h: LCTRL}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHFT}
   - G
   - H
-  - {t: J, h: RCTRL}
-  - K
+  - {t: J, h: RSHFT}
+  - {t: K, h: RCTRL}
   - {t: L, h: LALT}
-  - {t: ;, h: RSHFT}
+  - ;
   - Z
   - X
   - C
@@ -45,16 +45,16 @@ layers:
   - U
   - Y
   - ;
-  - {t: A, h: LSHFT}
+  - A
   - {t: R, h: LALT}
-  - S
-  - {t: T, h: LCTRL}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHFT}
   - G
   - M
-  - {t: N, h: RCTRL}
-  - E
+  - {t: N, h: RSHFT}
+  - {t: E, h: RCTRL}
   - {t: I, h: LALT}
-  - {t: O, h: RSHFT}
+  - O
   - Z
   - X
   - C
@@ -70,7 +70,7 @@ layers:
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   NUM:
-  - F12
+  - {type: none}
   - F7
   - F8
   - F9
@@ -80,21 +80,21 @@ layers:
   - '8'
   - '9'
   - {type: none}
-  - {t: F11, h: LSHFT}
+  - F12
   - {t: F4, h: LALT}
-  - F5
-  - {t: F6, h: LCTRL}
-  - F10
+  - {t: F5, h: LCTRL}
+  - {t: F6, h: LSHFT}
   - {type: none}
-  - {t: '4', h: RCTRL}
-  - '5'
+  - {type: none}
+  - {t: '4', h: RSHFT}
+  - {t: '5', h: RCTRL}
   - {t: '6', h: LALT}
-  - RSHFT
   - {type: none}
+  - F11
   - F1
   - F2
   - F3
-  - {type: none}
+  - F10
   - {type: none}
   - '1'
   - '2'
@@ -109,17 +109,17 @@ layers:
   - {t: SNIP, h: '$$mdi:crop$$'}
   - {t: PSCRN, h: '$$mdi:crop$$'}
   - {type: none}
-  - {t: ZOOM+, h: '$$mdi:magnify$$'}
   - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
-  - {t: UNDO, h: LSHFT}
+  - {type: none}
+  - {t: UNDO, h: '$$mdi:undo$$'}
   - LALT
-  - {type: none}
   - LCTRL
-  - {t: ZOOM-, h: '$$mdi:magnify$$'}
+  - LSHFT
+  - {t: ZOOM+, h: '$$mdi:magnify$$'}
   - {type: none}
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
@@ -129,7 +129,7 @@ layers:
   - {t: CUT, h: '$$mdi:content-cut$$'}
   - {t: COPY, h: '$$mdi:content-copy$$'}
   - {t: PASTE, h: '$$mdi:content-paste$$'}
-  - {type: none}
+  - {t: ZOOM-, h: '$$mdi:magnify$$'}
   - {type: none}
   - {t: HOME, h: '$$mdi:page-first$$'}
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
@@ -179,10 +179,16 @@ combos:
   k: CAPS
   l: [DEF, COL]
   a: top
-  o: -0.1
+  o: -0.25
+- p: [2, 3]
+  k: ESC
+  l: [DEF, COL, NUM]
 - p: [12, 13]
   k: TAB
   l: [DEF, COL, NUM]
+- p: [6, 7]
+  k: DEL
+  l: [DEF, COL, NUM, NAV]
 - p: [16, 17]
   k: BSPC
   l: [DEF, COL, NUM, NAV]
@@ -192,19 +198,19 @@ combos:
 - p: [7, 17]
   k: '}])'
   l: [DEF, COL]
-- p: [3, 4]
+- p: [13, 14]
   k: /
   l: [DEF, COL]
-- p: [5, 6]
+- p: [15, 16]
   k: '*'
   l: [DEF, COL]
-- p: [13, 14]
+- p: [23, 24]
   k: '-'
   l: [DEF, COL]
-- p: [15, 16]
+- p: [25, 26]
   k: +
   l: [DEF, COL]
-- p: [0, 10]
+- p: [10, 20]
   k: '!'
   l: [DEF, COL]
 - p: [1, 11]
@@ -231,7 +237,7 @@ combos:
 - p: [8, 18]
   k: '&'
   l: [DEF, COL]
-- p: [9, 19]
+- p: [19, 29]
   k: '?'
   l: [DEF, COL]
 - p: [17, 27]

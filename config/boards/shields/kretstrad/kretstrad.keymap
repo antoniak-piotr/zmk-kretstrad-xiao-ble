@@ -61,7 +61,7 @@
        DEF_layer {
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
-                &hm LSHFT A     &hm LALT S      &kp D           &hm LCTRL F     &kp G                   &kp H           &hm RCTRL J     &kp K           &hm LALT L      &hm RSHFT SEMI
+                &kp A           &hm LALT S      &hm LCTRL D     &hm LSHFT F     &kp G                   &kp H           &hm RSHFT J     &hm RCTRL K     &hm LALT L      &kp SEMI
                 &kp Z           &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp DOT         &kp SLASH
                                                                 &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
             >;
@@ -70,7 +70,7 @@
         COL_layer {
             bindings = <
                 &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
-                &hm LSHFT A     &hm LALT R      &kp S           &hm LCTRL T     &kp G                   &kp M           &hm RCTRL N     &kp E           &hm LALT I      &hm RSHFT O
+                &kp A           &hm LALT R      &hm LCTRL S     &hm LSHFT T     &kp G                   &kp M           &hm RSHFT N     &hm RCTRL E     &hm LALT I      &kp O
                 &kp Z           &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp SLASH
                                                                 &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
             >;
@@ -78,18 +78,18 @@
 
         NUM_layer {
             bindings = <
-                &kp F12         &kp F7          &kp F8          &kp F9          &none                   &none           &kp N7          &kp N8          &kp N9          &none
-                &hm LSHFT F11   &hm LALT F4     &kp F5          &hm LCTRL F6    &kp F10                 &none           &hm RCTRL N4    &kp N5          &hm LALT N6     &kp RSHFT
-                &none           &kp F1          &kp F2          &kp F3          &none                   &none           &kp N1          &kp N2          &kp N3          &none
+                &none           &kp F7          &kp F8          &kp F9          &none                   &none           &kp N7          &kp N8          &kp N9          &none
+                &kp F12         &hm LALT F4     &hm LCTRL F5    &hm LSHFT F6    &none                   &none           &hm RSHFT N4    &hm RCTRL N5    &hm LALT N6     &none
+                &kp F11         &kp F1          &kp F2          &kp F3          &kp F10                 &none           &kp N1          &kp N2          &kp N3          &none
                                                                 &mt LWIN ESC    &trans                  &lt NAV N0      &kp N0
             >;
         };
 
         NAV_layer {
             bindings = <
-                &kp LSC(Z)      &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &none           &none           &none           &none           &none
-                &hm LSHFT LC(Z) &kp LALT        &none           &kp LCTRL       &kp LG(MINUS)           &none           &kp LEFT        &kp UP          &kp RIGHT       &none
-                &none           &kp LC(X)       &kp LC(C)       &kp LC(V)       &none                   &none           &kp HOME        &kp DOWN        &kp END         &none
+                &kp LSC(Z)      &kp LGS(S)      &kp PSCRN       &none           &none                   &none           &none           &none           &none           &none
+                &kp LC(Z)       &kp LALT        &kp LCTRL       &kp LSHFT       &kp LG(EQUAL)           &none           &kp LEFT        &kp UP          &kp RIGHT       &none
+                &none           &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LG(MINUS)           &none           &kp HOME        &kp DOWN        &kp END         &none
                                                                 &mt LWIN ESC    &kp TAB                 &trans          &mt RALT ENTER
             >;
         };
@@ -131,7 +131,9 @@
         caps    {key-positions = <13 16>; bindings = <&caps_word>; layers = <DEF COL>; SHORT;};                 // CAPS WORD
 
         // TAB, ESC, BACKSPACE i DELETE
+        esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM>; SHORT;};                  // ESC
         tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM>; SHORT;};                // TAB
+        bsdl    {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; SHORT;};              // DEL
         bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; SHORT;};              // BSPC lub DEL (jeśli wciśnięto SHIFT)
 
         // nawiasy
@@ -139,13 +141,13 @@
         rpar    {key-positions = <7 17>; bindings = <&rpb>; layers = <DEF COL>; SHORT;};                        // ) ]}
 
         // symbole matematyczne: +, -, *, /
-        slash   {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF COL>; SHORT;};                    // /
-        star    {key-positions = <5 6>; bindings = <&kp STAR>; layers = <DEF COL>; SHORT;};                     // *
-        minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
-        plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL>; SHORT;};                   // +
+        slash   {key-positions = <13 14>; bindings = <&kp SLASH>; layers = <DEF COL>; SHORT;};                  // /
+        star    {key-positions = <15 16>; bindings = <&kp STAR>; layers = <DEF COL>; SHORT;};                   // *
+        minus   {key-positions = <23 24>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
+        plus    {key-positions = <25 26>; bindings = <&kp PLUS>; layers = <DEF COL>; SHORT;};                   // +
 
         // pozostałe symbole
-        excl    {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF COL>; SHORT;};                    // !
+        excl    {key-positions = <10 20>; bindings = <&kp EXCL>; layers = <DEF COL>; SHORT;};                   // !
         at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF COL>; SHORT;};                      // @
         hash    {key-positions = <2 12>; bindings = <&kp HASH>; layers = <DEF COL>; SHORT;};                    // #
         dllr    {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <DEF COL>; SHORT;};                    // $
@@ -156,7 +158,7 @@
 
         caret   {key-positions = <5 15>; bindings = <&kp CARET>; layers = <DEF COL>; SHORT;};                   // ^
         amps    {key-positions = <8 18>; bindings = <&kp AMPS>; layers = <DEF COL>; SHORT;};                    // &
-        quot    {key-positions = <9 19>; bindings = <&kp QMARK>; layers = <DEF COL>; SHORT;};                   // ?
+        quot    {key-positions = <19 29>; bindings = <&kp QMARK>; layers = <DEF COL>; SHORT;};                  // ?
 
         colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
         bslh    {key-positions = <26 27>; bindings = <&kp BSLH>; layers = <DEF COL>; SHORT;};                   // \|
