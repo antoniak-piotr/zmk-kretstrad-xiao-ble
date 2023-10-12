@@ -133,7 +133,7 @@
         // TAB, ESC, BACKSPACE i DELETE
         esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM>; SHORT;};                  // ESC
         tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM>; SHORT;};                // TAB
-        bsdl    {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; SHORT;};              // DEL
+        del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; SHORT;};              // DEL
         bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; SHORT;};              // BSPC lub DEL (jeśli wciśnięto SHIFT)
 
         // nawiasy
@@ -147,7 +147,7 @@
         plus    {key-positions = <25 26>; bindings = <&kp PLUS>; layers = <DEF COL>; SHORT;};                   // +
 
         // pozostałe symbole
-        excl    {key-positions = <10 20>; bindings = <&kp EXCL>; layers = <DEF COL>; SHORT;};                   // !
+        excl    {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF COL>; SHORT;};                    // !
         at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF COL>; SHORT;};                      // @
         hash    {key-positions = <2 12>; bindings = <&kp HASH>; layers = <DEF COL>; SHORT;};                    // #
         dllr    {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <DEF COL>; SHORT;};                    // $
@@ -158,7 +158,7 @@
 
         caret   {key-positions = <5 15>; bindings = <&kp CARET>; layers = <DEF COL>; SHORT;};                   // ^
         amps    {key-positions = <8 18>; bindings = <&kp AMPS>; layers = <DEF COL>; SHORT;};                    // &
-        quot    {key-positions = <19 29>; bindings = <&kp QMARK>; layers = <DEF COL>; SHORT;};                  // ?
+        quot    {key-positions = <9 19>; bindings = <&kp QMARK>; layers = <DEF COL>; SHORT;};                   // ?
 
         colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
         bslh    {key-positions = <26 27>; bindings = <&kp BSLH>; layers = <DEF COL>; SHORT;};                   // \|

@@ -179,7 +179,7 @@ combos:
   k: CAPS
   l: [DEF, COL]
   a: top
-  o: -0.25
+  o: -0.33
 - p: [2, 3]
   k: ESC
   l: [DEF, COL, NUM]
@@ -210,7 +210,7 @@ combos:
 - p: [25, 26]
   k: +
   l: [DEF, COL]
-- p: [10, 20]
+- p: [0, 10]
   k: '!'
   l: [DEF, COL]
 - p: [1, 11]
@@ -237,7 +237,7 @@ combos:
 - p: [8, 18]
   k: '&'
   l: [DEF, COL]
-- p: [19, 29]
+- p: [9, 19]
   k: '?'
   l: [DEF, COL]
 - p: [17, 27]
