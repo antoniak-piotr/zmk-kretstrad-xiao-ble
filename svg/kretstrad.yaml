@@ -85,11 +85,11 @@ layers:
   - {t: F5, h: LCTRL}
   - {t: F6, h: LSHFT}
   - {type: none}
-  - {type: none}
+  - {t: ',', h: .}
   - {t: '4', h: RSHFT}
   - {t: '5', h: RCTRL}
   - {t: '6', h: LALT}
-  - {type: none}
+  - '0'
   - F11
   - F1
   - F2
@@ -102,8 +102,8 @@ layers:
   - {type: none}
   - {t: ESC, h: LWIN}
   - {type: held}
-  - {t: '0', h: NAV}
-  - '0'
+  - {t: SPACE, h: NAV}
+  - {t: ENTER, h: RALT}
   NAV:
   - {t: REDO, h: '$$mdi:redo$$'}
   - {t: SNIP, h: '$$mdi:crop$$'}

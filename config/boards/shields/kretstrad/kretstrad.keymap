@@ -79,9 +79,9 @@
         NUM_layer {
             bindings = <
                 &none           &kp F7          &kp F8          &kp F9          &none                   &none           &kp N7          &kp N8          &kp N9          &none
-                &kp F12         &hm LALT F4     &hm LCTRL F5    &hm LSHFT F6    &none                   &none           &hm RSHFT N4    &hm RCTRL N5    &hm LALT N6     &none
+                &kp F12         &hm LALT F4     &hm LCTRL F5    &hm LSHFT F6    &none                   &mt DOT COMMA   &hm RSHFT N4    &hm RCTRL N5    &hm LALT N6     &kp N0
                 &kp F11         &kp F1          &kp F2          &kp F3          &kp F10                 &none           &kp N1          &kp N2          &kp N3          &none
-                                                                &mt LWIN ESC    &trans                  &lt NAV N0      &kp N0
+                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
