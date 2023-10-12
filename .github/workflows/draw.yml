@@ -3,10 +3,10 @@ on:
   workflow_dispatch:  # can be triggered manually
   push:               # automatically run on changes to following paths
     paths:
-      - "config/boards/shields/kretstrad/*.keymap"
-      - "config/boards/shields/kretstrad/*.dtsi"
-      - "keymap_drawer.config.yaml"
-      - "config/layout.json"
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      # - "keymap_drawer.config.yaml"
+      - "antoniak-piotr/zmk-hummingbird-xiao-ble/keymap_drawer.config.yaml"
 
 jobs:
   draw:
@@ -14,9 +14,9 @@ jobs:
     permissions:
       contents: write
     with:
-      keymap_patterns: "config/boards/shields/kretstrad/*.keymap"        # path to the keymaps to parse
-      config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
+      keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
+      # config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
+      config_path: "antoniak-piotr/zmk-hummingbird-xiao-ble/keymap_drawer.config.yaml"
       output_folder: "svg"                      # path to save produced SVG and keymap YAML files
-      # parse_args: "-k k34"
-      # draw_args: "'--qmk-layout k34'"
-      # draw_args: "layout: {qmk_keyboard: k34}"
+      amend_commit: true                        # whether to amend the commit or create a new one
+      install_branch: main                      # trying new features: svg_extra_style

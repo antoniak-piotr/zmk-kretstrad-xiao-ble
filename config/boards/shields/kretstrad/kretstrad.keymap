@@ -7,11 +7,13 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
-#define DEF 0           // podstawowa
-#define GRN 1           // liczby i klawisze funkcyjne
-#define RED 2           // nawigacja`
-#define CFG 3           // konfiguracja Bluetooth
+#define DEF 0           // QWERTY
+#define COL 1           // Colemak-DH
+#define NUM 2           // liczby
+#define NAV 3           // nawigacja
+#define CONF 4          // konfiguracja (np. Bluetooth)
 
 #define LGS(KEY) LG(LS(KEY))
 #define LSC(KEY) LS(LC(KEY))
@@ -21,30 +23,22 @@
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
-    quick-tap-ms = <125>;
-    global-quick-tap;
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <100>;
+    // global-quick-tap;
 };
 
 &lt {
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
-    quick-tap-ms = <125>;
-    global-quick-tap;
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <100>;
+    // global-quick-tap;
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 BSPC DEL>;
+    continue-list = <UNDER N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 BSPC DEL>;
 };
-
-// / {
-//     conditional_layers {
-//         compatible = "zmk,conditional-layers";
-//         tri_layer {
-//             if-layers = <GRN RED>;
-//             then-layer = <BTH>;
-//         };
-//     };
-// };
 
 / {
     behaviors {
@@ -64,39 +58,57 @@
         compatible = "zmk,keymap";
 
             //  |       0       |       1       |       2       |       3       |       4       |       |       5       |       6       |       7       |       8       |       9       |
-        def_layer {
+       DEF_layer {
             bindings = <
-                &lt CFG Q       &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
-                &hm LWIN A      &hm LALT S      &hm LCTRL D     &hm LSHFT F     &kp G                   &kp H           &hm RSHFT J     &hm RCTRL K     &hm LALT L      &hm RWIN SEMI
+                &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
+                &hm LSHFT A     &hm LALT S      &kp D           &hm LCTRL F     &kp G                   &kp H           &hm RCTRL J     &kp K           &hm LALT L      &hm RSHFT SEMI
                 &kp Z           &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp DOT         &kp SLASH
-                                                                &mt LWIN ESC    &lt GRN TAB             &lt RED SPACE   &mt RALT ENTER
+                                                                &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
-        grn_layer {
+        COL_layer {
             bindings = <
-                &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &none           &kp N7          &kp N8          &kp N9          &none
-                &hm LWIN F6     &hm LALT F7     &hm LCTRL F8    &hm LSHFT F9    &kp F10                 &none           &hm RSHFT N4    &hm RCTRL N5    &hm LALT N6     &hm RWIN N0
-                &none           &none           &kp F11         &kp F12         &none                   &none           &kp N1          &kp N2          &kp N3          &none
-                                                                &mt LWIN ESC    &trans                  &kp SPACE       &mt RALT ENTER
+                &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
+                &hm LSHFT A     &hm LALT R      &kp S           &hm LCTRL T     &kp G                   &kp M           &hm RCTRL N     &kp E           &hm LALT I      &hm RSHFT O
+                &kp Z           &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp SLASH
+                                                                &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
-        red_layer {
+        NUM_layer {
             bindings = <
-                &none           &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &none           &none           &none           &none           &none
-                &kp LWIN        &kp LALT        &kp LCTRL       &kp LSHFT       &kp LG(MINUS)           &none           &kp LEFT        &kp UP          &kp RIGHT       &none
+                &kp F12         &kp F7          &kp F8          &kp F9          &none                   &none           &kp N7          &kp N8          &kp N9          &none
+                &hm LSHFT F11   &hm LALT F4     &kp F5          &hm LCTRL F6    &kp F10                 &none           &hm RCTRL N4    &kp N5          &hm LALT N6     &kp RSHFT
+                &none           &kp F1          &kp F2          &kp F3          &none                   &none           &kp N1          &kp N2          &kp N3          &none
+                                                                &mt LWIN ESC    &trans                  &lt NAV N0      &kp N0
+            >;
+        };
+
+        NAV_layer {
+            bindings = <
+                &kp LSC(Z)      &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &none           &none           &none           &none           &none
+                &hm LSHFT LC(Z) &kp LALT        &none           &kp LCTRL       &kp LG(MINUS)           &none           &kp LEFT        &kp UP          &kp RIGHT       &none
                 &none           &kp LC(X)       &kp LC(C)       &kp LC(V)       &none                   &none           &kp HOME        &kp DOWN        &kp END         &none
                                                                 &mt LWIN ESC    &kp TAB                 &trans          &mt RALT ENTER
             >;
         };
 
-        cfg_layer {
+        // TOOL_layer {
+        //     bindings = <
+        //         &kp LSC(Z)      &kp LGS(S)      &kp PSCRN       &none           &kp LG(EQUAL)           &none           &none           &none           &none           &none
+        //         &kp LC(Z)       &none           &none           &none           &kp LG(MINUS)           &none           &none           &none           &none           &none
+        //         &none           &kp LC(X)       &kp LC(C)       &kp LC(V)       &none                   &none           &none           &none           &none           &none
+        //                                                         &kp ESC         &trans                  &trans          &none
+        //     >;
+        // };
+
+        CONF_layer {
             bindings = <
-                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none                   &none           &none           &none           &none           &none
-                &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none                   &none           &none           &none           &none           &none
+                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &out OUT_TOG            &none           &none           &none           &none           &none
+                &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &tog COL                &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                                                                &bt BT_CLR      &none                   &none           &none
+                                                                &sys_reset      &bootloader             &none           &none
             >;
         };
     };
@@ -109,59 +121,151 @@
     │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
     ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
                 ╰────────╯ ╰────────╯         */
+    #define SHORT timeout-ms = <50>
+    #define LONG timeout-ms = <200>
+
     combos {
         compatible = "zmk,combos";
 
-       // CAPS-WORD i UNDER (podkreślenie)
-        caps    {key-positions = <20 29>; bindings = <&caps_word>; layers = <DEF>; timeout-ms = <100>;};            // CAPS WORD
-        under   {key-positions = <23 26>; bindings = <&kp UNDER>; layers = <DEF>; timeout-ms = <100>;};             // _
+        // CAPS-WORD
+        caps    {key-positions = <13 16>; bindings = <&caps_word>; layers = <DEF COL>; SHORT;};                 // CAPS WORD
 
         // TAB, ESC, BACKSPACE i DELETE
-        esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF GRN>; timeout-ms = <150>;};             // ESC
-        tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF GRN>; timeout-ms = <150>;};           // TAB
-        del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF GRN RED>; timeout-ms = <150>;};         // DEL
-        bsp     {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF GRN RED>; timeout-ms = <150>;};      // BSPC
+        tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM>; SHORT;};                // TAB
+        bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; SHORT;};              // BSPC lub DEL (jeśli wciśnięto SHIFT)
 
         // nawiasy
-        lbkt    {key-positions = <6 16>; bindings = <&kp LBKT>; layers = <DEF>; timeout-ms = <100>;};               // [{
-        rbkt    {key-positions = <7 17>; bindings = <&kp RBKT>; layers = <DEF>; timeout-ms = <100>;};               // ]}
-        lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF>; timeout-ms = <100>;};              // (
-        rpar    {key-positions = <17 27>; bindings = <&kp RPAR>; layers = <DEF>; timeout-ms = <100>;};              // )
+        lpar    {key-positions = <6 16>; bindings = <&lpb>; layers = <DEF COL>; SHORT;};                        // ( [{
+        rpar    {key-positions = <7 17>; bindings = <&rpb>; layers = <DEF COL>; SHORT;};                        // ) ]}
 
-        // symbole
-        // slsh    {key-positions = <9 19>; bindings = <&kp SLASH>; layers = <DEF>; timeout-ms = <100>;};              // /?
+        // symbole matematyczne: +, -, *, /
+        slash   {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF COL>; SHORT;};                    // /
+        star    {key-positions = <5 6>; bindings = <&kp STAR>; layers = <DEF COL>; SHORT;};                     // *
+        minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
+        plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL>; SHORT;};                   // +
 
-        exclm   {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF>; timeout-ms = <100>;};               // !
-        at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF>; timeout-ms = <100>;};                 // @
-        hash    {key-positions = <2 12>; bindings = <&kp HASH>; layers = <DEF>; timeout-ms = <100>;};               // #
-        dllr    {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <DEF>; timeout-ms = <100>;};               // $
-        prcnt   {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <DEF>; timeout-ms = <100>;};              // %
+        // pozostałe symbole
+        excl    {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF COL>; SHORT;};                    // !
+        at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF COL>; SHORT;};                      // @
+        hash    {key-positions = <2 12>; bindings = <&kp HASH>; layers = <DEF COL>; SHORT;};                    // #
+        dllr    {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <DEF COL>; SHORT;};                    // $
+        prcnt   {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <DEF COL>; SHORT;};                   // %
 
-        amps    {key-positions = <5 15>; bindings = <&kp AMPS>; layers = <DEF>; timeout-ms = <100>;};               // &
-        caret   {key-positions = <8 18>; bindings = <&kp CARET>; layers = <DEF>; timeout-ms = <100>;};              // ^
-        qmark   {key-positions = <9 19>; bindings = <&kp QMARK>; layers = <DEF>; timeout-ms = <100>;};              // ?
-        equal   {key-positions = <18 28>; bindings = <&kp EQUAL>; layers = <DEF>; timeout-ms = <100>;};             // =+
-        bslash  {key-positions = <19 29>; bindings = <&kp BSLH>; layers = <DEF>; timeout-ms = <100>;};              // \|
+        equal   {key-positions = <12 22>; bindings = <&kp EQUAL>; layers = <DEF COL>; SHORT;};                  // =+
+        under   {key-positions = <22 23>; bindings = <&kp UNDER>; layers = <DEF COL>; SHORT;};                  // _
 
-        // plus, minus, mnożenie i dzielenie
-        slash   {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF>; timeout-ms = <200>;};               // /
-        star    {key-positions = <5 6>; bindings = <&kp STAR>; layers = <DEF>; timeout-ms = <200>;};                // *
-        minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF>; timeout-ms = <200>;};             // -
-        plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF>; timeout-ms = <200>;};              // +
+        caret   {key-positions = <5 15>; bindings = <&kp CARET>; layers = <DEF COL>; SHORT;};                   // ^
+        amps    {key-positions = <8 18>; bindings = <&kp AMPS>; layers = <DEF COL>; SHORT;};                    // &
+        quot    {key-positions = <9 19>; bindings = <&kp QMARK>; layers = <DEF COL>; SHORT;};                   // ?
 
-        // odwrotny oraz zwykły apostrof (GRAVE, APOS)
-        grave   {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF>; timeout-ms = <100>;};             // `~
-        apos    {key-positions = <15 25>; bindings = <&kp APOS>; layers = <DEF>; timeout-ms = <100>;};              // '"
+        colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
+        bslh    {key-positions = <26 27>; bindings = <&kp BSLH>; layers = <DEF COL>; SHORT;};                   // \|
+
+        // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda (TILDA) i cudzysłów ("): `, ', ~, "
+        grave   {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF COL>; SHORT;};                  // `~
+        sqt     {key-positions = <15 25>; bindings = <&kp APOS>; layers = <DEF COL>; SHORT;};                   // '"
 
         // klawiatura numeryczna
-        ndiv    {key-positions = <6 16>; bindings = <&kp KP_DIVIDE>; layers = <GRN>; timeout-ms = <100>;};          // /
-        nmul    {key-positions = <7 17>; bindings = <&kp KP_MULTIPLY>; layers = <GRN>; timeout-ms = <100>;};        // *
-        nsub    {key-positions = <8 18>; bindings = <&kp KP_MINUS>; layers = <GRN>; timeout-ms = <100>;};           // -
-        nadd    {key-positions = <18 28>; bindings = <&kp KP_PLUS>; layers = <GRN>; timeout-ms = <100>;};           // +
-        ncom    {key-positions = <16 26>; bindings = <&kp COMMA>; layers = <GRN>; timeout-ms = <100>;};             // ,
-        nsep    {key-positions = <17 27>; bindings = <&kp DOT>; layers = <GRN>; timeout-ms = <100>;};               // .
+        na      {key-positions = <16 26>; bindings = <&kp A>; layers = <NUM>; SHORT;};                          // A
+        nb      {key-positions = <17 27>; bindings = <&kp B>; layers = <NUM>; SHORT;};                          // B
+        nc      {key-positions = <18 28>; bindings = <&kp C>; layers = <NUM>; SHORT;};                          // C
+        nd      {key-positions = <6 16>; bindings = <&kp D>; layers = <NUM>; SHORT;};                           // D
+        ne      {key-positions = <7 17>; bindings = <&kp E>; layers = <NUM>; SHORT;};                           // E
+        nf      {key-positions = <8 18>; bindings = <&kp F>; layers = <NUM>; SHORT;};                           // F
+
+        // page up i page down w warstwie NAV
+        pgup    {key-positions = <16 26>; bindings = <&kp PG_UP>; layers = <NAV>; LONG;};                       // PAGE UP
+        pgdn    {key-positions = <18 28>; bindings = <&kp PG_DN>; layers = <NAV>; LONG;};                       // PAGE DOWN
 
         // wyjście z narzędzia magnifier (Win+Esc)
-        zexit   {key-positions = <4 14>; bindings = <&kp LG(ESC)>; layers = <RED>; timeout-ms = <100>;};            // Win + ESC
+        zexit   {key-positions = <4 14>; bindings = <&kp LG(ESC)>; layers = <NAV>; LONG;};                      // Win + ESC
     };
+
+    behaviors {
+        lbk: lbkt_lbrc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_BRACKET_BRACE";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        rbk: rbkt_rbrc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_BRACKET_BRACE";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        lpb: lpar_rbkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_PARENTHESIS_BRACKET_BRACE";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&lbk>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rpb: rpar_rbkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_PARENTHESIS_BRACKET_BRACE";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&rbk>;
+            mods = <(MOD_LSFT)>;
+        };
+
+       hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        bsdl: bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        // td_cleq: td_colon_equal {
+        //     compatible = "zmk,behavior-tap-dance";
+        //     label = "CLEQ";
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <150>;
+        //     bindings = <&kp SEMI>, <&kp COLON>, <&zm_cleq>;
+        // };
+    };
+
+    macros {
+        mclneq: colon_equal {
+            label = "COLON_EQUAL";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp EQUAL>;
+        };
+
+        // dm: delphi_macro {
+        //     #binding-cells = <1>;
+        //     label = "DELPHI_MACRO";
+        //     compatible = "zmk,behavior-macro-one-param";
+        //     bindings =
+        //         <&macro_press &kp LSHFT &kp LCTRL>,
+        //         <&macro_tap &kp K>,
+        //         <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+        //         <&macro_release &kp LSHFT &kp LCTRL>;
+        // };
+    };
+
+    // conditional_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     tri_layer {
+    //         if-layers = <NUM NAV>;
+    //         then-layer = <TOOL>;
+    //     };
+    // };
 };
