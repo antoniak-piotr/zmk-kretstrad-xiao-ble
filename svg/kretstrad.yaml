@@ -106,9 +106,9 @@ layers:
   - {t: ENTER, h: RALT}
   NAV:
   - {type: none}
-  - {t: SNIP, h: '$$mdi:crop$$'}
-  - {t: PSCRN, h: '$$mdi:crop$$'}
   - {type: none}
+  - {t: PSCRN, h: '$$mdi:crop$$'}
+  - LG(LS(s))
   - {type: none}
   - {type: none}
   - {type: none}
