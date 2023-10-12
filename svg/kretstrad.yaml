@@ -84,7 +84,7 @@ layers:
   - {t: F4, h: LALT}
   - {t: F5, h: LCTRL}
   - {t: F6, h: LSHFT}
-  - {type: none}
+  - F10
   - {t: ',', h: .}
   - {t: '4', h: RSHFT}
   - {t: '5', h: RCTRL}
@@ -94,7 +94,7 @@ layers:
   - F1
   - F2
   - F3
-  - F10
+  - {type: none}
   - {type: none}
   - '1'
   - '2'
@@ -269,6 +269,9 @@ combos:
   l: [NUM]
 - p: [8, 18]
   k: F
+  l: [NUM]
+- p: [26, 27]
+  k: .
   l: [NUM]
 - p: [16, 26]
   k: PGUP

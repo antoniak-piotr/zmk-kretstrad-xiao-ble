@@ -756,8 +756,9 @@ text.combo {
 <text x="0" y="0" class="key tap">F6</text>
 <text x="0" y="18" class="key hold">LSHFT</text>
 </g>
-<g transform="translate(252, 98)" class="key none keypos-14">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(252, 98)" class="key keypos-14">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F10</text>
 </g>
 <g transform="translate(476, 98)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -799,9 +800,8 @@ text.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">F3</text>
 </g>
-<g transform="translate(252, 154)" class="key keypos-24">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">F10</text>
+<g transform="translate(252, 154)" class="key none keypos-24">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(476, 154)" class="key none keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -878,6 +878,10 @@ text.combo {
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="629" y="56" width="30" height="14" class="combo"/>
 <text x="644" y="63" class="combo tap">F</text>
+</g>
+<g class="combo combopos-10">
+<rect rx="6" ry="6" x="545" y="136" width="30" height="14" class="combo"/>
+<text x="560" y="144" class="combo tap">.</text>
 </g>
 </g>
 </g>
