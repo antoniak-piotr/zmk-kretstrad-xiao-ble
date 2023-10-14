@@ -120,11 +120,11 @@ layers:
   - LCTRL
   - LSHFT
   - {type: none}
-  - {type: none}
+  - {t: PREV, h: '$$mdi:page-previous-outline$$'}
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
   - {t: RIGHT, h: '$$mdi:chevron-right$$'}
-  - {type: none}
+  - {t: NEXT, h: '$$mdi:page-next-outline$$'}
   - {type: none}
   - {t: CUT, h: '$$mdi:content-cut$$'}
   - {t: COPY, h: '$$mdi:content-copy$$'}
