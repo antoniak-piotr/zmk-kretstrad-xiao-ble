@@ -16,6 +16,7 @@
 #define CONF 4          // konfiguracja (np. Bluetooth)
 
 #define LGS(KEY) LG(LS(KEY))
+#define LSA(KEY) LS(LA(KEY))
 #define LSC(KEY) LS(LC(KEY))
 #define LCA(KEY) LC(LA(KEY))
 #define LSCA(KEY) LS(LC(LA(KEY)))
@@ -27,7 +28,6 @@
     tapping-term-ms = <200>;
     quick-tap-ms = <150>;
     require-prior-idle-ms = <100>;
-    // global-quick-tap;
 };
 
 &lt {
@@ -35,7 +35,6 @@
     tapping-term-ms = <200>;
     quick-tap-ms = <150>;
     require-prior-idle-ms = <100>;
-    // global-quick-tap;
 };
 
 &caps_word {
@@ -43,19 +42,6 @@
 };
 
 / {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods";
-            #binding-cells = <2>;
-            tapping_term_ms = <300>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -89,9 +75,9 @@
 
         NAV_layer {
             bindings = <
-                &none           &none           &none           &mt PSCRN SNIP  &none                   &none           &none           &none           &none           &none
-                &kp LC(Z)       &kp LALT        &kp LCTRL       &kp LSHFT       &kp LG(EQUAL)           &none           &kp LEFT        &kp UP          &kp RIGHT       &none
-                &none           &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LG(MINUS)           &none           &kp HOME        &kp DOWN        &kp END         &none
+                &zoom LG(ESC) 0 &none           &none           &mt PSCRN SNIP  &none                   &none           &none           &none           &none           &none
+                &kp LC(Z)       &kp LALT        &kp LCTRL       &kp LSHFT       &none                   &none           &kp LEFT        &kp UP          &kp RIGHT       &none
+                &none           &kp LC(X)       &kp LC(C)       &kp LC(V)       &none                   &none           &kp HOME        &kp DOWN        &kp END         &none
                                                                 &mt LWIN ESC    &kp TAB                 &trans          &mt RALT ENTER
             >;
         };
@@ -107,10 +93,10 @@
 
         CONF_layer {
             bindings = <
-                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &out OUT_TOG            &none           &none           &none           &none           &none
-                &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &tog COL                &none           &none           &none           &none           &none
+                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader             &none           &none           &none           &none           &none
+                &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &sys_reset              &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                                                                &sys_reset      &bootloader             &none           &none
+                                                                &out OUT_TOG    &tog COL                &none           &none
             >;
         };
     };
@@ -192,6 +178,42 @@
     };
 
     behaviors {
+        prev: prev_app_or_desktop {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PREV_APP_OR_VDESK_OR_CLOSE_VDESK_ON_HOLD";
+            #binding-cells = <0>;
+            bindings = <&mt LG(LC(F4)) LG(LC(LEFT))>, <&kp LS(TAB)>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        next: next_app_or_desktop {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NEXT_APP_OR_VDESK_OR_NEW_VDESK_ON_HOLD";
+            #binding-cells = <0>;
+            bindings = <&mt LG(LC(D)) LG(LC(RIGHT))>, <&kp TAB>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        zoom_in_out: windows_magnifier {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZOOM_IN_OUT";
+            #binding-cells = <0>;
+            bindings = <&kp LG(EQUAL)>, <&kp LG(MINUS)>;
+            mods = <(MOD_LSFT | MOD_LCTL)>;
+        };
+
+        zoom: zoom {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ZOOM";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
+            bindings = <&kp>, <&zoom_in_out>;
+        };
+
         lbk: lbkt_lbrc {
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_BRACKET_BRACE";
@@ -224,7 +246,7 @@
             mods = <(MOD_LSFT)>;
         };
 
-       hm: homerow_mods {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
@@ -252,13 +274,6 @@
     };
 
     macros {
-        mclneq: colon_equal {
-            label = "COLON_EQUAL";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp EQUAL>;
-        };
-
         // dm: delphi_macro {
         //     #binding-cells = <1>;
         //     label = "DELPHI_MACRO";

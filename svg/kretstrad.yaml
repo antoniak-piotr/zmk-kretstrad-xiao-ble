@@ -105,7 +105,7 @@ layers:
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   NAV:
-  - {type: none}
+  - {t: ZOOM, h: '$$mdi:magnify$$'}
   - {type: none}
   - {type: none}
   - {t: SNIP, h: PSCRN}
@@ -119,7 +119,7 @@ layers:
   - LALT
   - LCTRL
   - LSHFT
-  - {t: ZOOM+, h: '$$mdi:magnify$$'}
+  - {type: none}
   - {type: none}
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
@@ -129,7 +129,7 @@ layers:
   - {t: CUT, h: '$$mdi:content-cut$$'}
   - {t: COPY, h: '$$mdi:content-copy$$'}
   - {t: PASTE, h: '$$mdi:content-paste$$'}
-  - {t: ZOOM-, h: '$$mdi:magnify$$'}
+  - {type: none}
   - {type: none}
   - {t: HOME, h: '$$mdi:page-first$$'}
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
@@ -144,7 +144,7 @@ layers:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
-  - {t: BLE/USB, h: '$$mdi:toggle-switch-outline$$'}
+  - {t: BOOT, h: '$$mdi:cloud-download-outline$$'}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -154,24 +154,24 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - {t: BT, h: '5'}
-  - {t: COLEMAK, h: '$$mdi:toggle-switch-outline$$'}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
   - {t: RESET, h: '$$mdi:power$$'}
-  - {t: BOOT, h: '$$mdi:cloud-download-outline$$'}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: BT/USB, h: '$$mdi:toggle-switch-outline$$'}
+  - {t: COLEMAK, h: '$$mdi:toggle-switch-outline$$'}
   - {type: none}
   - {type: none}
 combos:
@@ -179,7 +179,7 @@ combos:
   k: CAPS
   l: [DEF, COL]
   a: top
-  o: -0.33
+  o: -0.25
 - p: [2, 3]
   k: ESC
   l: [DEF, COL, NUM]
@@ -289,5 +289,5 @@ combos:
   k: PGDN
   l: [NAV]
 - p: [14, 24]
-  k: EXIT
+  k: LG(ESC)
   l: [NAV]

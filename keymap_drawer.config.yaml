@@ -7,6 +7,7 @@ draw_config:
   glyph_tap_size: 24
   glyph_hold_size: 10
   glyph_shifted_size: 10
+  arc_radius: 0
   # separate_combo_diagrams: bool = False
   # draw_key_sides: True
   append_colon_to_layer_header: False
@@ -16,16 +17,6 @@ draw_config:
       opacity: 0.8;
     }
 
-    /* .keypos-27 > rect {
-      fill: #E77D7D;
-      stroke: #B25353;
-    }
-
-    .keypos-28 > rect {
-      fill: #C37BC3;
-      stroke: #924792;
-    } */
-
     /* color accent for combo boxes */
     rect.combo, rect.combo-separate {
         fill: #CCDDFF;
@@ -34,7 +25,8 @@ draw_config:
 
     /* rect.held, rect.combo.held { */
     .held {
-      filter: drop-shadow(0px 0px 8px #4FC0D0); /* #7979EC); */
+      opacity: 1.0;
+      filter: drop-shadow(0px 0px 6px #4FC0D0);  /* #7979EC); */
     }
 
     text.key.tap {
@@ -55,11 +47,8 @@ draw_config:
 parse_config:
   # mark_alternate_layer_activators: true
   # sticky_label: $$mdi:gesture-tap-hold$$
-  trans_legend: ""
-    # tap: $$mdi:transfer$$
-    # type: trans
-
-  # skip_binding_parsing: True;
+  trans_legend:
+    tap: ""
 
   raw_binding_map:
     "&kp LC(X)":
@@ -86,14 +75,9 @@ parse_config:
       tap: PSCRN
       hold: $$mdi:crop$$ # select$$
 
-    "&kp LG(EQUAL)":
-      tap: ZOOM+
-      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
-    "&kp LG(MINUS)":
-      tap: ZOOM-
+    "&zoom LG(ESC) 0":
+      tap: ZOOM
       hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    "&kp LG(ESC)":
-      tap: EXIT
 
     "&caps_word":
       tap: CAPS # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
@@ -114,7 +98,7 @@ parse_config:
 
     # przełącznik BLE-USB i QWERTY-COLEMAK
     "&out OUT_TOG":
-      tap: "BLE/USB"
+      tap: "BT/USB"
       hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
     "&tog COL":
       tap: COLEMAK
@@ -148,23 +132,18 @@ parse_config:
       tap: "BT" # $$mdi:bluetooth$$
       hold: "CLR" # $$mdi:close-box$$
 
+    # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
+    "&prev":
+      tap: "PREV"
+      hold: $$mdi:page-previous-outline$$
+    "&next":
+      tap: "NEXT"
+      hold: $$mdi:page-next-outline$$
+
     "&none":
       type: none
-
-    # "&lt CONF Q":
-    #   tap: Q
-    #   hold: CONF
-    # "&lt NAV A":
-    #   tap: A
-    #   hold: NAV
-    # "&lt NUM TAB":
-    #   tap: TAB
-    #   hold: NUM
-    # "&lt FUN SPACE":
-    #   tap: SPACE
-    #   hold: FUN
 
   zmk_combos:
     caps:
       align: top
-      offset: -0.33
+      offset: -0.25
