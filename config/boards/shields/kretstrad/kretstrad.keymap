@@ -172,7 +172,6 @@
         // page up i page down w warstwie NAV
         pgup    {key-positions = <16 26>; bindings = <&kp PG_UP>; layers = <NAV>; LONG;};                       // PAGE UP
         pgdn    {key-positions = <18 28>; bindings = <&kp PG_DN>; layers = <NAV>; LONG;};                       // PAGE DOWN
-
     };
 
     behaviors {
@@ -261,15 +260,7 @@
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT)>;
         };
-
-        // td_cleq: td_colon_equal {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "CLEQ";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <150>;
-        //     bindings = <&kp SEMI>, <&kp COLON>, <&zm_cleq>;
-        // };
-    };
+   };
 
     macros {
         // dm: delphi_macro {

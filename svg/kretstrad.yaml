@@ -179,7 +179,7 @@ combos:
   k: CAPS
   l: [DEF, COL]
   a: top
-  o: -0.25
+  o: -0.4
 - p: [12, 13]
   k: TAB
   l: [DEF, COL, NUM]
