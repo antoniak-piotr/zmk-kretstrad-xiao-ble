@@ -173,8 +173,6 @@
         pgup    {key-positions = <16 26>; bindings = <&kp PG_UP>; layers = <NAV>; LONG;};                       // PAGE UP
         pgdn    {key-positions = <18 28>; bindings = <&kp PG_DN>; layers = <NAV>; LONG;};                       // PAGE DOWN
 
-        // wyjście z narzędzia magnifier (Win+Esc)
-        zexit   {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <NAV>; LONG;};                     // Win + ESC
     };
 
     behaviors {

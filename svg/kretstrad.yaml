@@ -282,6 +282,3 @@ combos:
 - p: [18, 28]
   k: PGDN
   l: [NAV]
-- p: [14, 24]
-  k: LG(ESC)
-  l: [NAV]
