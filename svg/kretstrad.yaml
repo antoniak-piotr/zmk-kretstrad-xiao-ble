@@ -179,7 +179,7 @@ combos:
   k: CAPS
   l: [DEF, COL]
   a: top
-  o: -0.4
+  o: -0.33
 - p: [12, 13]
   k: TAB
   l: [DEF, COL, NUM]
@@ -267,13 +267,13 @@ combos:
 - p: [26, 27]
   k: .
   l: [NUM]
-- p: [11, 21]
+- p: [1, 11]
   k: F10
   l: [NUM]
-- p: [12, 22]
+- p: [2, 12]
   k: F11
   l: [NUM]
-- p: [13, 23]
+- p: [3, 13]
   k: F12
   l: [NUM]
 - p: [16, 26]
