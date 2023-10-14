@@ -180,15 +180,9 @@ combos:
   l: [DEF, COL]
   a: top
   o: -0.25
-- p: [2, 3]
-  k: ESC
-  l: [DEF, COL, NUM]
 - p: [12, 13]
   k: TAB
   l: [DEF, COL, NUM]
-- p: [6, 7]
-  k: DEL
-  l: [DEF, COL, NUM, NAV]
 - p: [16, 17]
   k: BSPC
   l: [DEF, COL, NUM, NAV]
