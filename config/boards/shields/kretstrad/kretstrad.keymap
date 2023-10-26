@@ -173,9 +173,9 @@
         ndot    {key-positions = <26 27>; bindings = <&kp DOT>; layers = <NUM>; SHORT;};                        // .
 
         // klawisze funkcyjne
-        f10     {key-positions = <1 11>; bindings = <&kp F10>; layers = <NUM>; SHORT;};                         // F10
-        f11     {key-positions = <2 12>; bindings = <&kp F11>; layers = <NUM>; SHORT;};                         // F11
-        f12     {key-positions = <3 13>; bindings = <&kp F12>; layers = <NUM>; SHORT;};                         // F12
+        f10     {key-positions = <11 21>; bindings = <&kp F10>; layers = <NUM>; SHORT;};                        // F10
+        f11     {key-positions = <12 22>; bindings = <&kp F11>; layers = <NUM>; SHORT;};                        // F11
+        f12     {key-positions = <13 23>; bindings = <&kp F12>; layers = <NUM>; SHORT;};                        // F12
 
         // page up i page down w warstwie NAV
         pgup    {key-positions = <16 26>; bindings = <&kp PG_UP>; layers = <NAV>; LONG;};                       // PAGE UP
