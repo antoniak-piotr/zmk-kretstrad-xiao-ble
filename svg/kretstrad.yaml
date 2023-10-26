@@ -198,6 +198,12 @@ combos:
 - p: [7, 17]
   k: ']'
   l: [DEF, COL]
+- p: [12, 22]
+  k: '{'
+  l: [DEF, COL]
+- p: [13, 23]
+  k: '}'
+  l: [DEF, COL]
 - p: [13, 14]
   k: /
   l: [DEF, COL]
