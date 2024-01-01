@@ -156,8 +156,9 @@
         quot    {key-positions = <9 19>; bindings = <&kp QMARK>; layers = <DEF COL>; SHORT;};                   // ?
 
         // colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
-        colon   {key-positions = <18 28>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
         // bslh    {key-positions = <26 27>; bindings = <&kp BSLH>; layers = <DEF COL>; SHORT;};                   // \|
+        colon   {key-positions = <18 28>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
+        bslh    {key-positions = <19 29>; bindings = <&kp BSLH>; layers = <DEF COL>; SHORT;};                    // \|
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda (TILDA) i cudzysłów ("): `, ', ~, "
         grave   {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF COL>; SHORT;};                  // `~

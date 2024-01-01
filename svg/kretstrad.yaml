@@ -246,6 +246,9 @@ combos:
 - p: [18, 28]
   k: ':'
   l: [DEF, COL]
+- p: [19, 29]
+  k: \
+  l: [DEF, COL]
 - p: [14, 24]
   k: '`'
   l: [DEF, COL]
