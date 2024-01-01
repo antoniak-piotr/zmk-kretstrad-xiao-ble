@@ -24,9 +24,6 @@
 <svg id="mdi:page-last">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-page-last" viewBox="0 0 24 24"><path d="M5.59,7.41L10.18,12L5.59,16.59L7,18L13,12L7,6L5.59,7.41M16,6H18V18H16V6Z" /></svg>
 </svg>
-<svg id="mdi:page-next-outline">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-page-next-outline" viewBox="0 0 24 24"><path d="M22,3H5A2,2 0 0,0 3,5V9H5V5H22V19H5V15H3V19A2,2 0 0,0 5,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M7,15V13H0V11H7V9L11,12L7,15M20,13H13V11H20V13M20,9H13V7H20V9M17,17H13V15H17V17Z" /></svg>
-</svg>
 <svg id="mdi:power">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-power" viewBox="0 0 24 24"><path d="M16.56,5.44L15.11,6.89C16.84,7.94 18,9.83 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12C6,9.83 7.16,7.94 8.88,6.88L7.44,5.44C5.36,6.88 4,9.28 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12C20,9.28 18.64,6.88 16.56,5.44M13,3H11V13H13" /></svg>
 </svg>
@@ -359,8 +356,8 @@ text.combo {
 <text x="224" y="94" class="combo tap">-</text>
 </g>
 <g class="combo combopos-9">
-<rect rx="6" ry="6" x="97" y="108" width="30" height="14" class="combo"/>
-<text x="112" y="116" class="combo tap">-</text>
+<rect rx="6" ry="6" x="125" y="105" width="30" height="14" class="combo"/>
+<text x="140" y="112" class="combo tap">-</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="573" y="105" width="30" height="14" class="combo"/>
@@ -597,8 +594,8 @@ text.combo {
 <text x="224" y="94" class="combo tap">-</text>
 </g>
 <g class="combo combopos-9">
-<rect rx="6" ry="6" x="97" y="108" width="30" height="14" class="combo"/>
-<text x="112" y="116" class="combo tap">-</text>
+<rect rx="6" ry="6" x="125" y="105" width="30" height="14" class="combo"/>
+<text x="140" y="112" class="combo tap">-</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="573" y="105" width="30" height="14" class="combo"/>
@@ -854,9 +851,8 @@ text.combo {
 <text x="0" y="0" class="key tap">SNIP</text>
 <text x="0" y="18" class="key hold">PSCRN</text>
 </g>
-<g transform="translate(252, 42)" class="key keypos-4">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">LG(MINUS)</tspan></text>
+<g transform="translate(252, 42)" class="key none keypos-4">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(476, 42)" class="key none keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -889,7 +885,7 @@ text.combo {
 </g>
 <g transform="translate(252, 98)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">LG(EQUAL)</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">LG(MINUS)</tspan></text>
 </g>
 <g transform="translate(476, 98)" class="key none keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -911,8 +907,7 @@ text.combo {
 </g>
 <g transform="translate(700, 105)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">NEXT</text>
-<use href="#mdi:page-next-outline" xlink:href="#mdi:page-next-outline" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:page-next-outline"/>
+<text x="0" y="0" class="key tap">PGUP</text>
 </g>
 <g transform="translate(28, 161)" class="key none keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -932,8 +927,9 @@ text.combo {
 <text x="0" y="0" class="key tap">PASTE</text>
 <text x="0" y="18" class="key hold">LCTRL</text>
 </g>
-<g transform="translate(252, 154)" class="key none keypos-24">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(252, 154)" class="key keypos-24">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">LG(EQUAL)</tspan></text>
 </g>
 <g transform="translate(476, 154)" class="key none keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -951,8 +947,9 @@ text.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 60%">LC(RIGHT)</tspan></text>
 </g>
-<g transform="translate(700, 161)" class="key none keypos-29">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(700, 161)" class="key keypos-29">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">PGDN</text>
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -981,22 +978,22 @@ text.combo {
 <text x="560" y="32" class="combo tap">DEL</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="517" y="112" width="30" height="14" class="combo"/>
-<text x="532" y="119" class="combo tap">PGUP</text>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="629" y="112" width="30" height="14" class="combo"/>
-<text x="644" y="119" class="combo tap">PGDN</text>
-</g>
-<g class="combo combopos-4">
 <rect rx="6" ry="6" x="545" y="136" width="30" height="14" class="combo"/>
 <text x="560" y="144" class="combo tap">HOME</text>
 <use href="#mdi:page-first" xlink:href="#mdi:page-first" x="555" y="132" height="10" width="10.0" class="combo hold glyph mdi:page-first"/>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="601" y="136" width="30" height="14" class="combo"/>
 <text x="616" y="144" class="combo tap">END</text>
 <use href="#mdi:page-last" xlink:href="#mdi:page-last" x="611" y="132" height="10" width="10.0" class="combo hold glyph mdi:page-last"/>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="629" y="112" width="30" height="14" class="combo"/>
+<text x="644" y="119" class="combo tap">/</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="237" y="119" width="30" height="14" class="combo"/>
+<text x="252" y="126" class="combo tap"><tspan style="font-size: 71%">LG(ESC)</tspan></text>
 </g>
 </g>
 </g>

@@ -109,7 +109,7 @@ layers:
   - {type: none}
   - {type: none}
   - {t: SNIP, h: PSCRN}
-  - LG(MINUS)
+  - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -119,22 +119,22 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - LG(EQUAL)
+  - LG(MINUS)
   - {type: none}
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
   - {t: RIGHT, h: '$$mdi:chevron-right$$'}
-  - {t: NEXT, h: '$$mdi:page-next-outline$$'}
+  - PGUP
   - {type: none}
   - {t: CUT, h: '$$mdi:content-cut$$'}
   - {t: COPY, h: LALT}
   - {t: PASTE, h: LCTRL}
-  - {type: none}
+  - LG(EQUAL)
   - {type: none}
   - LC(LEFT)
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
   - LC(RIGHT)
-  - {type: none}
+  - PGDN
   - {t: ESC, h: LWIN}
   - TAB
   - {type: held}
@@ -204,7 +204,7 @@ combos:
 - p: [13, 14]
   k: '-'
   l: [DEF, COL]
-- p: [11, 22]
+- p: [12, 22]
   k: '-'
   l: [DEF, COL]
 - p: [17, 27]
@@ -270,15 +270,15 @@ combos:
 - p: [13, 23]
   k: F12
   l: [NUM]
-- p: [16, 26]
-  k: PGUP
-  l: [NAV]
-- p: [18, 28]
-  k: PGDN
-  l: [NAV]
 - p: [26, 27]
   k: {t: HOME, h: '$$mdi:page-first$$'}
   l: [NAV]
 - p: [27, 28]
   k: {t: END, h: '$$mdi:page-last$$'}
+  l: [NAV]
+- p: [18, 28]
+  k: /
+  l: [NAV]
+- p: [14, 24]
+  k: LG(ESC)
   l: [NAV]

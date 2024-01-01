@@ -75,9 +75,9 @@
 
         NAV_layer {
             bindings = <
-                &kp LSC(Z)      &none           &none           &mt PSCRN SNIP  &kp LG(MINUS)           &none           &none           &none           &none           &none
-                &hm LSHFT LC(Z) &none           &none           &none           &kp LG(EQUAL)           &none           &kp LEFT        &kp UP          &kp RIGHT       &next
-                &none           &kp LC(X)       &hm LALT LC(C)  &hm LCTRL LC(V) &none                   &none           &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &none
+                &kp LSC(Z)      &none           &none           &mt PSCRN SNIP  &none                   &none           &none           &none           &none           &none
+                &hm LSHFT LC(Z) &none           &none           &none           &kp LG(MINUS)           &none           &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &none           &kp LC(X)       &hm LALT LC(C)  &hm LCTRL LC(V) &kp LG(EQUAL)           &none           &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
                                                                 &mt LWIN ESC    &kp TAB                 &trans          &KP ENTER
             >;
         };
@@ -138,7 +138,7 @@
         nplus   {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL>; SHORT;};                   // +
         nminus  {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
 
-        minus   {key-positions = <11 22>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
+        minus   {key-positions = <12 22>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
         equal   {key-positions = <17 27>; bindings = <&kp EQUAL>; layers = <DEF COL>; SHORT;};                  // =+
 
         // pozostałe symbole
@@ -170,12 +170,16 @@
         f11     {key-positions = <12 22>; bindings = <&kp F11>; layers = <NUM>; SHORT;};                        // F11
         f12     {key-positions = <13 23>; bindings = <&kp F12>; layers = <NUM>; SHORT;};                        // F12
 
-        // page up i page down w warstwie NAV
-        pgup    {key-positions = <16 26>; bindings = <&kp PG_UP>; layers = <NAV>; LONG;};                       // PAGE UP
-        pgdn    {key-positions = <18 28>; bindings = <&kp PG_DN>; layers = <NAV>; LONG;};                       // PAGE DOWN
+        // klawisze navigacyjne
+        // pgup    {key-positions = <16 26>; bindings = <&kp PG_UP>; layers = <NAV>; LONG;};                       // PAGE UP
+        // pgdn    {key-positions = <18 28>; bindings = <&kp PG_DN>; layers = <NAV>; LONG;};                       // PAGE DOWN
         home    {key-positions = <26 27>; bindings = <&kp HOME>; layers = <NAV>; LONG;};                        // HOME
         end     {key-positions = <27 28>; bindings = <&kp END>; layers = <NAV>; LONG;};                         // END
-    };
+        slash   {key-positions = <18 28>; bindings = <&kp SLASH>; layers = <NAV>; SHORT;};                      // / - przydaje się do komentowania kodu
+
+        // wyjście z Magnify
+        exit    {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <NAV>; SHORT;};                    // EXIT
+};
 
     behaviors {
         // prev: prev_app_or_desktop {
