@@ -120,7 +120,7 @@ layers:
   - {type: none}
   - {type: none}
   - LG(EQUAL)
-  - {t: PREV, h: '$$mdi:page-previous-outline$$'}
+  - {type: none}
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
   - {t: RIGHT, h: '$$mdi:chevron-right$$'}

@@ -27,9 +27,6 @@
 <svg id="mdi:page-next-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-page-next-outline" viewBox="0 0 24 24"><path d="M22,3H5A2,2 0 0,0 3,5V9H5V5H22V19H5V15H3V19A2,2 0 0,0 5,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M7,15V13H0V11H7V9L11,12L7,15M20,13H13V11H20V13M20,9H13V7H20V9M17,17H13V15H17V17Z" /></svg>
 </svg>
-<svg id="mdi:page-previous-outline">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-page-previous-outline" viewBox="0 0 24 24"><path d="M2,3H19A2,2 0 0,1 21,5V9H19V5H2V19H19V15H21V19A2,2 0 0,1 19,21H2A2,2 0 0,1 0,19V5A2,2 0 0,1 2,3M17,15V13H24V11H17V9L13,12L17,15M4,13H11V11H4V13M4,9H11V7H4V9M4,17H8V15H4V17Z" /></svg>
-</svg>
 <svg id="mdi:power">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-power" viewBox="0 0 24 24"><path d="M16.56,5.44L15.11,6.89C16.84,7.94 18,9.83 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12C6,9.83 7.16,7.94 8.88,6.88L7.44,5.44C5.36,6.88 4,9.28 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12C20,9.28 18.64,6.88 16.56,5.44M13,3H11V13H13" /></svg>
 </svg>
@@ -894,10 +891,8 @@ text.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 60%">LG(EQUAL)</tspan></text>
 </g>
-<g transform="translate(476, 98)" class="key keypos-15">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">PREV</text>
-<use href="#mdi:page-previous-outline" xlink:href="#mdi:page-previous-outline" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:page-previous-outline"/>
+<g transform="translate(476, 98)" class="key none keypos-15">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(532, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
