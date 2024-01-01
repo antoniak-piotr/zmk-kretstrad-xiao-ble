@@ -183,6 +183,9 @@ combos:
 - p: [16, 17]
   k: BSPC
   l: [DEF, COL, NUM, NAV]
+- p: [6, 7]
+  k: DEL
+  l: [DEF, COL, NUM, NAV]
 - p: [16, 26]
   k: (
   l: [DEF, COL]

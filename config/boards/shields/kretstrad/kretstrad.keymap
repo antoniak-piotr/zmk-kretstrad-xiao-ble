@@ -121,8 +121,8 @@
         // TAB, ESC, BACKSPACE i DELETE
         // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM>; SHORT;};                  // ESC
         // tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM>; SHORT;};                // TAB
-        // del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; SHORT;};              // DEL
         bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; SHORT;};              // BSPC lub DEL (jeśli wciśnięto SHIFT)
+        del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; SHORT;};              // DEL
 
         // nawiasy
         // lpar    {key-positions = <6 16>; bindings = <&lpb>; layers = <DEF COL>; SHORT;};                        // ( [{
