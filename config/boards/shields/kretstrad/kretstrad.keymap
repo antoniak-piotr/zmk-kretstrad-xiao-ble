@@ -51,7 +51,7 @@
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &hm LALT S      &hm LCTRL D     &hm LSHFT F     &kp G                   &kp H           &hm RSHFT J     &hm RCTRL K     &hm LALT L      &kp SEMI
                 &kp Z           &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp DOT         &kp SLASH
-                                                                &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
+                                                                &mt LWIN TAB    &lt NUM ESC             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
@@ -60,7 +60,7 @@
                 &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
                 &kp A           &hm LALT R      &hm LCTRL S     &hm LSHFT T     &kp G                   &kp M           &hm RSHFT N     &hm RCTRL E     &hm LALT I      &kp O
                 &kp Z           &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp SLASH
-                                                                &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
+                                                                &mt LWIN TAB    &lt NUM ESC             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
@@ -69,7 +69,7 @@
                 &none           &kp F7          &kp F8          &kp F9          &none                   &none           &kp N7          &kp N8          &kp N9          &none
                 &none           &hm LALT F4     &hm LCTRL F5    &hm LSHFT F6    &none                   &mt DOT COMMA   &hm RSHFT N4    &hm RCTRL N5    &hm LALT N6     &kp N0
                 &none           &kp F1          &kp F2          &kp F3          &none                   &none           &kp N1          &kp N2          &kp N3          &none
-                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT ENTER
+                                                                &mt LWIN TAB    &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
@@ -78,7 +78,7 @@
                 &zoom LG(ESC) 0 &none           &none           &mt PSCRN SNIP  &none                   &none           &none           &none           &none           &none
                 &kp LC(Z)       &kp LALT        &kp LCTRL       &kp LSHFT       &none                   &prev           &kp LEFT        &kp UP          &kp RIGHT       &next
                 &none           &kp LC(X)       &kp LC(C)       &kp LC(V)       &none                   &none           &kp HOME        &kp DOWN        &kp END         &none
-                                                                &mt LWIN ESC    &kp TAB                 &trans          &mt RALT ENTER
+                                                                &mt LWIN TAB    &kp ESC                 &trans          &mt RALT ENTER
             >;
         };
 

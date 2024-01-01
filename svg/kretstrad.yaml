@@ -30,8 +30,8 @@ layers:
   - ','
   - .
   - /
-  - {t: ESC, h: LWIN}
-  - {t: TAB, h: NUM}
+  - {t: TAB, h: LWIN}
+  - {t: ESC, h: NUM}
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   COL:
@@ -65,8 +65,8 @@ layers:
   - ','
   - .
   - /
-  - {t: ESC, h: LWIN}
-  - {t: TAB, h: NUM}
+  - {t: TAB, h: LWIN}
+  - {t: ESC, h: NUM}
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   NUM:
@@ -100,7 +100,7 @@ layers:
   - '2'
   - '3'
   - {type: none}
-  - {t: ESC, h: LWIN}
+  - {t: TAB, h: LWIN}
   - {type: held}
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
@@ -135,8 +135,8 @@ layers:
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
   - {t: END, h: '$$mdi:page-last$$'}
   - {type: none}
-  - {t: ESC, h: LWIN}
-  - TAB
+  - {t: TAB, h: LWIN}
+  - ESC
   - {type: held}
   - {t: ENTER, h: RALT}
   CONF:
@@ -256,7 +256,7 @@ combos:
   k: '`'
   l: [DEF, COL]
 - p: [15, 25]
-  k: .
+  k: ''''
   l: [DEF, COL]
 - p: [16, 26]
   k: A

@@ -183,7 +183,7 @@ text.combo {
 </style>
 <g transform="translate(30, 0)" class="layer-DEF">
 <text x="0" y="28" class="label">DEF</text>
-<g transform="translate(0, 38)">
+<g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Q</text>
@@ -313,12 +313,12 @@ text.combo {
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ESC</text>
+<text x="0" y="0" class="key tap">TAB</text>
 <text x="0" y="18" class="key hold">LWIN</text>
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">TAB</text>
+<text x="0" y="0" class="key tap">ESC</text>
 <text x="0" y="18" class="key hold">NUM</text>
 </g>
 <g transform="translate(448, 254) rotate(-30.0)" class="key keypos-32">
@@ -439,13 +439,13 @@ text.combo {
 </g>
 <g class="combo combopos-26">
 <rect rx="6" ry="6" x="461" y="119" width="30" height="14" class="combo"/>
-<text x="476" y="126" class="combo tap">.</text>
+<text x="476" y="126" class="combo tap">&#x27;</text>
 </g>
 </g>
 </g>
 <g transform="translate(30, 349)" class="layer-COL">
 <text x="0" y="28" class="label">COL</text>
-<g transform="translate(0, 38)">
+<g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Q</text>
@@ -575,12 +575,12 @@ text.combo {
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ESC</text>
+<text x="0" y="0" class="key tap">TAB</text>
 <text x="0" y="18" class="key hold">LWIN</text>
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">TAB</text>
+<text x="0" y="0" class="key tap">ESC</text>
 <text x="0" y="18" class="key hold">NUM</text>
 </g>
 <g transform="translate(448, 254) rotate(-30.0)" class="key keypos-32">
@@ -701,7 +701,7 @@ text.combo {
 </g>
 <g class="combo combopos-26">
 <rect rx="6" ry="6" x="461" y="119" width="30" height="14" class="combo"/>
-<text x="476" y="126" class="combo tap">.</text>
+<text x="476" y="126" class="combo tap">&#x27;</text>
 </g>
 </g>
 </g>
@@ -827,7 +827,7 @@ text.combo {
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ESC</text>
+<text x="0" y="0" class="key tap">TAB</text>
 <text x="0" y="18" class="key hold">LWIN</text>
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key held keypos-31">
@@ -1019,12 +1019,12 @@ text.combo {
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ESC</text>
+<text x="0" y="0" class="key tap">TAB</text>
 <text x="0" y="18" class="key hold">LWIN</text>
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">TAB</text>
+<text x="0" y="0" class="key tap">ESC</text>
 </g>
 <g transform="translate(448, 254) rotate(-30.0)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
