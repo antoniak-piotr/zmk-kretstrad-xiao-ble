@@ -116,7 +116,7 @@
         compatible = "zmk,combos";
 
         // CAPS-WORD
-        caps    {key-positions = <13 16>; bindings = <&caps_word>; layers = <DEF COL>; SHORT;};                 // CAPS WORD
+        caps    {key-positions = <31 32>; bindings = <&caps_word>; layers = <DEF COL>; SHORT;};                 // CAPS WORD
 
         // TAB, ESC, BACKSPACE i DELETE
         // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM>; SHORT;};                  // ESC
@@ -125,20 +125,23 @@
         del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; SHORT;};              // DEL
 
         // nawiasy
-        // lpar    {key-positions = <6 16>; bindings = <&lpb>; layers = <DEF COL>; SHORT;};                        // ( [{
-        // rpar    {key-positions = <7 17>; bindings = <&rpb>; layers = <DEF COL>; SHORT;};                        // ) ]}
-        lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF COL>; SHORT;};                        // ( [{
-        rpar    {key-positions = <17 27>; bindings = <&kp RPAR>; layers = <DEF COL>; SHORT;};                        // ) ]}
-        lbkt    {key-positions = <6 16>; bindings = <&kp LBKT>; layers = <DEF COL>; SHORT;};                        // ( [{
-        rbkt    {key-positions = <7 17>; bindings = <&kp RBKT>; layers = <DEF COL>; SHORT;};                        // ) ]}
-        lbrc    {key-positions = <12 22>; bindings = <&kp LBRC>; layers = <DEF COL>; SHORT;};                        // ( [{
-        rbrc    {key-positions = <13 23>; bindings = <&kp RBRC>; layers = <DEF COL>; SHORT;};                        // ) ]}
+        lpb     {key-positions = <6 16>; bindings = <&lpb>; layers = <DEF COL>; SHORT;};                        // ( [{
+        rpb     {key-positions = <7 17>; bindings = <&rpb>; layers = <DEF COL>; SHORT;};                        // ) ]}
+        // lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF COL>; SHORT;};                        // ( [{
+        // rpar    {key-positions = <17 27>; bindings = <&kp RPAR>; layers = <DEF COL>; SHORT;};                        // ) ]}
+        // lbkt    {key-positions = <6 16>; bindings = <&kp LBKT>; layers = <DEF COL>; SHORT;};                        // ( [{
+        // rbkt    {key-positions = <7 17>; bindings = <&kp RBKT>; layers = <DEF COL>; SHORT;};                        // ) ]}
+        // lbrc    {key-positions = <12 22>; bindings = <&kp LBRC>; layers = <DEF COL>; SHORT;};                        // ( [{
+        // rbrc    {key-positions = <13 23>; bindings = <&kp RBRC>; layers = <DEF COL>; SHORT;};                        // ) ]}
 
         // symbole matematyczne: +, -, *, /
-        slash   {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF COL>; SHORT;};                    // /
-        star    {key-positions = <5 6>; bindings = <&kp STAR>; layers = <DEF COL>; SHORT;};                     // *
-        minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
-        plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL>; SHORT;};                   // +
+        nstar   {key-positions = <5 6>; bindings = <&kp STAR>; layers = <DEF COL>; SHORT;};                     // *
+        ndiv    {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF COL>; SHORT;};                    // /
+        nplus   {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL>; SHORT;};                   // +
+        nminus  {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
+
+        minus   {key-positions = <11 21>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
+        equal   {key-positions = <18 28>; bindings = <&kp EQUAL>; layers = <DEF COL>; SHORT;};                  // =+
 
         // pozostałe symbole
         excl    {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF COL>; SHORT;};                    // !
@@ -148,7 +151,6 @@
         prcnt   {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <DEF COL>; SHORT;};                   // %
 
         // equal   {key-positions = <12 22>; bindings = <&kp EQUAL>; layers = <DEF COL>; SHORT;};                  // =+
-        equal   {key-positions = <11 21>; bindings = <&kp EQUAL>; layers = <DEF COL>; SHORT;};                  // =+
         // under   {key-positions = <22 23>; bindings = <&kp UNDER>; layers = <DEF COL>; SHORT;};                  // _
 
         caret   {key-positions = <5 15>; bindings = <&kp CARET>; layers = <DEF COL>; SHORT;};                   // ^
@@ -157,7 +159,8 @@
 
         // colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
         // bslh    {key-positions = <26 27>; bindings = <&kp BSLH>; layers = <DEF COL>; SHORT;};                   // \|
-        colon   {key-positions = <18 28>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
+        equal   {key-positions = <11 21>; bindings = <&kp EQUAL>; layers = <DEF COL>; SHORT;};                  // =+
+        // colon   {key-positions = <18 28>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
         bslh    {key-positions = <19 29>; bindings = <&kp BSLH>; layers = <DEF COL>; SHORT;};                    // \|
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda (TILDA) i cudzysłów ("): `, ', ~, "
@@ -222,36 +225,52 @@
             bindings = <&kp>, <&zoom_in_out>;
         };
 
-        lbk: lbkt_lbrc {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LEFT_BRACKET_BRACE";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT>, <&kp LBRC>;
-            mods = <(MOD_LCTL)>;
-        };
+        // lbk: lbkt_lbrc {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "LEFT_BRACKET_BRACE";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp LBKT>, <&kp LBRC>;
+        //     mods = <(MOD_LCTL)>;
+        // };
 
-        rbk: rbkt_rbrc {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RIGHT_BRACKET_BRACE";
-            #binding-cells = <0>;
-            bindings = <&kp RBKT>, <&kp RBRC>;
-            mods = <(MOD_LCTL)>;
-        };
+        // rbk: rbkt_rbrc {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "RIGHT_BRACKET_BRACE";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp RBKT>, <&kp RBRC>;
+        //     mods = <(MOD_LCTL)>;
+        // };
 
-        lpb: lpar_rbkt {
+        // lpb: lpar_rbkt {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "LEFT_PARENTHESIS_BRACKET_BRACE";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp LPAR>, <&lbk>;
+        //     mods = <(MOD_LSFT)>;
+        // };
+
+        // rpb: rpar_rbkt {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "RIGHT_PARENTHESIS_BRACKET_BRACE";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp RPAR>, <&rbk>;
+        //     mods = <(MOD_LSFT)>;
+        // };
+
+        lpb: lpar_lbkt {
             compatible = "zmk,behavior-mod-morph";
-            label = "LEFT_PARENTHESIS_BRACKET_BRACE";
+            label = "LEFT_PARENTHESIS_BRACKET";
             #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&lbk>;
-            mods = <(MOD_LSFT)>;
+            bindings = <&kp LPAR>, <&kp LBKT>;
+            mods = <(MOD_LCTL)>;
         };
 
         rpb: rpar_rbkt {
             compatible = "zmk,behavior-mod-morph";
-            label = "RIGHT_PARENTHESIS_BRACKET_BRACE";
+            label = "RIGHT_PARENTHESIS_BRACKET";
             #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&rbk>;
-            mods = <(MOD_LSFT)>;
+            bindings = <&kp RPAR>, <&kp RBKT>;
+            mods = <(MOD_LCTL)>;
         };
 
         hm: homerow_mods {
