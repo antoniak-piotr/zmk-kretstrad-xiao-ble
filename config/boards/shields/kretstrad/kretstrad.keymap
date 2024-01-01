@@ -135,10 +135,10 @@
         rbrc    {key-positions = <13 23>; bindings = <&kp RBRC>; layers = <DEF COL>; SHORT;};                        // ) ]}
 
         // symbole matematyczne: +, -, *, /
-        slash   {key-positions = <13 14>; bindings = <&kp SLASH>; layers = <DEF COL>; SHORT;};                  // /
-        star    {key-positions = <15 16>; bindings = <&kp STAR>; layers = <DEF COL>; SHORT;};                   // *
-        minus   {key-positions = <23 24>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
-        plus    {key-positions = <25 26>; bindings = <&kp PLUS>; layers = <DEF COL>; SHORT;};                   // +
+        slash   {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF COL>; SHORT;};                    // /
+        star    {key-positions = <5 6>; bindings = <&kp STAR>; layers = <DEF COL>; SHORT;};                     // *
+        minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
+        plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL>; SHORT;};                   // +
 
         // pozostałe symbole
         excl    {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF COL>; SHORT;};                    // !
