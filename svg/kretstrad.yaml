@@ -180,9 +180,6 @@ combos:
   l: [DEF, COL]
   a: top
   o: -0.33
-- p: [12, 13]
-  k: TAB
-  l: [DEF, COL, NUM]
 - p: [16, 17]
   k: BSPC
   l: [DEF, COL, NUM, NAV]
@@ -293,4 +290,10 @@ combos:
   l: [NAV]
 - p: [18, 28]
   k: PGDN
+  l: [NAV]
+- p: [26, 27]
+  k: {t: HOME, h: '$$mdi:page-first$$'}
+  l: [NAV]
+- p: [27, 28]
+  k: {t: END, h: '$$mdi:page-last$$'}
   l: [NAV]

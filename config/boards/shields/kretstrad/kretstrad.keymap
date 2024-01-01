@@ -120,7 +120,7 @@
 
         // TAB, ESC, BACKSPACE i DELETE
         // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM>; SHORT;};                  // ESC
-        tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM>; SHORT;};                // TAB
+        // tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM>; SHORT;};                // TAB
         // del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; SHORT;};              // DEL
         bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; SHORT;};              // BSPC lub DEL (jeśli wciśnięto SHIFT)
 
@@ -180,6 +180,8 @@
         // page up i page down w warstwie NAV
         pgup    {key-positions = <16 26>; bindings = <&kp PG_UP>; layers = <NAV>; LONG;};                       // PAGE UP
         pgdn    {key-positions = <18 28>; bindings = <&kp PG_DN>; layers = <NAV>; LONG;};                       // PAGE DOWN
+        home    {key-positions = <26 27>; bindings = <&kp HOME>; layers = <NAV>; LONG;};                        // HOME
+        end     {key-positions = <27 28>; bindings = <&kp END>; layers = <NAV>; LONG;};                         // END
     };
 
     behaviors {
