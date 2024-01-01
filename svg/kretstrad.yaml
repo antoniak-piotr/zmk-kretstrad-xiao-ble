@@ -105,7 +105,6 @@ layers:
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   NAV:
-  - '&<<<<<<< HEAD'
   - {t: REDO, h: '$$mdi:redo$$'}
   - {type: none}
   - {type: none}
@@ -131,41 +130,15 @@ layers:
   - {t: COPY, h: LALT}
   - {t: PASTE, h: LCTRL}
   - {type: none}
-  - {type: none}
-  - LC(LEFT)
-  - {t: DOWN, h: '$$mdi:chevron-down$$'}
-  - LC(RIGHT)
-  - PG DN =======
-  - {t: REDO, h: '$$mdi:redo$$'}
-  - {type: held}
-  - {type: none}
-  - {t: SNIP, h: PSCRN}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {t: UNDO, h: LSHFT}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - LG(MINUS)
-  - {type: none}
-  - {t: LEFT, h: '$$mdi:chevron-left$$'}
-  - {t: UP, h: '$$mdi:chevron-up$$'}
-  - {t: RIGHT, h: '$$mdi:chevron-right$$'}
-  - PGUP
-  - {type: none}
-  - {t: CUT, h: '$$mdi:content-cut$$'}
-  - {t: COPY, h: LALT}
-  - {t: PASTE, h: LCTRL}
-  - LG(EQUAL)
   - {type: none}
   - LC(LEFT)
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
   - LC(RIGHT)
   - PGDN
+  - {t: ESC, h: LWIN}
+  - TAB
+  - {type: held}
+  - '&KP ENTER'
   CONF:
   - {type: held}
   - {t: BT, h: '0'}
