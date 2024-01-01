@@ -234,9 +234,6 @@ combos:
 - p: [11, 21]
   k: '='
   l: [DEF, COL]
-- p: [22, 23]
-  k: _
-  l: [DEF, COL]
 - p: [5, 15]
   k: ^
   l: [DEF, COL]
@@ -248,9 +245,6 @@ combos:
   l: [DEF, COL]
 - p: [18, 28]
   k: ':'
-  l: [DEF, COL]
-- p: [26, 27]
-  k: \
   l: [DEF, COL]
 - p: [14, 24]
   k: '`'

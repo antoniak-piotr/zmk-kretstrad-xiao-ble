@@ -149,7 +149,7 @@
 
         // equal   {key-positions = <12 22>; bindings = <&kp EQUAL>; layers = <DEF COL>; SHORT;};                  // =+
         equal   {key-positions = <11 21>; bindings = <&kp EQUAL>; layers = <DEF COL>; SHORT;};                  // =+
-        under   {key-positions = <22 23>; bindings = <&kp UNDER>; layers = <DEF COL>; SHORT;};                  // _
+        // under   {key-positions = <22 23>; bindings = <&kp UNDER>; layers = <DEF COL>; SHORT;};                  // _
 
         caret   {key-positions = <5 15>; bindings = <&kp CARET>; layers = <DEF COL>; SHORT;};                   // ^
         amps    {key-positions = <8 18>; bindings = <&kp AMPS>; layers = <DEF COL>; SHORT;};                    // &
@@ -157,7 +157,7 @@
 
         // colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
         colon   {key-positions = <18 28>; bindings = <&kp COLON>; layers = <DEF COL>; SHORT;};                  // :
-        bslh    {key-positions = <26 27>; bindings = <&kp BSLH>; layers = <DEF COL>; SHORT;};                   // \|
+        // bslh    {key-positions = <26 27>; bindings = <&kp BSLH>; layers = <DEF COL>; SHORT;};                   // \|
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda (TILDA) i cudzysłów ("): `, ', ~, "
         grave   {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF COL>; SHORT;};                  // `~
