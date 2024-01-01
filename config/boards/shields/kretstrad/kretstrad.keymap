@@ -75,9 +75,15 @@
 
         NAV_layer {
             bindings = <
+<<<<<<< HEAD
+                &kp LSC(Z)      &none           &none           &mt PSCRN SNIP  &kp LG(MINUS)           &none           &none           &none           &none           &none
+                &hm LSHFT LC(Z) &none           &none           &none           &kp LG(EQUAL)           &none           &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &none           &kp LC(X)       &hm LALT LC(C)  &hm LCTRL LC(V) &none                   &none           &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
+=======
                 &kp LSC(Z)      &none           &none           &mt PSCRN SNIP  &none                   &none           &none           &none           &none           &none
                 &hm LSHFT LC(Z) &none           &none           &none           &kp LG(MINUS)           &none           &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &none           &kp LC(X)       &hm LALT LC(C)  &hm LCTRL LC(V) &kp LG(EQUAL)           &none           &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
+>>>>>>> 4912c2ada4cd85f5d994f561311a63d335141ed2
                                                                 &mt LWIN ESC    &kp TAB                 &trans          &KP ENTER
             >;
         };
@@ -175,11 +181,11 @@
         // pgdn    {key-positions = <18 28>; bindings = <&kp PG_DN>; layers = <NAV>; LONG;};                       // PAGE DOWN
         home    {key-positions = <26 27>; bindings = <&kp HOME>; layers = <NAV>; LONG;};                        // HOME
         end     {key-positions = <27 28>; bindings = <&kp END>; layers = <NAV>; LONG;};                         // END
-        slash   {key-positions = <18 28>; bindings = <&kp SLASH>; layers = <NAV>; SHORT;};                      // / - przydaje się do komentowania kodu
+        slash   {key-positions = <18 28>; bindings = <&kp LC(SLASH)>; layers = <NAV>; SHORT;};                  // / - przydaje się do komentowania kodu
 
         // wyjście z Magnify
         exit    {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <NAV>; SHORT;};                    // EXIT
-};
+     };
 
     behaviors {
         // prev: prev_app_or_desktop {
@@ -283,7 +289,7 @@
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT)>;
         };
-   };
+    };
 
     macros {
         // dm: delphi_macro {
