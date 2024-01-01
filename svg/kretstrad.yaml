@@ -10,28 +10,28 @@ layers:
   - I
   - O
   - P
-  - A
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
+  - {t: A, h: LSHFT}
+  - S
+  - D
   - {t: F, h: LSHFT}
   - G
   - H
-  - {t: J, h: RSHFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: LALT}
-  - ;
+  - J
+  - K
+  - L
+  - {t: ;, h: RSHFT}
   - Z
   - X
-  - C
-  - V
+  - {t: C, h: LALT}
+  - {t: V, h: LCTRL}
   - B
   - N
-  - M
-  - ','
+  - {t: M, h: RCTRL}
+  - {t: ',', h: LALT}
   - .
   - /
-  - {t: TAB, h: LWIN}
-  - {t: ESC, h: NUM}
+  - {t: ESC, h: LWIN}
+  - {t: TAB, h: NUM}
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   COL:
@@ -45,28 +45,28 @@ layers:
   - U
   - Y
   - ;
-  - A
-  - {t: R, h: LALT}
-  - {t: S, h: LCTRL}
-  - {t: T, h: LSHFT}
+  - {t: A, h: LSHFT}
+  - R
+  - S
+  - T
   - G
   - M
-  - {t: N, h: RSHFT}
-  - {t: E, h: RCTRL}
-  - {t: I, h: LALT}
-  - O
+  - N
+  - E
+  - I
+  - {t: O, h: RSHFT}
   - Z
   - X
-  - C
-  - D
+  - {t: C, h: LALT}
+  - {t: D, h: LCTRL}
   - V
   - K
-  - H
-  - ','
+  - {t: H, h: RCTRL}
+  - {t: ',', h: LALT}
   - .
   - /
-  - {t: TAB, h: LWIN}
-  - {t: ESC, h: NUM}
+  - {t: ESC, h: LWIN}
+  - {t: TAB, h: NUM}
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   NUM:
@@ -80,27 +80,27 @@ layers:
   - '8'
   - '9'
   - {type: none}
-  - {type: none}
-  - {t: F4, h: LALT}
-  - {t: F5, h: LCTRL}
+  - LSHFT
+  - F4
+  - F5
   - {t: F6, h: LSHFT}
   - {type: none}
   - {t: ',', h: .}
-  - {t: '4', h: RSHFT}
-  - {t: '5', h: RCTRL}
-  - {t: '6', h: LALT}
-  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - {t: '0', h: RSHFT}
   - {type: none}
   - F1
-  - F2
-  - F3
+  - {t: F2, h: LALT}
+  - {t: F3, h: LCTRL}
   - {type: none}
   - {type: none}
-  - '1'
-  - '2'
+  - {t: '1', h: RCTRL}
+  - {t: '2', h: LALT}
   - '3'
   - {type: none}
-  - {t: TAB, h: LWIN}
+  - {t: ESC, h: LWIN}
   - {type: held}
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
@@ -115,10 +115,10 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {t: UNDO, h: '$$mdi:undo$$'}
-  - LALT
-  - LCTRL
-  - LSHFT
+  - {t: UNDO, h: LSHFT}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - {type: none}
   - {t: PREV, h: '$$mdi:page-previous-outline$$'}
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
@@ -127,16 +127,16 @@ layers:
   - {t: NEXT, h: '$$mdi:page-next-outline$$'}
   - {type: none}
   - {t: CUT, h: '$$mdi:content-cut$$'}
-  - {t: COPY, h: '$$mdi:content-copy$$'}
-  - {t: PASTE, h: '$$mdi:content-paste$$'}
+  - {t: COPY, h: LALT}
+  - {t: PASTE, h: LCTRL}
   - {type: none}
   - {type: none}
-  - {t: HOME, h: '$$mdi:page-first$$'}
+  - LC(LEFT)
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
-  - {t: END, h: '$$mdi:page-last$$'}
+  - LC(RIGHT)
   - {type: none}
-  - {t: TAB, h: LWIN}
-  - ESC
+  - {t: ESC, h: LWIN}
+  - TAB
   - {type: held}
   - {t: ENTER, h: RALT}
   CONF:
