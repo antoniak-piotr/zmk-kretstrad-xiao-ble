@@ -75,9 +75,15 @@ parse_config:
       tap: PSCRN
       hold: $$mdi:crop$$ # select$$
 
-    "&zoom LG(ESC) 0":
-      tap: ZOOM
+    "&kp LG(EQUAL)":
+      tap: ZOOM+
+      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
+    "&kp LG(MINUS)":
+      tap: ZOOM-
       hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    "&kp LG(ESC)":
+      tap: EXIT
+      # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
 
     "&caps_word":
       tap: CAPS # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
@@ -125,8 +131,20 @@ parse_config:
       tap: END
       hold: $$mdi:page-last$$
 
-    "&kp PG_UP": "PGUP"
-    "&kp PG_DN": "PGDN"
+    "&kp PG_UP":
+      tap: PGUP
+      hold: $$mdi:chevron-double-up$$
+    "&kp PG_DN":
+      tap: PGDN
+      hold: $$mdi:chevron-double-down$$
+
+    "&kp LC(LEFT)":
+      tap: WORD
+      hold: $$mdi:achevron-double-left$$
+    "&kp LC(RIGHT)":
+      tap: WORD
+      hold: $$mdi-chevron-double-right$$
+    "&kp LC(SLASH)": "COMMENT"
 
     "&bt BT_CLR":
       tap: "BT" # $$mdi:bluetooth$$
@@ -146,4 +164,4 @@ parse_config:
   zmk_combos:
     caps:
       align: top
-      offset: -0.33
+      offset: 0.15

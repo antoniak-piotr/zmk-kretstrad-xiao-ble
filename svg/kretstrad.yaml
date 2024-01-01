@@ -109,7 +109,7 @@ layers:
   - {type: none}
   - {type: none}
   - {t: SNIP, h: PSCRN}
-  - LG(MINUS)
+  - {t: ZOOM-, h: '$$mdi:magnify$$'}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -119,22 +119,22 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - LG(EQUAL)
+  - {t: ZOOM+, h: '$$mdi:magnify$$'}
   - {type: none}
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
   - {t: RIGHT, h: '$$mdi:chevron-right$$'}
-  - PGUP
+  - {t: PGUP, h: '$$mdi:chevron-double-up$$'}
   - {type: none}
   - {t: CUT, h: '$$mdi:content-cut$$'}
   - {t: COPY, h: LALT}
   - {t: PASTE, h: LCTRL}
   - {type: none}
   - {type: none}
-  - LC(LEFT)
+  - {t: WORD, h: '$$mdi:achevron-double-left$$'}
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
-  - LC(RIGHT)
-  - PGDN
+  - {t: WORD, h: $$mdi-chevron-double-right$$}
+  - {t: PGDN, h: '$$mdi:chevron-double-down$$'}
   - {t: ESC, h: LWIN}
   - TAB
   - {type: held}
@@ -179,7 +179,7 @@ combos:
   k: CAPS
   l: [DEF, COL]
   a: top
-  o: -0.33
+  o: 0.15
 - p: [16, 17]
   k: BSPC
   l: [DEF, COL, NUM, NAV]
@@ -277,8 +277,8 @@ combos:
   k: {t: END, h: '$$mdi:page-last$$'}
   l: [NAV]
 - p: [18, 28]
-  k: LC(SLASH)
+  k: COMMENT
   l: [NAV]
 - p: [14, 24]
-  k: LG(ESC)
+  k: EXIT
   l: [NAV]
