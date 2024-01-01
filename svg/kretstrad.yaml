@@ -138,7 +138,7 @@ layers:
   - {t: ESC, h: LWIN}
   - TAB
   - {type: held}
-  - '&KP ENTER'
+  - ENTER
   CONF:
   - {type: held}
   - {t: BT, h: '0'}
