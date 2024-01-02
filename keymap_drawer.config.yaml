@@ -140,10 +140,10 @@ parse_config:
 
     "&kp LC(LEFT)":
       tap: WORD
-      hold: $$mdi:achevron-double-left$$
+      hold: $$mdi:chevron-left-box-outline$$
     "&kp LC(RIGHT)":
       tap: WORD
-      hold: $$mdi-chevron-double-right$$
+      hold: $$mdi:chevron-right-box-outline$$
     "&kp LC(SLASH)": "COMMENT"
 
     "&bt BT_CLR":

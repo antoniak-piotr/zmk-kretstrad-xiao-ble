@@ -131,9 +131,9 @@ layers:
   - {t: PASTE, h: LCTRL}
   - {type: none}
   - {type: none}
-  - {t: WORD, h: '$$mdi:achevron-double-left$$'}
+  - {t: WORD, h: '$$mdi:chevron-left-box-outline$$'}
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
-  - {t: WORD, h: $$mdi-chevron-double-right$$}
+  - {t: WORD, h: '$$mdi:chevron-right-box-outline$$'}
   - {t: PGDN, h: '$$mdi:chevron-double-down$$'}
   - {t: ESC, h: LWIN}
   - TAB
