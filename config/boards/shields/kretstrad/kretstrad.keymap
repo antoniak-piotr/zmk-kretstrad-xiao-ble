@@ -178,7 +178,7 @@
         slash   {key-positions = <18 28>; bindings = <&kp LC(SLASH)>; layers = <NAV>; SHORT;};                  // Ctrl + / - przydaje się do komentowania kodu
 
         // wyjście z Magnify
-        exit    {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <NAV>; SHORT;};                    // EXIT
+        exit    {key-positions = <4 14>; bindings = <&kp LG(ESC)>; layers = <NAV>; SHORT;};                     // EXIT
      };
 
     behaviors {

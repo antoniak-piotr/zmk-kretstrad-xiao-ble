@@ -273,6 +273,6 @@ combos:
 - p: [18, 28]
   k: COMMENT
   l: [NAV]
-- p: [14, 24]
+- p: [4, 14]
   k: EXIT
   l: [NAV]

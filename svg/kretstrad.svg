@@ -1005,8 +1005,8 @@ text.combo {
 <text x="644" y="119" class="combo tap"><tspan style="font-size: 71%">COMMENT</tspan></text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="237" y="119" width="30" height="14" class="combo"/>
-<text x="252" y="126" class="combo tap">EXIT</text>
+<rect rx="6" ry="6" x="237" y="63" width="30" height="14" class="combo"/>
+<text x="252" y="70" class="combo tap">EXIT</text>
 </g>
 </g>
 </g>
