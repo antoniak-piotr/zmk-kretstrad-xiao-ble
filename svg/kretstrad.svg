@@ -905,8 +905,10 @@ text.combo {
 <text x="0" y="0" class="key tap">ZOOM+</text>
 <use href="#mdi:magnify" xlink:href="#mdi:magnify" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:magnify"/>
 </g>
-<g transform="translate(476, 98)" class="key none keypos-15">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(476, 98)" class="key keypos-15">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">HOME</text>
+<use href="#mdi:page-first" xlink:href="#mdi:page-first" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:page-first"/>
 </g>
 <g transform="translate(532, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -949,8 +951,10 @@ text.combo {
 <g transform="translate(252, 154)" class="key none keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(476, 154)" class="key none keypos-25">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(476, 154)" class="key keypos-25">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">END</text>
+<use href="#mdi:page-last" xlink:href="#mdi:page-last" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:page-last"/>
 </g>
 <g transform="translate(532, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -997,20 +1001,10 @@ text.combo {
 <text x="560" y="32" class="combo tap">DEL</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="545" y="136" width="30" height="14" class="combo"/>
-<text x="560" y="144" class="combo tap">HOME</text>
-<use href="#mdi:page-first" xlink:href="#mdi:page-first" x="555" y="132" height="10" width="10.0" class="combo hold glyph mdi:page-first"/>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="601" y="136" width="30" height="14" class="combo"/>
-<text x="616" y="144" class="combo tap">END</text>
-<use href="#mdi:page-last" xlink:href="#mdi:page-last" x="611" y="132" height="10" width="10.0" class="combo hold glyph mdi:page-last"/>
-</g>
-<g class="combo combopos-4">
 <rect rx="6" ry="6" x="629" y="112" width="30" height="14" class="combo"/>
 <text x="644" y="119" class="combo tap"><tspan style="font-size: 71%">COMMENT</tspan></text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="237" y="119" width="30" height="14" class="combo"/>
 <text x="252" y="126" class="combo tap">EXIT</text>
 </g>

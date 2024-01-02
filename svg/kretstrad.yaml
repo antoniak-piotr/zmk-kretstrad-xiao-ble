@@ -120,7 +120,7 @@ layers:
   - {type: none}
   - {type: none}
   - {t: ZOOM+, h: '$$mdi:magnify$$'}
-  - {type: none}
+  - {t: HOME, h: '$$mdi:page-first$$'}
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
   - {t: RIGHT, h: '$$mdi:chevron-right$$'}
@@ -130,7 +130,7 @@ layers:
   - {t: COPY, h: LALT}
   - {t: PASTE, h: LCTRL}
   - {type: none}
-  - {type: none}
+  - {t: END, h: '$$mdi:page-last$$'}
   - {t: WORD, h: '$$mdi:chevron-left-box-outline$$'}
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
   - {t: WORD, h: '$$mdi:chevron-right-box-outline$$'}
@@ -270,12 +270,6 @@ combos:
 - p: [13, 23]
   k: F12
   l: [NUM]
-- p: [26, 27]
-  k: {t: HOME, h: '$$mdi:page-first$$'}
-  l: [NAV]
-- p: [27, 28]
-  k: {t: END, h: '$$mdi:page-last$$'}
-  l: [NAV]
 - p: [18, 28]
   k: COMMENT
   l: [NAV]
