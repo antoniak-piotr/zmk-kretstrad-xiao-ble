@@ -49,8 +49,8 @@
        DEF_layer {
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
-                &hm LSHFT A     &kp S           &kp D           &hm LSHFT F     &kp G                   &kp H           &kp J           &kp K           &kp L           &hm RSHFT SEMI
-                &kp Z           &kp X           &hm LALT C      &hm LCTRL V     &kp B                   &kp N           &hm RCTRL M     &hm LALT COMMA  &kp DOT         &kp SLASH
+                &kp A           &kp S           &kp D           &hm LSHFT F     &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
+                &hm LSHFT Z     &kp X           &hm LALT C      &hm LCTRL V     &kp B                   &kp N           &hm RCTRL M     &hm LALT COMMA  &kp DOT         &hm RSHFT SLASH
                                                                 &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
@@ -58,8 +58,8 @@
         COL_layer {
             bindings = <
                 &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
-                &hm LSHFT A     &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &hm RSHFT O
-                &kp Z           &kp X           &hm LALT C      &hm LCTRL D     &kp V                   &kp K           &hm RCTRL H     &hm LALT COMMA  &kp DOT         &kp SLASH
+                &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
+                &hm LSHFT Z     &kp X           &hm LALT C      &hm LCTRL D     &kp V                   &kp K           &hm RCTRL H     &hm LALT COMMA  &kp DOT         &hm RSHFT SLASH
                                                                 &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
@@ -67,8 +67,8 @@
         NUM_layer {
             bindings = <
                 &none           &kp F7          &kp F8          &kp F9          &none                   &none           &kp N7          &kp N8          &kp N9          &none
-                &kp LSHFT       &kp F4          &kp F5          &kp F6          &none                   &mt DOT COMMA   &kp N4          &kp N5          &kp N6          &hm RSHFT N0
-                &none           &kp F1          &hm LALT F2     &hm LCTRL F3    &none                   &none           &hm RCTRL N1    &hm LALT N2     &kp N3          &none
+                &none           &kp F4          &kp F5          &kp F6          &none                   &mt DOT COMMA   &kp N4          &kp N5          &kp N6          &kp N0
+                &kp LSHFT       &kp F1          &hm LALT F2     &hm LCTRL F3    &none                   &none           &hm RCTRL N1    &hm LALT N2     &kp N3          &kp RSHFT
                                                                 &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
@@ -76,8 +76,8 @@
         NAV_layer {
             bindings = <
                 &kp LSC(Z)      &none           &none           &mt PSCRN SNIP  &kp LG(MINUS)           &none           &none           &none           &none           &none
-                &hm LSHFT LC(Z) &none           &none           &none           &kp LG(EQUAL)           &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
-                &none           &kp LC(X)       &hm LALT LC(C)  &hm LCTRL LC(V) &none                   &kp END         &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
+                &kp LC(Z)       &none           &none           &none           &kp LG(EQUAL)           &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &kp LSHFT       &kp LC(X)       &hm LALT LC(C)  &hm LCTRL LC(V) &none                   &kp END         &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
                                                                 &mt LWIN ESC    &kp TAB                 &trans          &kp ENTER
             >;
         };

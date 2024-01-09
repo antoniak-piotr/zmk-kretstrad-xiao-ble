@@ -10,7 +10,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LSHFT}
+  - A
   - S
   - D
   - {t: F, h: LSHFT}
@@ -19,8 +19,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: RSHFT}
-  - Z
+  - ;
+  - {t: Z, h: LSHFT}
   - X
   - {t: C, h: LALT}
   - {t: V, h: LCTRL}
@@ -29,7 +29,7 @@ layers:
   - {t: M, h: RCTRL}
   - {t: ',', h: LALT}
   - .
-  - /
+  - {t: /, h: RSHFT}
   - {t: ESC, h: LWIN}
   - {t: TAB, h: NUM}
   - {t: SPACE, h: NAV}
@@ -45,7 +45,7 @@ layers:
   - U
   - Y
   - ;
-  - {t: A, h: LSHFT}
+  - A
   - R
   - S
   - T
@@ -54,8 +54,8 @@ layers:
   - N
   - E
   - I
-  - {t: O, h: RSHFT}
-  - Z
+  - O
+  - {t: Z, h: LSHFT}
   - X
   - {t: C, h: LALT}
   - {t: D, h: LCTRL}
@@ -64,7 +64,7 @@ layers:
   - {t: H, h: RCTRL}
   - {t: ',', h: LALT}
   - .
-  - /
+  - {t: /, h: RSHFT}
   - {t: ESC, h: LWIN}
   - {t: TAB, h: NUM}
   - {t: SPACE, h: NAV}
@@ -80,7 +80,7 @@ layers:
   - '8'
   - '9'
   - {type: none}
-  - LSHFT
+  - {type: none}
   - F4
   - F5
   - F6
@@ -89,8 +89,8 @@ layers:
   - '4'
   - '5'
   - '6'
-  - {t: '0', h: RSHFT}
-  - {type: none}
+  - '0'
+  - LSHFT
   - F1
   - {t: F2, h: LALT}
   - {t: F3, h: LCTRL}
@@ -99,7 +99,7 @@ layers:
   - {t: '1', h: RCTRL}
   - {t: '2', h: LALT}
   - '3'
-  - {type: none}
+  - RSHFT
   - {t: ESC, h: LWIN}
   - {type: held}
   - {t: SPACE, h: NAV}
@@ -115,7 +115,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {t: UNDO, h: LSHFT}
+  - {t: UNDO, h: '$$mdi:undo$$'}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -125,7 +125,7 @@ layers:
   - {t: UP, h: '$$mdi:chevron-up$$'}
   - {t: RIGHT, h: '$$mdi:chevron-right$$'}
   - {t: PGUP, h: '$$mdi:chevron-double-up$$'}
-  - {type: none}
+  - LSHFT
   - {t: CUT, h: '$$mdi:content-cut$$'}
   - {t: COPY, h: LALT}
   - {t: PASTE, h: LCTRL}
