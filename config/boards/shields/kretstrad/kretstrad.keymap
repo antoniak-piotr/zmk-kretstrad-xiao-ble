@@ -138,8 +138,8 @@
         nplus   {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL>; SHORT;};                   // +
         nminus  {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
 
-        minus   {key-positions = <12 22>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
-        equal   {key-positions = <17 27>; bindings = <&kp EQUAL>; layers = <DEF COL>; SHORT;};                  // =+
+        minus   {key-positions = <13 23>; bindings = <&kp MINUS>; layers = <DEF COL>; SHORT;};                  // -
+        equal   {key-positions = <16 26>; bindings = <&kp EQUAL>; layers = <DEF COL>; SHORT;};                  // =+
 
         // pozostałe symbole
         excl    {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF COL>; SHORT;};                    // !
