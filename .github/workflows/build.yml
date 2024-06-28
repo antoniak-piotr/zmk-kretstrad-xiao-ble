@@ -1,3 +1,5 @@
+name: CI build
+
 on:
   push:
     paths-ignore: ['keymap_drawer.config.yaml', 'svg/**']
