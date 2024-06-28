@@ -267,15 +267,15 @@
         //     mods = <(MOD_LCTL)>;
         // };
 
-        // hm: homerow_mods {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "HOMEROW_MODS";
-        //     #binding-cells = <2>;
-        //     flavor = "balanced";
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <100>;
-        //     bindings = <&kp>, <&kp>;
-        // };
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
+            bindings = <&kp>, <&kp>;
+        };
 
         // bsdl: bspc_del {
         //     compatible = "zmk,behavior-mod-morph";

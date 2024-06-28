@@ -282,31 +282,23 @@ text.combo {
 </g>
 <g transform="translate(28, 161)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LSHFT</tspan>
-<tspan x="0" dy="1.2em">Z</tspan>
-</text>
+<text x="0" y="0" class="key tap">Z</text>
+<text x="0" y="18" class="key hold">LSHFT</text>
 </g>
 <g transform="translate(84, 147)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LWIN</tspan>
-<tspan x="0" dy="1.2em">X</tspan>
-</text>
+<text x="0" y="0" class="key tap">X</text>
+<text x="0" y="18" class="key hold">LWIN</text>
 </g>
 <g transform="translate(140, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LALT</tspan>
-<tspan x="0" dy="1.2em">C</tspan>
-</text>
+<text x="0" y="0" class="key tap">C</text>
+<text x="0" y="18" class="key hold">LALT</text>
 </g>
 <g transform="translate(196, 147)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LCTRL</tspan>
-<tspan x="0" dy="1.2em">V</tspan>
-</text>
+<text x="0" y="0" class="key tap">V</text>
+<text x="0" y="18" class="key hold">LCTRL</text>
 </g>
 <g transform="translate(252, 154)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -318,31 +310,23 @@ text.combo {
 </g>
 <g transform="translate(532, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">RCTRL</tspan>
-<tspan x="0" dy="1.2em">M</tspan>
-</text>
+<text x="0" y="0" class="key tap">M</text>
+<text x="0" y="18" class="key hold">RCTRL</text>
 </g>
 <g transform="translate(588, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LALT</tspan>
-<tspan x="0" dy="1.2em">COMMA</tspan>
-</text>
+<text x="0" y="0" class="key tap">,</text>
+<text x="0" y="18" class="key hold">LALT</text>
 </g>
 <g transform="translate(644, 147)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LWIN</tspan>
-<tspan x="0" dy="1.2em">DOT</tspan>
-</text>
+<text x="0" y="0" class="key tap">.</text>
+<text x="0" y="18" class="key hold">LWIN</text>
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">RSHFT</tspan>
-<tspan x="0" dy="1.2em">SLASH</tspan>
-</text>
+<text x="0" y="0" class="key tap">/</text>
+<text x="0" y="18" class="key hold">RSHFT</text>
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -468,31 +452,23 @@ text.combo {
 </g>
 <g transform="translate(28, 161)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LSHFT</tspan>
-<tspan x="0" dy="1.2em">Z</tspan>
-</text>
+<text x="0" y="0" class="key tap">Z</text>
+<text x="0" y="18" class="key hold">LSHFT</text>
 </g>
 <g transform="translate(84, 147)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LWIN</tspan>
-<tspan x="0" dy="1.2em">X</tspan>
-</text>
+<text x="0" y="0" class="key tap">X</text>
+<text x="0" y="18" class="key hold">LWIN</text>
 </g>
 <g transform="translate(140, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LALT</tspan>
-<tspan x="0" dy="1.2em">C</tspan>
-</text>
+<text x="0" y="0" class="key tap">C</text>
+<text x="0" y="18" class="key hold">LALT</text>
 </g>
 <g transform="translate(196, 147)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LCTRL</tspan>
-<tspan x="0" dy="1.2em">D</tspan>
-</text>
+<text x="0" y="0" class="key tap">D</text>
+<text x="0" y="18" class="key hold">LCTRL</text>
 </g>
 <g transform="translate(252, 154)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -504,31 +480,23 @@ text.combo {
 </g>
 <g transform="translate(532, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">RCTRL</tspan>
-<tspan x="0" dy="1.2em">H</tspan>
-</text>
+<text x="0" y="0" class="key tap">H</text>
+<text x="0" y="18" class="key hold">RCTRL</text>
 </g>
 <g transform="translate(588, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LALT</tspan>
-<tspan x="0" dy="1.2em">COMMA</tspan>
-</text>
+<text x="0" y="0" class="key tap">,</text>
+<text x="0" y="18" class="key hold">LALT</text>
 </g>
 <g transform="translate(644, 147)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LWIN</tspan>
-<tspan x="0" dy="1.2em">DOT</tspan>
-</text>
+<text x="0" y="0" class="key tap">.</text>
+<text x="0" y="18" class="key hold">LWIN</text>
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">RSHFT</tspan>
-<tspan x="0" dy="1.2em">SLASH</tspan>
-</text>
+<text x="0" y="0" class="key tap">/</text>
+<text x="0" y="18" class="key hold">RSHFT</text>
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -827,17 +795,13 @@ text.combo {
 </g>
 <g transform="translate(140, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LALT</tspan>
-<tspan x="0" dy="1.2em">LC(C)</tspan>
-</text>
+<text x="0" y="0" class="key tap">COPY</text>
+<text x="0" y="18" class="key hold">LALT</text>
 </g>
 <g transform="translate(196, 147)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;hm</tspan><tspan x="0" dy="1.2em">LCTRL</tspan>
-<tspan x="0" dy="1.2em">LC(V)</tspan>
-</text>
+<text x="0" y="0" class="key tap">PASTE</text>
+<text x="0" y="18" class="key hold">LCTRL</text>
 </g>
 <g transform="translate(252, 154)" class="key none keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
