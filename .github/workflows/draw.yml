@@ -1,6 +1,12 @@
 name: Draw ZMK keymaps
+
 on:
   workflow_dispatch:  # can be triggered manually
+  workflow_run:
+    workflows: ["CI build"]
+    type:
+      - completed
+      
   push:               # automatically run on changes to following paths
     paths:
       - "config/*.keymap"
