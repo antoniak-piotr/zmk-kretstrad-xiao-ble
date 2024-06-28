@@ -119,10 +119,18 @@
         // caps    {key-positions = <31 32>; bindings = <&caps_word>; layers = <DEF COL>; SHORT;};                  // CAPS WORD
 
         // TAB, ESC, BACKSPACE i DELETE
-        esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; SHORT;};                  // ESC
+        // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; SHORT;};                  // ESC
         tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; SHORT;};                // TAB
-        del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; SHORT;};                  // DEL
+        // del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; SHORT;};                  // DEL
         bsdl    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; SHORT;};               // BSPC
+
+        // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda i cudzysłów
+        grave   {key-positions = <3 4>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                        // `~
+        sqt     {key-positions = <5 6>; bindings = <&kp APOS>; layers = <DEF COL>; COMBO;};                         // '"
+        tilde   {key-positions = <13 14>; bindings = <&kp TILDE>; layers = <DEF COL>; COMBO;};                      // ~
+        dqt     {key-positions = <15 16>; bindings = <&kp DQT>; layers = <DEF COL>; COMBO;};                        // "
+
+
 
         // nawiasy
         // lpb     {key-positions = <6 16>; bindings = <&lpb>; layers = <DEF COL>; SHORT;};                        // ( [{
