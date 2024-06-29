@@ -67,10 +67,10 @@
 
         NUM_layer {
             bindings = <
-                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
+                &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp CARET       &kp AMPS        &none           &none           &none
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
                 &hm LSHFT BSLH  &hm LWIN LBRC   &hm LALT LBKT   &hm LCTRL LPAR  &dequal                 &kp EQUAL       &hm RCTRL RPAR  &hm LALT RBKT   &hm LWIN RBRC   &hm RSHFT SLASH
-                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
+                                                                &mt LWIN ESC    &trans                  &lt NAV UNDER   &mt RALT DEL
             >;
         };
 
@@ -85,10 +85,10 @@
 
         FUN_layer {
             bindings = <
+                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
-                &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                &kp LSHFT       &kp LWIN        &kp LALT        &kp LCTRL       &none                   &none           &kp RCTRL       &kp LALT        &kp LWIN        &kp RSHFT
-                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
+                &kp LSHFT       &kp LWIN        &kp LALT        &kp LCTRL       &kp F11                 &kp F12         &kp RCTRL       &kp LALT        &kp LWIN        &kp RSHFT
+                                                                &mt LWIN ESC    &trans                  &trans          &mt RALT BSPC
             >;
         };
 
