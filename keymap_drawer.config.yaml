@@ -151,6 +151,9 @@ parse_config:
       hold: "CLR" # $$mdi:close-box$$
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
+    "&kp LA(TAB)":
+      tap: "PREV"
+      hold: $$mdi:page-previous-outline$$
     "&prev":
       tap: "PREV"
       hold: $$mdi:page-previous-outline$$
@@ -158,10 +161,69 @@ parse_config:
       tap: "NEXT"
       hold: $$mdi:page-next-outline$$
 
+    "&dlequal":
+      tap: "≤"
+
+    "&dequal":
+      tap: ":="
+
+    "&dgequal":
+      tap: "≥"
+
     "&none":
       type: none
 
   zmk_combos:
     caps:
       align: top
-      offset: 0.15
+      offset: 0.20
+
+    esc:
+      align: top
+      offset: 0.12
+      width: 100
+
+    ins:
+      align: top
+      offset: -0.2
+      width: 85
+
+    del:
+      align: top
+      offset: -0.2
+      width: 85
+
+    ent:
+      align: top
+      offset: 0.12
+      width: 100
+
+    # lbrc:
+    #   dendron: true
+
+    # rbrc:
+    #   dendron: true
+
+    lpar:
+      dendron: true
+
+    rpar:
+      dendron: true
+
+#    div:
+#      dendron: true
+
+#    mul:
+#      dendron: true
+
+    exit:
+      width: 30
+
+    tab:
+      width: 30
+
+    bspc:
+      width: 30
+
+    comment:
+      width: 50
