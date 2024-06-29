@@ -69,7 +69,7 @@
             bindings = <
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                &hm LSHFT BSLH  &hm LWIN LBRC   &hm LALT LBKT   &hm LCTRL LPAR  &none                   &none           &hm RCTRL RPAR  &hm LALT RBKT   &hm LWIN RBRC   &hm RSHFT SLASH
+                &hm LSHFT BSLH  &hm LWIN LBRC   &hm LALT LBKT   &hm LCTRL LPAR  &dequal                 &kp EQUAL       &hm RCTRL RPAR  &hm LALT RBKT   &hm LWIN RBRC   &hm RSHFT SLASH
                                                                 &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
             >;
         };
@@ -140,7 +140,11 @@
         tilde   {key-positions = <13 14>; bindings = <&kp TILDE>; layers = <DEF COL>; COMBO;};                      // ~
         dqt     {key-positions = <15 16>; bindings = <&kp DQT>; layers = <DEF COL>; COMBO;};                        // "
 
-
+        // +, -, *, /
+        minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <NUM>; COMBO;};                          // -_
+        plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <NUM>; COMBO;};                           // +
+        div     {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <NUM>; COMBO;};                            // /
+        mul     {key-positions = <5 6>; bindings = <&kp STAR>; layers = <NUM>; COMBO;};                             // *
 
         // nawiasy
         // lpb     {key-positions = <6 16>; bindings = <&lpb>; layers = <DEF COL>; COMBO;};                        // ( [{
@@ -186,8 +190,8 @@
         // ndot    {key-positions = <26 27>; bindings = <&mt DOT COMMA>; layers = <NUM>; COMBO;};                  // .,
 
         // klawisze funkcyjne
-        f11     {key-positions = <4 14>; bindings = <&kp F11>; layers = <NUM>; COMBO;};                        // F11
-        f12     {key-positions = <5 15>; bindings = <&kp F12>; layers = <NUM>; COMBO;};                        // F12
+        f11     {key-positions = <4 14>; bindings = <&kp F11>; layers = <FUN>; COMBO;};                        // F11
+        f12     {key-positions = <5 15>; bindings = <&kp F12>; layers = <FUN>; COMBO;};                        // F12
 
         // klawisze navigacyjne
         // pgup    {key-positions = <16 26>; bindings = <&kp PG_UP>; layers = <NAV>; COMBO;};                       // PAGE UP
@@ -315,6 +319,14 @@
         //         <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
         //         <&macro_release &kp LSHFT &kp LCTRL>;
         // };
+
+        dequal: delphi_equal {
+            #binding-cells = <0>;
+            label = "DELPHI_EQUAL";
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp SEMI &kp EQUAL>;
+        };
+
     };
 
     conditional_layers {
