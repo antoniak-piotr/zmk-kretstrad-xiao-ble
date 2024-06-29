@@ -792,9 +792,8 @@ text.combo {
 </g>
 <g transform="translate(252, 42)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">&amp;kop</tspan><tspan x="0" dy="1.2em">PSCRN</tspan>
-</text>
+<text x="0" y="0" class="key tap">PSCRN</text>
+<use href="#mdi:crop" xlink:href="#mdi:crop" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:crop"/>
 </g>
 <g transform="translate(476, 42)" class="key none keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
