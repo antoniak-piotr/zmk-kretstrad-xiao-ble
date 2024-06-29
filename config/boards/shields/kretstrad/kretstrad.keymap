@@ -131,16 +131,16 @@
         // TAB, ESC, BACKSPACE i DELETE
         // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};                  // ESC
         // del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};                  // DEL
-        tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                // TAB
-        bsdl    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};               // BSPC
-        tab1    {key-positions = <0 10>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                 // TAB
-        bsdl1   {key-positions = <9 19>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};                // BSPC
+        // tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                // TAB
+        // bsdl    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};               // BSPC
+        tab    {key-positions = <0 10>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                 // TAB
+        bsdl   {key-positions = <9 19>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};                // BSPC
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda i cudzysłów
         tilde   {key-positions = <1 11>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};                   // ~
         grave   {key-positions = <2 12>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};                   // `~
         apos    {key-positions = <7 17>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};                    // '"
-        dqt     {key-positions = <8 178>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                    // "
+        dqt     {key-positions = <8 18>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                     // "
 
         // +, -, *, /
         div     {key-positions = <13 14>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};                  // /
