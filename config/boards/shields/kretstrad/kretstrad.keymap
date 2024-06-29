@@ -67,9 +67,9 @@
 
         NUM_layer {
             bindings = <
-                &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp CARET       &kp AMPS        &none           &none           &kp QMARK
+                &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &none           &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                &hm LSHFT BSLH  &hm LWIN LBRC   &hm LALT LBKT   &hm LCTRL LPAR  &dequal                 &kp EQUAL       &hm RCTRL RPAR  &hm LALT RBKT   &hm LWIN RBRC   &hm RSHFT SLASH
+                &hm LSHFT BSLH  &hm LWIN LBRC   &hm LALT LBKT   &hm LCTRL LPAR  &kp COLON               &kp EQUAL       &hm RCTRL RPAR  &hm LALT RBKT   &hm LWIN RBRC   &hm RSHFT SLASH
                                                                 &mt LWIN ESC    &trans                  &lt NAV UNDER   &mt RALT DEL
             >;
         };
@@ -322,12 +322,12 @@
         //         <&macro_release &kp LSHFT &kp LCTRL>;
         // };
 
-        dequal: delphi_equal {
-            #binding-cells = <0>;
-            label = "DELPHI_EQUAL";
-            compatible = "zmk,behavior-macro";
-            bindings = <&macro_tap &kp COLON &kp EQUAL>;
-        };
+        // dequal: delphi_equal {
+        //     #binding-cells = <0>;
+        //     label = "DELPHI_EQUAL";
+        //     compatible = "zmk,behavior-macro";
+        //     bindings = <&macro_tap &kp COLON &kp EQUAL>;
+        // };
 
     };
 
