@@ -135,16 +135,16 @@
         bsdl    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};               // BSPC
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda i cudzysłów
-        grave   {key-positions = <3 4>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                        // `~
-        sqt     {key-positions = <5 6>; bindings = <&kp APOS>; layers = <DEF COL>; COMBO;};                         // '"
-        tilde   {key-positions = <13 14>; bindings = <&kp TILDE>; layers = <DEF COL>; COMBO;};                      // ~
-        dqt     {key-positions = <15 16>; bindings = <&kp DQT>; layers = <DEF COL>; COMBO;};                        // "
+        tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL>; COMBO;};                      // ~
+        grave   {key-positions = <3 13>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                      // `~
+        apos    {key-positions = <6 16>; bindings = <&kp APOS>; layers = <DEF COL>; COMBO;};                       // '"
+        dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL>; COMBO;};                        // "
 
         // +, -, *, /
-        minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <NUM>; COMBO;};                          // -_
-        plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <NUM>; COMBO;};                           // +
-        div     {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <NUM>; COMBO;};                            // /
-        mul     {key-positions = <5 6>; bindings = <&kp STAR>; layers = <NUM>; COMBO;};                             // *
+        div     {key-positions = <2 12>; bindings = <&kp SLASH>; layers = <NUM>; COMBO;};                          // /
+        minus   {key-positions = <3 13>; bindings = <&kp MINUS>; layers = <NUM>; COMBO;};                          // -_
+        plus    {key-positions = <6 16>; bindings = <&kp PLUS>; layers = <NUM>; COMBO;};                           // +
+        mul     {key-positions = <7 17>; bindings = <&kp STAR>; layers = <NUM>; COMBO;};                           // *
 
         // nawiasy
         // lpb     {key-positions = <6 16>; bindings = <&lpb>; layers = <DEF COL>; COMBO;};                        // ( [{
