@@ -51,7 +51,7 @@
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
-                &hm LSHFT Z     &hm LWIN X      &hm LALT C      &hm LCTRL V     &kp B                   &kp N           &hm RCTRL M     &hm LALT COMMA  &hm LWIN DOT    &hm RSHFT SLASH
+                &hm LSHFT Z     &hm LWIN X      &hm LALT C      &hm LCTRL V     &kp B                   &kp N           &hm RCTRL M     &hm LALT COMMA  &hm LWIN DOT    &hm RSHFT ENTER
                                                                 &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT BSPC
             >;
         };
@@ -67,9 +67,9 @@
 
         NUM_layer {
             bindings = <
-                &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp CARET       &kp AMPS        &none           &none           &none
+                &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp CARET       &kp AMPS        &none           &none           &kp QMARK
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                &hm LSHFT BSLH  &hm LWIN LBRC   &hm LALT LBKT   &hm LCTRL LPAR  &dequal                 &kp EQUAL       &hm RCTRL RPAR  &hm LALT RBKT   &hm LWIN RBRC   &hm RSHFT SLASH
+                &hm LSHFT BSLH  &hm LWIN LBRC   &hm LALT LBKT   &hm LCTRL LPAR  &dequal                 &kp EQUAL       &hm RCTRL RPAR  &hm LALT RBKT   &hm LWIN RBRC   &hm RSHFT ENTER
                                                                 &mt LWIN ESC    &trans                  &lt NAV UNDER   &mt RALT DEL
             >;
         };
@@ -130,9 +130,11 @@
 
         // TAB, ESC, BACKSPACE i DELETE
         // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};                  // ESC
-        tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                // TAB
         // del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};                  // DEL
+        tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                // TAB
         bsdl    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};               // BSPC
+        tab1    {key-positions = <0 10>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                 // TAB
+        bsdl1   {key-positions = <9 19>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};                // BSPC
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda i cudzysłów
         tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL>; COMBO;};                      // ~
