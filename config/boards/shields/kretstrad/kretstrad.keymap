@@ -76,9 +76,9 @@
 
         NAV_layer {
             bindings = <
-                &kp LSC(Z)      &none           &none           &mt PSCRN SNIP  &kp LG(MINUS)           &none           &none           &none           &none           &none
-                &kp LC(Z)       &none           &none           &none           &kp LG(EQUAL)           &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
-                &kp LSHFT       &kp LC(X)       &hm LALT LC(C)  &hm LCTRL LC(V) &none                   &kp END         &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
+                &none           &none           &none           &kp SNIP        &kop PSCRN              &none           &none           &none           &none           &none
+                &kp LSC(Z)      &none           &none           &none           &kp LG(MINUS)           &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &hm LSHFT LC(Z) &kp LC(X)       &hm LALT LC(C)  &hm LCTRL LC(V) &kp LG(EQUAL)           &kp END         &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
                                                                 &mt LWIN ESC    &kp ENTER               &trans          &kp BSPC
             >;
         };
@@ -192,8 +192,8 @@
         // ndot    {key-positions = <26 27>; bindings = <&mt DOT COMMA>; layers = <NUM>; COMBO;};                  // .,
 
         // klawisze funkcyjne
-        f11     {key-positions = <4 14>; bindings = <&kp F11>; layers = <FUN>; COMBO;};                        // F11
-        f12     {key-positions = <5 15>; bindings = <&kp F12>; layers = <FUN>; COMBO;};                        // F12
+        // f11     {key-positions = <4 14>; bindings = <&kp F11>; layers = <FUN>; COMBO;};                        // F11
+        // f12     {key-positions = <5 15>; bindings = <&kp F12>; layers = <FUN>; COMBO;};                        // F12
 
         // klawisze navigacyjne
         // pgup    {key-positions = <16 26>; bindings = <&kp PG_UP>; layers = <NAV>; COMBO;};                       // PAGE UP
@@ -203,7 +203,7 @@
         slash   {key-positions = <18 28>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                  // Ctrl + / - przydaje się do komentowania kodu
 
         // wyjście z Magnify
-        exit    {key-positions = <4 14>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                     // EXIT
+        exit    {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                     // EXIT
      };
 
     behaviors {

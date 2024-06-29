@@ -30,6 +30,9 @@
 <svg id="mdi:content-cut">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-cut" viewBox="0 0 24 24"><path d="M19,3L13,9L15,11L22,4V3M12,12.5A0.5,0.5 0 0,1 11.5,12A0.5,0.5 0 0,1 12,11.5A0.5,0.5 0 0,1 12.5,12A0.5,0.5 0 0,1 12,12.5M6,20A2,2 0 0,1 4,18C4,16.89 4.9,16 6,16A2,2 0 0,1 8,18C8,19.11 7.1,20 6,20M6,8A2,2 0 0,1 4,6C4,4.89 4.9,4 6,4A2,2 0 0,1 8,6C8,7.11 7.1,8 6,8M9.64,7.64C9.87,7.14 10,6.59 10,6A4,4 0 0,0 6,2A4,4 0 0,0 2,6A4,4 0 0,0 6,10C6.59,10 7.14,9.87 7.64,9.64L10,12L7.64,14.36C7.14,14.13 6.59,14 6,14A4,4 0 0,0 2,18A4,4 0 0,0 6,22A4,4 0 0,0 10,18C10,17.41 9.87,16.86 9.64,16.36L12,14L19,21H22V20L9.64,7.64Z" /></svg>
 </svg>
+<svg id="mdi:crop">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-crop" viewBox="0 0 24 24"><path d="M7,17V1H5V5H1V7H5V17A2,2 0 0,0 7,19H17V23H19V19H23V17M17,15H19V7C19,5.89 18.1,5 17,5H9V7H17V15Z" /></svg>
+</svg>
 <svg id="mdi:magnify">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-magnify" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
 </svg>
@@ -47,9 +50,6 @@
 </svg>
 <svg id="mdi:toggle-switch-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch-outline" viewBox="0 0 24 24"><path d="M17 6H7C3.69 6 1 8.69 1 12S3.69 18 7 18H17C20.31 18 23 15.31 23 12S20.31 6 17 6M17 16H7C4.79 16 3 14.21 3 12S4.79 8 7 8H17C19.21 8 21 9.79 21 12S19.21 16 17 16M17 9C15.34 9 14 10.34 14 12S15.34 15 17 15 20 13.66 20 12 18.66 9 17 9Z" /></svg>
-</svg>
-<svg id="mdi:undo">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-undo" viewBox="0 0 24 24"><path d="M12.5,8C9.85,8 7.45,9 5.6,10.6L2,7V16H11L7.38,12.38C8.77,11.22 10.54,10.5 12.5,10.5C16.04,10.5 19.05,12.81 20.1,16L22.47,15.22C21.08,11.03 17.15,8 12.5,8Z" /></svg>
 </svg>
 </defs>/* end glyphs */
 <style>/* inherit to force styles through use tags */
@@ -776,10 +776,8 @@ text.combo {
 <g transform="translate(30, 1046)" class="layer-NAV">
 <text x="0" y="28" class="label">NAV</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">REDO</text>
-<use href="#mdi:redo" xlink:href="#mdi:redo" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:redo"/>
+<g transform="translate(28, 49)" class="key none keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(84, 35)" class="key none keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -790,12 +788,13 @@ text.combo {
 <g transform="translate(196, 35)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SNIP</text>
-<text x="0" y="18" class="key hold">PSCRN</text>
+<use href="#mdi:crop" xlink:href="#mdi:crop" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:crop"/>
 </g>
 <g transform="translate(252, 42)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ZOOM-</text>
-<use href="#mdi:magnify" xlink:href="#mdi:magnify" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:magnify"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kop</tspan><tspan x="0" dy="1.2em">PSCRN</tspan>
+</text>
 </g>
 <g transform="translate(476, 42)" class="key none keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -814,8 +813,8 @@ text.combo {
 </g>
 <g transform="translate(28, 105)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">UNDO</text>
-<use href="#mdi:undo" xlink:href="#mdi:undo" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:undo"/>
+<text x="0" y="0" class="key tap">REDO</text>
+<use href="#mdi:redo" xlink:href="#mdi:redo" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:redo"/>
 </g>
 <g transform="translate(84, 91)" class="key none keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -828,7 +827,7 @@ text.combo {
 </g>
 <g transform="translate(252, 98)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ZOOM+</text>
+<text x="0" y="0" class="key tap">ZOOM-</text>
 <use href="#mdi:magnify" xlink:href="#mdi:magnify" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:magnify"/>
 </g>
 <g transform="translate(476, 98)" class="key keypos-15">
@@ -858,7 +857,8 @@ text.combo {
 </g>
 <g transform="translate(28, 161)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LSHFT</text>
+<text x="0" y="0" class="key tap">UNDO</text>
+<text x="0" y="18" class="key hold">LSHFT</text>
 </g>
 <g transform="translate(84, 147)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -875,8 +875,10 @@ text.combo {
 <text x="0" y="0" class="key tap">PASTE</text>
 <text x="0" y="18" class="key hold">LCTRL</text>
 </g>
-<g transform="translate(252, 154)" class="key none keypos-24">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(252, 154)" class="key keypos-24">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">ZOOM+</text>
+<use href="#mdi:magnify" xlink:href="#mdi:magnify" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:magnify"/>
 </g>
 <g transform="translate(476, 154)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -932,8 +934,8 @@ text.combo {
 <text x="644" y="119" class="combo tap"><tspan style="font-size: 71%">COMMENT</tspan></text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="237" y="63" width="30" height="14" class="combo"/>
-<text x="252" y="70" class="combo tap">EXIT</text>
+<rect rx="6" ry="6" x="237" y="119" width="30" height="14" class="combo"/>
+<text x="252" y="126" class="combo tap">EXIT</text>
 </g>
 </g>
 </g>
@@ -1065,14 +1067,6 @@ text.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">BSPC</text>
 <text x="0" y="18" class="key hold">RALT</text>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="237" y="63" width="30" height="14" class="combo"/>
-<text x="252" y="70" class="combo tap">F11</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="461" y="63" width="30" height="14" class="combo"/>
-<text x="476" y="70" class="combo tap">F12</text>
 </g>
 </g>
 </g>
