@@ -60,7 +60,7 @@
             bindings = <
                 &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
                 &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
-                &hm LSHFT Z     &hm LWIN X      &hm LALT C      &hm LCTRL D     &kp V                   &kp K           &hm RCTRL H     &hm LALT COMMA  &hm LWIN DOT    &hm RSHFT SLASH
+                &hm LSHFT Z     &hm LWIN X      &hm LALT C      &hm LCTRL D     &kp V                   &kp K           &hm RCTRL H     &hm LALT COMMA  &hm LWIN DOT    &hm RSHFT ENTER
                                                                 &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT BSPC
             >;
         };
@@ -69,7 +69,7 @@
             bindings = <
                 &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp CARET       &kp AMPS        &none           &none           &kp QMARK
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                &hm LSHFT BSLH  &hm LWIN LBRC   &hm LALT LBKT   &hm LCTRL LPAR  &dequal                 &kp EQUAL       &hm RCTRL RPAR  &hm LALT RBKT   &hm LWIN RBRC   &hm RSHFT ENTER
+                &hm LSHFT BSLH  &hm LWIN LBRC   &hm LALT LBKT   &hm LCTRL LPAR  &dequal                 &kp EQUAL       &hm RCTRL RPAR  &hm LALT RBKT   &hm LWIN RBRC   &hm RSHFT SLASH
                                                                 &mt LWIN ESC    &trans                  &lt NAV UNDER   &mt RALT DEL
             >;
         };
@@ -137,16 +137,16 @@
         bsdl1   {key-positions = <9 19>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};                // BSPC
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda i cudzysłów
-        tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL>; COMBO;};                      // ~
-        grave   {key-positions = <3 13>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                      // `~
-        apos    {key-positions = <6 16>; bindings = <&kp APOS>; layers = <DEF COL>; COMBO;};                       // '"
-        dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL>; COMBO;};                        // "
+        tilde   {key-positions = <1 11>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};                   // ~
+        grave   {key-positions = <2 12>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};                   // `~
+        apos    {key-positions = <7 17>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};                    // '"
+        dqt     {key-positions = <8 178>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                    // "
 
         // +, -, *, /
-        div     {key-positions = <2 12>; bindings = <&kp SLASH>; layers = <NUM>; COMBO;};                          // /
-        minus   {key-positions = <3 13>; bindings = <&kp MINUS>; layers = <NUM>; COMBO;};                          // -_
-        plus    {key-positions = <6 16>; bindings = <&kp PLUS>; layers = <NUM>; COMBO;};                           // +
-        mul     {key-positions = <7 17>; bindings = <&kp STAR>; layers = <NUM>; COMBO;};                           // *
+        div     {key-positions = <13 14>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};                  // /
+        minus   {key-positions = <3 13>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};                   // -_
+        plus    {key-positions = <6 16>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};                    // +
+        mul     {key-positions = <15 16>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                   // *
 
         // nawiasy
         // lpb     {key-positions = <6 16>; bindings = <&lpb>; layers = <DEF COL>; COMBO;};                        // ( [{
