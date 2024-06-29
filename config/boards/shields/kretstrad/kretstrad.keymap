@@ -133,8 +133,8 @@
         // del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};                  // DEL
         // tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                // TAB
         // bsdl    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};               // BSPC
-        tab    {key-positions = <0 10>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                 // TAB
-        bsdl   {key-positions = <9 19>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};                // BSPC
+        tab    {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                 // TAB
+        bsdl   {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};                // BSPC
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda i cudzysłów
         tilde   {key-positions = <1 11>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};                   // ~
@@ -326,7 +326,7 @@
             #binding-cells = <0>;
             label = "DELPHI_EQUAL";
             compatible = "zmk,behavior-macro";
-            bindings = <&macro_tap &kp SEMI &kp EQUAL>;
+            bindings = <&macro_tap &kp COLON &kp EQUAL>;
         };
 
     };
