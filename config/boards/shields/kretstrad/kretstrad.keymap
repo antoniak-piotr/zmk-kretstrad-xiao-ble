@@ -76,7 +76,7 @@
 
         NAV_layer {
             bindings = <
-                &kp TAB         &none           &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &kp BSPC
+                &none           &none           &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &none
                 &kp LSC(Z)      &none           &none           &none           &kp LG(MINUS)           &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &hm LSHFT LC(Z) &kp LC(X)       &hm LALT LC(C)  &hm LCTRL LC(V) &kp LG(EQUAL)           &kp END         &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
                                                                 &mt LWIN ESC    &kp ENTER               &trans          &kp BSPC

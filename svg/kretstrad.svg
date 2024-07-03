@@ -52,7 +52,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch-outline" viewBox="0 0 24 24"><path d="M17 6H7C3.69 6 1 8.69 1 12S3.69 18 7 18H17C20.31 18 23 15.31 23 12S20.31 6 17 6M17 16H7C4.79 16 3 14.21 3 12S4.79 8 7 8H17C19.21 8 21 9.79 21 12S19.21 16 17 16M17 9C15.34 9 14 10.34 14 12S15.34 15 17 15 20 13.66 20 12 18.66 9 17 9Z" /></svg>
 </svg>
 </defs>/* end glyphs */
-<style>/* inherit to force styles through use tags */
+<style>:root {
+    --fg-color: #24292e;
+    --key-color: #f6f8fa;
+    --outline-color: #c9cccf;
+    --combo-color: #ccddff;
+    --held-color: #ffdddd;
+    --font-size: 14px;
+    --small-font-size: 11px;
+    --tiny-font-size: 8px;
+    --dendron-color: #808080;
+    --trans-fg-color: #7b7e81;
+}
+
+/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
 }
@@ -60,19 +73,19 @@ svg path {
 /* font and background color specifications */
 svg.keymap {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    font-size: 14px;
+    font-size: var(--font-size);
     font-kerning: normal;
     text-rendering: optimizeLegibility;
-    fill: #24292e;
+    fill: var(--fg-color);
 }
 
 /* default key styling */
 rect.key {
-    fill: #f6f8fa;
+    fill: var(--key-color);
 }
 
 rect.key, rect.combo {
-    stroke: #c9cccf;
+    stroke: var(--outline-color);
     stroke-width: 1;
 }
 
@@ -83,15 +96,15 @@ rect.side {
 
 /* color accent for combo boxes */
 rect.combo, rect.combo-separate {
-    fill: #cdf;
+    fill: var(--combo-color);
 }
 
 /* color accent for held keys */
 rect.held, rect.combo.held {
-    fill: #fdd;
+    fill: var(--held-color);
 }
 
-/* color accent for ghost (optional) keys */
+/* styling for ghost (optional) keys */
 rect.ghost, rect.combo.ghost {
     stroke-dasharray: 4, 4;
     stroke-width: 2;
@@ -122,7 +135,7 @@ text.footer {
 
 /* styling for combo tap, and key hold/shifted label text */
 text.combo, text.hold, text.shifted {
-    font-size: 11px;
+    font-size: var(--small-font-size);
 }
 
 text.hold {
@@ -137,18 +150,18 @@ text.shifted {
 
 /* styling for hold/shifted label text in combo box */
 text.combo.hold, text.combo.shifted {
-    font-size: 8px;
+    font-size: var(--tiny-font-size);
 }
 
 /* lighter symbol for transparent keys */
 text.trans {
-    fill: #7b7e81;
+    fill: var(--trans-fg-color);
 }
 
 /* styling for combo dendrons */
 path.combo {
     stroke-width: 1;
-    stroke: gray;
+    stroke: var(--dendron-color);
     fill: none;
 }
 
@@ -730,9 +743,8 @@ text.combo {
 <g transform="translate(30, 1046)" class="layer-NAV">
 <text x="0" y="28" class="label">NAV</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">TAB</text>
+<g transform="translate(28, 49)" class="key none keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(84, 35)" class="key none keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -762,9 +774,8 @@ text.combo {
 <g transform="translate(644, 35)" class="key none keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(700, 49)" class="key keypos-9">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BSPC</text>
+<g transform="translate(700, 49)" class="key none keypos-9">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(28, 105)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
