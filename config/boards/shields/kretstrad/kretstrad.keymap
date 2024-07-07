@@ -70,11 +70,20 @@
             >;
         };
 
+        // NUM_layer {
+        //     bindings = <
+        //         &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp STAR        &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
+        //         &hm LSHF N1     &kp N2          &hm LALT N3     &hm LCTR N4     &kp N5                  &kp N6          &hm RCTR N7     &hm LALT N8     &kp N9          &hm RSHF N0
+        //         &kp BSLH        &kp LT          &kp LBKT        &kp LPAR        &kp COLON               &kp EQUAL       &kp RPAR        &kp RBKT        &kp GT          &kp SLASH
+        //                                                         &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
+        //     >;
+        // };
+
         NUM_layer {
             bindings = <
-                &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp STAR        &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
-                &hm LSHF N1     &kp N2          &hm LALT N3     &hm LCTR N4     &kp N5                  &kp N6          &hm RCTR N7     &hm LALT N8     &kp N9          &hm RSHF N0
-                &kp BSLH        &kp LT          &kp LBKT        &kp LPAR        &kp COLON               &kp EQUAL       &kp RPAR        &kp RBKT        &kp GT          &kp SLASH
+                &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
+                &hm LSHF N1     &kp N2          &hm LALT N3     &hm LCTR N4     &kp F11                 &kp F12         &hm RCTR N7     &hm LALT N8     &kp N9          &hm RSHF N0
+                &kp BSLH        &none           &none           &kp N5          &none                   &none           &kp N6          &none           &none           &kp SLASH
                                                                 &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
             >;
         };
