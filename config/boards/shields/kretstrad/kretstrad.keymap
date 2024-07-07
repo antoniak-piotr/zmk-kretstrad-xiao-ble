@@ -57,7 +57,7 @@
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
                 &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR V      &kp B                   &kp N           &hm RCTR M      &hm LALT COMMA  &kp DOT         &hm RSHF ENTER
-                                                                &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT BSPC
+                                                                &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
@@ -66,7 +66,7 @@
                 &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
                 &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
                 &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR D      &kp V                   &kp K           &hm RCTR H      &hm LALT COMMA  &kp DOT         &hm RSHF ENTER
-                                                                &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT BSPC
+                                                                &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
@@ -84,7 +84,7 @@
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp F11                 &kp F12         &kp N7          &kp N8          &kp N9          &kp N0
                 &hm LSHF BSLH   &none           &kp LALT        &hm LCTR N5     &none                   &none           &hm RCTR N6     &kp LALT        &none           &hm RSHF SLASH
-                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
+                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
@@ -93,7 +93,7 @@
                 &none           &none           &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &none
                 &kp LSC(Z)      &none           &none           &none           &kp LG(EQUAL)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
                 &hm LSHF LC(Z)  &kp LC(X)       &hm LALT LC(C)  &hm LCTR LC(V)  &kp LG(MINUS)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp LC(SLASH)
-                                                                &mt LWIN ESC    &lt NUM TAB             &trans          &mt RALT BSPC
+                                                                &mt LWIN ESC    &lt NUM TAB             &trans          &mt RALT ENTER
             >;
         };
 
@@ -133,9 +133,9 @@
         caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
         under   {key-positions = <13 16>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};                  // _
 
-        // TAB, ESC, BACKSPACE i DELETE
-        // tab     {key-positions = <0 10>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};             // TAB
-        // del     {key-positions = <9 19>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};             // DEL
+        // TAB, BACKSPACE
+        tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};            // TAB
+        bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSDL
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof
         // tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};               // ~
@@ -257,13 +257,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        // bsdl: bspc_del {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "BACKSPACE_DELETE";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp BSPC>, <&kp DEL>;
-        //     mods = <(MOD_LSFT)>;
-        // };
+        bsdl: bspc_del {    // BACKSPACE lub DELETE jeśli wciśnięto lewy shift (prawego można używać normalnie czyli można użyc Shift+DEL
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
