@@ -730,9 +730,8 @@ text.combo {
 </g>
 <g transform="translate(196, 35)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 62%">Sft+Gui+</tspan><tspan x="0" dy="1.2em" style="font-size: 62%">S</tspan>
-</text>
+<text x="0" y="0" class="key tap">SNIP</text>
+<use href="#mdi:crop" xlink:href="#mdi:crop" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:crop"/>
 </g>
 <g transform="translate(252, 42)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -756,9 +755,7 @@ text.combo {
 </g>
 <g transform="translate(28, 105)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 62%">Sft+Ctl+</tspan><tspan x="0" dy="1.2em" style="font-size: 62%">Z</tspan>
-</text>
+<text x="0" y="0" class="key tap">REDO</text>
 <text x="0" y="18" class="key hold">LSHFT</text>
 </g>
 <g transform="translate(84, 91)" class="key none keypos-11">
@@ -860,6 +857,7 @@ text.combo {
 <g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">TAB</text>
+<text x="0" y="18" class="key hold">NUM</text>
 </g>
 <g transform="translate(448, 254) rotate(-30.0)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>

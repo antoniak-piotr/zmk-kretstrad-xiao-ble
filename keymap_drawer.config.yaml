@@ -61,14 +61,14 @@ parse_config:
       tap: PASTE
       hold: $$mdi:content-paste$$
 
-    "&kp SC(Z)":
+    "&kp LSC(Z)":
       tap: REDO
       hold: $$mdi:redo$$
     "&kp LC(Z)":
       tap: UNDO
       hold: $$mdi:undo$$
 
-    "&kp SW(S)":
+    "&kp LSG(S)":
       tap: SNIP
       hold: $$mdi:crop$$ # select-drag$$
     "&kp PSCRN":

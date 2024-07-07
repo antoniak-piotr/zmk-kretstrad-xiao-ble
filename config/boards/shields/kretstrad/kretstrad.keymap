@@ -21,13 +21,13 @@
 #define RSHF RSHFT
 #define RCTR RCTRL
 
-#define LSW(KEY) LS(LG(KEY))
+#define LSG(KEY) LS(LG(KEY))
 #define LSA(KEY) LS(LA(KEY))
 #define LSC(KEY) LS(LC(KEY))
 #define LCA(KEY) LC(LA(KEY))
 #define LSCA(KEY) LS(LC(LA(KEY)))
 
-#define SNIP LSW(S)     // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
+#define SNIP LSG(S)     // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
 
 &mt {
     flavor = "tap-preferred";
@@ -84,7 +84,7 @@
                 &none           &none           &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &none
                 &hm LSHF LSC(Z) &none           &kp LALT        &kp LCTR        &kp LG(MINUS)           &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LG(EQUAL)           &kp END         &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
-                                                                &mt LWIN ESC    &kp TAB                 &trans          &kp DEL
+                                                                &mt LWIN ESC    &lt NUM TAB             &trans          &kp DEL
             >;
         };
 
@@ -96,15 +96,6 @@
                                                                 &mt LWIN ESC    &trans                  &trans          &mt RALT BSPC
             >;
         };
-
-        // TOOL_layer {
-        //     bindings = <
-        //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-        //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-        //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-        //                                                         &none           &trans                  &trans          &none
-        //     >;
-        // };
 
         CONF_layer {
             bindings = <
