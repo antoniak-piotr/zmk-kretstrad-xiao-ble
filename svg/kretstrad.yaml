@@ -74,17 +74,17 @@ layers:
   - ''
   - ''
   - ''
-  - LG(EQUAL)
+  - Gui+ =
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - LG(LS(S))
+  - Gui+Sft+ S
   - PSCRN
   - ''
-  - LG(MINUS)
+  - Gui+ -
   - ''
   - LEFT
   - UP
@@ -237,5 +237,5 @@ combos:
   k: .
   l: [grn]
 - p: [14, 24]
-  k: LG(ESC)
+  k: Gui+ ESC
   l: [red]
