@@ -10,11 +10,11 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0           // QWERTY
-#define COL 1           // Colemak-DH
-#define NUM 2           // liczby
-#define NAV 3           // nawigacja
+// #define COL 1           // Colemak-DH
+#define NUM 1           // liczby
+#define NAV 2           // nawigacja
 // #define FUN 4           // klawisze funkcyjne
-#define CONF 4          // konfiguracja (np. Bluetooth)
+#define CONF 3          // konfiguracja (np. Bluetooth)
 
 #define LSHF LSHFT
 #define LCTR LCTRL
@@ -56,19 +56,19 @@
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
-                &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR V      &kp B                   &kp N           &hm RCTR M      &hm LALT COMMA  &kp DOT         &hm RSHF ENTER
+                &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR V      &kp B                   &kp N           &hm RCTR M      &hm LALT COMMA  &kp DOT         &hm RSHF SLASH
                                                                 &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
-        COL_layer {
-            bindings = <
-                &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
-                &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
-                &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR D      &kp V                   &kp K           &hm RCTR H      &hm LALT COMMA  &kp DOT         &hm RSHF ENTER
-                                                                &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
-            >;
-        };
+        // COL_layer {
+        //     bindings = <
+        //         &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
+        //         &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
+        //         &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR D      &kp V                   &kp K           &hm RCTR H      &hm LALT COMMA  &kp DOT         &hm RSHF SLASH
+        //                                                         &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT ENTER
+        //     >;
+        // };
 
         // NUM_layer {
         //     bindings = <
@@ -111,9 +111,18 @@
                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader             &none           &none           &none           &none           &none
                 &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &sys_reset              &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                                                                &out OUT_TOG    &tog COL                &none           &none
+                                                                &out OUT_TOG    &none                   &none           &none
             >;
         };
+
+        // CONF_layer {
+        //     bindings = <
+        //         &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader             &none           &none           &none           &none           &none
+        //         &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &sys_reset              &none           &none           &none           &none           &none
+        //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
+        //                                                         &out OUT_TOG    &tog COL                &none           &none
+        //     >;
+        // };
     };
 
 
@@ -131,7 +140,7 @@
 
         // CAPS-WORD, UNDER
         caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
-        under   {key-positions = <13 16>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};                  // _
+        // under   {key-positions = <13 16>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};                  // _
 
         // TAB, BACKSPACE
         tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};            // TAB
