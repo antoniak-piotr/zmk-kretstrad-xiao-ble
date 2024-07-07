@@ -52,7 +52,7 @@ parse_config:
 
   raw_binding_map:
     "&kp COMMA":
-      tap: ", <"
+      tap: , <
 
     "&kp DOT":
       tap: ". >"
