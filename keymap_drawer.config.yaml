@@ -251,11 +251,11 @@ parse_config:
     # rpar:
     #   dendron: true
 
-#    div:
-#      dendron: true
+    # div:
+    #   dendron: true
 
-#    mul:
-#      dendron: true
+    # mul:
+    #   dendron: true
 
     exit:
       width: 30

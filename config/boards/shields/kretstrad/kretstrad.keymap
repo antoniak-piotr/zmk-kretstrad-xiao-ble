@@ -144,10 +144,10 @@
         // dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                 // "
 
         // +, -, *, /
-        // div     {key-positions = <4 14>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /
-        // mul     {key-positions = <14 24>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};               // *
-        minus   {key-positions = <14 24>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};               // -_
-        equal   {key-positions = <15 25>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};               // =+
+        div     {key-positions = <4 14>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /?
+        mul     {key-positions = <5 15>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                // *
+        minus   {key-positions = <14 24>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
+        equal   {key-positions = <15 25>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =+
 
         // nawiasy
         lpar   {key-positions = <7 17>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};                 // (
