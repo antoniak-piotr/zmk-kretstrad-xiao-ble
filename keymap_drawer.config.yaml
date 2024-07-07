@@ -85,50 +85,50 @@ parse_config:
     #   tap: "; :"
 
 
-    "&kp LC(X)":
-      tap: CUT
-      hold: $$mdi:content-cut$$
-    "&kp LC(C)":
-      tap: COPY
-      hold: $$mdi:content-copy$$
-    "&kp LC(V)":
-      tap: PASTE
-      hold: $$mdi:content-paste$$
+    # "&kp LC(X)":
+    #   tap: CUT
+    #   hold: $$mdi:content-cut$$
+    # "&kp LC(C)":
+    #   tap: COPY
+    #   hold: $$mdi:content-copy$$
+    # "&kp LC(V)":
+    #   tap: PASTE
+    #   hold: $$mdi:content-paste$$
 
-    "&kp LSC(Z)":
-      tap: REDO
-      hold: $$mdi:redo$$
-    "&kp LC(Z)":
-      tap: UNDO
-      hold: $$mdi:undo$$
+    # "&kp LSC(Z)":
+    #   tap: REDO
+    #   hold: $$mdi:redo$$
+    # "&kp LC(Z)":
+    #   tap: UNDO
+    #   hold: $$mdi:undo$$
 
-    "&kp LSG(S)":
-      tap: SNIP
-      hold: $$mdi:crop$$ # select-drag$$
-    "&kp PSCRN":
-      tap: PSCRN
-      hold: $$mdi:crop$$ # select$$
+    # "&kp LSG(S)":
+    #   tap: SNIP
+    #   hold: $$mdi:crop$$ # select-drag$$
+    # "&kp PSCRN":
+    #   tap: PSCRN
+    #   hold: $$mdi:crop$$ # select$$
 
-    "&kp LG(EQUAL)":
-      tap: ZOOM+
-      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
-    "&kp LG(MINUS)":
-      tap: ZOOM-
-      hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    "&kp LG(ESC)":
-      tap: EXIT
-      # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    # "&kp LG(EQUAL)":
+    #   tap: ZOOM+
+    #   hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
+    # "&kp LG(MINUS)":
+    #   tap: ZOOM-
+    #   hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    # "&kp LG(ESC)":
+    #   tap: EXIT
+    #   # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
 
-    "&caps_word":
-      tap: CAPS # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+    # "&caps_word":
+    #   tap: CAPS # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
 
-    "&bsdl":
-      tap: BSPC # $$mdi:backspace-outline$$
+    # "&bsdl":
+    #   tap: BSPC # $$mdi:backspace-outline$$
 
-    "&lpb":
-      tap: "([{" # hold: $$mdi:close-box$$
-    "&rpb":
-      tap: "}])" # hold: $$mdi:close-box$$
+    # "&lpb":
+    #   tap: "([{" # hold: $$mdi:close-box$$
+    # "&rpb":
+    #   tap: "}])" # hold: $$mdi:close-box$$
 
     # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK
     "&out OUT_TOG":
