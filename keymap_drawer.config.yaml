@@ -8,7 +8,7 @@ draw_config:
   glyph_hold_size: 10
   glyph_shifted_size: 10
   arc_radius: 0
-  separate_combo_diagrams: False
+  # separate_combo_diagrams: False
   # draw_key_sides: True
   append_colon_to_layer_header: False
 
@@ -177,9 +177,12 @@ parse_config:
       type: none
 
   zmk_combos:
-    # caps:
-    #   align: top
-    #   offset: 1.20
+    caps:
+      # align: top
+      offset: -0.20
+
+    under:
+      offset: 0.20
 
     esc:
       align: top
