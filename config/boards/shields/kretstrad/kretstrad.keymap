@@ -13,7 +13,7 @@
 #define COL 1           // Colemak-DH
 #define NUM 2           // liczby
 #define NAV 3           // nawigacja
-#define FUN 4           // klawisze funkcyjne
+// #define FUN 4           // klawisze funkcyjne
 #define CONF 5          // konfiguracja (np. Bluetooth)
 
 #define LSHF LSHFT
@@ -97,14 +97,14 @@
             >;
         };
 
-        FUN_layer {
-            bindings = <
-                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                &hm LSHF F1     &kp F2          &hm LALT F3     &hm LCTR F4     &kp F5                  &kp F6          &hm RCTR F7     &hm LALT F8     &kp F9          &hm RSHF F10
-                &none           &none           &none           &none           &kp F11                 &kp F12         &none           &none           &none           &none
-                                                                &mt LWIN ESC    &trans                  &trans          &mt RALT BSPC
-            >;
-        };
+        // FUN_layer {
+        //     bindings = <
+        //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
+        //         &hm LSHF F1     &kp F2          &hm LALT F3     &hm LCTR F4     &kp F5                  &kp F6          &hm RCTR F7     &hm LALT F8     &kp F9          &hm RSHF F10
+        //         &none           &none           &none           &none           &kp F11                 &kp F12         &none           &none           &none           &none
+        //                                                         &mt LWIN ESC    &trans                  &trans          &mt RALT BSPC
+        //     >;
+        // };
 
         CONF_layer {
             bindings = <
@@ -287,11 +287,11 @@
 
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <NUM NAV>;
-            then-layer = <FUN>;
-        };
-    };
+    // conditional_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     tri_layer {
+    //         if-layers = <NUM NAV>;
+    //         then-layer = <FUN>;
+    //     };
+    // };
 };
