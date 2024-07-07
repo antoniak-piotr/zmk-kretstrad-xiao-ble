@@ -144,7 +144,7 @@
         // dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                 // "
 
         // +, -, *, /
-        at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF COL NUM>; COMBO;};                  // @
+        at      {key-positions = <4 14>; bindings = <&kp AT>; layers = <DEF COL NUM>; COMBO;};                  // @
         caret   {key-positions = <5 15>; bindings = <&kp CARET>; layers = <DEF COL NUM>; COMBO;};               // ^
 
         div     {key-positions = <3 13>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /?
@@ -156,14 +156,13 @@
         equal   {key-positions = <16 26>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
 
         under   {key-positions = <10 20>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};                  // _
-        under1  {key-positions = <4 14>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};                   // _
         comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <DEF COL NUM NAV>; COMBO;};      // Ctrl + / - przydaje się do komentowania kodu
 
         // nawiasy
         lpar   {key-positions = <7 17>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};                 // (
         rpar   {key-positions = <8 18>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};                 // )
-        lbkt   {key-positions = <17 27>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};                // [{
-        rbkt   {key-positions = <18 28>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};                // ]}
+        lbkt   {key-positions = <1 11>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};                 // [{
+        rbkt   {key-positions = <2 12>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};                 // ]}
 
 
         // wyjście z Magnify
