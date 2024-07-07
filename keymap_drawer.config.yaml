@@ -60,8 +60,8 @@ parse_config:
     "&kp SLASH":
       tap: "/?"
 
-    "&kp BSLH":
-      tap: "\\|"
+    # "&kp BSLH":
+    #   tap: "\|"
 
     "&kp LBKT":
       tap: "[{"
@@ -185,7 +185,7 @@ parse_config:
 
     "&kp LC(SLASH)":
       tap: COMMENT
-      hold: //
+      # hold: //
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
     # "&kp LA(TAB)":
