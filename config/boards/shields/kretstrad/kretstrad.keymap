@@ -16,12 +16,7 @@
 #define FUN 4           // klawisze funkcyjne
 #define CONF 5          // konfiguracja (np. Bluetooth)
 
-#define S(KEY) LS(KEY)
-#define A(KEY) LA(KEY)
-#define C(KEY) LC(KEY)
-#define W(KEY) LG(KEY)
-
-#define SW(KEY) S(W(KEY))
+#define SW(KEY) LS(W(KEY))
 #define SA(KEY) LS(LA(KEY))
 #define SC(KEY) LS(LC(KEY))
 #define CA(KEY) LC(LA(KEY))
