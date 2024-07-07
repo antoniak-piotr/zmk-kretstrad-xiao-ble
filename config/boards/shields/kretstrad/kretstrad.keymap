@@ -140,7 +140,7 @@
         minus   {key-positions = <5 15>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};               // -_
         plus    {key-positions = <15 25>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
 
-        comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                  // Ctrl + / - przydaje się do komentowania kodu
+        comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <DEF COL NUM NAV>; COMBO;};      // Ctrl + / - przydaje się do komentowania kodu
 
         // wyjście z Magnify
         exit    {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                    // EXIT
