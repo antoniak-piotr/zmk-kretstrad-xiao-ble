@@ -18,6 +18,6 @@ jobs:
     with:
       keymap_patterns: "config/boards/shields/kretstrad/*.keymap"        # path to the keymaps to parse
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
-      output_folder: ".vscode"                      # path to save produced SVG and keymap YAML files
+      output_folder: "svg"                      # path to save produced SVG and keymap YAML files
       amend_commit: true                        # whether to amend the commit or create a new one
       install_branch: main                      # trying new features: svg_extra_style
