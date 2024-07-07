@@ -75,16 +75,16 @@
                 &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp STAR        &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
                 &hm LSHF N1     &kp N2          &hm LALT N3     &hm LCTR N4     &kp N5                  &kp N6          &hm RCTR N7     &hm LALT N8     &kp N9          &hm RSHF N0
                 &kp BSLH        &kp LT          &kp LBKT        &kp LPAR        &kp COLON               &kp EQUAL       &kp RPAR        &kp RBKT        &kp GT          &kp SLASH
-                                                                &mt LWIN ESC    &trans                  &lt NAV UNDER   &mt RALT DEL
+                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
             >;
         };
 
         NAV_layer {
             bindings = <
                 &none           &none           &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &none
-                &hm LSHF LSC(Z) &none           &kp LALT        &kp LCTR        &kp LG(MINUS)           &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
-                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LG(EQUAL)           &kp END         &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
-                                                                &mt LWIN ESC    &lt NUM TAB             &trans          &kp DEL
+                &hm LSHF LSC(Z) &none           &kp LALT        &kp LCTR        &kp LG(EWUAL)           &kp PGUP        &kp LEFT        &kp UP          &kp RIGHT       &kp ENTER
+                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LG(MINUS)           &kp PGDN        &kp HOME        &kp DOWN        &kp END         &kp LC(SLASH)
+                                                                &mt LWIN ESC    &lt NUM TAB             &trans          &kp BSPC
             >;
         };
 
@@ -124,8 +124,8 @@
         caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
 
         // // TAB, ESC, BACKSPACE i DELETE
-        // tab    {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                 // TAB
-        // bspc   {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};                // BSPC
+        tab     {key-positions = <0 10>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};             // TAB
+        del     {key-positions = <9 19>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};             // DEL
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda i cudzysłów
         tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};               // ~
@@ -134,10 +134,10 @@
         dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                 // "
 
         // +, -, *, /
-        div     {key-positions = <14 24>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /
-        minus   {key-positions = <4 14>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};               // -_
-        plus    {key-positions = <5 15>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};                // +
-        mul     {key-positions = <15 25>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};               // *
+        div     {key-positions = <4 14>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /
+        mul     {key-positions = <14 24>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};               // *
+        minus   {key-positions = <5 15>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};               // -_
+        plus    {key-positions = <15 25>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
 
         comment {key-positions = <18 28>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                  // Ctrl + / - przydaje się do komentowania kodu
 
