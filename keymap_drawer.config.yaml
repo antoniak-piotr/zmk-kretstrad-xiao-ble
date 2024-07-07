@@ -212,8 +212,8 @@ parse_config:
       type: none
 
   zmk_combos:
-    caps:
-      type: none
+    # caps:
+    #   type: none
     #   # align: top
     #   offset: -0.20
 
