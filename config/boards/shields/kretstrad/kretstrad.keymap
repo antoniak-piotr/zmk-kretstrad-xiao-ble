@@ -90,9 +90,9 @@
 
         NAV_layer {
             bindings = <
-                &none           &none           &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &none
-                &kp LSC(Z)      &none           &none           &none           &kp LG(EQUAL)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
-                &hm LSHF LC(Z)  &kp LC(X)       &hm LALT LC(C)  &hm LCTR LC(V)  &kp LG(MINUS)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &none
+                &kp LG(MINUS)   &kp LG(EQUAL)   &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &none
+                &kp LSC(Z)      &none           &none           &none           &none                   &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
+                &hm LSHF LC(Z)  &kp LC(X)       &hm LALT LC(C)  &hm LCTR LC(V)  &none                   &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &none
                                                                 &mt LWIN ESC    &lt NUM ENTER           &trans          &mt RALT ENTER
             >;
         };
@@ -166,7 +166,7 @@
 
 
         // wyjście z Magnify
-        exit    {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                    // EXIT
+        exit    {key-positions = <0 1>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT
      };
 
     behaviors {

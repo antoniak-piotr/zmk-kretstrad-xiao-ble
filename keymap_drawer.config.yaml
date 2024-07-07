@@ -257,6 +257,7 @@ parse_config:
     #   dendron: true
 
     exit:
+      align: top
       width: 30
 
     tab:
