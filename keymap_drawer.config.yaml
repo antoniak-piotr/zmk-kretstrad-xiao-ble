@@ -72,8 +72,8 @@ parse_config:
     "&kp GRAVE":
       tap: "`~"
 
-    "&kp APOS":
-      tap: "'"""
+    # "&kp APOS":
+    #   tap: "'"""
 
     # "&kp MINUS":
     #   tap: "- _"
