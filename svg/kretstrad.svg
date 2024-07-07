@@ -376,10 +376,8 @@ text.combo {
 <text x="28" y="77" class="combo tap">TAB</text>
 </g>
 <g class="combo combopos-3">
-<path d="M700,31 h0 a0.0,0.0 0 0 0 0.0,0.0 v7" class="combo"/>
-<path d="M700,31 h0 a0.0,0.0 0 0 0 0.0,0.0 v55" class="combo"/>
-<rect rx="6" ry="6" x="658" y="24" width="85" height="14" class="combo"/>
-<text x="700" y="31" class="combo tap">DEL</text>
+<rect rx="6" ry="6" x="685" y="70" width="30" height="14" class="combo"/>
+<text x="700" y="77" class="combo tap">DEL</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="125" y="49" width="30" height="14" class="combo"/>
@@ -582,10 +580,8 @@ text.combo {
 <text x="28" y="77" class="combo tap">TAB</text>
 </g>
 <g class="combo combopos-3">
-<path d="M700,31 h0 a0.0,0.0 0 0 0 0.0,0.0 v7" class="combo"/>
-<path d="M700,31 h0 a0.0,0.0 0 0 0 0.0,0.0 v55" class="combo"/>
-<rect rx="6" ry="6" x="658" y="24" width="85" height="14" class="combo"/>
-<text x="700" y="31" class="combo tap">DEL</text>
+<rect rx="6" ry="6" x="685" y="70" width="30" height="14" class="combo"/>
+<text x="700" y="77" class="combo tap">DEL</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="125" y="49" width="30" height="14" class="combo"/>
@@ -773,10 +769,8 @@ text.combo {
 <text x="28" y="77" class="combo tap">TAB</text>
 </g>
 <g class="combo combopos-1">
-<path d="M700,31 h0 a0.0,0.0 0 0 0 0.0,0.0 v7" class="combo"/>
-<path d="M700,31 h0 a0.0,0.0 0 0 0 0.0,0.0 v55" class="combo"/>
-<rect rx="6" ry="6" x="658" y="24" width="85" height="14" class="combo"/>
-<text x="700" y="31" class="combo tap">DEL</text>
+<rect rx="6" ry="6" x="685" y="70" width="30" height="14" class="combo"/>
+<text x="700" y="77" class="combo tap">DEL</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="125" y="49" width="30" height="14" class="combo"/>
@@ -966,10 +960,8 @@ text.combo {
 <text x="28" y="77" class="combo tap">TAB</text>
 </g>
 <g class="combo combopos-1">
-<path d="M700,31 h0 a0.0,0.0 0 0 0 0.0,0.0 v7" class="combo"/>
-<path d="M700,31 h0 a0.0,0.0 0 0 0 0.0,0.0 v55" class="combo"/>
-<rect rx="6" ry="6" x="658" y="24" width="85" height="14" class="combo"/>
-<text x="700" y="31" class="combo tap">DEL</text>
+<rect rx="6" ry="6" x="685" y="70" width="30" height="14" class="combo"/>
+<text x="700" y="77" class="combo tap">DEL</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="619" y="112" width="50" height="14" class="combo"/>

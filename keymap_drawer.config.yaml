@@ -194,10 +194,10 @@ parse_config:
       offset: -0.2
       width: 85
 
-    del:
-      align: top
-      offset: -0.2
-      width: 85
+    # del:
+    #   align: top
+    #   offset: -0.2
+    #   width: 85
 
     ent:
       align: top
@@ -229,6 +229,9 @@ parse_config:
       width: 30
 
     bspc:
+      width: 30
+
+    del:
       width: 30
 
     comment:
