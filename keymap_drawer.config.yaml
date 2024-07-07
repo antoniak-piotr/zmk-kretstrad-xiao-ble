@@ -258,7 +258,7 @@ parse_config:
 
     exit:
       align: top
-      offset: 0.50
+      offset: 0.15
       width: 30
 
     tab:
