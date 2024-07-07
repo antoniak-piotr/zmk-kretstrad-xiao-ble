@@ -57,6 +57,34 @@ parse_config:
     "&kp DOT":
       tap: ". >"
 
+    "&kp SLASH":
+      tap: "/ ?"
+
+    "&kp BSLH":
+      tap: "\ |"
+
+    "&kp LBKT":
+      tap: "[ {"
+
+    "&kp RBKT":
+      tap: "] }"
+
+    "&kp GRAVE":
+      tap: "` ~"
+
+    "&kp APOS":
+      tap: "' """
+
+    "&kp MINUS":
+      tap: "- _"
+
+    "&kp EQUAL":
+      tap: "= +"
+
+    "&kp SEMI":
+      tap: "; :"
+
+
     "&kp LC(X)":
       tap: CUT
       hold: $$mdi:content-cut$$
@@ -185,11 +213,12 @@ parse_config:
 
   zmk_combos:
     caps:
-      # align: top
-      offset: -0.20
+      type: none
+    #   # align: top
+    #   offset: -0.20
 
-    under:
-      offset: 0.20
+    # under:
+    #   offset: 0.20
 
     esc:
       align: top
