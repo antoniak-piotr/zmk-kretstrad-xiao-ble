@@ -14,7 +14,7 @@
 #define NUM 2           // liczby
 #define NAV 3           // nawigacja
 // #define FUN 4           // klawisze funkcyjne
-#define CONF 5          // konfiguracja (np. Bluetooth)
+#define CONF 4          // konfiguracja (np. Bluetooth)
 
 #define LSHF LSHFT
 #define LCTR LCTRL
