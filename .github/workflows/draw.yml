@@ -7,11 +7,11 @@ on:
     types:
       - completed 
   push:               # automatically run on changes to following paths
-    paths:
-      - "config/*.keymap"
-      - "config/*.dtsi"
-      - "config/boards/shields/kretstrad/*.keymap"
-      - "config/boards/shields/kretstrad/*.dtsi"
+    # paths:
+    #   - "config/*.keymap"
+    #   - "config/*.dtsi"
+    #   - "config/boards/shields/kretstrad/*.keymap"
+    #   - "config/boards/shields/kretstrad/*.dtsi"
       - "keymap_drawer.config.yaml"
 
 jobs:
