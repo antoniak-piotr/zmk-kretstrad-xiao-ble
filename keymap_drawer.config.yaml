@@ -51,6 +51,12 @@ parse_config:
     tap: ""
 
   raw_binding_map:
+    "&kp COMMA":
+      tap: ", <"
+
+    "&kp DOT":
+      tap: ". >"
+
     "&kp LC(X)":
       tap: CUT
       hold: $$mdi:content-cut$$
@@ -96,6 +102,14 @@ parse_config:
     "&rpb":
       tap: "}])" # hold: $$mdi:close-box$$
 
+    # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK
+    "&out OUT_TOG":
+      tap: "BT/USB"
+      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
+    "&tog COL":
+      tap: COLEMAK
+      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
+
     "&sys_reset":
       tap: RESET
       hold: $$mdi:power$$
@@ -103,13 +117,9 @@ parse_config:
       tap: BOOT
       hold: $$mdi:cloud-download-outline$$
 
-    # przełącznik BLE-USB i QWERTY-COLEMAK
-    "&out OUT_TOG":
-      tap: "BT/USB"
-      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
-    "&tog COL":
-      tap: COLEMAK
-      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
+    "&bt BT_CLR":
+      tap: "BT" # $$mdi:bluetooth$$
+      hold: "CLR" # $$mdi:close-box$$
 
     # nawigacja
     "&kp LEFT":
@@ -149,9 +159,6 @@ parse_config:
       tap: "COMMENT"
       hold: "//"
 
-    "&bt BT_CLR":
-      tap: "BT" # $$mdi:bluetooth$$
-      hold: "CLR" # $$mdi:close-box$$
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
     "&kp LA(TAB)":
@@ -235,4 +242,4 @@ parse_config:
       width: 30
 
     comment:
-      width: 50
+      width: 40
