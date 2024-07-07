@@ -55,8 +55,8 @@
        DEF_layer {
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
-                &hm LSHF A      &kp S           &hm LALT D      &hm LCTR F      &kp G                   &kp H           &hm RCTR J      &hm LALT K      &kp L           &hm RSHF SEMI
-                &kp Z           &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp DOT         &kp ENTER
+                &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
+                &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR V      &kp B                   &kp N           &hm RCTR M      &hm LALT COMMA  &kp DOT         &hm RSHF ENTER
                                                                 &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT BSPC
             >;
         };
@@ -64,8 +64,8 @@
         COL_layer {
             bindings = <
                 &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
-                &hm LSHF A      &kp R           &hm LALT S      &hm LCTR T      &kp G                   &kp M           &hm RCTR N      &hm LALT E      &kp I           &hm RSHF O
-                &kp Z           &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp ENTER
+                &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
+                &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR D      &kp V                   &kp K           &hm RCTR H      &hm LALT COMMA  &kp DOT         &hm RSHF ENTER
                                                                 &mt LWIN ESC    &lt NUM TAB             &lt NAV SPACE   &mt RALT BSPC
             >;
         };
@@ -73,8 +73,8 @@
         // NUM_layer {
         //     bindings = <
         //         &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp STAR        &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
-        //         &hm LSHF N1     &kp N2          &hm LALT N3     &hm LCTR N4     &kp N5                  &kp N6          &hm RCTR N7     &hm LALT N8     &kp N9          &hm RSHF N0
-        //         &kp BSLH        &kp LT          &kp LBKT        &kp LPAR        &kp COLON               &kp EQUAL       &kp RPAR        &kp RBKT        &kp GT          &kp SLASH
+        //         &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
+        //         &hm LSHF BSLH   &kp LT          &hm LALT LBKT   &hm LCTR LPAR   &kp COLON               &kp EQUAL       &hm RCTR RPAR   &hm LALT RBKT   &kp GT          &hm RSHF SLASH
         //                                                         &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
         //     >;
         // };
@@ -82,8 +82,8 @@
         NUM_layer {
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
-                &hm LSHF N1     &kp N2          &hm LALT N3     &hm LCTR N4     &kp F11                 &kp F12         &hm RCTR N7     &hm LALT N8     &kp N9          &hm RSHF N0
-                &kp BSLH        &none           &none           &kp N5          &none                   &none           &kp N6          &none           &none           &kp SLASH
+                &kp N1          &kp N2          &kp N3          &kp N4          &kp F11                 &kp F12         &kp N7          &kp N8          &kp N9          &kp N0
+                &hm LSHF BSLH   &none           &kp LALT        &hm LCTR N5     &none                   &none           &hm RCTR N6     &kp LALT        &none           &hm RSHF SLASH
                                                                 &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
             >;
         };
@@ -91,8 +91,8 @@
         NAV_layer {
             bindings = <
                 &none           &none           &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &none
-                &hm LSHF LSC(Z) &none           &kp LALT        &kp LCTR        &kp LG(EQUAL)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
-                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LG(MINUS)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp LC(SLASH)
+                &kp LSC(Z)      &none           &none           &none           &kp LG(EQUAL)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
+                &hm LSHF LC(Z)  &kp LC(X)       &hm LALT LC(C)  &hm LCTR LC(V)  &kp LG(MINUS)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp LC(SLASH)
                                                                 &mt LWIN ESC    &lt NUM TAB             &trans          &mt RALT BSPC
             >;
         };
