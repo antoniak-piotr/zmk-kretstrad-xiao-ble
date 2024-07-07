@@ -124,37 +124,6 @@ path.combo {
     visibility: hidden;
 }
 /* End Tabler Icons Cleanup */
-
-.none, .trans, .ghost {
-  opacity: 0.8;
-}
-
-/* color accent for combo boxes */
-rect.combo, rect.combo-separate {
-    fill: #CCDDFF;
-    stroke: #99AACC;
-}
-
-/* rect.held, rect.combo.held { */
-.held {
-  opacity: 1.0;
-  filter: drop-shadow(0px 0px 6px #4FC0D0);  /* #7979EC); */
-}
-
-text.key.tap {
-  font-size: 16px;
-  /* font-weight: 900; */
-}
-
-text.hold, text.shifted {
-  font-size: 9px;
-  font-weight: normal;
-}
-
-text.combo {
-  font-size: 11px;
-  font-weight: bold;
-}
 </style>
 <g transform="translate(30, 0)" class="layer-DEF">
 <text x="0" y="28" class="label">DEF</text>
