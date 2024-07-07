@@ -121,24 +121,31 @@
         compatible = "zmk,combos";
 
         // CAPS-WORD, UNDER
-        // caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
+        caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
         under   {key-positions = <14 15>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};                  // _
 
-        // // TAB, ESC, BACKSPACE i DELETE
-        tab     {key-positions = <0 10>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};             // TAB
-        del     {key-positions = <9 19>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};             // DEL
+        // TAB, ESC, BACKSPACE i DELETE
+        // tab     {key-positions = <0 10>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};             // TAB
+        // del     {key-positions = <9 19>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};             // DEL
 
-        // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda i cudzysłów
-        tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};               // ~
-        grave   {key-positions = <3 13>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};               // `~
-        apos    {key-positions = <6 16>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};                // '"
-        dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                 // "
+        // odwrotny (GRAVE) oraz zwykły (APOS) apostrof
+        // tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};               // ~
+        grave   {key-positions = <4 14>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};               // `~
+        apos    {key-positions = <5 15>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};                // '"
+        // dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                 // "
 
         // +, -, *, /
-        div     {key-positions = <4 14>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /
-        mul     {key-positions = <14 24>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};               // *
-        minus   {key-positions = <5 15>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};               // -_
-        plus    {key-positions = <15 25>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
+        // div     {key-positions = <4 14>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /
+        // mul     {key-positions = <14 24>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};               // *
+        minus   {key-positions = <14 24>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};               // -_
+        equal   {key-positions = <15 25>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};               // =+
+
+        // nawiasy
+        lpar   {key-positions = <7 17>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};                 // (
+        rpar   {key-positions = <8 18>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};                 // )
+        lbkt   {key-positions = <17 27>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};                // [{
+        rbkt   {key-positions = <18 28>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};                // ]}
+
 
         comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <DEF COL NUM NAV>; COMBO;};      // Ctrl + / - przydaje się do komentowania kodu
 
