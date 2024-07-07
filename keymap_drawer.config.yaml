@@ -129,7 +129,7 @@ parse_config:
     # "&rpb":
     #   tap: "}])" # hold: $$mdi:close-box$$
 
-    # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK
+    # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK)
     "&out OUT_TOG":
       tap: BT/USB
       hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
@@ -211,10 +211,9 @@ parse_config:
       type: none
 
   zmk_combos:
-    # caps:
-    #   type: none
-    #   # align: top
-    #   offset: -0.20
+    caps:
+      align: bottom
+      # offset: -0.20
 
     # under:
     #   offset: 0.20

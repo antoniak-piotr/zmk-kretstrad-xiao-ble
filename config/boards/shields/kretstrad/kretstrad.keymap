@@ -130,7 +130,7 @@
         compatible = "zmk,combos";
 
         // CAPS-WORD, UNDER
-        caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
+        caps    {key-positions = <20 29>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
         // under   {key-positions = <13 16>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};                  // _
 
         // TAB, BACKSPACE
