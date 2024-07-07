@@ -82,7 +82,7 @@
         NAV_layer {
             bindings = <
                 &none           &none           &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &none
-                &hm LSHF LSC(Z) &none           &kp LALT        &kp LCTR        &kp LG(EWUAL)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &kp ENTER
+                &hm LSHF LSC(Z) &none           &kp LALT        &kp LCTR        &kp LG(EWUAL)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
                 &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LG(MINUS)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp LC(SLASH)
                                                                 &mt LWIN ESC    &lt NUM TAB             &trans          &kp BSPC
             >;
@@ -120,8 +120,9 @@
     combos {
         compatible = "zmk,combos";
 
-        // CAPS-WORD
+        // CAPS-WORD, UNDER
         caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
+        under   {key-positions = <14 15>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};                  // _
 
         // // TAB, ESC, BACKSPACE i DELETE
         tab     {key-positions = <0 10>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};             // TAB
