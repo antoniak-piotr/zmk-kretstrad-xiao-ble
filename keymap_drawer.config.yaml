@@ -57,32 +57,32 @@ parse_config:
     "&kp DOT":
       tap: ". >"
 
-    # "&kp SLASH":
-    #   tap: "/ ?"
+    "&kp SLASH":
+      tap: "/ ?"
 
-    # "&kp BSLH":
-    #   tap: "\ |"
+    "&kp BSLH":
+      tap: "\ |"
 
-    # "&kp LBKT":
-    #   tap: "[ {"
+    "&kp LBKT":
+      tap: "[ {"
 
-    # "&kp RBKT":
-    #   tap: "] }"
+    "&kp RBKT":
+      tap: "] }"
 
-    # "&kp GRAVE":
-    #   tap: "` ~"
+    "&kp GRAVE":
+      tap: "` ~"
 
-    # "&kp APOS":
-    #   tap: "' """
+    "&kp APOS":
+      tap: "' """
 
-    # "&kp MINUS":
-    #   tap: "- _"
+    "&kp MINUS":
+      tap: "- _"
 
-    # "&kp EQUAL":
-    #   tap: "= +"
+    "&kp EQUAL":
+      tap: "= +"
 
-    # "&kp SEMI":
-    #   tap: "; :"
+    "&kp SEMI":
+      tap: "; :"
 
 
     "&kp LC(X)":
@@ -220,25 +220,25 @@ parse_config:
     # under:
     #   offset: 0.20
 
-    esc:
-      align: top
-      offset: 0.12
-      width: 100
+    # esc:
+    #   align: top
+    #   offset: 0.12
+    #   width: 100
 
-    ins:
-      align: top
-      offset: -0.2
-      width: 85
+    # ins:
+    #   align: top
+    #   offset: -0.2
+    #   width: 85
 
     # del:
     #   align: top
     #   offset: -0.2
     #   width: 85
 
-    ent:
-      align: top
-      offset: 0.12
-      width: 100
+    # ent:
+    #   align: top
+    #   offset: 0.12
+    #   width: 100
 
     # lbrc:
     #   dendron: true
@@ -246,11 +246,11 @@ parse_config:
     # rbrc:
     #   dendron: true
 
-    lpar:
-      dendron: true
+    # lpar:
+    #   dendron: true
 
-    rpar:
-      dendron: true
+    # rpar:
+    #   dendron: true
 
 #    div:
 #      dendron: true
