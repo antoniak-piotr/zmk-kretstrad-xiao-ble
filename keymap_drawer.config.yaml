@@ -268,5 +268,9 @@ parse_config:
     del:
       width: 30
 
+    dif:
+      tap: "/"
+      width: 30
+
     comment:
       width: 40
