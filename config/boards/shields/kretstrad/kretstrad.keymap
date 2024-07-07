@@ -82,8 +82,8 @@
         NAV_layer {
             bindings = <
                 &none           &none           &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &none
-                &hm LSHF LSC(Z) &none           &kp LALT        &kp LCTR        &kp LG(EWUAL)           &kp PGUP        &kp LEFT        &kp UP          &kp RIGHT       &kp ENTER
-                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LG(MINUS)           &kp PGDN        &kp HOME        &kp DOWN        &kp END         &kp LC(SLASH)
+                &hm LSHF LSC(Z) &none           &kp LALT        &kp LCTR        &kp LG(EWUAL)           &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &kp ENTER
+                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LG(MINUS)           &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp LC(SLASH)
                                                                 &mt LWIN ESC    &lt NUM TAB             &trans          &kp BSPC
             >;
         };
