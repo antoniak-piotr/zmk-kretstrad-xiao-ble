@@ -12,37 +12,37 @@ draw_config:
   # draw_key_sides: True
   append_colon_to_layer_header: False
 
-  # svg_extra_style: |
-  #   .none, .trans, .ghost {
-  #     opacity: 0.8;
-  #   }
+  svg_extra_style: |
+    .none, .trans, .ghost {
+      opacity: 0.8;
+    }
 
-  #   /* color accent for combo boxes */
-  #   rect.combo, rect.combo-separate {
-  #       fill: #CCDDFF;
-  #       stroke: #99AACC;
-  #   }
+    /* color accent for combo boxes */
+    rect.combo, rect.combo-separate {
+        fill: #CCDDFF;
+        stroke: #99AACC;
+    }
 
-  #   /* rect.held, rect.combo.held { */
-  #   .held {
-  #     opacity: 1.0;
-  #     filter: drop-shadow(0px 0px 6px #4FC0D0);  /* #7979EC); */
-  #   }
+    /* rect.held, rect.combo.held { */
+    .held {
+      opacity: 1.0;
+      filter: drop-shadow(0px 0px 6px #4FC0D0);  /* #7979EC); */
+    }
 
-  #   text.key.tap {
-  #     font-size: 16px;
-  #     /* font-weight: 900; */
-  #   }
+    text.key.tap {
+      font-size: 16px;
+      /* font-weight: 900; */
+    }
 
-  #   text.hold, text.shifted {
-  #     font-size: 9px;
-  #     font-weight: normal;
-  #   }
+    text.hold, text.shifted {
+      font-size: 9px;
+      font-weight: normal;
+    }
 
-  #   text.combo {
-  #     font-size: 11px;
-  #     font-weight: bold;
-  #   }
+    text.combo {
+      font-size: 11px;
+      font-weight: bold;
+    }
 
 parse_config:
   # mark_alternate_layer_activators: true
