@@ -8,7 +8,7 @@ draw_config:
   glyph_hold_size: 10
   glyph_shifted_size: 10
   arc_radius: 0
-  separate_combo_diagrams: True
+  # separate_combo_diagrams: True
   # draw_key_sides: True
   append_colon_to_layer_header: False
 
