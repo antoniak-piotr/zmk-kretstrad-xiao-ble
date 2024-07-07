@@ -271,5 +271,4 @@ parse_config:
       width: 30
 
     comment:
-      tap: 'COMMENT'
       width: 40
