@@ -8,7 +8,7 @@ draw_config:
   glyph_hold_size: 10
   glyph_shifted_size: 10
   arc_radius: 0
-  # separate_combo_diagrams: bool = False
+  separate_combo_diagrams: bool = True
   # draw_key_sides: True
   append_colon_to_layer_header: False
 
@@ -85,8 +85,9 @@ parse_config:
       tap: EXIT
       # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
 
-    "&caps_word":
-      tap: CAPS # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+    # "&caps_word":
+    #   tap: CAPS # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+
     "&bsdl":
       tap: BSPC # $$mdi:backspace-outline$$
 
