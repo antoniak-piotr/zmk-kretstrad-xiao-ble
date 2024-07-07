@@ -82,7 +82,7 @@ parse_config:
     #   tap: "= +"
 
     "&kp SEMI":
-      tap: "; :"
+      tap: ";:"
 
     "&kp LC(X)":
       tap: CUT
