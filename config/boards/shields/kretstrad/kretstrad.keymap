@@ -16,13 +16,18 @@
 #define FUN 4           // klawisze funkcyjne
 #define CONF 5          // konfiguracja (np. Bluetooth)
 
-#define LGS(KEY) LG(LS(KEY))
-#define LSA(KEY) LS(LA(KEY))
-#define LSC(KEY) LS(LC(KEY))
-#define LCA(KEY) LC(LA(KEY))
-#define LSCA(KEY) LS(LC(LA(KEY)))
+#define S(KEY) LS(KEY)
+#define A(KEY) LA(KEY)
+#define C(KEY) LC(KEY)
+#define W(KEY) LG(KEY)
 
-#define SNIP LGS(S)     // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
+#define SW(KEY) S(W(KEY))
+#define SA(KEY) LS(LA(KEY))
+#define SC(KEY) LS(LC(KEY))
+#define CA(KEY) LC(LA(KEY))
+#define SCA(KEY) LS(LC(LA(KEY)))
+
+#define SNIP SW(S)     // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
 
 &mt {
     flavor = "tap-preferred";
@@ -77,7 +82,7 @@
         NAV_layer {
             bindings = <
                 &none           &none           &none           &kp SNIP        &kp PSCRN               &none           &none           &none           &none           &none
-                &hm LSHFT LSC(Z)&kp LWIN        &kp LALT        &kp LCTRL       &kp LG(MINUS)           &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &hm LSHFT SC(Z) &kp LWIN        &kp LALT        &kp LCTRL       &kp LG(MINUS)           &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LG(EQUAL)           &kp END         &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
                                                                 &mt LWIN ESC    &kp ENTER               &trans          &kp BSPC
             >;
