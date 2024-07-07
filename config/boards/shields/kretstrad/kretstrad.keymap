@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0           // QWERTY
-// #define COL 1           // Colemak-DH
+#define COL 1           // Colemak-DH
 #define NUM 1           // liczby
 #define NAV 2           // nawigacja
 // #define FUN 4           // klawisze funkcyjne
