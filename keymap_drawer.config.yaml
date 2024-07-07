@@ -175,9 +175,9 @@ parse_config:
       type: none
 
   zmk_combos:
-    caps:
-      align: top
-      offset: 0.20
+    # caps:
+    #   align: top
+    #   offset: 0.20
 
     esc:
       align: top
