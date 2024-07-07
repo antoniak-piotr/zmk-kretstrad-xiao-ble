@@ -124,14 +124,14 @@ parse_config:
     "&bsdl":
       tap: BSPC # $$mdi:backspace-outline$$
 
-    "&lpb":
-      tap: "([{" # hold: $$mdi:close-box$$
-    "&rpb":
-      tap: "}])" # hold: $$mdi:close-box$$
+    # "&lpb":
+    #   tap: "([{" # hold: $$mdi:close-box$$
+    # "&rpb":
+    #   tap: "}])" # hold: $$mdi:close-box$$
 
     # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK
     "&out OUT_TOG":
-      tap: "BT/USB"
+      tap: BT/USB
       hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
     "&tog COL":
       tap: COLEMAK
@@ -145,8 +145,8 @@ parse_config:
       hold: $$mdi:cloud-download-outline$$
 
     "&bt BT_CLR":
-      tap: "BT" # $$mdi:bluetooth$$
-      hold: "CLR" # $$mdi:close-box$$
+      tap: BT # $$mdi:bluetooth$$
+      hold: CLR # $$mdi:close-box$$
 
     # nawigacja
     "&kp LEFT":
@@ -184,29 +184,28 @@ parse_config:
     #   hold: $$mdi:chevron-right-box-outline$$
 
     "&kp LC(SLASH)":
-      tap: "COMMENT"
-      hold: "//"
-
+      tap: COMMENT
+      hold: //
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
-    "&kp LA(TAB)":
-      tap: "PREV"
-      hold: $$mdi:page-previous-outline$$
-    "&prev":
-      tap: "PREV"
-      hold: $$mdi:page-previous-outline$$
-    "&next":
-      tap: "NEXT"
-      hold: $$mdi:page-next-outline$$
+    # "&kp LA(TAB)":
+    #   tap: PREV
+    #   hold: $$mdi:page-previous-outline$$
+    # "&prev":
+    #   tap: PREV
+    #   hold: $$mdi:page-previous-outline$$
+    # "&next":
+    #   tap: NEXT
+    #   hold: $$mdi:page-next-outline$$
 
-    "&dlequal":
-      tap: "≤"
+    # "&dlequal":
+    #   tap: "≤"
 
-    "&dequal":
-      tap: ":="
+    # "&dequal":
+    #   tap: ":="
 
-    "&dgequal":
-      tap: "≥"
+    # "&dgequal":
+    #   tap: "≥"
 
     "&none":
       type: none
