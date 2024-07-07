@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0           // QWERTY
-#define COL 1           // Colemak-DH
+#define COL 0           // Colemak-DH
 #define NUM 1           // liczby
 #define NAV 2           // nawigacja
 // #define FUN 4           // klawisze funkcyjne
@@ -111,18 +111,9 @@
                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader             &none           &none           &none           &none           &none
                 &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &sys_reset              &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                                                                &out OUT_TOG    &none                   &none           &none
+                                                                &out OUT_TOG    &tog COL                   &none           &none
             >;
         };
-
-        // CONF_layer {
-        //     bindings = <
-        //         &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader             &none           &none           &none           &none           &none
-        //         &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &sys_reset              &none           &none           &none           &none           &none
-        //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-        //                                                         &out OUT_TOG    &tog COL                &none           &none
-        //     >;
-        // };
     };
 
 
