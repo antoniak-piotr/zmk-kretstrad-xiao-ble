@@ -51,26 +51,26 @@ parse_config:
     tap: ""
 
   raw_binding_map:
-    # "&kp COMMA":
-    #   tap: ", <"
+    "&kp COMMA":
+      tap: ", <"
 
-    # "&kp DOT":
-    #   tap: ". >"
+    "&kp DOT":
+      tap: ". >"
 
-    # "&kp SLASH":
-    #   tap: "/ ?"
+    "&kp SLASH":
+      tap: "/ ?"
 
-    # "&kp BSLH":
-    #   tap: "\ |"
+    "&kp BSLH":
+      tap: "\ |"
 
-    # "&kp LBKT":
-    #   tap: "[ {"
+    "&kp LBKT":
+      tap: "[ {"
 
-    # "&kp RBKT":
-    #   tap: "] }"
+    "&kp RBKT":
+      tap: "] }"
 
-    # "&kp GRAVE":
-    #   tap: "` ~"
+    "&kp GRAVE":
+      tap: "` ~"
 
     # "&kp APOS":
     #   tap: "' """
@@ -81,8 +81,8 @@ parse_config:
     # "&kp EQUAL":
     #   tap: "= +"
 
-    # "&kp SEMI":
-    #   tap: "; :"
+    "&kp SEMI":
+      tap: "; :"
 
     "&kp LC(X)":
       tap: CUT
