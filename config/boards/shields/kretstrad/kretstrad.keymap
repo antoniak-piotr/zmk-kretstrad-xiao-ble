@@ -121,7 +121,7 @@
         compatible = "zmk,combos";
 
         // CAPS-WORD, UNDER
-        caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
+        // caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
         under   {key-positions = <14 15>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};                  // _
 
         // // TAB, ESC, BACKSPACE i DELETE
