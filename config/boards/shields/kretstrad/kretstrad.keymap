@@ -72,7 +72,7 @@
 
         NUM_layer {
             bindings = <
-                &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp TILDE       &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
+                &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp STAR        &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
                 &hm LSHF N1     &kp N2          &hm LALT N3     &hm LCTR N4     &kp N5                  &kp N6          &hm RCTR N7     &hm LALT N8     &kp N9          &hm RSHF N0
                 &kp BSLH        &kp LT          &kp LBKT        &kp LPAR        &kp COLON               &kp EQUAL       &kp RPAR        &kp RBKT        &kp GT          &kp SLASH
                                                                 &mt LWIN ESC    &trans                  &lt NAV UNDER   &mt RALT DEL
@@ -121,28 +121,28 @@
         compatible = "zmk,combos";
 
         // CAPS-WORD
-        // caps    {key-positions = <31 32>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                  // CAPS WORD
+        caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
 
         // // TAB, ESC, BACKSPACE i DELETE
         // tab    {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};                 // TAB
         // bspc   {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};                // BSPC
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof oraz tylda i cudzysłów
-        tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL>; COMBO;};                       // ~
-        grave   {key-positions = <3 13>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                       // `~
-        apos    {key-positions = <6 16>; bindings = <&kp APOS>; layers = <DEF COL>; COMBO;};                        // '"
-        dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL>; COMBO;};                         // "
+        tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};               // ~
+        grave   {key-positions = <3 13>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};               // `~
+        apos    {key-positions = <6 16>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};                // '"
+        dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                 // "
 
         // +, -, *, /
-        div     {key-positions = <2 12>; bindings = <&kp SLASH>; layers = <NUM>; COMBO;};                           // /
-        minus   {key-positions = <3 13>; bindings = <&kp MINUS>; layers = <NUM>; COMBO;};                           // -_
-        plus    {key-positions = <6 16>; bindings = <&kp PLUS>; layers = <NUM>; COMBO;};                            // +
-        mul     {key-positions = <7 17>; bindings = <&kp STAR>; layers = <NUM>; COMBO;};                            // *
+        div     {key-positions = <14 24>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /
+        minus   {key-positions = <4 14>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};               // -_
+        plus    {key-positions = <5 15>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};                // +
+        mul     {key-positions = <15 25>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};               // *
 
-        slash   {key-positions = <18 28>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                      // Ctrl + / - przydaje się do komentowania kodu
+        comment {key-positions = <18 28>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                  // Ctrl + / - przydaje się do komentowania kodu
 
         // wyjście z Magnify
-        exit    {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                        // EXIT
+        exit    {key-positions = <14 24>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                    // EXIT
      };
 
     behaviors {
