@@ -55,25 +55,25 @@ parse_config:
       tap: ",<"
 
     "&kp DOT":
-      tap: ". >"
+      tap: ".>"
 
     "&kp SLASH":
-      tap: "/ ?"
+      tap: "/?"
 
     "&kp BSLH":
-      tap: "\ |"
+      tap: "\|"
 
     "&kp LBKT":
-      tap: "[ {"
+      tap: "[{"
 
     "&kp RBKT":
-      tap: "] }"
+      tap: "]}"
 
     "&kp GRAVE":
-      tap: "` ~"
+      tap: "`~"
 
-    # "&kp APOS":
-    #   tap: "' """
+    "&kp APOS":
+      tap: "'"""
 
     # "&kp MINUS":
     #   tap: "- _"
