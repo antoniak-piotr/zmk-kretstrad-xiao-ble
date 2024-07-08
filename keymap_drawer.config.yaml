@@ -108,6 +108,18 @@ parse_config:
       tap: PSCRN
       hold: $$mdi:crop$$ # select$$
 
+    "&kp LS(LA(S))":
+      tap: GREP
+
+    "&kp LC(F)":
+      tap: FIND
+
+    "&kp LC(G)":
+      tap: GOTO
+
+    "&kp LC(B)":
+      tap: BMRK
+
     "&kp LG(EQUAL)":
       tap: ZOOM+
       hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
