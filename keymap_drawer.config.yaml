@@ -188,12 +188,12 @@ parse_config:
       tap: PGDN
       hold: $$mdi:chevron-double-down$$
 
-    # "&kp LC(LEFT)":
-    #   tap: WORD
-    #   hold: $$mdi:chevron-left-box-outline$$
-    # "&kp LC(RIGHT)":
-    #   tap: WORD
-    #   hold: $$mdi:chevron-right-box-outline$$
+    "&kp LC(LEFT)":
+      tap: WORD
+      hold: $$mdi:chevron-left-box-outline$$
+    "&kp LC(RIGHT)":
+      tap: WORD
+      hold: $$mdi:chevron-right-box-outline$$
 
     "&kp LC(SLASH)":
       tap: COMMENT
