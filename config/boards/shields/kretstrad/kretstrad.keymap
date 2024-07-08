@@ -90,9 +90,9 @@
 
         NAV_layer {
             bindings = <
-                &kp LG(MINUS)   &kp LG(EQUAL)   &kp LG(E)       &kp LG(R)       &lht PSCRN SNIP         &none           &none           &none           &none           &none
-                &kp LSC(Z)      &kp LSA(S)      &kp LG(D)       &kp LC(F)       &kp LC(G)               &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
-                &hm LSHF LC(Z)  &kp LC(X)       &hm LALT LC(C)  &hm LCTR LC(V)  &kp LC(B)               &kp END         &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
+                &kp LG(MINUS)   &kp LG(EQUAL)   &none           &none           &lht PSCRN SNIP         &none           &none           &none           &none           &none
+                &kp LSC(Z)      &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
+                &hm LSHF LC(Z)  &kp LC(X)       &hm LALT LC(C)  &hm LCTR LC(V)  &kp LC(B)               &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &none
                                                                 &mt LWIN ESC    &lt NUM ENTER           &trans          &mt RALT ENTER
             >;
         };
