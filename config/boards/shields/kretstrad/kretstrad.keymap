@@ -13,7 +13,7 @@
 #define COL 0           // Colemak-DH
 #define NUM 1           // liczby
 #define NAV 2           // nawigacja
-// #define FUN 4           // klawisze funkcyjne
+// #define FUN 3           // klawisze funkcyjne
 #define CONF 3          // konfiguracja (np. Bluetooth)
 
 #define LSHF LSHFT
@@ -56,7 +56,7 @@
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
-                &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR V      &kp B                   &kp N           &hm RCTR M      &hm LALT COMMA  &kp DOT         &hm RSHF SLASH
+                &hm LSHF Z      &kp X           &hm LCTR C      &hm LALT V      &kp B                   &kp N           &hm LALT M      &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
                                                                 &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT TAB
             >;
         };
@@ -65,7 +65,7 @@
         //     bindings = <
         //         &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
         //         &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
-        //         &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR D      &kp V                   &kp K           &hm RCTR H      &hm LALT COMMA  &kp DOT         &hm RSHF SLASH
+        //         &hm LSHF Z      &kp X           &hm LCTR C      &hm LALT D      &kp V                   &kp K           &hm LALT H      &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
         //                                                         &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT TAB
         //     >;
         // };
@@ -74,7 +74,7 @@
         //     bindings = <
         //         &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp STAR        &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
         //         &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-        //         &hm LSHF BSLH   &kp LT          &hm LALT LBKT   &hm LCTR LPAR   &kp COLON               &kp EQUAL       &hm RCTR RPAR   &hm LALT RBKT   &kp GT          &hm RSHF SLASH
+        //         &hm LSHF BSLH   &kp LT          &hm LCTR LBKT   &hm LALT LPAR   &kp COLON               &kp EQUAL       &hm LALT RPAR   &hm RCTR RBKT   &kp GT          &hm RSHF SLASH
         //                                                         &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
         //     >;
         // };
@@ -83,7 +83,7 @@
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp F11                 &kp F12         &kp N7          &kp N8          &kp N9          &kp N0
-                &hm LSHF BSLH   &kp LBKT        &hm LALT RBKT   &hm LCTR N5     &kp COLON               &kp EQUAL       &hm RCTR N6     &hm LALT COMMA  &kp DOT         &hm RSHF SLASH
+                &hm LSHF BSLH   &kp LBKT        &hm LCTR RBKT   &hm LALT N5     &kp COLON               &kp EQUAL       &hm LALT N6     &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
                                                                 &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT TAB
             >;
         };
@@ -92,7 +92,7 @@
             bindings = <
                 &kp LG(MINUS)   &kp LG(EQUAL)   &none           &none           &lht PSCRN SNIP         &none           &none           &none           &none           &none
                 &kp LSC(Z)      &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
-                &hm LSHF LC(Z)  &kp LC(X)       &hm LALT LC(C)  &hm LCTR LC(V)  &kp LC(B)               &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &none
+                &hm LSHF LC(Z)  &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &kp LC(B)               &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &none
                                                                 &mt LWIN ESC    &lt NUM ENTER           &trans          &mt RALT TAB
             >;
         };
@@ -100,7 +100,7 @@
         // FUN_layer {
         //     bindings = <
         //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-        //         &hm LSHF F1     &kp F2          &hm LALT F3     &hm LCTR F4     &kp F5                  &kp F6          &hm RCTR F7     &hm LALT F8     &kp F9          &hm RSHF F10
+        //         &hm LSHF F1     &kp F2          &hm LCTR F3     &hm LALT F4     &kp F5                  &kp F6          &hm RCTR F7     &hm RCTR F8     &kp F9          &hm RSHF F10
         //         &none           &none           &none           &none           &kp F11                 &kp F12         &none           &none           &none           &none
         //                                                         &mt LWIN ESC    &trans                  &trans          &mt RALT TAB
         //     >;
