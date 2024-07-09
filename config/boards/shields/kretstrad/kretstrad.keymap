@@ -136,8 +136,8 @@
         // TAB, BACKSPACE
         esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};              // ESC
         tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};            // TAB
-        del     {key-positions = <6 7>; bindings = <&del>; layers = <DEF COL NUM NAV>; COMBO;};                 // DEL
-        bspc    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSPC
+        del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};              // DEL
+        bspc    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};           // BSPC
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof
         // tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};               // ~
@@ -192,13 +192,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        bsdl: bspc_del {    // BACKSPACE lub DELETE jeśli wciśnięto lewy shift (prawego można używać normalnie czyli można użyc Shift+DEL
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DELETE";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-            mods = <(MOD_LSFT)>;
-        };
+        // bsdl: bspc_del {    // BACKSPACE lub DELETE jeśli wciśnięto lewy shift (prawego można używać normalnie czyli można użyc Shift+DEL
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "BACKSPACE_DELETE";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp BSPC>, <&kp DEL>;
+        //     mods = <(MOD_LSFT)>;
+        // };
 
         // prev: prev_app_or_desktop {
         //     compatible = "zmk,behavior-mod-morph";
