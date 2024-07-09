@@ -56,7 +56,7 @@
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
-                &hm LSHF Z      &kp X           &hm LCTR C      &hm LALT V      &kp B                   &kp N           &hm LALT M      &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
+                &hm LSHF Z      &kp X           &hm LCTR C      &hm LALT V      &kp B                   &kp N           &hm LALT M      &hm RCTR COMMA  &kp DOT         &hm RSHF ENTER
                                                                 &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT TAB
             >;
         };
@@ -65,7 +65,7 @@
         //     bindings = <
         //         &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
         //         &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
-        //         &hm LSHF Z      &kp X           &hm LCTR C      &hm LALT D      &kp V                   &kp K           &hm LALT H      &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
+        //         &hm LSHF Z      &kp X           &hm LCTR C      &hm LALT D      &kp V                   &kp K           &hm LALT H      &hm RCTR COMMA  &kp DOT         &hm RSHF ENTER
         //                                                         &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT TAB
         //     >;
         // };
@@ -74,7 +74,7 @@
         //     bindings = <
         //         &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp STAR        &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
         //         &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-        //         &hm LSHF BSLH   &kp LT          &hm LCTR LBKT   &hm LALT LPAR   &kp COLON               &kp EQUAL       &hm LALT RPAR   &hm RCTR RBKT   &kp GT          &hm RSHF SLASH
+        //         &hm LSHF BSLH   &kp LT          &hm LCTR LBKT   &hm LALT LPAR   &kp COLON               &kp EQUAL       &hm LALT RPAR   &hm RCTR RBKT   &kp GT          &hm RSHF ENTER
         //                                                         &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
         //     >;
         // };
@@ -83,7 +83,7 @@
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp F11                 &kp F12         &kp N7          &kp N8          &kp N9          &kp N0
-                &hm LSHF BSLH   &kp LBKT        &hm LCTR RBKT   &hm LALT N5     &none                   &none           &hm LALT N6     &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
+                &hm LSHF BSLH   &kp LBKT        &hm LCTR RBKT   &hm LALT N5     &none                   &none           &hm LALT N6     &hm RCTR COMMA  &kp DOT         &hm RSHF ENTER
                                                                 &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT TAB
             >;
         };
@@ -157,6 +157,9 @@
 
         equal   {key-positions = <13 23>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
         colon   {key-positions = <16 26>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
+
+        slash   {key-positions = <10 20>; bindings = <&kp SLASH>; layers = <DEF COL NUM NAV>; COMBO;};          // /?
+        bslh    {key-positions = <19 29>; bindings = <&kp BSLH>; layers = <DEF COL NUM NAV>; COMBO;};           // \|
 
         under   {key-positions = <11 21>; bindings = <&kp UNDER>; layers = <DEF COL NUM NAV>; COMBO;};          // _
         comment {key-positions = <18 28>; bindings = <&kp LC(SLASH)>; layers = <DEF COL NUM NAV>; COMBO;};      // Ctrl + / - przydaje się do komentowania kodu
