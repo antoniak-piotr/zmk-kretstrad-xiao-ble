@@ -83,7 +83,7 @@
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp F11                 &kp F12         &kp N7          &kp N8          &kp N9          &kp N0
-                &hm LSHF BSLH   &kp LBKT        &hm LCTR RBKT   &hm LALT N5     &kp COLON               &kp EQUAL       &hm LALT N6     &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
+                &hm LSHF BSLH   &kp LBKT        &hm LCTR RBKT   &hm LALT N5     &none                   &none           &hm LALT N6     &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
                                                                 &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT TAB
             >;
         };
@@ -154,8 +154,8 @@
         minus   {key-positions = <13 23>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
         plus    {key-positions = <16 26>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
 
-        colon   {key-positions = <14 24>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
-        equal   {key-positions = <15 25>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
+        equal   {key-positions = <14 24>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
+        colon   {key-positions = <15 25>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
 
         under   {key-positions = <11 21>; bindings = <&kp UNDER>; layers = <DEF COL NUM NAV>; COMBO;};          // _
         comment {key-positions = <18 28>; bindings = <&kp LC(SLASH)>; layers = <DEF COL NUM NAV>; COMBO;};      // Ctrl + / - przydaje się do komentowania kodu
