@@ -131,11 +131,13 @@
 
         // CAPS-WORD, UNDER
         caps    {key-positions = <20 29>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
-        // under   {key-positions = <13 16>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};                  // _
+        // under   {key-positions = <13 16>; bindings = <&kp UNDER>; layers = <DEF COL>; COMBO;};               // _
 
         // TAB, BACKSPACE
+        esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};              // ESC
         tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};            // TAB
-        bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSDL
+        del     {key-positions = <6 7>; bindings = <&del>; layers = <DEF COL NUM NAV>; COMBO;};                 // DEL
+        bspc    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSPC
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof
         // tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};               // ~
