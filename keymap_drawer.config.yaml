@@ -51,27 +51,42 @@ parse_config:
     tap: ""
 
   raw_binding_map:
+    "&kp N1":
+      tap: "1!"
+    "&kp N2":
+      tap: "2@"
+    "&kp N3":
+      tap: "3#"
+    "&kp N4":
+      tap: "4$"
+    "&kp N5":
+      tap: "5%"
+    "&kp N6":
+      tap: "6^"
+    "&kp N7":
+      tap: "7&"
+    "&kp N8":
+      tap: "8*"
+    "&kp N9":
+      tap: "9("
+    "&kp N0":
+      tap: "0)"
+
+
     "&kp COMMA":
       tap: ",<"
-
     "&kp DOT":
       tap: ".>"
-
     "&kp SLASH":
       tap: "/?"
-
     "&kp BSLH":
       tap: "\\|"
-
     "&kp LBKT":
       tap: "[{"
-
     "&kp RBKT":
       tap: "]}"
-
     "&kp GRAVE":
       tap: "`~"
-
     "&kp APOS":
       tap: "'\""
 
