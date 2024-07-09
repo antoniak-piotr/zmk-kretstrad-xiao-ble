@@ -57,7 +57,7 @@
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
                 &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR V      &kp B                   &kp N           &hm RCTR M      &hm LALT COMMA  &kp DOT         &hm RSHF SLASH
-                                                                &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT ENTER
+                                                                &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT TAB
             >;
         };
 
@@ -66,7 +66,7 @@
         //         &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
         //         &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
         //         &hm LSHF Z      &kp X           &hm LALT C      &hm LCTR D      &kp V                   &kp K           &hm RCTR H      &hm LALT COMMA  &kp DOT         &hm RSHF SLASH
-        //                                                         &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT ENTER
+        //                                                         &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT TAB
         //     >;
         // };
 
@@ -84,7 +84,7 @@
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp F11                 &kp F12         &kp N7          &kp N8          &kp N9          &kp N0
                 &hm LSHF BSLH   &kp LBKT        &hm LALT RBKT   &hm LCTR N5     &kp COLON               &kp EQUAL       &hm RCTR N6     &hm LALT COMMA  &kp DOT         &hm RSHF SLASH
-                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT ENTER
+                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT TAB
             >;
         };
 
@@ -93,7 +93,7 @@
                 &kp LG(MINUS)   &kp LG(EQUAL)   &none           &none           &lht PSCRN SNIP         &none           &none           &none           &none           &none
                 &kp LSC(Z)      &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &none
                 &hm LSHF LC(Z)  &kp LC(X)       &hm LALT LC(C)  &hm LCTR LC(V)  &kp LC(B)               &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &none
-                                                                &mt LWIN ESC    &lt NUM ENTER           &trans          &mt RALT ENTER
+                                                                &mt LWIN ESC    &lt NUM ENTER           &trans          &mt RALT TAB
             >;
         };
 
@@ -102,7 +102,7 @@
         //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
         //         &hm LSHF F1     &kp F2          &hm LALT F3     &hm LCTR F4     &kp F5                  &kp F6          &hm RCTR F7     &hm LALT F8     &kp F9          &hm RSHF F10
         //         &none           &none           &none           &none           &kp F11                 &kp F12         &none           &none           &none           &none
-        //                                                         &mt LWIN ESC    &trans                  &trans          &mt RALT BSPC
+        //                                                         &mt LWIN ESC    &trans                  &trans          &mt RALT TAB
         //     >;
         // };
 
@@ -111,7 +111,7 @@
                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader             &none           &none           &none           &none           &none
                 &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &sys_reset              &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-                                                                &out OUT_TOG    &tog COL                   &none           &none
+                                                                &out OUT_TOG    &tog COL                &none           &none
             >;
         };
     };
