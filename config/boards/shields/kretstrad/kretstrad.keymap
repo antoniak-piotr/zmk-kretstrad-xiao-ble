@@ -56,8 +56,8 @@
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
-                &hm LSHF Z      &kp X           &hm LCTR C      &hm LALT V      &kp B                   &kp N           &hm LALT M      &hm RCTR COMMA  &kp DOT         &hm RSHF ENTER
-                                                                &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT TAB
+                &hm LSHF Z      &kp X           &hm LCTR C      &hm LALT V      &kp B                   &kp N           &hm LALT M      &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
+                                                                &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
@@ -65,8 +65,8 @@
         //     bindings = <
         //         &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
         //         &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
-        //         &hm LSHF Z      &kp X           &hm LCTR C      &hm LALT D      &kp V                   &kp K           &hm LALT H      &hm RCTR COMMA  &kp DOT         &hm RSHF ENTER
-        //                                                         &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT TAB
+        //         &hm LSHF Z      &kp X           &hm LCTR C      &hm LALT D      &kp V                   &kp K           &hm LALT H      &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
+        //                                                         &mt LWIN ESC    &lt NUM ENTER           &lt NAV SPACE   &mt RALT ENTER
         //     >;
         // };
 
@@ -74,8 +74,8 @@
         //     bindings = <
         //         &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp STAR        &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
         //         &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-        //         &hm LSHF BSLH   &kp LT          &hm LCTR LBKT   &hm LALT LPAR   &kp COLON               &kp EQUAL       &hm LALT RPAR   &hm RCTR RBKT   &kp GT          &hm RSHF ENTER
-        //                                                         &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT BSPC
+        //         &hm LSHF BSLH   &kp LT          &hm LCTR LBKT   &hm LALT LPAR   &kp COLON               &kp EQUAL       &hm LALT RPAR   &hm RCTR RBKT   &kp GT          &hm RSHF SLASH
+        //                                                         &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT ENTER
         //     >;
         // };
 
@@ -83,8 +83,8 @@
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp F11                 &kp F12         &kp N7          &kp N8          &kp N9          &kp N0
-                &hm LSHF BSLH   &kp LBKT        &hm LCTR RBKT   &hm LALT N5     &none                   &none           &hm LALT N6     &hm RCTR COMMA  &kp DOT         &hm RSHF ENTER
-                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT TAB
+                &hm LSHF BSLH   &kp LBKT        &hm LCTR RBKT   &hm LALT N5     &none                   &none           &hm LALT N6     &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
+                                                                &mt LWIN ESC    &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
@@ -93,7 +93,7 @@
                 &kp LG(MINUS)   &kp LG(EQUAL)   &none           &none           &lht PSCRN SNIP         &none           &none           &none           &none           &none
                 &kp LSC(Z)      &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp HOME        &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &hm LSHF LC(Z)  &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &kp LC(B)               &kp END         &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
-                                                                &mt LWIN ESC    &lt NUM ENTER           &trans          &mt RALT TAB
+                                                                &mt LWIN ESC    &lt NUM ENTER           &trans          &mt RALT ENTER
             >;
         };
 
@@ -102,7 +102,7 @@
         //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
         //         &hm LSHF F1     &kp F2          &hm LCTR F3     &hm LALT F4     &kp F5                  &kp F6          &hm RCTR F7     &hm RCTR F8     &kp F9          &hm RSHF F10
         //         &none           &none           &none           &none           &kp F11                 &kp F12         &none           &none           &none           &none
-        //                                                         &mt LWIN ESC    &trans                  &trans          &mt RALT TAB
+        //                                                         &mt LWIN ESC    &trans                  &trans          &mt RALT ENTER
         //     >;
         // };
 
