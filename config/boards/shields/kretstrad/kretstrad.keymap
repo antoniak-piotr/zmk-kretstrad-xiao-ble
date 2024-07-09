@@ -146,8 +146,8 @@
         // dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                 // "
 
         // +, -, *, /
-        at      {key-positions = <3 13>; bindings = <&kp AT>; layers = <DEF COL NUM>; COMBO;};                  // @
-        caret   {key-positions = <6 16>; bindings = <&kp CARET>; layers = <DEF COL NUM>; COMBO;};               // ^
+        at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF COL NUM>; COMBO;};                  // @
+        caret   {key-positions = <8 18>; bindings = <&kp CARET>; layers = <DEF COL NUM>; COMBO;};               // ^
 
         div     {key-positions = <0 10>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /?
         mul     {key-positions = <9 19>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                // *
@@ -162,10 +162,10 @@
         comment {key-positions = <18 28>; bindings = <&kp LC(SLASH)>; layers = <DEF COL NUM NAV>; COMBO;};      // Ctrl + / - przydaje się do komentowania kodu
 
         // nawiasy
-        lpar   {key-positions = <7 17>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};                 // (
-        rpar   {key-positions = <8 18>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};                 // )
-        lbkt   {key-positions = <1 11>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};                 // [{
-        rbkt   {key-positions = <2 12>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};                 // ]}
+        lpar   {key-positions = <6 16>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};                 // (
+        rpar   {key-positions = <7 17>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};                 // )
+        lbkt   {key-positions = <2 12>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};                 // [{
+        rbkt   {key-positions = <3 13>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};                 // ]}
 
 
         // wyjście z Magnify
