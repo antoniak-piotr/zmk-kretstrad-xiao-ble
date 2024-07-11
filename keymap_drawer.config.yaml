@@ -123,6 +123,14 @@ parse_config:
       tap: PSCRN
       hold: $$mdi:crop$$ # select$$
 
+    "&kp LSC(UP)":
+      tap: "IDENT-"
+      # hold: $$mdi:crop$$ # select-drag$$
+    "&kp LSC(DOWN)":
+      tap: $$mdi::tag-arrow-right$$
+      # tap: "IDENT+""
+      # hold: $$mdi:crop$$ # select$$
+
     "&kp LS(LA(S))":
       tap: GREP
 
