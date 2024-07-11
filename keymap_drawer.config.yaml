@@ -124,13 +124,11 @@ parse_config:
       hold: $$mdi:crop$$ # select$$
 
     "&kp LSC(UP)":
-      # tap: $$mdi::tag-arrow-up$$
       tap: IDENT-
-      # hold: $$mdi:crop$$ # select-drag$$
+      hold: $$mdi::tag-arrow-up$$
     "&kp LSC(DOWN)":
-      # tap: $$mdi::tag-arrow-down$$
       tap: IDENT+
-      # hold: $$mdi:crop$$ # select$$
+      hold: $$mdi::tag-arrow-down$$
 
     "&kp LS(LA(S))":
       tap: GREP
