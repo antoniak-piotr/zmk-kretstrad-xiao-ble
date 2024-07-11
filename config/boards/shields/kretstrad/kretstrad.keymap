@@ -92,7 +92,7 @@
             bindings = <
                 &kp LG(MINUS)   &kp LG(EQUAL)   &none           &none           &lht PSCRN SNIP         &kp LSC(UP)     &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
                 &kp LSC(Z)      &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
-                &hm LSHF LC(Z)  &hm LCTR LC(X)  &kp LC(C)       &hm LALT LC(V)  &kp LC(B)               &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
+                &hm LSHF LC(Z)  &hm LCTR LC(X)  &kp LC(C)       &hm LALT LC(V)  &none                   &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
                                                                 &mt LWIN ESC    &lt NUM ENTER           &trans          &mt RALT ENTER
             >;
         };
