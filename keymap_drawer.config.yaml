@@ -135,6 +135,17 @@ parse_config:
       hold: $$mdi:tag$$
       # hold: $$mdi:tag-arrow-down$$
 
+    # Parnassus bookmarks
+    "&kp LCA(LEFT)":
+      tap: BMRK >
+      hold: $$mdi:bookmark$$
+    "&kp LCA(RIGHT)":
+      tap: < BMRK
+      hold: $$mdi:bookmark$$
+    "&kp LC(B)":
+      tap: BMRK ⌄
+      hold: $$mdi:bookmark$$
+
     "&kp LA(LEFT)":
       tap: HIST-
       hold: $$mdi:step-backward-2$$
@@ -153,11 +164,6 @@ parse_config:
 
     "&kp LC(G)":
       tap: GOTO
-
-    "&kp LC(B)":
-      tap: BMRK
-      hold: $$mdi:bookmark$$
-
 
     "&kp LG(EQUAL)":
       tap: ZOOM+

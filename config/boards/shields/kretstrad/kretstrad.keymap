@@ -90,7 +90,7 @@
 
         NAV_layer {
             bindings = <
-                &kp LG(MINUS)   &kp LG(EQUAL)   &none           &none           &lht PSCRN SNIP         &none           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
+                &kp LG(MINUS)   &kp LG(EQUAL)   &none           &none           &lht PSCRN SNIP         &LSC(UP)        &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
                 &kp LSC(Z)      &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &hm LSHF LC(Z)  &hm LCTR LC(X)  &kp LC(C)       &hm LALT LC(V)  &kp LC(B)               &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
                                                                 &mt LWIN ESC    &lt NUM ENTER           &trans          &mt RALT ENTER
@@ -175,7 +175,11 @@
         exit    {key-positions = <0 1>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
         home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
         end     {key-positions = <18 28>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
-        deimp   {key-positions = <15 25>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                    // Przełączenie Declaration <-> Implementation
+        // deimp   {key-positions = <15 25>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                    // Przełączenie Declaration <-> Implementation
+
+        bmrk1   {key-positions = <6 16>; bindings = <&kp LCA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
+        bmrk2   {key-positions = <8 18>; bindings = <&kp LCA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
+        bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
      };
 
     behaviors {
