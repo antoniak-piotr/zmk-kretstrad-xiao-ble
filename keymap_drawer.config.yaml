@@ -225,12 +225,10 @@ parse_config:
 
     "&kp LC(LEFT)":
       tap: WORD
-      # hold: $$mdi:chevron-left-box-outline$$
-      hold: $$mdi:chevron-double-left$$
+      hold: $$mdi:chevron-triple-left$$
     "&kp LC(RIGHT)":
       tap: WORD
-      # hold: $$mdi:chevron-right-box-outline$$
-      hold: $$mdi:chevron-double-right$$
+      hold: $$mdi:chevron-triple-right$$
 
     "&kp LC(SLASH)":
       tap: CMNT

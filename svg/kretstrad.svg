@@ -3,12 +3,6 @@
 <svg id="mdi:chevron-double-down">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-double-down" viewBox="0 0 24 24"><path d="M16.59,5.59L18,7L12,13L6,7L7.41,5.59L12,10.17L16.59,5.59M16.59,11.59L18,13L12,19L6,13L7.41,11.59L12,16.17L16.59,11.59Z" /></svg>
 </svg>
-<svg id="mdi:chevron-double-left">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-double-left" viewBox="0 0 24 24"><path d="M18.41,7.41L17,6L11,12L17,18L18.41,16.59L13.83,12L18.41,7.41M12.41,7.41L11,6L5,12L11,18L12.41,16.59L7.83,12L12.41,7.41Z" /></svg>
-</svg>
-<svg id="mdi:chevron-double-right">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-double-right" viewBox="0 0 24 24"><path d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" /></svg>
-</svg>
 <svg id="mdi:chevron-double-up">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-double-up" viewBox="0 0 24 24"><path d="M7.41,18.41L6,17L12,11L18,17L16.59,18.41L12,13.83L7.41,18.41M7.41,12.41L6,11L12,5L18,11L16.59,12.41L12,7.83L7.41,12.41Z" /></svg>
 </svg>
@@ -20,6 +14,12 @@
 </svg>
 <svg id="mdi:chevron-right">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-right" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+</svg>
+<svg id="mdi:chevron-triple-left">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-triple-left" viewBox="0 0 24 24"><path d="M9.42,7.41L4.83,12L9.42,16.59L8,18L2,12L8,6L9.42,7.41M15.42,7.41L10.83,12L15.42,16.59L14,18L8,12L14,6L15.42,7.41M21.42,7.41L16.83,12L21.42,16.59L20,18L14,12L20,6L21.42,7.41Z" /></svg>
+</svg>
+<svg id="mdi:chevron-triple-right">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-triple-right" viewBox="0 0 24 24"><path d="M14.58,16.59L19.17,12L14.58,7.41L16,6L22,12L16,18L14.58,16.59M8.58,16.59L13.17,12L8.58,7.41L10,6L16,12L10,18L8.58,16.59M2.58,16.59L7.17,12L2.58,7.41L4,6L10,12L4,18L2.58,16.59Z" /></svg>
 </svg>
 <svg id="mdi:chevron-up">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-up" viewBox="0 0 24 24"><path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" /></svg>
@@ -912,7 +912,7 @@ text.combo {
 <g transform="translate(532, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">WORD</text>
-<use href="#mdi:chevron-double-left" xlink:href="#mdi:chevron-double-left" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:chevron-double-left"/>
+<use href="#mdi:chevron-triple-left" xlink:href="#mdi:chevron-triple-left" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:chevron-triple-left"/>
 </g>
 <g transform="translate(588, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -922,7 +922,7 @@ text.combo {
 <g transform="translate(644, 147)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">WORD</text>
-<use href="#mdi:chevron-double-right" xlink:href="#mdi:chevron-double-right" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:chevron-double-right"/>
+<use href="#mdi:chevron-triple-right" xlink:href="#mdi:chevron-triple-right" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:chevron-triple-right"/>
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
