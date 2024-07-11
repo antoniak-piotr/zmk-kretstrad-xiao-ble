@@ -134,13 +134,13 @@ parse_config:
 
     "&kp LA(LEFT)":
       tap: HIST-
-      hold: $$mdi:step-backward-2$$
+      # hold: $$mdi:step-backward-2$$
     "&kp LA(UP)":
       tap: DECL
-      hold: $$mdi:lead-pencil$$
+      # hold: $$mdi:lead-pencil$$
     "&kp LA(RIGHT)":
       tap: HIST+
-      hold: $$mdi:step-forward-2$$
+      # hold: $$mdi:step-forward-2$$
 
     "&kp LS(LA(S))":
       tap: GREP
