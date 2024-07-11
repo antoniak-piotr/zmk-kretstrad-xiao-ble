@@ -137,14 +137,14 @@ parse_config:
 
     # Parnassus bookmarks
     "&kp LCA(LEFT)":
-      tap: BMRK >
-      hold: $$mdi:bookmark$$
+      tap: <BMRK
+      # hold: $$mdi:bookmark$$
     "&kp LCA(RIGHT)":
-      tap: < BMRK
-      hold: $$mdi:bookmark$$
+      tap: BMRK>
+      # hold: $$mdi:bookmark$$
     "&kp LC(B)":
-      tap: BMRK ⌄
-      hold: $$mdi:bookmark$$
+      tap: BMRK⌄
+      # hold: $$mdi:bookmark$$
 
     "&kp LA(LEFT)":
       tap: HIST-
