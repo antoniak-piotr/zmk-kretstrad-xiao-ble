@@ -123,6 +123,8 @@ parse_config:
       tap: PSCRN
       hold: $$mdi:crop$$ # select$$
 
+    "&kp LSC(UP)":
+      tap: DECL
     "&kp LCA(UP)":
       tap: IDENT-
       hold: $$mdi:tag-arrow-up$$
