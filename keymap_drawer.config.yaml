@@ -124,8 +124,8 @@ parse_config:
       hold: $$mdi:crop$$ # select$$
 
     "&kp LSC(UP)":
-      tap: $$mdi:swap-vertical$$
-      # tap: DECL
+      tap: SWAP
+      # hold: $$mdi:swap-vertical$$
     "&kp LCA(UP)":
       tap: IDENT-
       hold: $$mdi:tag-arrow-up$$
