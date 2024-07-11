@@ -127,11 +127,11 @@ parse_config:
       tap: SWAP
       hold: $$mdi:swap-vertical$$
     "&kp LCA(UP)":
-      tap: IDENT-
+      tap: IDNT-
       hold: $$mdi:tag$$
       # hold: $$mdi:tag-arrow-up$$
     "&kp LCA(DOWN)":
-      tap: IDENT+
+      tap: IDNT+
       hold: $$mdi:tag$$
       # hold: $$mdi:tag-arrow-down$$
 
