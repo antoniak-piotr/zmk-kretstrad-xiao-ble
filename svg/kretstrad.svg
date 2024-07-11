@@ -39,6 +39,12 @@
 <svg id="mdi:redo">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-redo" viewBox="0 0 24 24"><path d="M18.4,10.6C16.55,9 14.15,8 11.5,8C6.85,8 2.92,11.03 1.54,15.22L3.9,16C4.95,12.81 7.95,10.5 11.5,10.5C13.45,10.5 15.23,11.22 16.62,12.38L13,16H22V7L18.4,10.6Z" /></svg>
 </svg>
+<svg id="mdi:step-backward-2">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-step-backward-2" viewBox="0 0 24 24"><path d="M17,5H14V19H17V5M12,5L1,12L12,19V5M22,5H19V19H22V5Z" /></svg>
+</svg>
+<svg id="mdi:step-forward-2">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-step-forward-2" viewBox="0 0 24 24"><path d="M7,5H10V19H7V5M12,5L23,12L12,19V5M2,5H5V19H2V5Z" /></svg>
+</svg>
 <svg id="mdi:tag-arrow-down">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-tag-arrow-down" viewBox="0 0 24 24"><path d="M21.41 11.58L12.41 2.58C12.04 2.21 11.53 2 11 2H4C2.9 2 2 2.9 2 4V11C2 11.53 2.21 12.04 2.59 12.41L3 12.81C3.9 12.27 4.94 12 6 12C9.31 12 12 14.69 12 18C12 19.06 11.72 20.09 11.18 21L11.58 21.4C11.95 21.78 12.47 22 13 22S14.04 21.79 14.41 21.41L21.41 14.41C21.79 14.04 22 13.53 22 13S21.79 11.96 21.41 11.58M5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7M7 19V15H5V19H3L6 22L9 19H7Z" /></svg>
 </svg>
@@ -811,6 +817,7 @@ text.combo {
 <g transform="translate(532, 35)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">HIST-</text>
+<use href="#mdi:step-backward-2" xlink:href="#mdi:step-backward-2" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:step-backward-2"/>
 </g>
 <g transform="translate(588, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -819,6 +826,7 @@ text.combo {
 <g transform="translate(644, 35)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">HIST+</text>
+<use href="#mdi:step-forward-2" xlink:href="#mdi:step-forward-2" x="-5" y="8" height="10" width="10.0" class="key hold glyph mdi:step-forward-2"/>
 </g>
 <g transform="translate(700, 49)" class="key none keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
