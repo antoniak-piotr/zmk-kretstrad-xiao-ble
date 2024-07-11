@@ -48,6 +48,9 @@
 <svg id="mdi:step-forward-2">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-step-forward-2" viewBox="0 0 24 24"><path d="M7,5H10V19H7V5M12,5L23,12L12,19V5M2,5H5V19H2V5Z" /></svg>
 </svg>
+<svg id="mdi:swap-vertical-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-swap-vertical-bold" viewBox="0 0 24 24"><path d="M14,8H11V14H6V8H3L8.5,2L14,8M15.5,22L21,16H18V10H13V16H10L15.5,22Z" /></svg>
+</svg>
 <svg id="mdi:tag-arrow-down">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-tag-arrow-down" viewBox="0 0 24 24"><path d="M21.41 11.58L12.41 2.58C12.04 2.21 11.53 2 11 2H4C2.9 2 2 2.9 2 4V11C2 11.53 2.21 12.04 2.59 12.41L3 12.81C3.9 12.27 4.94 12 6 12C9.31 12 12 14.69 12 18C12 19.06 11.72 20.09 11.18 21L11.58 21.4C11.95 21.78 12.47 22 13 22S14.04 21.79 14.41 21.41L21.41 14.41C21.79 14.04 22 13.53 22 13S21.79 11.96 21.41 11.58M5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7M7 19V15H5V19H3L6 22L9 19H7Z" /></svg>
 </svg>
@@ -515,11 +518,11 @@ text.combo {
 </g>
 <g class="combo combopos-36">
 <rect rx="6" ry="6" x="568" y="105" width="40" height="14" class="combo"/>
-<text x="588" y="112" class="combo tap"><tspan style="font-size: 71%">COMMENT</tspan></text>
+<text x="588" y="112" class="combo tap">CMNT</text>
 </g>
 <g class="combo combopos-37">
 <rect rx="6" ry="6" x="568" y="105" width="40" height="14" class="combo"/>
-<text x="588" y="112" class="combo tap"><tspan style="font-size: 71%">COMMENT</tspan></text>
+<text x="588" y="112" class="combo tap">CMNT</text>
 </g>
 <g class="combo combopos-38">
 <rect rx="6" ry="6" x="517" y="56" width="30" height="14" class="combo"/>
@@ -770,7 +773,7 @@ text.combo {
 </g>
 <g class="combo combopos-17">
 <rect rx="6" ry="6" x="568" y="105" width="40" height="14" class="combo"/>
-<text x="588" y="112" class="combo tap"><tspan style="font-size: 71%">COMMENT</tspan></text>
+<text x="588" y="112" class="combo tap">CMNT</text>
 </g>
 <g class="combo combopos-18">
 <rect rx="6" ry="6" x="517" y="56" width="30" height="14" class="combo"/>
@@ -965,7 +968,7 @@ text.combo {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="568" y="105" width="40" height="14" class="combo"/>
-<text x="588" y="112" class="combo tap"><tspan style="font-size: 71%">COMMENT</tspan></text>
+<text x="588" y="112" class="combo tap">CMNT</text>
 </g>
 <g class="combo combopos-5">
 <path d="M56,-2 h-28 a0.0,0.0 0 0 0 -0.0,0.0 v33" class="combo"/>
@@ -983,7 +986,7 @@ text.combo {
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="461" y="119" width="30" height="14" class="combo"/>
-<text x="476" y="126" class="combo tap">DECL</text>
+<use href="#mdi:swap-vertical-bold" xlink:href="#mdi:swap-vertical-bold" x="464" y="114" height="24" width="24.0" class="combo tap glyph mdi:swap-vertical-bold"/>
 </g>
 </g>
 </g>

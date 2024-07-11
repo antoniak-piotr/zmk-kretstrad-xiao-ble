@@ -124,7 +124,8 @@ parse_config:
       hold: $$mdi:crop$$ # select$$
 
     "&kp LSC(UP)":
-      tap: DECL
+      tap: $$mdi:swap-vertical-bold$$
+      # tap: DECL
     "&kp LCA(UP)":
       tap: IDENT-
       hold: $$mdi:tag-arrow-up$$
@@ -230,7 +231,7 @@ parse_config:
       hold: $$mdi:chevron-right-box-outline$$
 
     "&kp LC(SLASH)":
-      tap: COMMENT
+      tap: CMNT
       # hold: //
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
