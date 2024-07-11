@@ -128,10 +128,12 @@ parse_config:
       # hold: $$mdi:swap-vertical$$
     "&kp LCA(UP)":
       tap: IDENT-
-      hold: $$mdi:tag-arrow-up$$
+      hold: $$mdi:tag$$
+      # hold: $$mdi:tag-arrow-up$$
     "&kp LCA(DOWN)":
       tap: IDENT+
-      hold: $$mdi:tag-arrow-down$$
+      hold: $$mdi:tag$$
+      # hold: $$mdi:tag-arrow-down$$
 
     "&kp LA(LEFT)":
       tap: HIST-
@@ -154,6 +156,8 @@ parse_config:
 
     "&kp LC(B)":
       tap: BMRK
+      hold: $$mdi:bookmark$$
+
 
     "&kp LG(EQUAL)":
       tap: ZOOM+
