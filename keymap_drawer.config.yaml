@@ -130,6 +130,16 @@ parse_config:
       tap: IDENT+
       hold: $$mdi:tag-arrow-down$$
 
+    "&kp LA(LEFT)":
+      tap: HIST-
+      hold: $$mdi:step-backward-2$$
+    "&kp LA(UP)":
+      tap: DECL
+      hold: $$mdi:lead-pencil$$
+    "&kp LA(RIGHT)":
+      tap: HIST+
+      hold: $$mdi:step-forward-2$$
+
     "&kp LS(LA(S))":
       tap: GREP
 
@@ -198,10 +208,10 @@ parse_config:
 
     "&kp HOME":
       tap: HOME
-      hold: $$mdi:page-first$$
+      # hold: $$mdi:page-first$$
     "&kp END":
       tap: END
-      hold: $$mdi:page-last$$
+      # hold: $$mdi:page-last$$
 
     "&kp PG_UP":
       tap: PGUP
