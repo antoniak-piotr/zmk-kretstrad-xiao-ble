@@ -151,7 +151,8 @@ parse_config:
       hold: $$mdi:step-backward-2$$
     "&kp LA(UP)":
       tap: DECL
-      hold: $$mdi:pencil$$
+      hold: ↜
+      # hold: $$mdi:pencil$$
     "&kp LA(RIGHT)":
       tap: HIST+
       hold: $$mdi:step-forward-2$$
