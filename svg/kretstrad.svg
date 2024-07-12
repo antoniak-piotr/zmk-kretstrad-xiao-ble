@@ -45,9 +45,6 @@
 <svg id="mdi:step-forward-2">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-step-forward-2" viewBox="0 0 24 24"><path d="M7,5H10V19H7V5M12,5L23,12L12,19V5M2,5H5V19H2V5Z" /></svg>
 </svg>
-<svg id="mdi:swap-vertical">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-swap-vertical" viewBox="0 0 24 24"><path d="M9,3L5,7H8V14H10V7H13M16,17V10H14V17H11L15,21L19,17H16Z" /></svg>
-</svg>
 <svg id="mdi:tag">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-tag" viewBox="0 0 24 24"><path d="M5.5,7A1.5,1.5 0 0,1 4,5.5A1.5,1.5 0 0,1 5.5,4A1.5,1.5 0 0,1 7,5.5A1.5,1.5 0 0,1 5.5,7M21.41,11.58L12.41,2.58C12.05,2.22 11.55,2 11,2H4C2.89,2 2,2.89 2,4V11C2,11.55 2.22,12.05 2.59,12.41L11.58,21.41C11.95,21.77 12.45,22 13,22C13.55,22 14.05,21.77 14.41,21.41L21.41,14.41C21.78,14.05 22,13.55 22,13C22,12.44 21.77,11.94 21.41,11.58Z" /></svg>
 </svg>
@@ -969,7 +966,6 @@ text.combo {
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="461" y="119" width="30" height="14" class="combo"/>
 <text x="476" y="126" class="combo tap">SWAP</text>
-<use href="#mdi:swap-vertical" xlink:href="#mdi:swap-vertical" x="471" y="115" height="10" width="10.0" class="combo hold glyph mdi:swap-vertical"/>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="568" y="105" width="40" height="14" class="combo"/>

@@ -125,7 +125,7 @@ parse_config:
 
     "&kp LSC(UP)":
       tap: SWAP
-      hold: $$mdi:swap-vertical$$
+      # hold: $$mdi:swap-vertical$$
     "&kp LCA(UP)":
       tap: IDNT-
       hold: $$mdi:tag$$
