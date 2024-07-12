@@ -57,7 +57,7 @@
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &hm LSHF A      &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &hm RSHF SEMI
                 &kp Z           &kp X           &hm LCTR C      &hm LALT V      &kp B                   &kp N           &hm LALT M      &hm RCTR COMMA  &kp DOT         &kp ENTER
-                                                                &mt LWIN 0      &lt NUM ESC             &lt NAV SPACE   &mt RALT 0
+                                                                &mt LWIN 0      &lt NUM ESC             &lt NAV SPACE   &mt RALT TAB
             >;
         };
 
@@ -66,7 +66,7 @@
         //         &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
         //         &hm LSHF A      &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &hm RSHF O
         //         &kp Z           &kp X           &hm LCTR C      &hm LALT D      &kp V                   &kp K           &hm LALT H      &hm RCTR COMMA  &kp DOT         &kp ENTER
-        //                                                         &mt LWIN 0      &lt NUM ESC             &lt NAV SPACE   &mt RALT 0
+        //                                                         &mt LWIN 0      &lt NUM ESC             &lt NAV SPACE   &mt RALT TAB
         //     >;
         // };
 
@@ -75,7 +75,7 @@
         //         &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp STAR        &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
         //         &hm LSHF N1     &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &hm RSHF N0
         //         &kp BSLH        &kp LT          &hm LCTR LBKT   &hm LALT LPAR   &kp COLON               &kp EQUAL       &hm LALT RPAR   &hm RCTR RBKT   &kp GT           &kp ENTER
-        //                                                         &mt LWIN 0      &trans                  &lt NAV SPACE   &mt RALT 0
+        //                                                         &mt LWIN 0      &trans                  &lt NAV SPACE   &mt RALT TAB
         //     >;
         // };
 
@@ -84,7 +84,7 @@
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &hm LSHF N1     &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &hm RSHF N0
                 &none           &none           &hm LCTR 0      &hm LALT 0      &kp F11                 &kp F12         &hm LALT N6     &hm RCTR COMMA  &kp DOT         &kp ENTER
-                                                                &mt LWIN 0      &trans                  &lt NAV SPACE   &mt RALT 0
+                                                                &mt LWIN 0      &trans                  &lt NAV SPACE   &mt RALT TAB
             >;
         };
 
@@ -93,7 +93,7 @@
                 &kp LG(MINUS)   &kp LG(EQUAL)   &none           &none           &lht PSCRN SNIP         &none           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
                 &hm LSHF LSC(Z) &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &kp LC(Z)       &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &none                   &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
-                                                                &mt LWIN 0      &lt NUM ESC             &trans          &mt RALT 0
+                                                                &mt LWIN 0      &lt NUM ESC             &trans          &mt RALT TAB
             >;
         };
 
@@ -102,7 +102,7 @@
         //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
         //         &hm LSHF F1     &kp F2          &hm LCTR F3     &hm LALT F4     &kp F5                  &kp F6          &hm RCTR F7     &hm RCTR F8     &kp F9          &hm RSHF F10
         //         &none           &none           &none           &none           &kp F11                 &kp F12         &none           &none           &none           &none
-        //                                                         &mt LWIN 0      &trans                  &trans          &mt RALT 0
+        //                                                         &mt LWIN 0      &trans                  &trans          &mt RALT TAB
         //     >;
         // };
 
@@ -166,13 +166,13 @@
         slash   {key-positions = <19 29>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /?
         bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; COMBO;};               // \|
 
-        under   {key-positions = <12 22>; bindings = <&kp UNDER>; layers = <DEF COL NUM>; COMBO;};              // _
+        // under   {key-positions = <12 22>; bindings = <&kp UNDER>; layers = <DEF COL NUM>; COMBO;};              // _
 
         // nawiasy
-        lpar    {key-positions = <7 17>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};                // (
-        rpar    {key-positions = <8 18>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};                // )
-        lbkt    {key-positions = <17 27>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
-        rbkt    {key-positions = <18 28>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
+        lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};                // (
+        rpar    {key-positions = <17 27>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};                // )
+        lbkt    {key-positions = <12 22>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
+        rbkt    {key-positions = <13 23>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
 
 
         // dodatkowe combo na warstwie NAV
