@@ -169,10 +169,10 @@
         // under   {key-positions = <12 22>; bindings = <&kp UNDER>; layers = <DEF COL NUM>; COMBO;};              // _
 
         // nawiasy
-        lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};                // (
-        rpar    {key-positions = <17 27>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};                // )
-        lbkt    {key-positions = <12 22>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
-        rbkt    {key-positions = <13 23>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
+        lpar    {key-positions = <17 27>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};                // (
+        rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};                // )
+        lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
+        rbkt    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
 
 
         // dodatkowe combo na warstwie NAV
