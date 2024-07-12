@@ -82,8 +82,8 @@
         NUM_layer {
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
-                &hm LSHF N1     &kp N2          &kp N3          &kp N4          &kp F11                 &kp F12         &kp N7          &kp N8          &kp N9          &hm RSHF N0
-                &kp BSLH        &kp LBKT        &hm LCTR RBKT   &hm LALT N5     &none                   &none           &hm LALT N6     &hm RCTR COMMA  &kp DOT         &kp ENTER
+                &hm LSHF N1     &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &hm RSHF N0
+                &kp BSLH        &kp LBKT        &hm LCTR RBKT   &hm LALT N5     &kp F11                 &kp F12         &hm LALT N6     &hm RCTR COMMA  &kp DOT         &kp ENTER
                                                                 &mt LWIN ENTER  &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
