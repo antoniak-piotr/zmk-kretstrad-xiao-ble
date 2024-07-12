@@ -145,17 +145,28 @@
         apos    {key-positions = <5 6>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};                 // '"
         // dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                 // "
 
+        n1      {key-positions = <0 10>; bindings = <&kp N1>; layers = <DEF COL NUM>; COMBO;};                  // 1
+        n2      {key-positions = <0 10>; bindings = <&kp N2>; layers = <DEF COL NUM>; COMBO;};                  // 2
+        n3      {key-positions = <0 10>; bindings = <&kp N3>; layers = <DEF COL NUM>; COMBO;};                  // 3
+        n4      {key-positions = <0 10>; bindings = <&kp N4>; layers = <DEF COL NUM>; COMBO;};                  // 4
+        n5      {key-positions = <0 10>; bindings = <&kp N5>; layers = <DEF COL NUM>; COMBO;};                  // 5
+        n6      {key-positions = <0 10>; bindings = <&kp N6>; layers = <DEF COL NUM>; COMBO;};                  // 6
+        n7      {key-positions = <0 10>; bindings = <&kp N7>; layers = <DEF COL NUM>; COMBO;};                  // 7
+        n8      {key-positions = <0 10>; bindings = <&kp N8>; layers = <DEF COL NUM>; COMBO;};                  // 8
+        n9      {key-positions = <0 10>; bindings = <&kp N9>; layers = <DEF COL NUM>; COMBO;};                  // 9
+        n0      {key-positions = <0 10>; bindings = <&kp N0>; layers = <DEF COL NUM>; COMBO;};                  // 0
+
         // +, -, *, /
-        excl    {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF COL NUM>; COMBO;};                // !
-        at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF COL NUM>; COMBO;};                  // @
-        hash    {key-positions = <2 12>; bindings = <&kp HASH>; layers = <DEF COL NUM>; COMBO;};                // #
-        dllr    {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <DEF COL NUM>; COMBO;};                // $
-        prcnt   {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <DEF COL NUM>; COMBO;};               // %
+        // excl    {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF COL NUM>; COMBO;};                // !
+        // at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF COL NUM>; COMBO;};                  // @
+        // hash    {key-positions = <2 12>; bindings = <&kp HASH>; layers = <DEF COL NUM>; COMBO;};                // #
+        // dllr    {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <DEF COL NUM>; COMBO;};                // $
+        // prcnt   {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <DEF COL NUM>; COMBO;};               // %
 
-        caret   {key-positions = <5 15>; bindings = <&kp CARET>; layers = <DEF COL NUM>; COMBO;};               // ^
-        amps    {key-positions = <6 16>; bindings = <&kp AMPS>; layers = <DEF COL NUM>; COMBO;};                // &
+        // caret   {key-positions = <5 15>; bindings = <&kp CARET>; layers = <DEF COL NUM>; COMBO;};               // ^
+        // amps    {key-positions = <6 16>; bindings = <&kp AMPS>; layers = <DEF COL NUM>; COMBO;};                // &
 
-        mul     {key-positions = <9 19>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                // *
+        // mul     {key-positions = <9 19>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                // *
 
         minus   {key-positions = <14 24>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
         plus    {key-positions = <15 25>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
@@ -180,7 +191,7 @@
         home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
         end     {key-positions = <18 28>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
         swap    {key-positions = <15 25>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                    // Przełączenie Declaration <-> Implementation
-        comment {key-positions = <17 27>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                  // Ctrl + / - przydaje się do komentowania kodu
+        comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                  // Ctrl + / - przydaje się do komentowania kodu
 
         bmrk1   {key-positions = <6 16>; bindings = <&kp LCA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
         bmrk2   {key-positions = <8 18>; bindings = <&kp LCA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
