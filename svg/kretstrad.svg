@@ -363,16 +363,16 @@ text.combo {
 <text x="0" y="18" class="key hold">RALT</text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,134 h-336 a0.0,0.0 0 0 1 -0.0,-0.0 v-10" class="combo"/>
-<path d="M364,134 h336 a0.0,0.0 0 0 0 0.0,-0.0 v-10" class="combo"/>
-<rect rx="6" ry="6" x="349" y="127" width="30" height="14" class="combo"/>
-<text x="364" y="134" class="combo tap">CAPS</text>
+<path d="M364,22 h-336 a0.0,0.0 0 0 0 -0.0,0.0 v64" class="combo"/>
+<path d="M364,22 h336 a0.0,0.0 0 0 1 0.0,0.0 v64" class="combo"/>
+<rect rx="6" ry="6" x="349" y="15" width="30" height="14" class="combo"/>
+<text x="364" y="22" class="combo tap">CAPS</text>
 </g>
 <g class="combo combopos-1">
-<path d="M364,134 h-336 a0.0,0.0 0 0 1 -0.0,-0.0 v-10" class="combo"/>
-<path d="M364,134 h336 a0.0,0.0 0 0 0 0.0,-0.0 v-10" class="combo"/>
-<rect rx="6" ry="6" x="349" y="127" width="30" height="14" class="combo"/>
-<text x="364" y="134" class="combo tap">CAPS</text>
+<path d="M364,22 h-336 a0.0,0.0 0 0 0 -0.0,0.0 v64" class="combo"/>
+<path d="M364,22 h336 a0.0,0.0 0 0 1 0.0,0.0 v64" class="combo"/>
+<rect rx="6" ry="6" x="349" y="15" width="30" height="14" class="combo"/>
+<text x="364" y="22" class="combo tap">CAPS</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="153" y="24" width="30" height="14" class="combo"/>
@@ -1044,20 +1044,20 @@ text.combo {
 <text x="476" y="126" class="combo tap">SWAP</text>
 </g>
 <g class="combo combopos-7">
-<rect rx="6" ry="6" x="680" y="126" width="40" height="14" class="combo"/>
-<text x="700" y="133" class="combo tap">CMNT</text>
-</g>
-<g class="combo combopos-8">
 <rect rx="6" ry="6" x="517" y="56" width="30" height="14" class="combo"/>
 <text x="532" y="63" class="combo tap">&lt;BMK&lt;</text>
 </g>
-<g class="combo combopos-9">
+<g class="combo combopos-8">
 <rect rx="6" ry="6" x="629" y="56" width="30" height="14" class="combo"/>
 <text x="644" y="63" class="combo tap">&gt;BMK&gt;</text>
 </g>
-<g class="combo combopos-10">
+<g class="combo combopos-9">
 <rect rx="6" ry="6" x="573" y="49" width="30" height="14" class="combo"/>
 <text x="588" y="56" class="combo tap">⌄BMK⌄</text>
+</g>
+<g class="combo combopos-10">
+<rect rx="6" ry="6" x="680" y="126" width="40" height="14" class="combo"/>
+<text x="700" y="133" class="combo tap">CMNT</text>
 </g>
 <g class="combo combopos-11">
 <path d="M56,-2 h-28 a0.0,0.0 0 0 0 -0.0,0.0 v33" class="combo"/>
