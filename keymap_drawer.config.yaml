@@ -271,14 +271,15 @@ parse_config:
       type: none
 
   zmk_combos:
-    # caps:
+    caps:
       # align: bottom
       # offset: -2.0
+      width: 40
 
     exit:
       align: top
       offset: 0.15
-      width: 30
+      width: 40
 
     tab:
       width: 30
@@ -289,7 +290,7 @@ parse_config:
     del:
       width: 30
 
-    dif:
+    div:
       tap: "/"
       width: 30
 
