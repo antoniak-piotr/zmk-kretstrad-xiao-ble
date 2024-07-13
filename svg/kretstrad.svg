@@ -363,16 +363,16 @@ text.combo {
 <text x="0" y="18" class="key hold">RALT</text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,22 h-336 a0.0,0.0 0 0 0 -0.0,0.0 v64" class="combo"/>
-<path d="M364,22 h336 a0.0,0.0 0 0 1 0.0,0.0 v64" class="combo"/>
-<rect rx="6" ry="6" x="349" y="15" width="30" height="14" class="combo"/>
-<text x="364" y="22" class="combo tap">CAPS</text>
+<path d="M364,105 l-317,0" class="combo"/>
+<path d="M364,105 l317,0" class="combo"/>
+<rect rx="6" ry="6" x="349" y="98" width="30" height="14" class="combo"/>
+<text x="364" y="105" class="combo tap">CAPS</text>
 </g>
 <g class="combo combopos-1">
-<path d="M364,22 h-336 a0.0,0.0 0 0 0 -0.0,0.0 v64" class="combo"/>
-<path d="M364,22 h336 a0.0,0.0 0 0 1 0.0,0.0 v64" class="combo"/>
-<rect rx="6" ry="6" x="349" y="15" width="30" height="14" class="combo"/>
-<text x="364" y="22" class="combo tap">CAPS</text>
+<path d="M364,105 l-317,0" class="combo"/>
+<path d="M364,105 l317,0" class="combo"/>
+<rect rx="6" ry="6" x="349" y="98" width="30" height="14" class="combo"/>
+<text x="364" y="105" class="combo tap">CAPS</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="153" y="24" width="30" height="14" class="combo"/>
