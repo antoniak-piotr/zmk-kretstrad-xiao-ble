@@ -51,6 +51,7 @@ parse_config:
     tap: ""
 
   raw_binding_map:
+    # NUMERIC
     "&kp N1":
       tap: "1!"
     "&kp N2":
@@ -72,7 +73,7 @@ parse_config:
     "&kp N0":
       tap: "0)"
 
-
+    # OTHER SHIFTED KEYS
     "&kp COMMA":
       tap: ",<"
     "&kp DOT":
@@ -89,16 +90,10 @@ parse_config:
       tap: "`~"
     "&kp APOS":
       tap: "'\""
-
-    # "&kp MINUS":
-    #   tap: "- _"
-
-    # "&kp EQUAL":
-    #   tap: "= +"
-
     "&kp SEMI":
       tap: ";:"
 
+    # CUT, COPY, PASTE
     "&kp LC(X)":
       tap: CUT
       hold: $$mdi:content-cut$$
@@ -109,13 +104,15 @@ parse_config:
       tap: PASTE
       hold: $$mdi:content-paste$$
 
-    "&kp LSC(Z)":
-      tap: REDO
-      hold: $$mdi:redo$$
+    # UNDO, REDO
     "&kp LC(Z)":
       tap: UNDO
       hold: $$mdi:undo$$
+    "&kp LSC(Z)":
+      tap: REDO
+      hold: $$mdi:redo$$
 
+    # SNIP, PSCRN
     "&kp LSG(S)":
       tap: SNIP
       hold: $$mdi:crop$$ # select-drag$$
@@ -123,9 +120,7 @@ parse_config:
       tap: PSCRN
       hold: $$mdi:crop$$ # select$$
 
-    "&kp LSC(UP)":
-      tap: SWAP
-      # hold: $$mdi:swap-vertical$$
+    # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
     "&kp LCA(UP)":
       tap: IDNT-
       hold: $$mdi:tag$$
@@ -134,8 +129,11 @@ parse_config:
       tap: IDNT+
       hold: $$mdi:tag$$
       # hold: $$mdi:tag-arrow-down$$
+    "&kp LSC(UP)":
+      tap: SWAP
+      # hold: $$mdi:swap-vertical$$
 
-    # Parnassus bookmarks
+    # PREV/NEXT/DROP BOOKMARKS (Parnassus)
     "&kp LCA(LEFT)":
       tap: "<BMK<"
       # hold: $$mdi:bookmark$$
@@ -146,16 +144,18 @@ parse_config:
       tap: "⌄BMK⌄"
       # hold: $$mdi:bookmark$$
 
+    # PREV/NEXT HISTORY + GOTO DEFINITION (Delphi IDE)
     "&kp LA(LEFT)":
       tap: HIST-
       hold: $$mdi:step-backward-2$$
-    "&kp LA(UP)":
-      tap: DECL
-      hold: $$mdi:pencil$$
     "&kp LA(RIGHT)":
       tap: HIST+
       hold: $$mdi:step-forward-2$$
+    "&kp LA(UP)":
+      tap: DECL
+      hold: $$mdi:pencil$$
 
+    # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
     "&kp LS(LA(S))":
       tap: GREP
 
@@ -165,6 +165,7 @@ parse_config:
     "&kp LC(G)":
       tap: GOTO
 
+    # MAGNIFIER
     "&kp LG(EQUAL)":
       tap: ZOOM+
       hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
@@ -175,11 +176,12 @@ parse_config:
       tap: EXIT
       # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
 
+    # CAPS WORD
     "&caps_word":
       tap: CAPS # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
 
-    "&bsdl":
-      tap: BSPC # $$mdi:backspace-outline$$
+    # "&bsdl":
+    #   tap: BSPC # $$mdi:backspace-outline$$
 
     # "&lpb":
     #   tap: "([{" # hold: $$mdi:close-box$$
@@ -240,6 +242,7 @@ parse_config:
       tap: WORD
       hold: $$mdi:chevron-triple-right$$
 
+    # COMMENT
     "&kp LC(SLASH)":
       tap: CMNT
       # hold: //
@@ -270,48 +273,6 @@ parse_config:
   zmk_combos:
     caps:
       align: bottom
-      # offset: -0.20
-
-    # under:
-    #   offset: 0.20
-
-    # esc:
-    #   align: top
-    #   offset: 0.12
-    #   width: 100
-
-    # ins:
-    #   align: top
-    #   offset: -0.2
-    #   width: 85
-
-    # del:
-    #   align: top
-    #   offset: -0.2
-    #   width: 85
-
-    # ent:
-    #   align: top
-    #   offset: 0.12
-    #   width: 100
-
-    # lbrc:
-    #   dendron: true
-
-    # rbrc:
-    #   dendron: true
-
-    # lpar:
-    #   dendron: true
-
-    # rpar:
-    #   dendron: true
-
-    # div:
-    #   dendron: true
-
-    # mul:
-    #   dendron: true
 
     exit:
       align: top

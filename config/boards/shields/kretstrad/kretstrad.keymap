@@ -140,10 +140,8 @@
         bspc    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};           // BSPC
 
         // odwrotny (GRAVE) oraz zwykły (APOS) apostrof
-        // tilde   {key-positions = <2 12>; bindings = <&kp TILDE>; layers = <DEF COL NUM>; COMBO;};              // ~
         grave   {key-positions = <3 4>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};                // `~
         apos    {key-positions = <5 6>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};                 // '"
-        // dqt     {key-positions = <7 17>; bindings = <&kp DQT>; layers = <DEF COL NUM>; COMBO;};                 // "
 
         n1      {key-positions = <0 10>; bindings = <&kp N1>; layers = <DEF COL NUM>; COMBO;};                  // 1
         n2      {key-positions = <1 11>; bindings = <&kp N2>; layers = <DEF COL NUM>; COMBO;};                  // 2
