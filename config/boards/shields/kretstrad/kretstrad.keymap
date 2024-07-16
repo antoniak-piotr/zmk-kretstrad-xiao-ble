@@ -178,10 +178,10 @@
         // div     {key-positions = <4 13>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /
         mul     {key-positions = <5 16>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                // *
 
-        // // NAV LAYERS COMBOS
-        // home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
-        // end     {key-positions = <18 28>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
-        // bounce  {key-positions = <5 15>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
+        // NAV LAYERS COMBOS
+        home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
+        end     {key-positions = <18 28>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
+        bounce  {key-positions = <5 15>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
 
         // // PREV/NEXT/DROP BOOKMARKS
         // bmrk1   {key-positions = <6 16>; bindings = <&kp LCA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)

@@ -1003,6 +1003,18 @@ text.combo {
 <text x="560" y="88" class="combo tap">BSPC</text>
 <text x="560" y="88" class="combo shifted">DEL</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="517" y="112" width="30" height="14" class="combo"/>
+<text x="532" y="119" class="combo tap">HOME</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="629" y="112" width="30" height="14" class="combo"/>
+<text x="644" y="119" class="combo tap">END</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="461" y="63" width="30" height="14" class="combo"/>
+<text x="476" y="70" class="combo tap">SWAP</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1046)" class="layer-CONF">
