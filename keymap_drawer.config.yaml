@@ -130,11 +130,11 @@ parse_config:
     # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
     "&kp LCA(UP)":
       tap: IDNT-
-      hold: $$mdi:tag$$
+      hold: $$mdi:tag-outline$$
       # hold: $$mdi:tag-arrow-up$$
     "&kp LCA(DOWN)":
       tap: IDNT+
-      hold: $$mdi:tag$$
+      hold: $$mdi:tag-outline$$
       # hold: $$mdi:tag-arrow-down$$
     "&kp LSC(UP)":
       tap: SWAP
@@ -229,17 +229,17 @@ parse_config:
 
     "&kp PG_UP":
       tap: PGUP
-      hold: $$mdi:chevron-double-up$$
+      hold: $$mdi:chevron-triple-up$$
     "&kp PG_DN":
       tap: PGDN
-      hold: $$mdi:chevron-double-down$$
+      hold: $$mdi:chevron-triple-down$$
 
     "&kp LC(LEFT)":
       tap: "<WORD"
-      hold: $$mdi:chevron-triple-left$$
+      hold: $$mdi:chevron-double-left$$
     "&kp LC(RIGHT)":
       tap: "WORD>"
-      hold: $$mdi:chevron-triple-right$$
+      hold: $$mdi:chevron-double-right$$
 
     # COMMENT
     "&kp LC(SLASH)":
