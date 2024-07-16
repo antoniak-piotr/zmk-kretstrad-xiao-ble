@@ -129,15 +129,15 @@ parse_config:
 
     # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
     "&kp LCA(UP)":
-      tap: <IDNT
+      tap: <IDEN
       hold: $$mdi:tag-outline$$
       # hold: $$mdi:tag-arrow-up$$
     "&kp LCA(DOWN)":
-      tap: IDNT>
+      tap: IDEN>
       hold: $$mdi:tag-outline$$
       # hold: $$mdi:tag-arrow-down$$
     "&kp LSC(UP)":
-      tap: SWAP
+      tap: BOUNC
       # hold: $$mdi:swap-vertical$$
 
     # PREV/NEXT/DROP BOOKMARKS (Parnassus)
