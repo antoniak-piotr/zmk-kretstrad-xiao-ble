@@ -90,7 +90,7 @@
 
         NAV_layer {
             bindings = <
-                &kp LG(MINUS)   &kp LG(EQUAL)   &none           &none           &lht PSCRN SNIP         &none           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
+                &none           &kp LG(MINUS)   &kp LG(EQUAL)   &none           &lht PSCRN SNIP         &none           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
                 &hm LSHF LSC(Z) &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &kp LC(Z)       &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &none                   &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
                                                                 &mt LWIN 0      &lt NUM ESC             &trans          &mt RALT TAB
@@ -191,18 +191,6 @@
         // UTILS
         comment {key-positions = <18 19>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                  // Ctrl + / - przydaje się do komentowania kodu
         exit    {key-positions = <1 2>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
-
-        // // +, -, *, /
-        // // excl    {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <DEF COL NUM>; COMBO;};                // !
-        // // at      {key-positions = <1 11>; bindings = <&kp AT>; layers = <DEF COL NUM>; COMBO;};                  // @
-        // // hash    {key-positions = <2 12>; bindings = <&kp HASH>; layers = <DEF COL NUM>; COMBO;};                // #
-        // // dllr    {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <DEF COL NUM>; COMBO;};                // $
-        // // prcnt   {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <DEF COL NUM>; COMBO;};               // %
-
-        // // caret   {key-positions = <5 15>; bindings = <&kp CARET>; layers = <DEF COL NUM>; COMBO;};               // ^
-        // // amps    {key-positions = <6 16>; bindings = <&kp AMPS>; layers = <DEF COL NUM>; COMBO;};                // &
-
-        // // under   {key-positions = <12 22>; bindings = <&kp UNDER>; layers = <DEF COL NUM>; COMBO;};              // _
      };
 
     behaviors {

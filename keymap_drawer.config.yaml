@@ -1,15 +1,18 @@
 draw_config:
   # key_h: 60
-  combo_w: 30
-  combo_h: 14
+  combo_w: 21
+  combo_h: 15
   small_pad: 8
   shrink_wide_legends: 5
-  glyph_tap_size: 24
-  glyph_hold_size: 10
-  glyph_shifted_size: 10
+
+  # glyph_tap_size: 24
+  # glyph_hold_size: 10
+  # glyph_shifted_size: 10
+
   arc_radius: 0
   # separate_combo_diagrams: False
   # draw_key_sides: True
+
   append_colon_to_layer_header: False
 
   svg_extra_style: |
@@ -35,13 +38,13 @@ draw_config:
     }
 
     text.hold, text.shifted {
-      font-size: 9px;
+      /* font-size: 9px; */
       font-weight: normal;
     }
 
     text.combo {
-      font-size: 11px;
-      font-weight: bold;
+      /* font-size: 11px; */
+      /* font-weight: bold; */
     }
 
 parse_config:
@@ -73,7 +76,7 @@ parse_config:
     "&kp N0":
       tap: "0)"
 
-    # OTHER SHIFTED KEYS
+    # SHIFTED KEYS
     "&kp COMMA":
       tap: ",<"
     "&kp DOT":
@@ -93,7 +96,11 @@ parse_config:
     "&kp SEMI":
       tap: ";:"
 
-    # CUT, COPY, PASTE
+    # BSPC, DEL, BSDL, CUT, COPY, PASTE
+    "&bsdl":
+      tap: BSDL
+      # hold: $$mdi:content-cut$$
+
     "&kp LC(X)":
       tap: CUT
       hold: $$mdi:content-cut$$
@@ -135,21 +142,21 @@ parse_config:
 
     # PREV/NEXT/DROP BOOKMARKS (Parnassus)
     "&kp LCA(LEFT)":
-      tap: "<BMK<"
+      tap: "<BMK"
       # hold: $$mdi:bookmark$$
     "&kp LCA(RIGHT)":
-      tap: ">BMK>"
+      tap: "BMK>"
       # hold: $$mdi:bookmark$$
     "&kp LC(B)":
-      tap: "⌄BMK⌄"
+      tap: "BMK"
       # hold: $$mdi:bookmark$$
 
     # PREV/NEXT HISTORY + GOTO DEFINITION (Delphi IDE)
     "&kp LA(LEFT)":
-      tap: HIST-
+      tap: <HIST
       hold: $$mdi:step-backward-2$$
     "&kp LA(RIGHT)":
-      tap: HIST+
+      tap: HIST>
       hold: $$mdi:step-forward-2$$
     "&kp LA(UP)":
       tap: DECL
@@ -158,10 +165,8 @@ parse_config:
     # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
     "&kp LS(LA(S))":
       tap: GREP
-
     "&kp LC(F)":
       tap: FIND
-
     "&kp LC(G)":
       tap: GOTO
 
@@ -176,17 +181,11 @@ parse_config:
       tap: EXIT
       # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
 
-    # CAPS WORD
+    # CAPSLOCK, CAPSWORD
+    "&kp CLCK":
+      tap: CLCK # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
     "&caps_word":
-      tap: CAPS # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
-
-    # "&bsdl":
-    #   tap: BSPC # $$mdi:backspace-outline$$
-
-    # "&lpb":
-    #   tap: "([{" # hold: $$mdi:close-box$$
-    # "&rpb":
-    #   tap: "}])" # hold: $$mdi:close-box$$
+      tap: CWRD # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
 
     # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK)
     "&out OUT_TOG":
@@ -236,15 +235,15 @@ parse_config:
       hold: $$mdi:chevron-double-down$$
 
     "&kp LC(LEFT)":
-      tap: WORD
+      tap: "<WORD"
       hold: $$mdi:chevron-triple-left$$
     "&kp LC(RIGHT)":
-      tap: WORD
+      tap: "WORD>"
       hold: $$mdi:chevron-triple-right$$
 
     # COMMENT
     "&kp LC(SLASH)":
-      tap: CMNT
+      tap: "//"
       # hold: //
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
@@ -271,28 +270,35 @@ parse_config:
       type: none
 
   zmk_combos:
-    caps:
-      # align: bottom
-      # offset: -2.0
-      width: 40
+    clck:
+      width: 41
+    cwrd:
+      width: 41
+
+    tab:
+      width: 31
+    bsdl:
+      width: 31
 
     exit:
       align: top
       offset: 0.15
-      width: 40
+      width: 35
 
-    tab:
-      width: 30
+    menter:
+      width: 41
 
-    bspc:
-      width: 30
+    home:
+      width: 31
+    end:
+      width: 31
 
-    del:
-      width: 30
+    bmrk1:
+      width: 31
+    bmrk2:
+      width: 31
+    bmrk3:
+      width: 31
 
-    div:
-      tap: "/"
-      width: 30
-
-    comment:
-      width: 40
+    bounce:
+      width: 31
