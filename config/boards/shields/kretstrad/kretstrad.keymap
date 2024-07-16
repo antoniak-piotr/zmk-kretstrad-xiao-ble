@@ -168,9 +168,9 @@
         equal   {key-positions = <12 22>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
         colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
 
-        // // SLASH, BSLH
-        // bslh    {key-positions = <10 11>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; COMBO;};               // \|
-        // slash   {key-positions = <18 19>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /?
+        // SLASH, BSLH
+        bslh    {key-positions = <10 11>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; COMBO;};               // \|
+        slash   {key-positions = <18 19>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /?
 
         // // MINUS, PLUS, DIV and MUL
         // minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_

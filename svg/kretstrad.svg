@@ -548,6 +548,22 @@ text.combo {
 <rect rx="6" ry="6" x="573" y="105" width="30" height="14" class="combo"/>
 <text x="588" y="112" class="combo tap">:</text>
 </g>
+<g class="combo combopos-44">
+<rect rx="6" ry="6" x="41" y="91" width="30" height="14" class="combo"/>
+<text x="56" y="98" class="combo tap">\|</text>
+</g>
+<g class="combo combopos-45">
+<rect rx="6" ry="6" x="41" y="91" width="30" height="14" class="combo"/>
+<text x="56" y="98" class="combo tap">\|</text>
+</g>
+<g class="combo combopos-46">
+<rect rx="6" ry="6" x="657" y="91" width="30" height="14" class="combo"/>
+<text x="672" y="98" class="combo tap">/?</text>
+</g>
+<g class="combo combopos-47">
+<rect rx="6" ry="6" x="657" y="91" width="30" height="14" class="combo"/>
+<text x="672" y="98" class="combo tap">/?</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 349)" class="layer-NUM">
@@ -775,6 +791,14 @@ text.combo {
 <g class="combo combopos-19">
 <rect rx="6" ry="6" x="573" y="105" width="30" height="14" class="combo"/>
 <text x="588" y="112" class="combo tap">:</text>
+</g>
+<g class="combo combopos-20">
+<rect rx="6" ry="6" x="41" y="91" width="30" height="14" class="combo"/>
+<text x="56" y="98" class="combo tap">\|</text>
+</g>
+<g class="combo combopos-21">
+<rect rx="6" ry="6" x="657" y="91" width="30" height="14" class="combo"/>
+<text x="672" y="98" class="combo tap">/?</text>
 </g>
 </g>
 </g>
