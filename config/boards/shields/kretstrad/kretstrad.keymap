@@ -124,23 +124,27 @@
     │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
     ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
                 ╰────────╯ ╰────────╯         */
-    #define COMBO timeout-ms = <100>
+
+    #define COMBO timeout-ms = <200>
+    #define LCOMBO timout-ms = <250>
 
     combos {
         compatible = "zmk,combos";
 
-        // CAPS-WORD, UNDER
-        caps    {key-positions = <10 19>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPS WORD
+        // CAPSLOCK, CAPSWORD
+        clck    {key-positions = <3 6>; bindings = <&kp CLCK>; layers = <DEF COL>; COMBO;};                     // CAPSLOCK
+        cwrd    {key-positions = <13 16>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPSWORD
 
         // ESC, TAB, DEL and BSPC
-        esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};              // ESC
+        // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};              // ESC
         tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};            // TAB
-        del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};              // DEL
-        bspc    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};           // BSPC
+        // del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};              // DEL
+        // bspc    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};           // BSPC
+        bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSDL
 
         // GRAVE, APOS
-        grave   {key-positions = <3 4>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};                // `~
-        apos    {key-positions = <5 6>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};                 // '"
+        grave   {key-positions = <11 12>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};              // `~
+        apos    {key-positions = <17 18>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};               // '"
 
         // NUMERICS
         n1      {key-positions = <0 10>; bindings = <&kp N1>; layers = <DEF COL NUM>; COMBO;};                  // 1
@@ -155,29 +159,29 @@
         n0      {key-positions = <9 19>; bindings = <&kp N0>; layers = <DEF COL NUM>; COMBO;};                  // 0
 
         // PAR, BKT
-        lpar    {key-positions = <17 27>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
+        lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
         rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
         lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
-        rbkt    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
+        rbkt    {key-positions = <13 23>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
 
         // EQUAL, COLON
-        equal   {key-positions = <13 23>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
-        colon   {key-positions = <16 26>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
+        equal   {key-positions = <12 22>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
+        colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
 
         // SLASH, BSLH
-        bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; COMBO;};               // \|
-        slash   {key-positions = <19 29>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /?
+        bslh    {key-positions = <10 11>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; COMBO;};               // \|
+        slash   {key-positions = <18 19>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /?
 
         // MINUS, PLUS, DIV and MUL
-        minus   {key-positions = <14 24>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
-        plus    {key-positions = <15 25>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
-        div     {key-positions = <13 14>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /
-        mul     {key-positions = <15 16>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                // *
+        minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
+        plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
+        div     {key-positions = <4 13>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /
+        mul     {key-positions = <5 16>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                // *
 
         // NAV LAYERS COMBOS
         home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
         end     {key-positions = <18 28>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
-        bounce  {key-positions = <15 25>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                    // Declaration <-> Implementation
+        bounce  {key-positions = <5 15>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
 
         // PREV/NEXT/DROP BOOKMARKS
         bmrk1   {key-positions = <6 16>; bindings = <&kp LCA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
@@ -185,8 +189,8 @@
         bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
 
         // UTILS
-        comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                  // Ctrl + / - przydaje się do komentowania kodu
-        exit    {key-positions = <0 1>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
+        comment {key-positions = <18 19>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                  // Ctrl + / - przydaje się do komentowania kodu
+        exit    {key-positions = <1 2>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
 
 
         // +, -, *, /
@@ -212,7 +216,6 @@
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
@@ -222,7 +225,6 @@
 
         lht: long_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LONG_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <350>;
@@ -230,13 +232,31 @@
             bindings = <&kp>, <&kp>;
         };
 
-        // bsdl: bspc_del {    // BACKSPACE lub DELETE jeśli wciśnięto lewy shift (prawego można używać normalnie czyli można użyc Shift+DEL
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "BACKSPACE_DELETE";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp BSPC>, <&kp DEL>;
-        //     mods = <(MOD_LSFT)>;
-        // };
+        bsdl: bspc_del {    // BACKSPACE lub DELETE jeśli wciśnięto lewy shift (prawego można używać normalnie czyli można użyc Shift+DEL
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
+        spacetab: space_tab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp TAB>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
+        st: spc_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPTAB";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
+            bindings = <&mo>, <&spacetab>;
+        };
 
         // prev: prev_app_or_desktop {
         //     compatible = "zmk,behavior-mod-morph";
@@ -324,16 +344,15 @@
     };
 
     macros {
-        // dm: delphi_macro {
-        //     #binding-cells = <1>;
-        //     label = "DELPHI_MACRO";
-        //     compatible = "zmk,behavior-macro-one-param";
-        //     bindings =
-        //         <&macro_press &kp LSHFT &kp LCTRL>,
-        //         <&macro_tap &kp K>,
-        //         <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-        //         <&macro_release &kp LSHFT &kp LCTRL>;
-        // };
+        dm: delphi_macro {
+            #binding-cells = <1>;
+            compatible = "zmk,behavior-macro-one-param";
+            bindings =
+                <&macro_press &kp LSHFT &kp LCTRL>,
+                <&macro_tap &kp K>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_release &kp LSHFT &kp LCTRL>;
+        };
 
         // dequal: delphi_equal {
         //     #binding-cells = <0>;
