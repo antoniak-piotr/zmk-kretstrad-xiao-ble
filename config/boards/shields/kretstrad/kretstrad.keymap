@@ -158,25 +158,25 @@
         n9      {key-positions = <8 18>; bindings = <&kp N9>; layers = <DEF COL NUM>; COMBO;};                  // 9
         n0      {key-positions = <9 19>; bindings = <&kp N0>; layers = <DEF COL NUM>; COMBO;};                  // 0
 
-        // // PAR, BKT
-        // lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
-        // rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
-        // lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
-        // rbkt    {key-positions = <13 23>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
+        // PAR, BKT
+        lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
+        rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
+        lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
+        rbkt    {key-positions = <13 23>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
 
-        // // EQUAL, COLON
-        // equal   {key-positions = <12 22>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
-        // colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
+        // EQUAL, COLON
+        equal   {key-positions = <12 22>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
+        colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
 
-        // // SLASH, BSLH
-        // bslh    {key-positions = <10 11>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; COMBO;};               // \|
-        // slash   {key-positions = <18 19>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /?
+        // SLASH, BSLH
+        bslh    {key-positions = <10 11>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; COMBO;};               // \|
+        slash   {key-positions = <18 19>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /?
 
-        // // MINUS, PLUS, DIV and MUL
-        // minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
-        // plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
-        // div     {key-positions = <4 13>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /
-        // mul     {key-positions = <5 16>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                // *
+        // MINUS, PLUS, DIV and MUL
+        minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
+        plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
+        div     {key-positions = <4 13>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};               // /
+        mul     {key-positions = <5 16>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                // *
 
         // // NAV LAYERS COMBOS
         // home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
