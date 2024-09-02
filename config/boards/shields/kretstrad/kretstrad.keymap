@@ -277,13 +277,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        // bsdl: bspc_del {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "BACKSPACE_DELETE";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp BSPC>, <&kp DEL>;
-        //     mods = <(MOD_LSFT)>;
-        // };
+        bsdl: bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
     };
 
     macros {
