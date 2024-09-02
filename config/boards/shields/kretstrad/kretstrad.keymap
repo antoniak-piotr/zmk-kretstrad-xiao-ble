@@ -287,16 +287,16 @@
     };
 
     macros {
-        // dm: delphi_macro {
-        //     #binding-cells = <1>;
-        //     label = "DELPHI_MACRO";
-        //     compatible = "zmk,behavior-macro-one-param";
-        //     bindings =
-        //         <&macro_press &kp LSHFT &kp LCTRL>,
-        //         <&macro_tap &kp K>,
-        //         <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-        //         <&macro_release &kp LSHFT &kp LCTRL>;
-        // };
+        dm: delphi_macro { // code block folding
+            #binding-cells = <1>;
+            label = "DELPHI_MACRO";
+            compatible = "zmk,behavior-macro-one-param";
+            bindings =
+                <&macro_press &kp LSHFT &kp LCTRL>,
+                <&macro_tap &kp K>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_release &kp LSHFT &kp LCTRL>;
+        };
 
         // dequal: delphi_equal {
         //     #binding-cells = <0>;
@@ -307,11 +307,11 @@
 
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <NUM NAV>;
-            then-layer = <FUN>;
-        };
-    };
+    // conditional_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     tri_layer {
+    //         if-layers = <NUM NAV>;
+    //         then-layer = <FUN>;
+    //     };
+    // };
 };
