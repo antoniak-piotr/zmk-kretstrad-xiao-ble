@@ -51,165 +51,165 @@ parse_config:
     tap: ""
 
   raw_binding_map:
-    "&kp COMMA":
-      tap: ", <"
+    # "&kp COMMA":
+    #   tap: ", <"
 
-    "&kp DOT":
-      tap: ". >"
+    # "&kp DOT":
+    #   tap: ". >"
 
-    "&kp SLASH":
-      tap: "/ ?"
+    # "&kp SLASH":
+    #   tap: "/ ?"
 
-    "&kp BSLH":
-      tap: "\ |"
+    # "&kp BSLH":
+    #   tap: "\ |"
 
-    "&kp LBKT":
-      tap: "[ {"
+    # "&kp LBKT":
+    #   tap: "[ {"
 
-    "&kp RBKT":
-      tap: "] }"
+    # "&kp RBKT":
+    #   tap: "] }"
 
-    "&kp GRAVE":
-      tap: "` ~"
+    # "&kp GRAVE":
+    #   tap: "` ~"
 
-    "&kp APOS":
-      tap: "' """
+    # "&kp APOS":
+    #   tap: "' """
 
-    "&kp MINUS":
-      tap: "- _"
+    # "&kp MINUS":
+    #   tap: "- _"
 
-    "&kp EQUAL":
-      tap: "= +"
+    # "&kp EQUAL":
+    #   tap: "= +"
 
-    "&kp SEMI":
-      tap: "; :"
-
-
-    "&kp LC(X)":
-      tap: CUT
-      hold: $$mdi:content-cut$$
-    "&kp LC(C)":
-      tap: COPY
-      hold: $$mdi:content-copy$$
-    "&kp LC(V)":
-      tap: PASTE
-      hold: $$mdi:content-paste$$
-
-    "&kp LSC(Z)":
-      tap: REDO
-      hold: $$mdi:redo$$
-    "&kp LC(Z)":
-      tap: UNDO
-      hold: $$mdi:undo$$
-
-    "&kp LSG(S)":
-      tap: SNIP
-      hold: $$mdi:crop$$ # select-drag$$
-    "&kp PSCRN":
-      tap: PSCRN
-      hold: $$mdi:crop$$ # select$$
-
-    "&kp LG(EQUAL)":
-      tap: ZOOM+
-      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
-    "&kp LG(MINUS)":
-      tap: ZOOM-
-      hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    "&kp LG(ESC)":
-      tap: EXIT
-      # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-
-    "&caps_word":
-      tap: CAPS # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
-
-    "&bsdl":
-      tap: BSPC # $$mdi:backspace-outline$$
-
-    "&lpb":
-      tap: "([{" # hold: $$mdi:close-box$$
-    "&rpb":
-      tap: "}])" # hold: $$mdi:close-box$$
-
-    # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK
-    "&out OUT_TOG":
-      tap: "BT/USB"
-      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
-    "&tog COL":
-      tap: COLEMAK
-      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
-
-    "&sys_reset":
-      tap: RESET
-      hold: $$mdi:power$$
-    "&bootloader":
-      tap: BOOT
-      hold: $$mdi:cloud-download-outline$$
-
-    "&bt BT_CLR":
-      tap: "BT" # $$mdi:bluetooth$$
-      hold: "CLR" # $$mdi:close-box$$
-
-    # nawigacja
-    "&kp LEFT":
-      tap: LEFT
-      hold: $$mdi:chevron-left$$
-    "&kp RIGHT":
-      tap: RIGHT
-      hold: $$mdi:chevron-right$$
-    "&kp UP":
-      tap: UP
-      hold: $$mdi:chevron-up$$
-    "&kp DOWN":
-      tap: DOWN
-      hold: $$mdi:chevron-down$$
-
-    "&kp HOME":
-      tap: HOME
-      hold: $$mdi:page-first$$
-    "&kp END":
-      tap: END
-      hold: $$mdi:page-last$$
-
-    "&kp PG_UP":
-      tap: PGUP
-      hold: $$mdi:chevron-double-up$$
-    "&kp PG_DN":
-      tap: PGDN
-      hold: $$mdi:chevron-double-down$$
-
-    "&kp LC(LEFT)":
-      tap: WORD
-      hold: $$mdi:chevron-left-box-outline$$
-    "&kp LC(RIGHT)":
-      tap: WORD
-      hold: $$mdi:chevron-right-box-outline$$
-    "&kp LC(SLASH)":
-      tap: "COMMENT"
-      hold: "//"
+    # "&kp SEMI":
+    #   tap: "; :"
 
 
-    # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
-    "&kp LA(TAB)":
-      tap: "PREV"
-      hold: $$mdi:page-previous-outline$$
-    "&prev":
-      tap: "PREV"
-      hold: $$mdi:page-previous-outline$$
-    "&next":
-      tap: "NEXT"
-      hold: $$mdi:page-next-outline$$
+    # "&kp LC(X)":
+    #   tap: CUT
+    #   hold: $$mdi:content-cut$$
+    # "&kp LC(C)":
+    #   tap: COPY
+    #   hold: $$mdi:content-copy$$
+    # "&kp LC(V)":
+    #   tap: PASTE
+    #   hold: $$mdi:content-paste$$
 
-    "&dlequal":
-      tap: "≤"
+    # "&kp LSC(Z)":
+    #   tap: REDO
+    #   hold: $$mdi:redo$$
+    # "&kp LC(Z)":
+    #   tap: UNDO
+    #   hold: $$mdi:undo$$
 
-    "&dequal":
-      tap: ":="
+    # "&kp LSG(S)":
+    #   tap: SNIP
+    #   hold: $$mdi:crop$$ # select-drag$$
+    # "&kp PSCRN":
+    #   tap: PSCRN
+    #   hold: $$mdi:crop$$ # select$$
 
-    "&dgequal":
-      tap: "≥"
+    # "&kp LG(EQUAL)":
+    #   tap: ZOOM+
+    #   hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
+    # "&kp LG(MINUS)":
+    #   tap: ZOOM-
+    #   hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    # "&kp LG(ESC)":
+    #   tap: EXIT
+    #   # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
 
-    "&none":
-      type: none
+    # "&caps_word":
+    #   tap: CAPS # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+
+    # "&bsdl":
+    #   tap: BSPC # $$mdi:backspace-outline$$
+
+    # "&lpb":
+    #   tap: "([{" # hold: $$mdi:close-box$$
+    # "&rpb":
+    #   tap: "}])" # hold: $$mdi:close-box$$
+
+    # # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK
+    # "&out OUT_TOG":
+    #   tap: "BT/USB"
+    #   hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
+    # "&tog COL":
+    #   tap: COLEMAK
+    #   hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
+
+    # "&sys_reset":
+    #   tap: RESET
+    #   hold: $$mdi:power$$
+    # "&bootloader":
+    #   tap: BOOT
+    #   hold: $$mdi:cloud-download-outline$$
+
+    # "&bt BT_CLR":
+    #   tap: "BT" # $$mdi:bluetooth$$
+    #   hold: "CLR" # $$mdi:close-box$$
+
+    # # nawigacja
+    # "&kp LEFT":
+    #   tap: LEFT
+    #   hold: $$mdi:chevron-left$$
+    # "&kp RIGHT":
+    #   tap: RIGHT
+    #   hold: $$mdi:chevron-right$$
+    # "&kp UP":
+    #   tap: UP
+    #   hold: $$mdi:chevron-up$$
+    # "&kp DOWN":
+    #   tap: DOWN
+    #   hold: $$mdi:chevron-down$$
+
+    # "&kp HOME":
+    #   tap: HOME
+    #   hold: $$mdi:page-first$$
+    # "&kp END":
+    #   tap: END
+    #   hold: $$mdi:page-last$$
+
+    # "&kp PG_UP":
+    #   tap: PGUP
+    #   hold: $$mdi:chevron-double-up$$
+    # "&kp PG_DN":
+    #   tap: PGDN
+    #   hold: $$mdi:chevron-double-down$$
+
+    # "&kp LC(LEFT)":
+    #   tap: WORD
+    #   hold: $$mdi:chevron-left-box-outline$$
+    # "&kp LC(RIGHT)":
+    #   tap: WORD
+    #   hold: $$mdi:chevron-right-box-outline$$
+    # "&kp LC(SLASH)":
+    #   tap: "COMMENT"
+    #   hold: "//"
+
+
+    # # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
+    # "&kp LA(TAB)":
+    #   tap: "PREV"
+    #   hold: $$mdi:page-previous-outline$$
+    # "&prev":
+    #   tap: "PREV"
+    #   hold: $$mdi:page-previous-outline$$
+    # "&next":
+    #   tap: "NEXT"
+    #   hold: $$mdi:page-next-outline$$
+
+    # "&dlequal":
+    #   tap: "≤"
+
+    # "&dequal":
+    #   tap: ":="
+
+    # "&dgequal":
+    #   tap: "≥"
+
+    # "&none":
+    #   type: none
 
   zmk_combos:
     # caps:
