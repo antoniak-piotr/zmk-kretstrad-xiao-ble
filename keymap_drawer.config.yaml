@@ -96,36 +96,36 @@ parse_config:
     "&kp SEMI":
       tap: ";:"
 
-    # # BSPC, DEL, BSDL, CUT, COPY, PASTE
-    # "&bsdl":
-    #   tap: BSDL
-    #   # hold: $$mdi:content-cut$$
+    # BSPC, DEL, BSDL, CUT, COPY, PASTE
+    "&bsdl":
+      tap: BSDL
+      # hold: $$mdi:content-cut$$
 
-    # "&kp LC(X)":
-    #   tap: CUT
-    #   hold: $$mdi:content-cut$$
-    # "&kp LC(C)":
-    #   tap: COPY
-    #   hold: $$mdi:content-copy$$
-    # "&kp LC(V)":
-    #   tap: PASTE
-    #   hold: $$mdi:content-paste$$
+    "&kp LC(X)":
+      tap: CUT
+      hold: $$mdi:content-cut$$
+    "&kp LC(C)":
+      tap: COPY
+      hold: $$mdi:content-copy$$
+    "&kp LC(V)":
+      tap: PASTE
+      hold: $$mdi:content-paste$$
 
-    # # UNDO, REDO
-    # "&kp LC(Z)":
-    #   tap: UNDO
-    #   hold: $$mdi:undo$$
-    # "&kp LSC(Z)":
-    #   tap: REDO
-    #   hold: $$mdi:redo$$
+    # UNDO, REDO
+    "&kp LC(Z)":
+      tap: UNDO
+      hold: $$mdi:undo$$
+    "&kp LSC(Z)":
+      tap: REDO
+      hold: $$mdi:redo$$
 
-    # # SNIP, PSCRN
-    # "&kp LSG(S)":
-    #   tap: SNIP
-    #   hold: $$mdi:crop$$ # select-drag$$
-    # "&kp PSCRN":
-    #   tap: PSCRN
-    #   hold: $$mdi:crop$$ # select$$
+    # SNIP, PSCRN
+    "&kp LSG(S)":
+      tap: SNIP
+      hold: $$mdi:crop$$ # select-drag$$
+    "&kp PSCRN":
+      tap: PSCRN
+      hold: $$mdi:crop$$ # select$$
 
     # # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
     # "&kp LCA(UP)":
