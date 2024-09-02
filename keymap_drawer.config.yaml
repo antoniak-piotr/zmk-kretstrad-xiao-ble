@@ -162,49 +162,49 @@ parse_config:
       tap: DECL
       hold: $$mdi:pencil$$
 
-    # # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
-    # "&kp LS(LA(S))":
-    #   tap: GREP
-    # "&kp LC(F)":
-    #   tap: FIND
-    # "&kp LC(G)":
-    #   tap: GOTO
+    # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
+    "&kp LS(LA(S))":
+      tap: GREP
+    "&kp LC(F)":
+      tap: FIND
+    "&kp LC(G)":
+      tap: GOTO
 
-    # # MAGNIFIER
-    # "&kp LG(EQUAL)":
-    #   tap: ZOOM+
-    #   hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
-    # "&kp LG(MINUS)":
-    #   tap: ZOOM-
-    #   hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    # "&kp LG(ESC)":
-    #   tap: EXIT
-    #   # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    # MAGNIFIER
+    "&kp LG(EQUAL)":
+      tap: ZOOM+
+      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
+    "&kp LG(MINUS)":
+      tap: ZOOM-
+      hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    "&kp LG(ESC)":
+      tap: EXIT
+      # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
 
-    # # CAPSLOCK, CAPSWORD
-    # "&kp CLCK":
-    #   tap: CLCK # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
-    # "&caps_word":
-    #   tap: CWRD # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+    # CAPSLOCK, CAPSWORD
+    "&kp CLCK":
+      tap: CLCK # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+    "&caps_word":
+      tap: CWRD # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
 
-    # # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK)
-    # "&out OUT_TOG":
-    #   tap: BT/USB
-    #   hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
-    # "&tog COL":
-    #   tap: COLEMAK
-    #   hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
+    # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK)
+    "&out OUT_TOG":
+      tap: BT/USB
+      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
+    "&tog COL":
+      tap: COLEMAK
+      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
 
-    # "&sys_reset":
-    #   tap: RESET
-    #   hold: $$mdi:power$$
-    # "&bootloader":
-    #   tap: BOOT
-    #   hold: $$mdi:cloud-download-outline$$
+    "&sys_reset":
+      tap: RESET
+      hold: $$mdi:power$$
+    "&bootloader":
+      tap: BOOT
+      hold: $$mdi:cloud-download-outline$$
 
-    # "&bt BT_CLR":
-    #   tap: BT # $$mdi:bluetooth$$
-    #   hold: CLR # $$mdi:close-box$$
+    "&bt BT_CLR":
+      tap: BT # $$mdi:bluetooth$$
+      hold: CLR # $$mdi:close-box$$
 
     # # nawigacja
     # "&kp LEFT":
