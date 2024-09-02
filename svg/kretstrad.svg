@@ -54,6 +54,9 @@
 <svg id="mdi:undo">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-undo" viewBox="0 0 24 24"><path d="M12.5,8C9.85,8 7.45,9 5.6,10.6L2,7V16H11L7.38,12.38C8.77,11.22 10.54,10.5 12.5,10.5C16.04,10.5 19.05,12.81 20.1,16L22.47,15.22C21.08,11.03 17.15,8 12.5,8Z" /></svg>
 </svg>
+<svg id="mdi:unfold-more-vertical">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-unfold-more-vertical" viewBox="0 0 24 24"><path d="M18.17,12L15,8.83L16.41,7.41L21,12L16.41,16.58L15,15.17L18.17,12M5.83,12L9,15.17L7.59,16.59L3,12L7.59,7.42L9,8.83L5.83,12Z" /></svg>
+</svg>
 </defs>/* end glyphs */
 <style>/* inherit to force styles through use tags */
 svg path {
@@ -1009,8 +1012,10 @@ text.combo {
 <text x="0" y="0" class="key tap">ZOOM+</text>
 <use href="#mdi:magnify" xlink:href="#mdi:magnify" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:magnify"/>
 </g>
-<g transform="translate(196, 35)" class="key none keypos-3">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(196, 35)" class="key keypos-3">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">TGGL</text>
+<use href="#mdi:unfold-more-vertical" xlink:href="#mdi:unfold-more-vertical" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:unfold-more-vertical"/>
 </g>
 <g transform="translate(252, 42)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
