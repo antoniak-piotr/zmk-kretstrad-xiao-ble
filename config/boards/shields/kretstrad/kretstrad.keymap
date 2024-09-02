@@ -13,7 +13,7 @@
 #define COL 1           // Colemak-DH
 #define NUM 2           // liczby
 #define NAV 3           // nawigacja
-#define CFG 4           // konfiguracja (np. Bluetooth)
+#define CONF 4          // konfiguracja (np. Bluetooth)
 
 #define LSHF LSHFT
 #define LCTR LCTRL
@@ -29,17 +29,17 @@
 #define SNIP LSG(S)     // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
 
 &mt {
-    flavor = "tap-preferred";
+    // flavor = "tap-preferred";
     tapping-term-ms = <200>;
-    quick-tap-ms = <150>;
-    require-prior-idle-ms = <100>;
+    // quick-tap-ms = <150>;
+    // require-prior-idle-ms = <100>;
 };
 
 &lt {
-    flavor = "tap-preferred";
+    // flavor = "tap-preferred";
     tapping-term-ms = <200>;
     quick-tap-ms = <150>;
-    require-prior-idle-ms = <100>;
+    // require-prior-idle-ms = <100>;
 };
 
 &caps_word {
@@ -51,7 +51,7 @@
         compatible = "zmk,keymap";
 
             //  |       0       |       1       |       2       |       3       |       4       |       |       5       |       6       |       7       |       8       |       9       |
-       DEF_layer {
+        DEF_layer {
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &hm LSHF A      &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &hm RSHF SEMI
