@@ -96,160 +96,187 @@ parse_config:
     "&kp SEMI":
       tap: ";:"
 
-    # BSPC, DEL, BSDL, CUT, COPY, PASTE
-    "&bsdl":
-      tap: BSDL
-      # hold: $$mdi:content-cut$$
+    # # BSPC, DEL, BSDL, CUT, COPY, PASTE
+    # "&bsdl":
+    #   tap: BSDL
+    #   # hold: $$mdi:content-cut$$
 
-    "&kp LC(X)":
-      tap: CUT
-      hold: $$mdi:content-cut$$
-    "&kp LC(C)":
-      tap: COPY
-      hold: $$mdi:content-copy$$
-    "&kp LC(V)":
-      tap: PASTE
-      hold: $$mdi:content-paste$$
+    # "&kp LC(X)":
+    #   tap: CUT
+    #   hold: $$mdi:content-cut$$
+    # "&kp LC(C)":
+    #   tap: COPY
+    #   hold: $$mdi:content-copy$$
+    # "&kp LC(V)":
+    #   tap: PASTE
+    #   hold: $$mdi:content-paste$$
 
-    # UNDO, REDO
-    "&kp LC(Z)":
-      tap: UNDO
-      hold: $$mdi:undo$$
-    "&kp LSC(Z)":
-      tap: REDO
-      hold: $$mdi:redo$$
+    # # UNDO, REDO
+    # "&kp LC(Z)":
+    #   tap: UNDO
+    #   hold: $$mdi:undo$$
+    # "&kp LSC(Z)":
+    #   tap: REDO
+    #   hold: $$mdi:redo$$
 
-    # SNIP, PSCRN
-    "&kp LSG(S)":
-      tap: SNIP
-      hold: $$mdi:crop$$ # select-drag$$
-    "&kp PSCRN":
-      tap: PSCRN
-      hold: $$mdi:crop$$ # select$$
+    # # SNIP, PSCRN
+    # "&kp LSG(S)":
+    #   tap: SNIP
+    #   hold: $$mdi:crop$$ # select-drag$$
+    # "&kp PSCRN":
+    #   tap: PSCRN
+    #   hold: $$mdi:crop$$ # select$$
 
-    # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
-    "&kp LCA(UP)":
-      tap: <IDEN
-      hold: $$mdi:tag-outline$$
-      # hold: $$mdi:tag-arrow-up$$
-    "&kp LCA(DOWN)":
-      tap: IDEN>
-      hold: $$mdi:tag-outline$$
-      # hold: $$mdi:tag-arrow-down$$
-    "&kp LSC(UP)":
-      tap: BOUNC
-      # hold: $$mdi:swap-vertical$$
+    # # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
+    # "&kp LCA(UP)":
+    #   tap: <IDEN
+    #   hold: $$mdi:tag-outline$$
+    #   # hold: $$mdi:tag-arrow-up$$
+    # "&kp LCA(DOWN)":
+    #   tap: IDEN>
+    #   hold: $$mdi:tag-outline$$
+    #   # hold: $$mdi:tag-arrow-down$$
+    # "&kp LSC(UP)":
+    #   tap: BOUNC
+    #   # hold: $$mdi:swap-vertical$$
 
-    # PREV/NEXT/DROP BOOKMARKS (Parnassus)
-    "&kp LCA(LEFT)":
-      tap: "<BMK"
-      # hold: $$mdi:bookmark$$
-    "&kp LCA(RIGHT)":
-      tap: "BMK>"
-      # hold: $$mdi:bookmark$$
-    "&kp LC(B)":
-      tap: "BMK"
-      # hold: $$mdi:bookmark$$
+    # # PREV/NEXT/DROP BOOKMARKS (Parnassus)
+    # "&kp LCA(LEFT)":
+    #   tap: "<BMK"
+    #   # hold: $$mdi:bookmark$$
+    # "&kp LCA(RIGHT)":
+    #   tap: "BMK>"
+    #   # hold: $$mdi:bookmark$$
+    # "&kp LC(B)":
+    #   tap: "BMK"
+    #   # hold: $$mdi:bookmark$$
 
-    # PREV/NEXT HISTORY + GOTO DEFINITION (Delphi IDE)
-    "&kp LA(LEFT)":
-      tap: <HIST
-      hold: $$mdi:step-backward-2$$
-    "&kp LA(RIGHT)":
-      tap: HIST>
-      hold: $$mdi:step-forward-2$$
-    "&kp LA(UP)":
-      tap: DECL
-      hold: $$mdi:pencil$$
+    # # PREV/NEXT HISTORY + GOTO DEFINITION (Delphi IDE)
+    # "&kp LA(LEFT)":
+    #   tap: <HIST
+    #   hold: $$mdi:step-backward-2$$
+    # "&kp LA(RIGHT)":
+    #   tap: HIST>
+    #   hold: $$mdi:step-forward-2$$
+    # "&kp LA(UP)":
+    #   tap: DECL
+    #   hold: $$mdi:pencil$$
 
-    # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
-    "&kp LS(LA(S))":
-      tap: GREP
-    "&kp LC(F)":
-      tap: FIND
-    "&kp LC(G)":
-      tap: GOTO
+    # # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
+    # "&kp LS(LA(S))":
+    #   tap: GREP
+    # "&kp LC(F)":
+    #   tap: FIND
+    # "&kp LC(G)":
+    #   tap: GOTO
 
-    # MAGNIFIER
-    "&kp LG(EQUAL)":
-      tap: ZOOM+
-      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
-    "&kp LG(MINUS)":
-      tap: ZOOM-
-      hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    "&kp LG(ESC)":
-      tap: EXIT
-      # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    # # MAGNIFIER
+    # "&kp LG(EQUAL)":
+    #   tap: ZOOM+
+    #   hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
+    # "&kp LG(MINUS)":
+    #   tap: ZOOM-
+    #   hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    # "&kp LG(ESC)":
+    #   tap: EXIT
+    #   # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
 
-    # CAPSLOCK, CAPSWORD
-    "&kp CLCK":
-      tap: CLCK # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
-    "&caps_word":
-      tap: CWRD # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+    # # CAPSLOCK, CAPSWORD
+    # "&kp CLCK":
+    #   tap: CLCK # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+    # "&caps_word":
+    #   tap: CWRD # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
 
-    # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK)
-    "&out OUT_TOG":
-      tap: BT/USB
-      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
-    "&tog COL":
-      tap: COLEMAK
-      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
+    # # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK)
+    # "&out OUT_TOG":
+    #   tap: BT/USB
+    #   hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
+    # "&tog COL":
+    #   tap: COLEMAK
+    #   hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
 
-    "&sys_reset":
-      tap: RESET
-      hold: $$mdi:power$$
-    "&bootloader":
-      tap: BOOT
-      hold: $$mdi:cloud-download-outline$$
+    # "&sys_reset":
+    #   tap: RESET
+    #   hold: $$mdi:power$$
+    # "&bootloader":
+    #   tap: BOOT
+    #   hold: $$mdi:cloud-download-outline$$
 
-    "&bt BT_CLR":
-      tap: BT # $$mdi:bluetooth$$
-      hold: CLR # $$mdi:close-box$$
+    # "&bt BT_CLR":
+    #   tap: BT # $$mdi:bluetooth$$
+    #   hold: CLR # $$mdi:close-box$$
 
-    # nawigacja
-    "&kp LEFT":
-      tap: LEFT
-      hold: $$mdi:chevron-left$$
-    "&kp RIGHT":
-      tap: RIGHT
-      hold: $$mdi:chevron-right$$
-    "&kp UP":
-      tap: UP
-      hold: $$mdi:chevron-up$$
-    "&kp DOWN":
-      tap: DOWN
-      hold: $$mdi:chevron-down$$
+    # # nawigacja
+    # "&kp LEFT":
+    #   tap: LEFT
+    #   hold: $$mdi:chevron-left$$
+    # "&kp RIGHT":
+    #   tap: RIGHT
+    #   hold: $$mdi:chevron-right$$
+    # "&kp UP":
+    #   tap: UP
+    #   hold: $$mdi:chevron-up$$
+    # "&kp DOWN":
+    #   tap: DOWN
+    #   hold: $$mdi:chevron-down$$
 
-    "&kp HOME":
-      tap: HOME
-      # hold: $$mdi:page-first$$
-    "&kp END":
-      tap: END
-      # hold: $$mdi:page-last$$
+    # "&kp HOME":
+    #   tap: HOME
+    #   # hold: $$mdi:page-first$$
+    # "&kp END":
+    #   tap: END
+    #   # hold: $$mdi:page-last$$
 
-    "&kp PG_UP":
-      tap: PGUP
-      hold: $$mdi:chevron-triple-up$$
-    "&kp PG_DN":
-      tap: PGDN
-      hold: $$mdi:chevron-triple-down$$
+    # "&kp PG_UP":
+    #   tap: PGUP
+    #   hold: $$mdi:chevron-triple-up$$
+    # "&kp PG_DN":
+    #   tap: PGDN
+    #   hold: $$mdi:chevron-triple-down$$
 
-    "&kp LC(LEFT)":
-      tap: "<WORD"
-      hold: $$mdi:chevron-double-left$$
-    "&kp LC(RIGHT)":
-      tap: "WORD>"
-      hold: $$mdi:chevron-double-right$$
+    # "&kp LC(LEFT)":
+    #   tap: "<WORD"
+    #   hold: $$mdi:chevron-double-left$$
+    # "&kp LC(RIGHT)":
+    #   tap: "WORD>"
+    #   hold: $$mdi:chevron-double-right$$
 
-    # COMMENT
-    "&kp LC(SLASH)":
-      tap: "//"
-      # hold: //
+    # # COMMENT
+    # "&kp LC(SLASH)":
+    #   tap: "//"
+    #   # hold: //
 
-    # DELPHI MACROS
-    "&dm(T)":   # CODE BLOCK FOLD TOGGLE
-      tap: TGGL
-      hold: $$mdi:unfold-more-vertical$$
+    # # DELPHI MACROS
+    # "&dm(T)":   # CODE BLOCK FOLD TOGGLE
+    #   tap: TGGL
+    #   hold: $$mdi:unfold-more-vertical$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
     # "&kp LA(TAB)":
