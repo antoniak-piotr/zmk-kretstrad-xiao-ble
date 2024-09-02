@@ -251,33 +251,6 @@ parse_config:
       tap: TGGL
       hold: $$mdi:unfold-more-vertical$$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
     # "&kp LA(TAB)":
     #   tap: PREV
