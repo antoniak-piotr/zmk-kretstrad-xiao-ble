@@ -376,6 +376,54 @@ text.combo {
 <rect rx="6" ry="6" x="544" y="80" width="31" height="15" class="combo"/>
 <text x="560" y="88" class="combo tap">BSDL</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="102" y="80" width="21" height="15" class="combo"/>
+<text x="112" y="88" class="combo tap">`~</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="606" y="80" width="21" height="15" class="combo"/>
+<text x="616" y="88" class="combo tap">&#x27;&quot;</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="18" y="70" width="21" height="15" class="combo"/>
+<text x="28" y="77" class="combo tap">1!</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="74" y="56" width="21" height="15" class="combo"/>
+<text x="84" y="63" class="combo tap">2@</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="130" y="48" width="21" height="15" class="combo"/>
+<text x="140" y="56" class="combo tap">3#</text>
+</g>
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="186" y="56" width="21" height="15" class="combo"/>
+<text x="196" y="63" class="combo tap">4$</text>
+</g>
+<g class="combo combopos-10">
+<rect rx="6" ry="6" x="242" y="62" width="21" height="15" class="combo"/>
+<text x="252" y="70" class="combo tap">5%</text>
+</g>
+<g class="combo combopos-11">
+<rect rx="6" ry="6" x="466" y="62" width="21" height="15" class="combo"/>
+<text x="476" y="70" class="combo tap">6^</text>
+</g>
+<g class="combo combopos-12">
+<rect rx="6" ry="6" x="522" y="56" width="21" height="15" class="combo"/>
+<text x="532" y="63" class="combo tap">7&amp;</text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="578" y="48" width="21" height="15" class="combo"/>
+<text x="588" y="56" class="combo tap">8*</text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="634" y="56" width="21" height="15" class="combo"/>
+<text x="644" y="63" class="combo tap">9(</text>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="690" y="70" width="21" height="15" class="combo"/>
+<text x="700" y="77" class="combo tap">0)</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 349)" class="layer-COL">
@@ -551,6 +599,54 @@ text.combo {
 <rect rx="6" ry="6" x="544" y="80" width="31" height="15" class="combo"/>
 <text x="560" y="88" class="combo tap">BSDL</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="102" y="80" width="21" height="15" class="combo"/>
+<text x="112" y="88" class="combo tap">`~</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="606" y="80" width="21" height="15" class="combo"/>
+<text x="616" y="88" class="combo tap">&#x27;&quot;</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="18" y="70" width="21" height="15" class="combo"/>
+<text x="28" y="77" class="combo tap">1!</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="74" y="56" width="21" height="15" class="combo"/>
+<text x="84" y="63" class="combo tap">2@</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="130" y="48" width="21" height="15" class="combo"/>
+<text x="140" y="56" class="combo tap">3#</text>
+</g>
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="186" y="56" width="21" height="15" class="combo"/>
+<text x="196" y="63" class="combo tap">4$</text>
+</g>
+<g class="combo combopos-10">
+<rect rx="6" ry="6" x="242" y="62" width="21" height="15" class="combo"/>
+<text x="252" y="70" class="combo tap">5%</text>
+</g>
+<g class="combo combopos-11">
+<rect rx="6" ry="6" x="466" y="62" width="21" height="15" class="combo"/>
+<text x="476" y="70" class="combo tap">6^</text>
+</g>
+<g class="combo combopos-12">
+<rect rx="6" ry="6" x="522" y="56" width="21" height="15" class="combo"/>
+<text x="532" y="63" class="combo tap">7&amp;</text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="578" y="48" width="21" height="15" class="combo"/>
+<text x="588" y="56" class="combo tap">8*</text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="634" y="56" width="21" height="15" class="combo"/>
+<text x="644" y="63" class="combo tap">9(</text>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="690" y="70" width="21" height="15" class="combo"/>
+<text x="700" y="77" class="combo tap">0)</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 697)" class="layer-NUM">
@@ -702,6 +798,54 @@ text.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="544" y="80" width="31" height="15" class="combo"/>
 <text x="560" y="88" class="combo tap">BSDL</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="102" y="80" width="21" height="15" class="combo"/>
+<text x="112" y="88" class="combo tap">`~</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="606" y="80" width="21" height="15" class="combo"/>
+<text x="616" y="88" class="combo tap">&#x27;&quot;</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="18" y="70" width="21" height="15" class="combo"/>
+<text x="28" y="77" class="combo tap">1!</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="74" y="56" width="21" height="15" class="combo"/>
+<text x="84" y="63" class="combo tap">2@</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="130" y="48" width="21" height="15" class="combo"/>
+<text x="140" y="56" class="combo tap">3#</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="186" y="56" width="21" height="15" class="combo"/>
+<text x="196" y="63" class="combo tap">4$</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="242" y="62" width="21" height="15" class="combo"/>
+<text x="252" y="70" class="combo tap">5%</text>
+</g>
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="466" y="62" width="21" height="15" class="combo"/>
+<text x="476" y="70" class="combo tap">6^</text>
+</g>
+<g class="combo combopos-10">
+<rect rx="6" ry="6" x="522" y="56" width="21" height="15" class="combo"/>
+<text x="532" y="63" class="combo tap">7&amp;</text>
+</g>
+<g class="combo combopos-11">
+<rect rx="6" ry="6" x="578" y="48" width="21" height="15" class="combo"/>
+<text x="588" y="56" class="combo tap">8*</text>
+</g>
+<g class="combo combopos-12">
+<rect rx="6" ry="6" x="634" y="56" width="21" height="15" class="combo"/>
+<text x="644" y="63" class="combo tap">9(</text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="690" y="70" width="21" height="15" class="combo"/>
+<text x="700" y="77" class="combo tap">0)</text>
 </g>
 </g>
 </g>
