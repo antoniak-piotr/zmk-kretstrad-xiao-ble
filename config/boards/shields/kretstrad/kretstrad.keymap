@@ -10,11 +10,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0           // QWERTY
-#define COL 0           // Colemak-DH
-#define NUM 1           // liczby
-#define NAV 2           // nawigacja
-// #define FUN 3           // klawisze funkcyjne
-#define CONF 3          // konfiguracja (np. Bluetooth)
+#define COL 1           // Colemak-DH
+#define NUM 2           // liczby
+#define NAV 3           // nawigacja
+#define CFG 4           // konfiguracja (np. Bluetooth)
 
 #define LSHF LSHFT
 #define LCTR LCTRL
@@ -57,56 +56,38 @@
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &hm LSHF A      &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &hm RSHF SEMI
                 &kp Z           &kp X           &hm LCTR C      &hm LALT V      &kp B                   &kp N           &hm LALT M      &hm RCTR COMMA  &kp DOT         &kp ENTER
-                                                                &mt LWIN TAB    &lt NUM ESC             &st NAV SPACE   &mt RALT ENTER
+                                                                &mt LWIN TAB    &lt NUM ESC             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
-        // COL_layer {
-        //     bindings = <
-        //         &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
-        //         &hm LSHF A      &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &hm RSHF O
-        //         &kp Z           &kp X           &hm LCTR C      &hm LALT D      &kp V                   &kp K           &hm LALT H      &hm RCTR COMMA  &kp DOT         &kp ENTER
-        //                                                         &mt LWIN TAB    &lt NUM ESC             &st NAV SPACE   &mt RALT ENTER
-        //     >;
-        // };
-
-        // NUM_layer {
-        //     bindings = <
-        //         &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp STAR        &kp CARET       &kp AMPS        &kp PIPE        &kp QMARK
-        //         &hm LSHF N1     &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &hm RSHF N0
-        //         &kp BSLH        &kp LT          &hm LCTR LBKT   &hm LALT LPAR   &kp COLON               &kp EQUAL       &hm LALT RPAR   &hm RCTR RBKT   &kp GT          &kp ENTER
-        //                                                         &mt LWIN TAB    &trans                  &st NAV SPACE   &mt RALT ENTER
-        //     >;
-        // };
+        COL_layer {
+            bindings = <
+                &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
+                &hm LSHF A      &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &hm RSHF O
+                &kp Z           &kp X           &hm LCTR C      &hm LALT D      &kp V                   &kp K           &hm LALT H      &hm RCTR COMMA  &kp DOT         &kp ENTER
+                                                                &mt LWIN TAB    &lt NUM ESC             &lt NAV SPACE   &mt RALT ENTER
+            >;
+        };
 
         NUM_layer {
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &hm LSHF N1     &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &hm RSHF N0
-                &none           &none           &hm LCTR 0      &hm LALT F11    &none                   &none           &hm LALT F12    &hm RCTR COMMA  &kp DOT         &kp ENTER
-                                                                &mt LWIN TAB    &trans                  &st NAV SPACE   &mt RALT ENTER
+                &kp BSLH        &none           &kp LCTR        &kp LALT        &kp F11                 &kp F12         &kp LALT        &kp RCTR        &none           &kp SLASH
+                                                                &mt LWIN TAB    &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
         NAV_layer {
             bindings = <
-                &none           &kp LG(MINUS)   &kp LG(EQUAL)   &dm(T)          &lht PSCRN SNIP         &none           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
-                &hm LSHF LSC(Z) &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
-                &kp LC(Z)       &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &none                   &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
-                                                                &mt LWIN TAB    &lt NUM ESC             &trans          &mt RALT ENTER
+                &none           &kp LG(MINUS)   &kp LG(EQUAL)   &none           &mt PSCRN SNIP          &kp LCA(UP)     &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &kp PG_UP
+                &hm LSHF LSC(Z) &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp LCA(DOWN)   &kp LEFT        &kp UP          &kp RIGHT       &kp PG_DN
+                &kp LC(Z)       &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &none                   &none           &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp LC(SLASH)
+                                                                &mt LWIN TAB    &lt NUM TAB             &trans          &mt RALT ENTER
             >;
         };
 
-        // FUN_layer {
-        //     bindings = <
-        //         &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
-        //         &hm LSHF F1     &kp F2          &hm LCTR F3     &hm LALT F4     &kp F5                  &kp F6          &hm RCTR F7     &hm RCTR F8     &kp F9          &hm RSHF F10
-        //         &none           &none           &none           &none           &kp F11                 &kp F12         &none           &none           &none           &none
-        //                                                         &mt LWIN TAB    &trans                  &trans          &mt RALT ENTER
-        //     >;
-        // };
-
-        CONF_layer {
+        CFG_layer {
             bindings = <
                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader             &none           &none           &none           &none           &none
                 &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &sys_reset              &none           &none           &none           &none           &none
@@ -124,9 +105,7 @@
     │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
     ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
                 ╰────────╯ ╰────────╯         */
-
-    #define COMBO timeout-ms = <200>
-    #define LCOMBO timout-ms = <250>
+    #define COMBO timeout-ms = <100>
 
     combos {
         compatible = "zmk,combos";
@@ -135,109 +114,75 @@
         clck    {key-positions = <3 6>; bindings = <&kp CLCK>; layers = <DEF COL>; COMBO;};                     // CAPSLOCK
         cwrd    {key-positions = <13 16>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPSWORD
 
-        // ESC, TAB, DEL and BSPC
-        // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};              // ESC
-        tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};            // TAB
-        // del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};              // DEL
-        // bspc    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};           // BSPC
-        bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSDL
+        // // QWERTY, COLEMAK
+        // mz      {key-positions = <10 20>; bindings = <&kp Z>; layers = <DEF COL>; LCOMBO;};                     // Z
+        // menter  {key-positions = <19 25>; bindings = <&kp ENTER>; layers = <DEF COL>; LCOMBO;};                 // ENTER
 
-        // GRAVE, APOS
-        grave   {key-positions = <11 12>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};              // `~
-        apos    {key-positions = <17 18>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};               // '"
+        // mb      {key-positions = <14 22>; bindings = <&kp B>; layers = <DEF>; LCOMBO;};                         // B
+        // mn      {key-positions = <15 23>; bindings = <&kp N>; layers = <DEF>; LCOMBO;};                         // N
 
-        // NUMERICS
-        n1      {key-positions = <0 10>; bindings = <&kp N1>; layers = <DEF COL NUM>; COMBO;};                  // 1
-        n2      {key-positions = <1 11>; bindings = <&kp N2>; layers = <DEF COL NUM>; COMBO;};                  // 2
-        n3      {key-positions = <2 12>; bindings = <&kp N3>; layers = <DEF COL NUM>; COMBO;};                  // 3
-        n4      {key-positions = <3 13>; bindings = <&kp N4>; layers = <DEF COL NUM>; COMBO;};                  // 4
-        n5      {key-positions = <4 14>; bindings = <&kp N5>; layers = <DEF COL NUM>; COMBO;};                  // 5
-        n6      {key-positions = <5 15>; bindings = <&kp N6>; layers = <DEF COL NUM>; COMBO;};                  // 6
-        n7      {key-positions = <6 16>; bindings = <&kp N7>; layers = <DEF COL NUM>; COMBO;};                  // 7
-        n8      {key-positions = <7 17>; bindings = <&kp N8>; layers = <DEF COL NUM>; COMBO;};                  // 8
-        n9      {key-positions = <8 18>; bindings = <&kp N9>; layers = <DEF COL NUM>; COMBO;};                  // 9
-        n0      {key-positions = <9 19>; bindings = <&kp N0>; layers = <DEF COL NUM>; COMBO;};                  // 0
+        // mv      {key-positions = <14 22>; bindings = <&kp V>; layers = <COL>; LCOMBO;};                         // V
+        // mk      {key-positions = <15 23>; bindings = <&kp K>; layers = <COL>; LCOMBO;};                         // K
 
-        // PAR, BKT
-        lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
-        rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
-        lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
-        rbkt    {key-positions = <13 23>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
+        // // ESC, TAB, DEL and BSPC
+        // // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};              // ESC
+        // tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};            // TAB
+        // // del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};              // DEL
+        // // bspc    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};           // BSPC
+        // bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSDL
 
-        // EQUAL, COLON
-        equal   {key-positions = <12 22>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
-        colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
+        // // GRAVE, APOS
+        // grave   {key-positions = <11 12>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};              // `~
+        // apos    {key-positions = <17 18>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};               // '"
 
-        // SLASH, BSLH
-        bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; COMBO;};               // \|
-        slash   {key-positions = <19 29>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /?
+        // // NUMERICS
+        // n1      {key-positions = <0 10>; bindings = <&kp N1>; layers = <DEF COL NUM>; COMBO;};                  // 1
+        // n2      {key-positions = <1 11>; bindings = <&kp N2>; layers = <DEF COL NUM>; COMBO;};                  // 2
+        // n3      {key-positions = <2 12>; bindings = <&kp N3>; layers = <DEF COL NUM>; COMBO;};                  // 3
+        // n4      {key-positions = <3 13>; bindings = <&kp N4>; layers = <DEF COL NUM>; COMBO;};                  // 4
+        // n5      {key-positions = <4 14>; bindings = <&kp N5>; layers = <DEF COL NUM>; COMBO;};                  // 5
+        // n6      {key-positions = <5 15>; bindings = <&kp N6>; layers = <DEF COL NUM>; COMBO;};                  // 6
+        // n7      {key-positions = <6 16>; bindings = <&kp N7>; layers = <DEF COL NUM>; COMBO;};                  // 7
+        // n8      {key-positions = <7 17>; bindings = <&kp N8>; layers = <DEF COL NUM>; COMBO;};                  // 8
+        // n9      {key-positions = <8 18>; bindings = <&kp N9>; layers = <DEF COL NUM>; COMBO;};                  // 9
+        // n0      {key-positions = <9 19>; bindings = <&kp N0>; layers = <DEF COL NUM>; COMBO;};                  // 0
 
-        // MINUS, PLUS, DIV and MUL
-        minus   {key-positions = <23 24>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
-        plus    {key-positions = <25 26>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
-        div1    {key-positions = <13 14>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /
-        mul     {key-positions = <15 16>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};               // *
+        // // PAR, BKT
+        // lpar    {key-positions = <16 23>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
+        // rpar    {key-positions = <18 25>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
+        // lbkt    {key-positions = <11 20>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
+        // rbkt    {key-positions = <13 22>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
 
-        // NAV LAYERS COMBOS
-        home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
-        end     {key-positions = <18 28>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
-        bounce  {key-positions = <15 25>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                    // Declaration <-> Implementation
+        // // EQUAL, COLON
+        // equal   {key-positions = <12 21>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
+        // colon   {key-positions = <17 24>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
 
-        // PREV/NEXT/DROP BOOKMARKS
-        bmrk1   {key-positions = <6 16>; bindings = <&kp LCA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
-        bmrk2   {key-positions = <8 18>; bindings = <&kp LCA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
-        bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
+        // // SLASH, BSLH
+        // bslh    {key-positions = <10 11>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; LCOMBO;};              // \|
+        // slash   {key-positions = <18 19>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; LCOMBO;};             // /?
 
-        // UTILS
-        comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <NAV>; COMBO;};                  // Ctrl + / - przydaje się do komentowania kodu
-        exit    {key-positions = <1 2>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
+        // // MINUS, PLUS, DIV and MUL
+        // minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
+        // plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
+        // div     {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};                // /
+        // mul     {key-positions = <5 6>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                 // *
+
+        // // NAV LAYERS COMBOS
+        // home    {key-positions = <16 23>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
+        // end     {key-positions = <18 25>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
+        // bounce  {key-positions = <5 15>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
+
+        // // PREV/NEXT/DROP BOOKMARKS
+        // bmrk1   {key-positions = <6 16>; bindings = <&kp LCA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
+        // bmrk2   {key-positions = <8 18>; bindings = <&kp LCA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
+        // bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
+
+        // // UTILS
+        // comment {key-positions = <18 19>; bindings = <&kp LC(SLASH)>; layers = <NAV>; LCOMBO;};                 // Ctrl + / - przydaje się do komentowania kodu
+        // exit    {key-positions = <1 2>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
      };
 
     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        lht: long_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <350>;
-            // quick-tap-ms = <100>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        bsdl: bspc_del {    // BACKSPACE lub DELETE jeśli wciśnięto lewy shift (prawego można używać normalnie czyli można użyc Shift+DEL
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
-
-        spacetab: space_tab {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp TAB>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
-
-        st: spc_tab {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SPTAB";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
-            bindings = <&mo>, <&spacetab>;
-        };
-
         // prev: prev_app_or_desktop {
         //     compatible = "zmk,behavior-mod-morph";
         //     label = "PREV_APP_OR_VDESK_OR_CLOSE_VDESK_ON_HOLD";
@@ -321,18 +266,37 @@
         //     bindings = <&kp RPAR>, <&kp RBKT>;
         //     mods = <(MOD_LCTL)>;
         // };
+
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        // bsdl: bspc_del {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "BACKSPACE_DELETE";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp BSPC>, <&kp DEL>;
+        //     mods = <(MOD_LSFT)>;
+        // };
     };
 
     macros {
-        dm: delphi_macro {
-            #binding-cells = <1>;
-            compatible = "zmk,behavior-macro-one-param";
-            bindings =
-                <&macro_press &kp LSHFT &kp LCTRL>,
-                <&macro_tap &kp K>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_release &kp LSHFT &kp LCTRL>;
-        };
+        // dm: delphi_macro {
+        //     #binding-cells = <1>;
+        //     label = "DELPHI_MACRO";
+        //     compatible = "zmk,behavior-macro-one-param";
+        //     bindings =
+        //         <&macro_press &kp LSHFT &kp LCTRL>,
+        //         <&macro_tap &kp K>,
+        //         <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+        //         <&macro_release &kp LSHFT &kp LCTRL>;
+        // };
 
         // dequal: delphi_equal {
         //     #binding-cells = <0>;
@@ -343,11 +307,11 @@
 
     };
 
-    // conditional_layers {
-    //     compatible = "zmk,conditional-layers";
-    //     tri_layer {
-    //         if-layers = <NUM NAV>;
-    //         then-layer = <FUN>;
-    //     };
-    // };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NUM NAV>;
+            then-layer = <FUN>;
+        };
+    };
 };
