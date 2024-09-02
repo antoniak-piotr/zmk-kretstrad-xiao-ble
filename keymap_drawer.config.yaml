@@ -127,40 +127,40 @@ parse_config:
       tap: PSCRN
       hold: $$mdi:crop$$ # select$$
 
-    # # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
-    # "&kp LCA(UP)":
-    #   tap: <IDEN
-    #   hold: $$mdi:tag-outline$$
-    #   # hold: $$mdi:tag-arrow-up$$
-    # "&kp LCA(DOWN)":
-    #   tap: IDEN>
-    #   hold: $$mdi:tag-outline$$
-    #   # hold: $$mdi:tag-arrow-down$$
-    # "&kp LSC(UP)":
-    #   tap: BOUNC
-    #   # hold: $$mdi:swap-vertical$$
+    # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
+    "&kp LCA(UP)":
+      tap: <IDEN
+      hold: $$mdi:tag-outline$$
+      # hold: $$mdi:tag-arrow-up$$
+    "&kp LCA(DOWN)":
+      tap: IDEN>
+      hold: $$mdi:tag-outline$$
+      # hold: $$mdi:tag-arrow-down$$
+    "&kp LSC(UP)":
+      tap: BOUNC
+      # hold: $$mdi:swap-vertical$$
 
-    # # PREV/NEXT/DROP BOOKMARKS (Parnassus)
-    # "&kp LCA(LEFT)":
-    #   tap: "<BMK"
-    #   # hold: $$mdi:bookmark$$
-    # "&kp LCA(RIGHT)":
-    #   tap: "BMK>"
-    #   # hold: $$mdi:bookmark$$
-    # "&kp LC(B)":
-    #   tap: "BMK"
-    #   # hold: $$mdi:bookmark$$
+    # PREV/NEXT/DROP BOOKMARKS (Parnassus)
+    "&kp LCA(LEFT)":
+      tap: "<BMK"
+      # hold: $$mdi:bookmark$$
+    "&kp LCA(RIGHT)":
+      tap: "BMK>"
+      # hold: $$mdi:bookmark$$
+    "&kp LC(B)":
+      tap: "BMK"
+      # hold: $$mdi:bookmark$$
 
-    # # PREV/NEXT HISTORY + GOTO DEFINITION (Delphi IDE)
-    # "&kp LA(LEFT)":
-    #   tap: <HIST
-    #   hold: $$mdi:step-backward-2$$
-    # "&kp LA(RIGHT)":
-    #   tap: HIST>
-    #   hold: $$mdi:step-forward-2$$
-    # "&kp LA(UP)":
-    #   tap: DECL
-    #   hold: $$mdi:pencil$$
+    # PREV/NEXT HISTORY + GOTO DEFINITION (Delphi IDE)
+    "&kp LA(LEFT)":
+      tap: <HIST
+      hold: $$mdi:step-backward-2$$
+    "&kp LA(RIGHT)":
+      tap: HIST>
+      hold: $$mdi:step-forward-2$$
+    "&kp LA(UP)":
+      tap: DECL
+      hold: $$mdi:pencil$$
 
     # # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
     # "&kp LS(LA(S))":
