@@ -206,50 +206,50 @@ parse_config:
       tap: BT # $$mdi:bluetooth$$
       hold: CLR # $$mdi:close-box$$
 
-    # # nawigacja
-    # "&kp LEFT":
-    #   tap: LEFT
-    #   hold: $$mdi:chevron-left$$
-    # "&kp RIGHT":
-    #   tap: RIGHT
-    #   hold: $$mdi:chevron-right$$
-    # "&kp UP":
-    #   tap: UP
-    #   hold: $$mdi:chevron-up$$
-    # "&kp DOWN":
-    #   tap: DOWN
-    #   hold: $$mdi:chevron-down$$
+    # nawigacja
+    "&kp LEFT":
+      tap: LEFT
+      hold: $$mdi:chevron-left$$
+    "&kp RIGHT":
+      tap: RIGHT
+      hold: $$mdi:chevron-right$$
+    "&kp UP":
+      tap: UP
+      hold: $$mdi:chevron-up$$
+    "&kp DOWN":
+      tap: DOWN
+      hold: $$mdi:chevron-down$$
 
-    # "&kp HOME":
-    #   tap: HOME
-    #   # hold: $$mdi:page-first$$
-    # "&kp END":
-    #   tap: END
-    #   # hold: $$mdi:page-last$$
+    "&kp HOME":
+      tap: HOME
+      # hold: $$mdi:page-first$$
+    "&kp END":
+      tap: END
+      # hold: $$mdi:page-last$$
 
-    # "&kp PG_UP":
-    #   tap: PGUP
-    #   hold: $$mdi:chevron-triple-up$$
-    # "&kp PG_DN":
-    #   tap: PGDN
-    #   hold: $$mdi:chevron-triple-down$$
+    "&kp PG_UP":
+      tap: PGUP
+      hold: $$mdi:chevron-triple-up$$
+    "&kp PG_DN":
+      tap: PGDN
+      hold: $$mdi:chevron-triple-down$$
 
-    # "&kp LC(LEFT)":
-    #   tap: "<WORD"
-    #   hold: $$mdi:chevron-double-left$$
-    # "&kp LC(RIGHT)":
-    #   tap: "WORD>"
-    #   hold: $$mdi:chevron-double-right$$
+    "&kp LC(LEFT)":
+      tap: "<WORD"
+      hold: $$mdi:chevron-double-left$$
+    "&kp LC(RIGHT)":
+      tap: "WORD>"
+      hold: $$mdi:chevron-double-right$$
 
-    # # COMMENT
-    # "&kp LC(SLASH)":
-    #   tap: "//"
-    #   # hold: //
+    # COMMENT
+    "&kp LC(SLASH)":
+      tap: "//"
+      # hold: //
 
-    # # DELPHI MACROS
-    # "&dm(T)":   # CODE BLOCK FOLD TOGGLE
-    #   tap: TGGL
-    #   hold: $$mdi:unfold-more-vertical$$
+    # DELPHI MACROS
+    "&dm(T)":   # CODE BLOCK FOLD TOGGLE
+      tap: TGGL
+      hold: $$mdi:unfold-more-vertical$$
 
 
 
