@@ -128,7 +128,7 @@
         grave   {key-positions = <11 12>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};              // `~
         apos    {key-positions = <17 18>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};               // '"
 
-        // // NUMERICS
+        // NUMERICS
         n1      {key-positions = <0 10>; bindings = <&kp N1>; layers = <DEF COL NUM>; COMBO;};                  // 1
         n2      {key-positions = <1 11>; bindings = <&kp N2>; layers = <DEF COL NUM>; COMBO;};                  // 2
         n3      {key-positions = <2 12>; bindings = <&kp N3>; layers = <DEF COL NUM>; COMBO;};                  // 3
@@ -140,32 +140,32 @@
         n9      {key-positions = <8 18>; bindings = <&kp N9>; layers = <DEF COL NUM>; COMBO;};                  // 9
         n0      {key-positions = <9 19>; bindings = <&kp N0>; layers = <DEF COL NUM>; COMBO;};                  // 0
 
-        // // PAR, BKT
+        // PAR, BKT
         lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
         rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
         lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
         rbkt    {key-positions = <13 23>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
 
-        // // EQUAL, COLON
+        // EQUAL, COLON
         equal   {key-positions = <12 22>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
         colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
 
-        // // SLASH, BSLH
+        // SLASH, BSLH
         bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; LCOMBO;};              // \|
         slash   {key-positions = <19 29>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; LCOMBO;};             // /?
 
-        // // MINUS, PLUS, DIV and MUL
+        // MINUS, PLUS, DIV and MUL
         minus   {key-positions = <13 14>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
         plus    {key-positions = <15 16>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
         div     {key-positions = <3 4>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};                // /
         mul     {key-positions = <5 6>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                 // *
 
-        // // NAV LAYERS COMBOS
+        // NAV LAYERS COMBOS
         home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
         end     {key-positions = <18 28>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
         bounce  {key-positions = <15 25>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
 
-        // // PREV/NEXT/DROP BOOKMARKS
+        // PREV/NEXT/DROP BOOKMARKS
         bmrk1   {key-positions = <6 16>; bindings = <&kp LCA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
         bmrk2   {key-positions = <8 18>; bindings = <&kp LCA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
         bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
