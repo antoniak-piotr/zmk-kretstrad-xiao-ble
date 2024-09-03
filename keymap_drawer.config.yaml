@@ -180,6 +180,9 @@ parse_config:
     "&kp LG(ESC)":
       tap: EXIT
       # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    "&zoom":                # ZOOM+ / ZOOM- (when SHIFT modifier) on TAP and EXIT (on HOLD)
+      tap: ZOOM
+      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
 
     # CAPSLOCK, CAPSWORD
     "&kp CLCK":
