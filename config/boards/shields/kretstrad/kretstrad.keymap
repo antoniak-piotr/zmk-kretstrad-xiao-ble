@@ -141,14 +141,14 @@
         n0      {key-positions = <9 19>; bindings = <&kp N0>; layers = <DEF COL NUM>; COMBO;};                  // 0
 
         // PAR, BKT
-        lpar    {key-positions = <16 26>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
+        lpar    {key-positions = <17 27>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
         rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
         lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
-        rbkt    {key-positions = <13 23>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
+        rbkt    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
 
         // EQUAL, COLON
-        equal   {key-positions = <12 22>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
-        colon   {key-positions = <17 27>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
+        equal   {key-positions = <13 23>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
+        colon   {key-positions = <18 28>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
 
         // SLASH, BSLH
         bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; LCOMBO;};              // \|
