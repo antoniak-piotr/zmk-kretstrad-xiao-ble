@@ -26,7 +26,8 @@
 #define LCA(KEY) LC(LA(KEY))
 #define LSCA(KEY) LS(LC(LA(KEY)))
 
-#define SNIP LSG(S)     // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
+#define SNIP LSG(S)                 // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
+#define DESK LGC(LEFT) LG(D)        // tworzy (on TAP) lub zamyka (on HOLD) pulpi wirtualny
 
 &mt {
     // flavor = "tap-preferred";
@@ -82,7 +83,7 @@
         NAV_layer {
             bindings = <
                 &dm(A)          &none           &dm(R)          &dm(T)          &mt PSCRN SNIP          &zoom           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
-                &kp LSC(Z)      &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &kp LSC(Z)      &kp LSA(S)      &mt DESK        &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &hm LSHF LC(Z)  &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &kp LSC(B)              &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hm RSHF PG_DN
                                                                 &mt LWIN TAB    &lt NUM ESC             &trans          &mt RALT ENTER
             >;
