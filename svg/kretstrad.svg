@@ -1048,7 +1048,7 @@ text.combo {
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DSK+</text>
-<text x="0" y="18" class="key hold"><tspan style="font-size: 62%">LGC(LEF…</tspan></text>
+<text x="0" y="18" class="key hold">DSK-</text>
 </g>
 <g transform="translate(196, 91)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
