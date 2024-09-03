@@ -189,9 +189,9 @@
         bmrk2   {key-positions = <8 18>; bindings = <&kp LCA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
         bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
 
-        // // UTILS
+        // UTILS
         comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <NAV>; LCOMBO;};                 // Ctrl + / - przydaje się do komentowania kodu
-        exit    {key-positions = <1 2>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
+        // exit    {key-positions = <1 2>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
      };
 
     behaviors {
@@ -301,7 +301,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LG(EQUAL)>, <&kp LG(MINUS)>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         zoom: windows_magnifier {
