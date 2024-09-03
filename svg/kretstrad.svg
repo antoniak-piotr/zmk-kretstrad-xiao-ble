@@ -954,11 +954,11 @@ text.combo {
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="74" y="112" width="21" height="15" class="combo"/>
-<text x="84" y="119" class="combo tap">[{</text>
+<text x="84" y="119" class="combo tap">{</text>
 </g>
 <g class="combo combopos-16">
 <rect rx="6" ry="6" x="130" y="104" width="21" height="15" class="combo"/>
-<text x="140" y="112" class="combo tap">]}</text>
+<text x="140" y="112" class="combo tap">}</text>
 </g>
 <g class="combo combopos-17">
 <rect rx="6" ry="6" x="186" y="112" width="21" height="15" class="combo"/>
