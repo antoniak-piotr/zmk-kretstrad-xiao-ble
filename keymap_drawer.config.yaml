@@ -267,9 +267,10 @@ parse_config:
       hold: $$mdi:unfold-more-vertical$$
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
-    "&kp LG(D)":    # Tworzy nowy pulpit wirtualny (on TAP) lub zamyka aktualny (on HOLD)
+    "&kp LG(D)":      # Tworzy nowy pulpit wirtualny (on TAP) lub zamyka aktualny (on HOLD)
       tap: DSK+
-      hold: DSK-
+    "&kp LGC(F4)":    # Tworzy nowy pulpit wirtualny (on TAP) lub zamyka aktualny (on HOLD)
+      tap: DSK-
     # "&kp LA(TAB)":
     #   tap: PREV
     #   hold: $$mdi:page-previous-outline$$
