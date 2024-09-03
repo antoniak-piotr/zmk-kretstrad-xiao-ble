@@ -25,6 +25,7 @@
 #define LSC(KEY) LS(LC(KEY))
 #define LCA(KEY) LC(LA(KEY))
 #define LSCA(KEY) LS(LC(LA(KEY)))
+#define LGC(KEY) LG(LC(KEY))
 
 #define SNIP LSG(S)                 // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
 #define DESK LGC(F4)                // zamyka pulpit wirtualny
