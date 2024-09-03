@@ -78,12 +78,13 @@
             >;
         };
 
+//                &none           &kp LG(MINUS)   &kp LG(EQUAL)   &dm(T)          &mt PSCRN SNIP          &zoom           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
         NAV_layer {
             bindings = <
-                &none           &kp LG(MINUS)   &kp LG(EQUAL)   &dm(T)          &mt PSCRN SNIP          &none           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
+                &none           &none           &none           &dm(T)          &mt PSCRN SNIP          &zoom           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
                 &kp LSC(Z)      &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &hm LSHF LC(Z)  &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &none                   &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
-                                                                &mt LWIN TAB    &lt NUM TAB             &trans          &mt RALT ENTER
+                                                                &mt LWIN TAB    &lt NUM ESC             &trans          &mt RALT ENTER
             >;
         };
 
@@ -148,7 +149,7 @@
         s5      {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <NUM>; COMBO;};                       // %
         s6      {key-positions = <5 15>; bindings = <&kp CARET>; layers = <NUM>; COMBO;};                       // ^
         s7      {key-positions = <6 16>; bindings = <&kp AMPS>; layers = <NUM>; COMBO;};                        // &
-        // s8      {key-positions = <7 17>; bindings = <&kp N8>; layers = <NUM>; COMBO;};                           // *
+        s8      {key-positions = <7 17>; bindings = <&kp ASTRK>; layers = <NUM>; COMBO;};                       // *
         // s9      {key-positions = <8 18>; bindings = <&kp N9>; layers = <NUM>; COMBO;};                           // (
         // s10     {key-positions = <9 19>; bindings = <&kp N0>; layers = <NUM>; COMBO;};                           // )
         s11     {key-positions = <10 20>; bindings = <&kp PIPE>; layers = <NUM>; COMBO;};                       // |
@@ -295,12 +296,28 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
+
+        zoom_actions: windows_magnifier_actions { // powiększanie i pomniejszanie (Win++ / Win+-)
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LG(EQUAL)>, <&kp LG(MINUS)>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        zoom: windows_magnifier {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            // flavor = "hold-preferred";
+            // tapping-term-ms = <400>;
+            // quick-tap-ms = <200>;
+            bindings = <&kp LG(ESC)>, <&zoom_actions>;
+        };
+
     };
 
     macros {
         dm: delphi_macro { // code block folding
             #binding-cells = <1>;
-            label = "DELPHI_MACRO";
             compatible = "zmk,behavior-macro-one-param";
             bindings =
                 <&macro_press &kp LSHFT &kp LCTRL>,
