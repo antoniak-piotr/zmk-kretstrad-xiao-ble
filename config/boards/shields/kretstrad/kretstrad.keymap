@@ -141,16 +141,16 @@
         n0      {key-positions = <9 19>; bindings = <&kp N0>; layers = <DEF COL>; COMBO;};                      // 0
 
         // SYMBOLS
-        n1      {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <NUM>; COMBO;};                          // !
-        n2      {key-positions = <1 11>; bindings = <&kp AT>; layers = <NUM>; COMBO;};                          // @
-        n3      {key-positions = <2 12>; bindings = <&kp HASH>; layers = <NUM>; COMBO;};                          // #
-        n4      {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <NUM>; COMBO;};                          // $
-        n5      {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <NUM>; COMBO;};                          // %
-        n6      {key-positions = <5 15>; bindings = <&kp CARET>; layers = <NUM>; COMBO;};                          // ^
-        n7      {key-positions = <6 16>; bindings = <&kp AMPS>; layers = <NUM>; COMBO;};                          // &
-        // n8      {key-positions = <7 17>; bindings = <&kp N8>; layers = <NUM>; COMBO;};                           // *
-        // n9      {key-positions = <8 18>; bindings = <&kp N9>; layers = <NUM>; COMBO;};                           // (
-        // n0      {key-positions = <9 19>; bindings = <&kp N0>; layers = <NUM>; COMBO;};                           // )
+        s1      {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <NUM>; COMBO;};                          // !
+        s2      {key-positions = <1 11>; bindings = <&kp AT>; layers = <NUM>; COMBO;};                          // @
+        s3      {key-positions = <2 12>; bindings = <&kp HASH>; layers = <NUM>; COMBO;};                          // #
+        s4      {key-positions = <3 13>; bindings = <&kp DLLR>; layers = <NUM>; COMBO;};                          // $
+        s5      {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <NUM>; COMBO;};                          // %
+        s6      {key-positions = <5 15>; bindings = <&kp CARET>; layers = <NUM>; COMBO;};                          // ^
+        s7      {key-positions = <6 16>; bindings = <&kp AMPS>; layers = <NUM>; COMBO;};                          // &
+        // s8      {key-positions = <7 17>; bindings = <&kp N8>; layers = <NUM>; COMBO;};                           // *
+        // s9      {key-positions = <8 18>; bindings = <&kp N9>; layers = <NUM>; COMBO;};                           // (
+        // s0      {key-positions = <9 19>; bindings = <&kp N0>; layers = <NUM>; COMBO;};                           // )
 
         // PAR, BKT
         lpar    {key-positions = <17 27>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
