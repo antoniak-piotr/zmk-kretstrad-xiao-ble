@@ -150,6 +150,12 @@ parse_config:
     "&kp LC(B)":
       tap: "BMK"
       # hold: $$mdi:bookmark$$
+    "&kp LSC(B)":
+      tap: "BMK^"       # Caret Bookmark
+      # hold: $$mdi:bookmark$$
+    "&kp LS(ESC)":      # Jumps between two caret bookmarks
+      tap: "<BMK>"
+      # hold: $$mdi:bookmark$$
 
     # PREV/NEXT HISTORY + GOTO DEFINITION (Delphi IDE)
     "&kp LA(LEFT)":
