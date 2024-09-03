@@ -990,14 +990,18 @@ text.combo {
 <g transform="translate(30, 1046)" class="layer-NAV">
 <text x="0" y="28" class="label" id="NAV">NAV</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key none keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(28, 49)" class="key keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">EALL</text>
+<use href="#mdi:unfold-more-vertical" xlink:href="#mdi:unfold-more-vertical" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:unfold-more-vertical"/>
 </g>
 <g transform="translate(84, 35)" class="key none keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(140, 28)" class="key none keypos-2">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(140, 28)" class="key keypos-2">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">CRGN</text>
+<use href="#mdi:unfold-more-vertical" xlink:href="#mdi:unfold-more-vertical" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:unfold-more-vertical"/>
 </g>
 <g transform="translate(196, 35)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

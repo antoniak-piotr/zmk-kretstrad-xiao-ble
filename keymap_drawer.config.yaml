@@ -259,6 +259,12 @@ parse_config:
     "&dm(T)":   # CODE BLOCK FOLD TOGGLE
       tap: TGGL
       hold: $$mdi:unfold-more-vertical$$
+    "&dm(R)":   # CODE BLOCK COLLAPSE ALL REGIONS
+      tap: CRGN
+      hold: $$mdi:unfold-more-vertical$$
+    "&dm(A)":   # CODE BLOCK EXPANDS ALL BLOCKS OF CODE
+      tap: EALL
+      hold: $$mdi:unfold-more-vertical$$
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
     # "&kp LA(TAB)":
