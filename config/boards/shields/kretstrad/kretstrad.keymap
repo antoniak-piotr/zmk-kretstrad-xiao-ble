@@ -80,9 +80,9 @@
 
         NAV_layer {
             bindings = <
-                &none           &kp LG(MINUS)   &kp LG(EQUAL)   &dm(T)          &mt PSCRN SNIP          &none           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &kp PG_UP
-                &hm LSHF LSC(Z) &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_DN
-                &kp LC(Z)       &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &none                   &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp LC(SLASH)
+                &none           &kp LG(MINUS)   &kp LG(EQUAL)   &dm(T)          &mt PSCRN SNIP          &none           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
+                &hm LSHF LSC(Z) &kp LSA(S)      &none           &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &kp LC(Z)       &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &none                   &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
                                                                 &mt LWIN TAB    &lt NUM TAB             &trans          &mt RALT ENTER
             >;
         };
@@ -171,7 +171,7 @@
         bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
 
         // // UTILS
-        // comment {key-positions = <18 19>; bindings = <&kp LC(SLASH)>; layers = <NAV>; LCOMBO;};                 // Ctrl + / - przydaje się do komentowania kodu
+        comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <NAV>; LCOMBO;};                 // Ctrl + / - przydaje się do komentowania kodu
         exit    {key-positions = <1 2>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
      };
 
