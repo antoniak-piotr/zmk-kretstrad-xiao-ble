@@ -125,8 +125,8 @@
         bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSDL
 
         // GRAVE, APOS
-        grave   {key-positions = <11 12>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};              // `~
-        apos    {key-positions = <17 18>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};               // '"
+        grave   {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};              // `~
+        apos    {key-positions = <15 25>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};               // '"
 
         // NUMERICS
         n1      {key-positions = <0 10>; bindings = <&kp N1>; layers = <DEF COL NUM>; COMBO;};                  // 1
