@@ -125,8 +125,8 @@
         bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSDL
 
         // GRAVE, APOS
-        grave   {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF COL NUM>; COMBO;};              // `~
-        apos    {key-positions = <15 25>; bindings = <&kp APOS>; layers = <DEF COL NUM>; COMBO;};               // '"
+        grave   {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                  // `~
+        apos    {key-positions = <15 25>; bindings = <&kp APOS>; layers = <DEF COL>; COMBO;};                   // '"
 
         // NUMERICS
         n1      {key-positions = <0 10>; bindings = <&kp N1>; layers = <DEF COL>; COMBO;};                      // 1
@@ -159,8 +159,8 @@
         // PAR, BKT
         lpar    {key-positions = <17 27>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
         rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
-        lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
-        rbkt    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
+        lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL>; COMBO;};                   // [{
+        rbkt    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <DEF COL>; COMBO;};                   // ]}
         lbrc    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <NUM>; COMBO;};                       // {
         rbrc    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <NUM>; COMBO;};                       // }
 
@@ -169,8 +169,8 @@
         colon   {key-positions = <16 26>; bindings = <&kp COLON>; layers = <DEF COL NUM>; COMBO;};              // :
 
         // SLASH, BSLH
-        bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL NUM>; LCOMBO;};              // \|
-        slash   {key-positions = <19 29>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; LCOMBO;};             // /?
+        bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL>; LCOMBO;};                  // \|
+        slash   {key-positions = <19 29>; bindings = <&kp SLASH>; layers = <DEF COL>; LCOMBO;};                 // /?
 
         // MINUS, PLUS, DIV and MUL
         plus    {key-positions = <13 14>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
