@@ -218,7 +218,6 @@
             #binding-cells = <0>;
 
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positionss = <0>;
             // ignored-key-positions = <LT2>;   // tutaj należałoby dodać pozycję klawisza realizującego LS(TAB)
         };
 
