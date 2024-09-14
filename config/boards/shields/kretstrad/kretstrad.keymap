@@ -218,6 +218,7 @@
             #binding-cells = <0>;
 
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positionss = <0>;
             // ignored-key-positions = <LT2>;   // tutaj należałoby dodać pozycję klawisza realizującego LS(TAB)
         };
 
@@ -225,7 +226,6 @@
         hl: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
@@ -238,7 +238,6 @@
         hr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
@@ -250,7 +249,6 @@
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
