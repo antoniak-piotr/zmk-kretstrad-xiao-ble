@@ -192,6 +192,35 @@
      };
 
     behaviors {
+        // &sn i &nd, łącznie, pozwalają na uzyskanie następującej funkcjonalności:
+        // tap: num-word | double-tap: sticky num-layer | hold: num-layer
+        sn: smart_num {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&nd>;
+        }
+
+        nd: num_dance {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+
+            tapping-term-ms = <200>;
+            bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
+        };
+
+        sw: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            // ignored-key-positions = <LT2>;   // tutaj należałoby dodać pozycję klawisza realizującego LS(TAB)
+        };
+
+
         hl: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
