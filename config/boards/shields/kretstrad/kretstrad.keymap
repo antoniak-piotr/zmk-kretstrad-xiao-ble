@@ -202,7 +202,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             bindings = <&mo>, <&nd>;
-        }
+        };
 
         nd: num_dance {
             compatible = "zmk,behavior-hold-tap";
@@ -212,6 +212,7 @@
             bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
         };
 
+        // Alt+Tab swapper, requires PR #1366
         sw: swapper {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
