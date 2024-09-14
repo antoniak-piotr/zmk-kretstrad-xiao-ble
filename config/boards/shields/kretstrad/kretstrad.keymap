@@ -205,7 +205,7 @@
         };
 
         nd: num_dance {
-            compatible = "zmk,behavior-hold-tap";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <2>;
 
             tapping-term-ms = <200>;
