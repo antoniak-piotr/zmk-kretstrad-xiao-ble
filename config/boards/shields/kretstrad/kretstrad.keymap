@@ -186,33 +186,9 @@
         // NAV LAYERS COMBOS
         home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
         end     {key-positions = <18 28>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
-        // bounce  {key-positions = <15 25>; bindings = <&kp SC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
-
-        // PREV/NEXT/DROP BOOKMARKS
-        // bmrk1   {key-positions = <6 16>; bindings = <&kp CA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
-        // bmrk2   {key-positions = <8 18>; bindings = <&kp CA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
-        // bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
-        // bmrk4   {key-positions = <14 24>; bindings = <&kp LS(ESC)>; layers = <NAV>; COMBO;};                    // Bookmark drop (Parnassus) - Jumps between two caret bookmarks
-
-        // UTILS
-        // comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <NAV>; LCOMBO;};                 // Ctrl + / - przydaje się do komentowania kodu
-        // exit    {key-positions = <1 2>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
      };
 
     behaviors {
-        // &sn i &nd, łącznie, pozwalają na uzyskanie następującej funkcjonalności:
-        // tap: num-word | double-tap: sticky num-layer | hold: num-layer
-
-        // sn: smart_num {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-
-        //     flavor = "balanced";
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <175>;
-        //     bindings = <&kp>, <&kp>; // <&mo>, <&nd>;
-        // };
-
         sn: smart_num {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -233,8 +209,7 @@
         sw: windows_application_iterator {       // obsługa Alt+Tab
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
-            // bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            bindings = <&kt LALT>, <&mt LS(TAB) TAB>, <&kt LALT>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <20 29>;    // Oba SHFT
             // ignored-key-positions = <LT2>;   // tutaj należałoby dodać pozycję klawisza realizującego LS(TAB)
         };
