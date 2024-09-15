@@ -112,8 +112,8 @@
                 ╰────────╯ ╰────────╯         */
 
     // #define COMBO timeout-ms = <100>
-    #define COMBO timeout-ms = <150>
-    #define LCOMBO timeout-ms = <250>
+    #define COMBO timeout-ms = <100>
+    #define LCOMBO timeout-ms = <200>
 
     combos {
         compatible = "zmk,combos";
