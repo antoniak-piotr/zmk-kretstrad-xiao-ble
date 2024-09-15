@@ -75,7 +75,7 @@
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                &hl LSHF BSLH   &num_word       &kp LCTR        &kp LALT        &kp F11                 &kp F12         &kp LALT        &hr RCTR COMMA  &kp DOT         &hr RSHF SLASH
+                &hl LSHF BSLH   &none           &kp LCTR        &kp LALT        &kp F11                 &kp F12         &kp LALT        &hr RCTR COMMA  &kp DOT         &hr RSHF SLASH
                                                                 &mt LWIN TAB    &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
@@ -210,6 +210,15 @@
         //     quick-tap-ms = <175>;
         //     bindings = <&kp>, <&kp>; // <&mo>, <&nd>;
         // };
+
+        num: smart_num {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <1>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&num_word>, <&kp>;
+        };
 
         nd: num_dance {
             compatible = "zmk,behavior-tap-dance";
