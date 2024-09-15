@@ -119,7 +119,7 @@ parse_config:
       tap: REDO
       hold: $$mdi:redo$$
 
-    # SNIP, PSCRN
+    # SNIP, PSCRN, ALT+PSCRN
     "&kp SG(S)":
       tap: SNIP
       hold: $$mdi:crop$$ # select-drag$$
@@ -313,10 +313,16 @@ parse_config:
     nwrd:
       width: 41
 
+    esc:
+      width: 25
     tab:
-      width: 31
-    bsdl:
-      width: 31
+      width: 25
+    # bsdl:
+    #   width: 25
+    bspc:
+      width: 25
+    del:
+      width: 25
 
     exit:
       align: top
