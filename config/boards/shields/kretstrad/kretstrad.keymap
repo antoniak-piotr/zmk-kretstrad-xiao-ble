@@ -123,11 +123,11 @@
         nwrd    {key-positions = <24 25>; bindings = <&num_word>; layers = <DEF COL>; COMBO;};                  // NUMWORD
 
         // ESC, TAB, DEL and BSPC
-        // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};              // ESC
+        esc     {key-positions = <11 12>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};            // ESC
         tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};            // TAB
-        // del     {key-positions = <6 7>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};              // DEL
-        // bspc    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};           // BSPC
-        bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSDL
+        // bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSDL
+        bspc    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};           // BSPC
+        del     {key-positions = <17 18>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};            // DEL
 
         // GRAVE, APOS
         grave   {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                  // `~
@@ -230,8 +230,8 @@
             bindings = <&num_word>, <&sl NUM>;  // reverse this for sticky-num on single tap
         };
 
-        // Alt+Tab swapper, requires PR #1366
-        sw: windows_application_swapper {       // obsługa Alt+Tab
+        // Obsługa zmiany aplikacji za pomocą Alt+Tab
+        sw: windows_application_iterator {       // obsługa Alt+Tab
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
