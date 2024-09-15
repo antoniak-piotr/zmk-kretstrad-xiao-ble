@@ -455,6 +455,7 @@ text.combo {
 <g class="combo combopos-24">
 <rect rx="6" ry="6" x="690" y="126" width="21" height="15" class="combo"/>
 <text x="700" y="133" class="combo tap">/?</text>
+<text x="700" y="132" class="combo hold">//</text>
 </g>
 <g class="combo combopos-25">
 <rect rx="6" ry="6" x="214" y="87" width="21" height="15" class="combo"/>
@@ -732,6 +733,7 @@ text.combo {
 <g class="combo combopos-24">
 <rect rx="6" ry="6" x="690" y="126" width="21" height="15" class="combo"/>
 <text x="700" y="133" class="combo tap">/?</text>
+<text x="700" y="132" class="combo hold">//</text>
 </g>
 <g class="combo combopos-25">
 <rect rx="6" ry="6" x="214" y="87" width="21" height="15" class="combo"/>
@@ -1057,7 +1059,9 @@ text.combo {
 </g>
 <g transform="translate(196, 91)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">FIND</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Ctl+</tspan><tspan x="0" dy="1.2em">F</tspan>
+</text>
 <text x="0" y="18" class="key hold"><tspan style="font-size: 62%">Sft+Ctl…</tspan></text>
 </g>
 <g transform="translate(252, 98)" class="key keypos-14">
@@ -1193,10 +1197,6 @@ text.combo {
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="242" y="118" width="21" height="15" class="combo"/>
 <text x="252" y="126" class="combo tap">&lt;BMK&gt;</text>
-</g>
-<g class="combo combopos-9">
-<rect rx="6" ry="6" x="690" y="126" width="21" height="15" class="combo"/>
-<text x="700" y="133" class="combo tap">//</text>
 </g>
 </g>
 </g>

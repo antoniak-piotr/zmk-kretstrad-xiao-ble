@@ -171,8 +171,9 @@ parse_config:
     # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
     "&kp LS(LA(S))":
       tap: GREP
-    "&kp LC(F)":
+    "&kp SC(F) LC(F)":
       tap: FIND
+      hold: FILES
     "&mt LA(G) LC(G)":
       tap: GOTO
       hold: LINE

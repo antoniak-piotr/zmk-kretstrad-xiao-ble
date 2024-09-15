@@ -175,7 +175,7 @@
 
         // SLASH, BSLH
         bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL>; LCOMBO;};                  // \|
-        slash   {key-positions = <19 29>; bindings = <&kp SLASH>; layers = <DEF COL>; LCOMBO;};                 // /?
+        slash   {key-positions = <19 29>; bindings = <&mt LC(SLASH) SLASH>; layers = <DEF COL>; LCOMBO;};       // /?
 
         // MINUS, PLUS, DIV and MUL
         plus    {key-positions = <13 14>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
@@ -196,7 +196,7 @@
 
 
         // UTILS
-        comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <NAV>; LCOMBO;};                 // Ctrl + / - przydaje się do komentowania kodu
+        // comment {key-positions = <19 29>; bindings = <&kp LC(SLASH)>; layers = <NAV>; LCOMBO;};                 // Ctrl + / - przydaje się do komentowania kodu
         // exit    {key-positions = <1 2>; bindings = <&kp LG(ESC)>; layers = <NAV>; COMBO;};                      // EXIT (wyjście z Magnify)
      };
 
