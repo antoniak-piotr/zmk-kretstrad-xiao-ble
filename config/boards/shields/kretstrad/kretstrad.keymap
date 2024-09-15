@@ -85,7 +85,7 @@
 
         NAV_layer {
             bindings = <
-                &none           &sw             &none           &df A T         &mt PSCRN SNIP          &zm LG(ESC) 0   &kp LA(LEFT)    &none           &kp LA(RIGHT)   &none
+                &none           &sw             &none           &df A T         &mt PSCRN SNIP          &zm LG(ESC) 0   &kp LA(LEFT)    &dh             &kp LA(RIGHT)   &none
                 &kp SC(Z)       &kp SA(S)       &none           &mt SC(F) LC(F) &mt LA(G) LC(G)         &di LA(UP) 0    &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &hl LSFT LC(Z)  &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &mt SC(B) LS(ESC)       &db LC(B) 0     &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hr RSHF PG_DN
                                                                 &mt LWIN TAB    &sn NUM ESC             &trans          &mt RALT ENTER
@@ -330,6 +330,14 @@
             #binding-cells = <2>;
             tapping-term-ms = <400>;
             bindings = <&kp>, <&dbi>;
+        };
+
+        // Obsługa historii (go back, go forward) w Delphi
+        dh: delphi_history_iterator {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT)>, <&kp LC(RIGHT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
