@@ -186,7 +186,7 @@
         // NAV LAYERS COMBOS
         home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
         end     {key-positions = <18 28>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
-        bounce  {key-positions = <15 25>; bindings = <&kp SC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
+        // bounce  {key-positions = <15 25>; bindings = <&kp SC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
 
         // PREV/NEXT/DROP BOOKMARKS
         // bmrk1   {key-positions = <6 16>; bindings = <&kp CA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
