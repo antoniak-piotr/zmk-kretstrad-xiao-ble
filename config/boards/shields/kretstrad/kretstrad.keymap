@@ -307,7 +307,7 @@
         dii: delphi_identifier_iterator { // przeskakuje pomiedzy kolejnymi wystąpieniami identyfikatora
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp CA(DOWN)>, <&kp CA(MINUS)>;
+            bindings = <&kp CA(DOWN)>, <&kp CA(UP)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
