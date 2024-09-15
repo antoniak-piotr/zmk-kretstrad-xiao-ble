@@ -151,7 +151,7 @@ parse_config:
       tap: "BMK"
       # hold: $$mdi:bookmark$$
     "&kp SC(B)":
-      tap: "CBMK^"       # Caret Bookmark
+      tap: "CBMK"       # Caret Bookmark
       # hold: $$mdi:bookmark$$
     "&kp LS(ESC)":      # Jumps between two caret bookmarks
       tap: "BJUMP"
