@@ -116,7 +116,7 @@
         // CAPSLOCK, CAPSWORD
         clck    {key-positions = <3 6>; bindings = <&kp CLCK>; layers = <DEF COL>; COMBO;};                     // CAPSLOCK
         cwrd    {key-positions = <13 16>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPSWORD
-        nmwd    {key-positions = <23 26>; bindings = <&num_word NUM>; layers = <DEF COL>; COMBO;};
+        nmwd    {key-positions = <23 26>; bindings = <&num_word>; layers = <DEF COL>; COMBO;};
 
         // ESC, TAB, DEL and BSPC
         // esc     {key-positions = <2 3>; bindings = <&kp ESC>; layers = <DEF COL NUM NAV>; COMBO;};              // ESC
