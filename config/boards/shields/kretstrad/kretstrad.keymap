@@ -86,7 +86,7 @@
 
         NAV_layer {
             bindings = <
-                &dm(A)          &sw             &dm(R)          &dm(T)          &mt PSCRN SNIP          &zoom LG(ESC) 0 &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
+                &none           &sw             &none           &df T A         &mt PSCRN SNIP          &zoom LG(ESC) 0 &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
                 &kp LSC(Z)      &kp LSA(S)      &kp LG(D)       &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &hl LSFT LC(Z)  &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &kp LSC(B)              &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hr RSHF PG_DN
                                                                 &mt LWIN TAB    &sn NUM ESC             &trans          &mt RALT ENTER
@@ -296,6 +296,12 @@
             bindings = <&kp>, <&zoom_actions>;
         };
 
+        df: delphi_code_folding {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            bindings = <&dm>, <&dm>;
+        }
     };
 
     macros {
