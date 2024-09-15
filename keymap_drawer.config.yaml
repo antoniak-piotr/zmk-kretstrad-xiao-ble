@@ -173,8 +173,9 @@ parse_config:
       tap: GREP
     "&kp LC(F)":
       tap: FIND
-    "&kp LC(G)":
+    "&kp LC(G) LA(G)":
       tap: GOTO
+      hold: LINE
 
     # MAGNIFIER
     "&kp LG(EQUAL)":
