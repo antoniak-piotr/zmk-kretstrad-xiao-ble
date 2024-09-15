@@ -195,6 +195,8 @@ parse_config:
       tap: CLCK # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
     "&caps_word":
       tap: CWRD # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+    "&num_word":
+      tap: NWRD  # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
     "&sn NUM ESC":
       tap: ESC  # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
       hold: NUM

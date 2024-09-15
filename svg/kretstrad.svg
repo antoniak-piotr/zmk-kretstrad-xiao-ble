@@ -369,7 +369,7 @@ text.combo {
 <path d="M364,154 l-93,0" class="combo"/>
 <path d="M364,154 l93,0" class="combo"/>
 <rect rx="6" ry="6" x="344" y="146" width="41" height="15" class="combo"/>
-<text x="364" y="154" class="combo tap"><tspan style="font-size: 62%">&amp;num_wo…</tspan></text>
+<text x="364" y="154" class="combo tap">NWRD</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="152" y="80" width="31" height="15" class="combo"/>
@@ -646,7 +646,7 @@ text.combo {
 <path d="M364,154 l-93,0" class="combo"/>
 <path d="M364,154 l93,0" class="combo"/>
 <rect rx="6" ry="6" x="344" y="146" width="41" height="15" class="combo"/>
-<text x="364" y="154" class="combo tap"><tspan style="font-size: 62%">&amp;num_wo…</tspan></text>
+<text x="364" y="154" class="combo tap">NWRD</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="152" y="80" width="31" height="15" class="combo"/>
