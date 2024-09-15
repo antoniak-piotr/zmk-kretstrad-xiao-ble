@@ -232,10 +232,11 @@
         };
 
         // Alt+Tab swapper, requires PR #1366
-        sw: swapper {
+        sw: windows_application_swapper {       // obsługa Alt+Tab
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <20 29>;    // Oba SHFT
             // ignored-key-positions = <LT2>;   // tutaj należałoby dodać pozycję klawisza realizującego LS(TAB)
         };
 
