@@ -195,22 +195,22 @@
         // &sn i &nd, łącznie, pozwalają na uzyskanie następującej funkcjonalności:
         // tap: num-word | double-tap: sticky num-layer | hold: num-layer
 
+        // sn: smart_num {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+
+        //     flavor = "balanced";
+        //     tapping-term-ms = <200>;
+        //     quick-tap-ms = <175>;
+        //     bindings = <&kp>, <&kp>; // <&mo>, <&nd>;
+        // };
+
         nd: num_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
 
             tapping-term-ms = <200>;
             bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
-        };
-
-        sn: smart_num {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&kp>; // <&mo>, <&nd>;
         };
 
         // Alt+Tab swapper, requires PR #1366
