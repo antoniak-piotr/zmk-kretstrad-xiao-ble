@@ -364,22 +364,22 @@ text.combo {
 <text x="0" y="18" class="key hold">RALT</text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,35 l-149,0" class="combo"/>
-<path d="M364,35 l149,0" class="combo"/>
-<rect rx="6" ry="6" x="344" y="28" width="41" height="15" class="combo"/>
-<text x="364" y="35" class="combo tap">CLCK</text>
+<path d="M364,42 l-93,0" class="combo"/>
+<path d="M364,42 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="344" y="34" width="41" height="15" class="combo"/>
+<text x="364" y="42" class="combo tap">CLCK</text>
 </g>
 <g class="combo combopos-1">
-<path d="M364,91 l-149,0" class="combo"/>
-<path d="M364,91 l149,0" class="combo"/>
-<rect rx="6" ry="6" x="344" y="84" width="41" height="15" class="combo"/>
-<text x="364" y="91" class="combo tap">CWRD</text>
-</g>
-<g class="combo combopos-2">
 <path d="M364,98 l-93,0" class="combo"/>
 <path d="M364,98 l93,0" class="combo"/>
-<rect rx="6" ry="6" x="354" y="90" width="21" height="15" class="combo"/>
-<text x="364" y="98" class="combo tap"><tspan style="font-size: 62%">&amp;num_wo…</tspan></text>
+<rect rx="6" ry="6" x="344" y="90" width="41" height="15" class="combo"/>
+<text x="364" y="98" class="combo tap">CWRD</text>
+</g>
+<g class="combo combopos-2">
+<path d="M364,154 l-93,0" class="combo"/>
+<path d="M364,154 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="354" y="146" width="21" height="15" class="combo"/>
+<text x="364" y="154" class="combo tap"><tspan style="font-size: 62%">&amp;num_wo…</tspan></text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="152" y="80" width="31" height="15" class="combo"/>
@@ -642,22 +642,22 @@ text.combo {
 <text x="0" y="18" class="key hold">RALT</text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,35 l-149,0" class="combo"/>
-<path d="M364,35 l149,0" class="combo"/>
-<rect rx="6" ry="6" x="344" y="28" width="41" height="15" class="combo"/>
-<text x="364" y="35" class="combo tap">CLCK</text>
+<path d="M364,42 l-93,0" class="combo"/>
+<path d="M364,42 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="344" y="34" width="41" height="15" class="combo"/>
+<text x="364" y="42" class="combo tap">CLCK</text>
 </g>
 <g class="combo combopos-1">
-<path d="M364,91 l-149,0" class="combo"/>
-<path d="M364,91 l149,0" class="combo"/>
-<rect rx="6" ry="6" x="344" y="84" width="41" height="15" class="combo"/>
-<text x="364" y="91" class="combo tap">CWRD</text>
-</g>
-<g class="combo combopos-2">
 <path d="M364,98 l-93,0" class="combo"/>
 <path d="M364,98 l93,0" class="combo"/>
-<rect rx="6" ry="6" x="354" y="90" width="21" height="15" class="combo"/>
-<text x="364" y="98" class="combo tap"><tspan style="font-size: 62%">&amp;num_wo…</tspan></text>
+<rect rx="6" ry="6" x="344" y="90" width="41" height="15" class="combo"/>
+<text x="364" y="98" class="combo tap">CWRD</text>
+</g>
+<g class="combo combopos-2">
+<path d="M364,154 l-93,0" class="combo"/>
+<path d="M364,154 l93,0" class="combo"/>
+<rect rx="6" ry="6" x="354" y="146" width="21" height="15" class="combo"/>
+<text x="364" y="154" class="combo tap"><tspan style="font-size: 62%">&amp;num_wo…</tspan></text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="152" y="80" width="31" height="15" class="combo"/>
