@@ -204,13 +204,13 @@
         //     bindings = <&mo>, <&nd>;
         // };
 
-        // nd: num_dance {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     #binding-cells = <2>;
+        nd: num_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <2>;
 
-        //     tapping-term-ms = <200>;
-        //     bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
-        // };
+            tapping-term-ms = <200>;
+            bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
+        };
 
         // Alt+Tab swapper, requires PR #1366
         sw: swapper {
