@@ -60,8 +60,8 @@
         DEF_layer {
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
-                &kp A           &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &kp SEMI
-                &hl LSHF Z      &kp X           &hl LCTR C      &hl LALT V      &kp B                   &kp N           &hr LALT M      &hr RCTR COMMA  &kp DOT         &hr RSHF ENTER
+                &hl LWIN A      &hl LALT S      &hl LCTR D      &hl LSHF F      &kp G                   &kp H           &hr RSHF J      &hr RCTR K      &hr LALT L      &hr LWIN SEMI
+                &kp Z           &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp DOT         &kp ENTER
                                                                 &mt LWIN TAB    &sn NUM ESC             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
@@ -69,8 +69,8 @@
         COL_layer {
             bindings = <
                 &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
-                &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
-                &hl LSHF Z      &kp X           &hl LCTR C      &hl LALT D      &kp V                   &kp K           &hr LALT H      &hr RCTR COMMA  &kp DOT         &hr RSHF ENTER
+                &hl LWIN A      &hl LALT R      &hl LCTR S      &hl LSHF T      &kp G                   &kp M           &hr RSHF N      &hr RCTR E      &hr LALT I      &hr LWIN O
+                &kp Z           &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp ENTER
                                                                 &mt LWIN TAB    &sn NUM ESC             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
@@ -78,8 +78,8 @@
         NUM_layer {
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
-                &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                &hl LSHF BSLH   &none           &kp LCTR        &kp LALT        &kp F11                 &kp F12         &kp LALT        &hr RCTR COMMA  &kp DOT         &hr RSHF SLASH
+                &hl LWIN N1     &hl LALT N2     &hl LCTR N3     &hl LSHF N4     &kp N5                  &kp N6          &hr RSHF N7     &hr RCTR N8     &hr LALT N9     &hr LWIN N0
+                &kp BSLH        &none           &none           &kp N5          &kp F11                 &kp F12         &kp N6          &kp COMMA       &kp DOT         &kp SLASH
                                                                 &mt LWIN TAB    &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
@@ -87,9 +87,9 @@
         NAV_layer {
             bindings = <
                 &dm(A)          &sw             &dm(R)          &dm(T)          &mt PSCRN SNIP          &zoom           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
-                &kp LSC(Z)      &kp LSA(S)      &mt DESK LG(D)  &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
-                &hl LSHF LC(Z)  &kp LC(X)       &hl LCTR LC(C)  &hl LALT LC(V)  &kp LSC(B)              &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hr RSHF PG_DN
-                                                                &mt LWIN TAB    &lt NUM ESC             &trans          &mt RALT ENTER
+                &hl LWIN LSC(Z) &hl LALT LSA(S) &hl LCTR LG(D)  &hl LSHF LC(F)  &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LSC(B)              &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hr RSHF PG_DN
+                                                                &mt LWIN TAB    &sn NUM ESC             &trans          &mt RALT ENTER
             >;
         };
 
