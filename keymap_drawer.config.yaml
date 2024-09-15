@@ -270,7 +270,7 @@ parse_config:
     "&dm(A)":   # CODE BLOCK EXPANDS ALL BLOCKS OF CODE
       tap: EALL
       hold: $$mdi:unfold-more-vertical$$
-    "&dm A &dm T":   # CODE BLOCK EXPANDS ALL BLOCKS OF CODE
+    "&df T A":  # CODE BLOCK EXPANDS ALL BLOCKS OF CODE
       tap: BTGL
       hold: EALL
 
