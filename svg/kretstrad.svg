@@ -338,7 +338,8 @@ text.combo {
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">NWRD1</text>
+<text x="0" y="0" class="key tap">ESC</text>
+<text x="0" y="18" class="key hold">NWRD</text>
 </g>
 <g transform="translate(448, 254) rotate(-30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -367,7 +368,7 @@ text.combo {
 <path d="M364,154 l-93,0" class="combo"/>
 <path d="M364,154 l93,0" class="combo"/>
 <rect rx="6" ry="6" x="344" y="146" width="41" height="15" class="combo"/>
-<text x="364" y="154" class="combo tap">NWRD</text>
+<text x="364" y="154" class="combo tap"><tspan style="font-size: 62%">&amp;num_wo…</tspan></text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="152" y="80" width="31" height="15" class="combo"/>
@@ -613,7 +614,8 @@ text.combo {
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">NWRD1</text>
+<text x="0" y="0" class="key tap">ESC</text>
+<text x="0" y="18" class="key hold">NWRD</text>
 </g>
 <g transform="translate(448, 254) rotate(-30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -642,7 +644,7 @@ text.combo {
 <path d="M364,154 l-93,0" class="combo"/>
 <path d="M364,154 l93,0" class="combo"/>
 <rect rx="6" ry="6" x="344" y="146" width="41" height="15" class="combo"/>
-<text x="364" y="154" class="combo tap">NWRD</text>
+<text x="364" y="154" class="combo tap"><tspan style="font-size: 62%">&amp;num_wo…</tspan></text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="152" y="80" width="31" height="15" class="combo"/>
@@ -1148,7 +1150,8 @@ text.combo {
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">NWRD1</text>
+<text x="0" y="0" class="key tap">ESC</text>
+<text x="0" y="18" class="key hold">NWRD</text>
 </g>
 <g transform="translate(448, 254) rotate(-30.0)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
