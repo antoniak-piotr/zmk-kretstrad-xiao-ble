@@ -209,7 +209,8 @@
             #binding-cells = <0>;
 
             tapping-term-ms = <200>;
-            bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
+            binding = <&kp NUM>, <&sl NUM>;
+            // bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
         };
 
         // Alt+Tab swapper, requires PR #1366
