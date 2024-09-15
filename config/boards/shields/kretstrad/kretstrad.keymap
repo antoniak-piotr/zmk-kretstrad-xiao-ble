@@ -81,7 +81,7 @@
 
         NAV_layer {
             bindings = <
-                &dm(A)          &none           &dm(R)          &dm(T)          &mt PSCRN SNIP          &zoom           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
+                &dm(A)          &sw             &dm(R)          &dm(T)          &mt PSCRN SNIP          &zoom           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
                 &kp LSC(Z)      &kp LSA(S)      &mt DESK LG(D)  &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &hl LSHF LC(Z)  &kp LC(X)       &hl LCTR LC(C)  &hl LALT LC(V)  &kp LSC(B)              &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hr RSHF PG_DN
                                                                 &mt LWIN TAB    &lt NUM ESC             &trans          &mt RALT ENTER
