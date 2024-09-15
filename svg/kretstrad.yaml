@@ -31,7 +31,7 @@ layers:
   - .>
   - ENTER
   - {t: TAB, h: LWIN}
-  - {t: ESC, h: '&num_word 2'}
+  - NWRD1
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   COL:
@@ -66,7 +66,7 @@ layers:
   - .>
   - ENTER
   - {t: TAB, h: LWIN}
-  - {t: ESC, h: '&num_word 2'}
+  - NWRD1
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   NUM:
@@ -110,7 +110,7 @@ layers:
   - {t: CRGN, h: '$$mdi:unfold-more-vertical$$'}
   - {t: TGGL, h: '$$mdi:unfold-more-vertical$$'}
   - {t: SNIP, h: PSCRN}
-  - {t: ZOOM, h: '$$mdi:magnify$$'}
+  - {t: ZOOM+, h: EXIT, s: ZOOM-}
   - {t: <HIST, h: '$$mdi:step-backward-2$$'}
   - {t: DECL, h: '$$mdi:pencil$$'}
   - {t: HIST>, h: '$$mdi:step-forward-2$$'}
@@ -136,7 +136,7 @@ layers:
   - {t: WORD>, h: '$$mdi:chevron-double-right$$'}
   - {t: PGDN, h: RSHFT}
   - {t: TAB, h: LWIN}
-  - {t: ESC, h: '&num_word 2'}
+  - NWRD1
   - {type: held}
   - {t: ENTER, h: RALT}
   CFG:
@@ -184,8 +184,9 @@ combos:
   l: [DEF, COL]
   w: 41.0
 - p: [24, 25]
-  k: '&num_word'
+  k: NWRD
   l: [DEF, COL]
+  w: 41.0
 - p: [12, 13]
   k: TAB
   l: [DEF, COL, NUM, NAV]
