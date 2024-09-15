@@ -112,7 +112,7 @@
                 ╰────────╯ ╰────────╯         */
 
     // #define COMBO timeout-ms = <100>
-    #define COMBO timeout-ms = <200>
+    #define COMBO timeout-ms = <150>
     #define LCOMBO timeout-ms = <250>
 
     combos {
