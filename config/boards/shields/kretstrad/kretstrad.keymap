@@ -78,7 +78,7 @@
             bindings = <
                 &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                &hl LSFT BSLH   &none           &hl LALT 0      &hl LCTR N5     &kp F11                 &kp F12         &hr RCTR N6     &hr LALT COMMA  &kp DOT         &hr RSFT SLASH
+                &hl LSFT BSLH   &kp LBRC        &hl LALT RBRC   &hl LCTR N5     &kp F11                 &kp F12         &hr RCTR N6     &hr LALT COMMA  &kp DOT         &hr RSFT SLASH
                                                                 &mt LWIN TAB    &trans                  &lt NAV SPACE   &mt RALT ENTER
             >;
         };
@@ -164,10 +164,10 @@
         // PAR, BKT
         lpar    {key-positions = <17 27>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
         rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
-        lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL>; COMBO;};                   // [{
-        rbkt    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <DEF COL>; COMBO;};                   // ]}
-        lbrc    {key-positions = <11 21>; bindings = <&kp LBRC>; layers = <NUM>; COMBO;};                       // {
-        rbrc    {key-positions = <12 22>; bindings = <&kp RBRC>; layers = <NUM>; COMBO;};                       // }
+        lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
+        rbkt    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
+        // lbrc    {key-positions = <11 21>; bindings = <&kp LBRC>; layers = <NUM>; COMBO;};                       // {
+        // rbrc    {key-positions = <12 22>; bindings = <&kp RBRC>; layers = <NUM>; COMBO;};                       // }
 
         // EQUAL, COLON
         equal   {key-positions = <13 23>; bindings = <&kp EQUAL>; layers = <DEF COL NUM>; COMBO;};              // =
