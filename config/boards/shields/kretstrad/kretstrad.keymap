@@ -71,7 +71,7 @@
                 &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
                 &kp A           &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O
                 &hl LSHF Z      &kp X           &hl LCTR C      &hl LALT D      &kp V                   &kp K           &hr LALT H      &hr RCTR COMMA  &kp DOT         &hr RSHF ENTER
-                                                                &mt LWIN TAB    &lt NUM ESC             &lt NAV SPACE   &mt RALT ENTER
+                                                                &mt LWIN TAB    &lt NUM 0 ESC           &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
