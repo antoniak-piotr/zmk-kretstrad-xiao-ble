@@ -8,7 +8,6 @@
 #define COL 1           // Colemak-DH
 #define NUM 2           // liczby
 #define NAV 3           // nawigacja
-// #define NAV 3           // nawigacja
 #define CONF 4          // konfiguracja (np. Bluetooth)
 
 #define LSHF LSHFT
@@ -16,15 +15,15 @@
 #define RSHF RSHFT
 #define RCTR RCTRL
 
-#define LSG(KEY) LS(LG(KEY))
-#define LSA(KEY) LS(LA(KEY))
-#define LSC(KEY) LS(LC(KEY))
-#define LCA(KEY) LC(LA(KEY))
-#define LSCA(KEY) LS(LC(LA(KEY)))
-#define LGC(KEY) LG(LC(KEY))
+#define SG(KEY) LS(LG(KEY))
+#define SA(KEY) LS(LA(KEY))
+#define SC(KEY) LS(LC(KEY))
+#define CA(KEY) LC(LA(KEY))
+#define SCA(KEY) LS(LC(LA(KEY)))
+#define GC(KEY) LG(LC(KEY))
 
-#define SNIP LSG(S)                 // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
-#define DESK LGC(F4)                // zamyka pulpit wirtualny
+#define SNIP SG(S)                  // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
+#define DESK GC(F4)                 // zamyka pulpit wirtualny
 
 &mt {
     // flavor = "tap-preferred";
@@ -86,9 +85,9 @@
 
         NAV_layer {
             bindings = <
-                &none           &sw             &none           &df T A         &mt PSCRN SNIP          &zm LG(ESC) 0   &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
-                &kp LSC(Z)      &kp LSA(S)      &kp LG(D)       &kp LC(F)       &mt LA(G) LC(G)         &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
-                &hl LSFT LC(Z)  &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &kp LSC(B)              &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hr RSHF PG_DN
+                &none           &sw             &none           &df A T         &mt PSCRN SNIP          &zm LG(ESC) 0   &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
+                &kp SC(Z)       &kp SA(S)       &none           &mt SC(F) LC(F) &mt LA(G) LC(G)         &kp CA(UP)      &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &hl LSFT LC(Z)  &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &kp SC(B)               &kp CA(DOWN)    &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hr RSHF PG_DN
                                                                 &mt LWIN TAB    &sn NUM ESC             &trans          &mt RALT ENTER
             >;
         };
@@ -187,11 +186,11 @@
         // NAV LAYERS COMBOS
         home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
         end     {key-positions = <18 28>; bindings = <&kp END>; layers = <NAV>; COMBO;};                        // END
-        bounce  {key-positions = <15 25>; bindings = <&kp LSC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
+        bounce  {key-positions = <15 25>; bindings = <&kp SC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
 
         // PREV/NEXT/DROP BOOKMARKS
-        bmrk1   {key-positions = <6 16>; bindings = <&kp LCA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
-        bmrk2   {key-positions = <8 18>; bindings = <&kp LCA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
+        bmrk1   {key-positions = <6 16>; bindings = <&kp CA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
+        bmrk2   {key-positions = <8 18>; bindings = <&kp CA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
         bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
         bmrk4   {key-positions = <14 24>; bindings = <&kp LS(ESC)>; layers = <NAV>; COMBO;};                    // Bookmark drop (Parnassus) - Jumps between two caret bookmarks
 
