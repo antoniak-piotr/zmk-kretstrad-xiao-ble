@@ -270,6 +270,9 @@ parse_config:
     "&dm(A)":   # CODE BLOCK EXPANDS ALL BLOCKS OF CODE
       tap: EALL
       hold: $$mdi:unfold-more-vertical$$
+    "&dm A &dm T":   # CODE BLOCK EXPANDS ALL BLOCKS OF CODE
+      tap: BTGL
+      hold: EALL
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
     "&kp LG(D)":      # Tworzy nowy pulpit wirtualny (on TAP) lub zamyka aktualny (on HOLD)
