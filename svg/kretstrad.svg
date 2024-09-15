@@ -438,11 +438,11 @@ text.combo {
 </g>
 <g class="combo combopos-23">
 <rect rx="6" ry="6" x="186" y="112" width="21" height="15" class="combo"/>
-<text x="196" y="119" class="combo tap">=</text>
+<text x="196" y="119" class="combo tap">:</text>
 </g>
 <g class="combo combopos-24">
 <rect rx="6" ry="6" x="522" y="112" width="21" height="15" class="combo"/>
-<text x="532" y="119" class="combo tap">:</text>
+<text x="532" y="119" class="combo tap">=</text>
 </g>
 <g class="combo combopos-25">
 <rect rx="6" ry="6" x="18" y="126" width="21" height="15" class="combo"/>
@@ -724,11 +724,11 @@ text.combo {
 </g>
 <g class="combo combopos-23">
 <rect rx="6" ry="6" x="186" y="112" width="21" height="15" class="combo"/>
-<text x="196" y="119" class="combo tap">=</text>
+<text x="196" y="119" class="combo tap">:</text>
 </g>
 <g class="combo combopos-24">
 <rect rx="6" ry="6" x="522" y="112" width="21" height="15" class="combo"/>
-<text x="532" y="119" class="combo tap">:</text>
+<text x="532" y="119" class="combo tap">=</text>
 </g>
 <g class="combo combopos-25">
 <rect rx="6" ry="6" x="18" y="126" width="21" height="15" class="combo"/>
@@ -987,11 +987,11 @@ text.combo {
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="186" y="112" width="21" height="15" class="combo"/>
-<text x="196" y="119" class="combo tap">=</text>
+<text x="196" y="119" class="combo tap">:</text>
 </g>
 <g class="combo combopos-21">
 <rect rx="6" ry="6" x="522" y="112" width="21" height="15" class="combo"/>
-<text x="532" y="119" class="combo tap">:</text>
+<text x="532" y="119" class="combo tap">=</text>
 </g>
 <g class="combo combopos-22">
 <rect rx="6" ry="6" x="214" y="87" width="21" height="15" class="combo"/>
