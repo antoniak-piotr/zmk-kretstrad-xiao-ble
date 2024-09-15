@@ -86,8 +86,8 @@
         NAV_layer {
             bindings = <
                 &none           &sw             &none           &df A T         &mt PSCRN SNIP          &zm LG(ESC) 0   &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
-                &kp SC(Z)       &kp SA(S)       &none           &mt SC(F) LC(F) &mt LA(G) LC(G)         &kp CA(UP)      &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
-                &hl LSFT LC(Z)  &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &kp SC(B)               &kp CA(DOWN)    &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hr RSHF PG_DN
+                &kp SC(Z)       &kp SA(S)       &none           &mt SC(F) LC(F) &mt LA(G) LC(G)         &di LA(UP) 0    &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &hl LSFT LC(Z)  &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &kp SC(B)               &db LC(B) 0     &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hr RSHF PG_DN
                                                                 &mt LWIN TAB    &sn NUM ESC             &trans          &mt RALT ENTER
             >;
         };
@@ -189,9 +189,9 @@
         bounce  {key-positions = <15 25>; bindings = <&kp SC(UP)>; layers = <NAV>; COMBO;};                     // Declaration <-> Implementation
 
         // PREV/NEXT/DROP BOOKMARKS
-        bmrk1   {key-positions = <6 16>; bindings = <&kp CA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
-        bmrk2   {key-positions = <8 18>; bindings = <&kp CA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
-        bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
+        // bmrk1   {key-positions = <6 16>; bindings = <&kp CA(LEFT)>; layers = <NAV>; COMBO;};                   // Bookmark prev (Parnassus)
+        // bmrk2   {key-positions = <8 18>; bindings = <&kp CA(RIGHT)>; layers = <NAV>; COMBO;};                  // Bookmark next (Parnassus)
+        // bmrk3   {key-positions = <7 17>; bindings = <&kp LC(B)>; layers = <NAV>; COMBO;};                       // Bookmark drop (Parnassus)
         bmrk4   {key-positions = <14 24>; bindings = <&kp LS(ESC)>; layers = <NAV>; COMBO;};                    // Bookmark drop (Parnassus) - Jumps between two caret bookmarks
 
 
@@ -280,6 +280,7 @@
             keep-mods = <(MOD_RSFT)>;
         };
 
+        // Obsługa lupy windowsowej
         za: windows_magnifier_actions { // powiększanie i pomniejszanie (Win++ / Win+-)
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -294,16 +295,46 @@
             bindings = <&kp>, <&za>;
         };
 
+        // Zawijanie kodu w Delphi
         df: delphi_code_folding {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <400>;
-            bindings = <&dm>, <&dm>;
+            bindings = <&dfm>, <&dfm>;
+        };
+
+        // Iterowanie po kolejnych wystąpieniach identyfikatora + Skok do definicji (po przytrzymaniu klawisza)
+        dii: delphi_identifier_iterator { // przeskakuje pomiedzy kolejnymi wystąpieniami identyfikatora
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp CA(UP)>, <&kp CA(DOWN)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        di: delphi_identifier {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            bindings = <&kp>, <&dii>;
+        };
+
+        dbi: delphi_bookmark_iterator { // przeskakuje pomiedzy kolejnymi zakładkami w pliku (wymaga Parnassus Bookmarks)
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp CA(LEFT)>, <&kp CA(RIGHT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        db: delphi_bookmark {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            bindings = <&kp>, <&dbi>;
         };
     };
 
     macros {
-        dm: delphi_macro { // code block folding
+        dfm: delphi_code_folding_macro { // code block folding
             #binding-cells = <1>;
             compatible = "zmk,behavior-macro-one-param";
             bindings =

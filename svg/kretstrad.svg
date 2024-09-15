@@ -42,9 +42,6 @@
 <svg id="mdi:step-forward-2">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-step-forward-2" viewBox="0 0 24 24"><path d="M7,5H10V19H7V5M12,5L23,12L12,19V5M2,5H5V19H2V5Z" /></svg>
 </svg>
-<svg id="mdi:tag-outline">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-tag-outline" viewBox="0 0 24 24"><path d="M21.41 11.58L12.41 2.58A2 2 0 0 0 11 2H4A2 2 0 0 0 2 4V11A2 2 0 0 0 2.59 12.42L11.59 21.42A2 2 0 0 0 13 22A2 2 0 0 0 14.41 21.41L21.41 14.41A2 2 0 0 0 22 13A2 2 0 0 0 21.41 11.58M13 20L4 11V4H11L20 13M6.5 5A1.5 1.5 0 1 1 5 6.5A1.5 1.5 0 0 1 6.5 5Z" /></svg>
-</svg>
 <svg id="mdi:toggle-switch-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch-outline" viewBox="0 0 24 24"><path d="M17 6H7C3.69 6 1 8.69 1 12S3.69 18 7 18H17C20.31 18 23 15.31 23 12S20.31 6 17 6M17 16H7C4.79 16 3 14.21 3 12S4.79 8 7 8H17C19.21 8 21 9.79 21 12S19.21 16 17 16M17 9C15.34 9 14 10.34 14 12S15.34 15 17 15 20 13.66 20 12 18.66 9 17 9Z" /></svg>
 </svg>
@@ -1072,7 +1069,8 @@ text.combo {
 <g transform="translate(476, 98)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">&lt;IDEN</text>
-<use href="#mdi:tag-outline" xlink:href="#mdi:tag-outline" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:tag-outline"/>
+<text x="0" y="18" class="key hold">DECL</text>
+<text x="0" y="-18" class="key shifted">IDEN&gt;</text>
 </g>
 <g transform="translate(532, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1120,8 +1118,9 @@ text.combo {
 </g>
 <g transform="translate(476, 154)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">IDEN&gt;</text>
-<use href="#mdi:tag-outline" xlink:href="#mdi:tag-outline" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:tag-outline"/>
+<text x="0" y="0" class="key tap">&lt;BMK</text>
+<text x="0" y="18" class="key hold">BMK</text>
+<text x="0" y="-18" class="key shifted">BMK&gt;</text>
 </g>
 <g transform="translate(532, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1183,18 +1182,6 @@ text.combo {
 <text x="476" y="126" class="combo tap">BOUNC</text>
 </g>
 <g class="combo combopos-5">
-<rect rx="6" ry="6" x="516" y="56" width="31" height="15" class="combo"/>
-<text x="532" y="63" class="combo tap">&lt;BMK</text>
-</g>
-<g class="combo combopos-6">
-<rect rx="6" ry="6" x="628" y="56" width="31" height="15" class="combo"/>
-<text x="644" y="63" class="combo tap">BMK&gt;</text>
-</g>
-<g class="combo combopos-7">
-<rect rx="6" ry="6" x="572" y="48" width="31" height="15" class="combo"/>
-<text x="588" y="56" class="combo tap">BMK</text>
-</g>
-<g class="combo combopos-8">
 <rect rx="6" ry="6" x="242" y="118" width="21" height="15" class="combo"/>
 <text x="252" y="126" class="combo tap">&lt;BMK&gt;</text>
 </g>
