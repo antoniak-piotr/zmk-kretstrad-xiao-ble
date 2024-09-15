@@ -197,7 +197,7 @@ parse_config:
       tap: CWRD # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
     "&sn NUM ESC":
       tap: ESC  # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
-      hold: NWRD
+      hold: NUM
 
     # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK)
     "&out OUT_TOG":
