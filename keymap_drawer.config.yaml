@@ -173,7 +173,7 @@ parse_config:
       tap: GREP
     "&kp LC(F)":
       tap: FIND
-    "&kp LC(G) LA(G)":
+    "&mt LA(G) LC(G)":
       tap: GOTO
       hold: LINE
 

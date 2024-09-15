@@ -86,8 +86,8 @@
 
         NAV_layer {
             bindings = <
-                &none           &sw             &none           &df T A         &mt PSCRN SNIP          &zoom LG(ESC) 0 &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
-                &kp LSC(Z)      &kp LSA(S)      &kp LG(D)       &kp LC(F)       &mt LC(G) LA(G)         &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
+                &none           &sw             &none           &df T A         &mt PSCRN SNIP          &zm LG(ESC) 0   &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
+                &kp LSC(Z)      &kp LSA(S)      &kp LG(D)       &kp LC(F)       &mt LA(G) LC(G)         &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
                 &hl LSFT LC(Z)  &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &kp LSC(B)              &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hr RSHF PG_DN
                                                                 &mt LWIN TAB    &sn NUM ESC             &trans          &mt RALT ENTER
             >;
@@ -280,20 +280,18 @@
             keep-mods = <(MOD_RSFT)>;
         };
 
-        zoom_actions: windows_magnifier_actions { // powiększanie i pomniejszanie (Win++ / Win+-)
+        za: windows_magnifier_actions { // powiększanie i pomniejszanie (Win++ / Win+-)
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LG(EQUAL)>, <&kp LG(MINUS)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        zoom: windows_magnifier {
+        zm: windows_magnifier {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            // flavor = "hold-preferred";
             tapping-term-ms = <400>;
-            // quick-tap-ms = <200>;
-            bindings = <&kp>, <&zoom_actions>;
+            bindings = <&kp>, <&za>;
         };
 
         df: delphi_code_folding {
