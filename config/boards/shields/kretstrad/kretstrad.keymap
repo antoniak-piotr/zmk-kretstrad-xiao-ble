@@ -212,16 +212,15 @@
         nd: num_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-
             tapping-term-ms = <200>;
-            bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
+            bindings = <&kp N1>, <&kp N2>;
+            // bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
         };
 
         // Alt+Tab swapper, requires PR #1366
         sw: swapper {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
-
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             // ignored-key-positions = <LT2>;   // tutaj należałoby dodać pozycję klawisza realizującego LS(TAB)
         };
