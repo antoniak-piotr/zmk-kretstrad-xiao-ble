@@ -10,26 +10,26 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LWIN}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHFT}
+  - A
+  - S
+  - D
+  - F
   - G
   - H
-  - {t: J, h: RSHFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: LALT}
-  - {t: ';:', h: LWIN}
-  - Z
+  - J
+  - K
+  - L
+  - ';:'
+  - {t: Z, h: LSFT}
   - X
-  - C
-  - V
+  - {t: C, h: LALT}
+  - {t: V, h: LCTRL}
   - B
   - N
-  - M
-  - ',<'
+  - {t: M, h: RCTRL}
+  - {t: ',<', h: LALT}
   - .>
-  - ENTER
+  - {t: ENTER, h: RSFT}
   - {t: TAB, h: LWIN}
   - NWRD1
   - {t: SPACE, h: NAV}
@@ -45,26 +45,26 @@ layers:
   - U
   - Y
   - ';:'
-  - {t: A, h: LWIN}
-  - {t: R, h: LALT}
-  - {t: S, h: LCTRL}
-  - {t: T, h: LSHFT}
+  - A
+  - R
+  - S
+  - T
   - G
   - M
-  - {t: N, h: RSHFT}
-  - {t: E, h: RCTRL}
-  - {t: I, h: LALT}
-  - {t: O, h: LWIN}
-  - Z
+  - N
+  - E
+  - I
+  - O
+  - {t: Z, h: LSFT}
   - X
-  - C
-  - D
+  - {t: C, h: LALT}
+  - {t: D, h: LCTRL}
   - V
   - K
-  - H
-  - ',<'
+  - {t: H, h: RCTRL}
+  - {t: ',<', h: LALT}
   - .>
-  - ENTER
+  - {t: ENTER, h: RSFT}
   - {t: TAB, h: LWIN}
   - NWRD1
   - {t: SPACE, h: NAV}
@@ -80,26 +80,26 @@ layers:
   - F8
   - F9
   - F10
-  - {t: 1!, h: LWIN}
-  - {t: 2@, h: LALT}
-  - {t: 3#, h: LCTRL}
-  - {t: 4$, h: LSHFT}
+  - 1!
+  - 2@
+  - 3#
+  - 4$
   - 5%
   - 6^
-  - {t: 7&, h: RSHFT}
-  - {t: 8*, h: RCTRL}
-  - {t: 9(, h: LALT}
-  - {t: 0), h: LWIN}
-  - \|
+  - 7&
+  - 8*
+  - 9(
+  - 0)
+  - {t: \|, h: LSFT}
   - {type: none}
-  - {type: none}
-  - 5%
+  - {t: '0', h: LALT}
+  - {t: 5%, h: LCTRL}
   - F11
   - F12
-  - 6^
-  - ',<'
+  - {t: 6^, h: RCTRL}
+  - {t: ',<', h: LALT}
   - .>
-  - /?
+  - {t: '/?', h: RSFT}
   - {t: TAB, h: LWIN}
   - ''
   - {t: SPACE, h: NAV}
@@ -115,20 +115,20 @@ layers:
   - {t: DECL, h: '$$mdi:pencil$$'}
   - {t: HIST>, h: '$$mdi:step-forward-2$$'}
   - {type: none}
-  - {t: REDO, h: LWIN}
-  - {t: GREP, h: LALT}
-  - {t: DSK+, h: LCTRL}
-  - {t: FIND, h: LSHFT}
+  - {t: REDO, h: '$$mdi:redo$$'}
+  - GREP
+  - DSK+
+  - FIND
   - GOTO
   - {t: <IDEN, h: '$$mdi:tag-outline$$'}
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
   - {t: RIGHT, h: '$$mdi:chevron-right$$'}
   - {t: PGUP, h: '$$mdi:chevron-triple-up$$'}
-  - {t: UNDO, h: '$$mdi:undo$$'}
+  - {t: UNDO, h: LSFT}
   - {t: CUT, h: '$$mdi:content-cut$$'}
-  - {t: COPY, h: '$$mdi:content-copy$$'}
-  - {t: PASTE, h: '$$mdi:content-paste$$'}
+  - {t: COPY, h: LALT}
+  - {t: PASTE, h: LCTRL}
   - BMK^
   - {t: IDEN>, h: '$$mdi:tag-outline$$'}
   - {t: <WORD, h: '$$mdi:chevron-double-left$$'}
