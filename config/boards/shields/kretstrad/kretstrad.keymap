@@ -210,7 +210,7 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            bindings = <&mo>, <&nd>;
+            bindings = <&kp>, <&kp>; // <&mo>, <&nd>;
         };
 
         // Alt+Tab swapper, requires PR #1366
