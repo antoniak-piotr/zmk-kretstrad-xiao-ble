@@ -314,15 +314,15 @@ parse_config:
       width: 41
 
     esc:
-      width: 25
+      width: 27
     tab:
-      width: 25
+      width: 27
     # bsdl:
     #   width: 25
     bspc:
-      width: 25
+      width: 27
     del:
-      width: 25
+      width: 27
 
     exit:
       align: top
