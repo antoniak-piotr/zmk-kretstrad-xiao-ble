@@ -61,7 +61,7 @@
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
                 &hl LSFT A      &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &hr RSFT SLASH
                 &kp Z           &kp X           &hl LALT C      &hl LCTR V      &kp B                   &kp N           &hr RCTR M      &hr LALT COMMA  &kp DOT         &kp SEMI
-                                                                &mt LWIN TAB    &sn NUM ESC             &lt NAV SPACE   &mt RALT ENTER
+                                                                &mt LWIN TAB    &lt NUM ESC             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
@@ -70,7 +70,7 @@
                 &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SLASH
                 &hl LSFT A      &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &hr RSFT O
                 &kp Z           &kp X           &hl LALT C      &hl LCTR D      &kp V                   &kp K           &hr RCTR H      &hr LALT COMMA  &kp DOT         &kp SEMI
-                                                                &mt LWIN TAB    &sn NUM ESC             &lt NAV SPACE   &mt RALT ENTER
+                                                                &mt LWIN TAB    &lt NUM ESC             &lt NAV SPACE   &mt RALT ENTER
             >;
         };
 
@@ -88,7 +88,7 @@
                 &none           &none           &sw             &none           &mt PSCRN SNIP          &zm LG(ESC) 0   &none           &dh             &none           &none
                 &hl LSFT SC(Z)  &kp SA(S)       &df A T         &mt SC(F) LC(F) &mt LA(G) LC(G)         &di LA(UP) 0    &kp LEFT        &kp UP          &kp RIGHT       &hr RSHF PG_UP
                 &kp LC(Z)       &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &mt SC(B) LS(ESC)       &db LC(B) 0     &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
-                                                                &mt LWIN TAB    &sn NUM ESC             &trans          &mt RALT ENTER
+                                                                &mt LWIN TAB    &lt NUM ESC             &trans          &mt RALT ENTER
             >;
         };
 
