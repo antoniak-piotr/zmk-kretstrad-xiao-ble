@@ -57,22 +57,38 @@ parse_config:
     # NUMERIC
     "&kp N1": {tap: "1!"}
     "&kp N2": {tap: "2@"}
-    "&kp N3": {tap: "3#", hold: ""}
-    "&kp N4": {tap: "4$", hold: ""}
-    "&kp N5": {tap: "5%", hold: ""}
-    "&kp N6": {tap: "6^", hold: ""}
-    "&kp N7": {tap: "7&", hold: ""}
-    "&kp N8": {tap: "8*", hold: ""}
-    "&kp N9": {tap: "9(", hold: ""}
-    "&kp N0": {tap: "0)", hold: ""}
+    "&kp N3": {tap: "3#"}
+    "&kp N4": {tap: "4$"}
+    "&kp N5": {tap: "5%"}
+    "&kp N6": {tap: "6^"}
+    "&kp N7": {tap: "7&"}
+    "&kp N8": {tap: "8*"}
+    "&kp N9": {tap: "9("}
+    "&kp N0": {tap: "0)"}
 
-    # HEX
+    # NUMERIC AND HEX
+    "&kp KP_N1": {tap: "1"}
+    # "&kp KP_N2": {tap: "2"}
+    # "&kp KP_N3": {tap: "3"}
+    "KP_N2": {tap: "2"}
+    "KP_N3": {tap: "3"}
+    "&kp KP_N4": {tap: "4"}
+    "&kp KP_N5": {tap: "5"}
+    "&kp KP_N6": {tap: "6"}
+    "&kp KP_N7": {tap: "7"}
+    "&kp KP_N8": {tap: "8"}
+    "&kp KP_N9": {tap: "9"}
+    "&kp KP_N0": {tap: "0"}
+
     "&kp LS(A)": {tap: "A"}
     "&kp LS(B)": {tap: "B"}
     "&kp LS(C)": {tap: "C"}
     "&kp LS(D)": {tap: "D"}
     "&kp LS(E)": {tap: "E"}
     "&kp LS(F)": {tap: "F"}
+
+    "&kp KP_DOT": {tap: "."}
+    "&kp KP_COMMA": {tap: ","}
 
     # SHIFTED KEYS
     "&kp COMMA": {tap: ",<"}
