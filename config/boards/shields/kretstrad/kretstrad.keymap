@@ -173,9 +173,10 @@
         nf      {key-positions = <8 18>; bindings = <&kp LS(F)>; layers = <NUM>; COMBO;};                       // F
 
         // FUNCTION KEYS (CUSTOM)
-        nf2     {key-positions = <12 22>; bindings = <&kp LC(F2)>; layers = <NUM>; COMBO;};                     // Ctrl + F2 = Reset
-        nf7     {key-positions = <1 11>; bindings = <&kp LS(F7)>; layers = <NUM>; COMBO;};                      // Shift + F7 - Trace to next source line
-        nf8     {key-positions = <2 12>; bindings = <&kp LS(F8)>; layers = <NUM>; COMBO;};                      // Shift + F8 - Run until the function returns
+        f2     {key-positions = <12 22>; bindings = <&kp LC(F2)>; layers = <NUM>; COMBO;};                      // Ctrl + F2 = Reset
+        f7     {key-positions = <1 11>; bindings = <&kp LS(F7)>; layers = <NUM>; COMBO;};                       // Shift + F7 - Trace to next source line
+        f8     {key-positions = <2 12>; bindings = <&kp LS(F8)>; layers = <NUM>; COMBO;};                       // Shift + F8 - Run until the function returns
+        f9     {key-positions = <3 13>; bindings = <&kp LC(F9)>; layers = <NUM>; COMBO;};                       // Ctrl + F9 - Compile (Make)
 
         // SYMBOLS
         // s1      {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <NUM>; COMBO;};                        // !

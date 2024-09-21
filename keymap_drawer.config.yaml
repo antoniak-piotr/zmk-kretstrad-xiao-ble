@@ -88,6 +88,12 @@ parse_config:
     "&kp KP_DOT": {tap: "."}
     "&kp KP_COMMA": {tap: ","}
 
+    # CUSTOM FUNCTION KEYS
+    "&kp LC(F2)": {tap: RESET}
+    "&kp LS(F7)": {tap: "LINE"}
+    "&kp LS(F8)": {tap: "RETURN"}
+    "&kp LC(F9)": {tap: "COMPILE"}
+
     # SHIFTED KEYS
     "&kp COMMA": {tap: ",<"}
     "&kp DOT": {tap: ".>"}
@@ -100,9 +106,7 @@ parse_config:
     "&kp SEMI": {tap: ";:"}
 
     # BSPC, DEL, BSDL, CUT, COPY, PASTE
-    "&bsdl":
-      tap: BSDL
-      # hold: $$mdi:content-cut$$
+    "&bsdl": {tap: BSDL}
 
     "&kp LC(X)":
       tap: CUT
