@@ -126,6 +126,7 @@ parse_config:
     # Nawiasy i inne specjalne
     "&lplt": {tap: "(<"}
     "&rpgt": {tap: ")>"}
+    "&cmsm": {tap: ",;"}
     "&dtcl": {tap: ".:"}
     "&csm LALT 0": {tap: ",;", hold: LALT}
     "&dcm LWIN 0": {tap: ".:", hold: LWIN}
