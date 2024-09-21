@@ -232,6 +232,14 @@
             bindings = <&kp>, <&cmsm>;
         };
 
+        stex: star_excl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp STAR>, <&kp EXCL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
         sn: smart_num {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

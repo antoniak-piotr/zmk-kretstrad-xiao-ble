@@ -126,10 +126,11 @@ parse_config:
       tap: ")>"
     "&dtcl":
       tap: ".:"
-    # "&cmsm":
-    #   tap: ",;"
     "&csm LALT 0":
       tap: ",;"
+      hold: LALT
+    "&stex":
+      tap: "*!"
 
     # SNIP, PSCRN, ALT+PSCRN
     "&kp SG(S)":
