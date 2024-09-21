@@ -126,7 +126,9 @@ parse_config:
       tap: ")>"
     "&dtcl":
       tap: ".:"
-    "&cmsm":
+    # "&cmsm":
+    #   tap: ",;"
+    "&csm LALT 0":
       tap: ",;"
 
     # SNIP, PSCRN, ALT+PSCRN
