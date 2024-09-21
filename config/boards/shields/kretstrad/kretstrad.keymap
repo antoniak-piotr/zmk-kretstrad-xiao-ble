@@ -67,8 +67,8 @@
 
         COL_layer {
             bindings = <
-                &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &none
-                &hl LSFT A      &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &hr RSFT SEMI
+                &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
+                &hl LSFT A      &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &hr RSFT O
                 &kp Z           &kp X           &hl LALT C      &hl LCTR D      &kp V                   &kp K           &hr RCTR H      &csm LALT 0     &dtcl           &kp SLASH
                                                                 &mt LWIN TAB    &lt NUM ESC             &lt NAV SPACE   &mt RALT ENTER
             >;

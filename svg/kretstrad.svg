@@ -269,7 +269,7 @@ text.combo {
 </g>
 <g transform="translate(700, 105)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">/?</text>
+<text x="0" y="0" class="key tap">;:</text>
 <text x="0" y="18" class="key hold">RSFT</text>
 </g>
 <g transform="translate(28, 161)" class="key keypos-20">
@@ -307,14 +307,16 @@ text.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">,&lt;</text>
 <text x="0" y="18" class="key hold">LALT</text>
+<text x="0" y="-18" class="key shifted">;:</text>
 </g>
 <g transform="translate(644, 147)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">.&gt;</text>
+<text x="0" y="-18" class="key shifted">:</text>
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">;:</text>
+<text x="0" y="0" class="key tap">/?</text>
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -423,10 +425,12 @@ text.combo {
 <g class="combo combopos-19">
 <rect rx="6" ry="6" x="578" y="104" width="21" height="15" class="combo"/>
 <text x="588" y="112" class="combo tap">(</text>
+<text x="588" y="112" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="634" y="112" width="21" height="15" class="combo"/>
 <text x="644" y="119" class="combo tap">)</text>
+<text x="644" y="120" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-21">
 <rect rx="6" ry="6" x="74" y="112" width="21" height="15" class="combo"/>
@@ -514,7 +518,7 @@ text.combo {
 </g>
 <g transform="translate(700, 49)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">/?</text>
+<text x="0" y="0" class="key tap">;:</text>
 </g>
 <g transform="translate(28, 105)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -593,14 +597,16 @@ text.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">,&lt;</text>
 <text x="0" y="18" class="key hold">LALT</text>
+<text x="0" y="-18" class="key shifted">;:</text>
 </g>
 <g transform="translate(644, 147)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">.&gt;</text>
+<text x="0" y="-18" class="key shifted">:</text>
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">;:</text>
+<text x="0" y="0" class="key tap">/?</text>
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -709,10 +715,12 @@ text.combo {
 <g class="combo combopos-19">
 <rect rx="6" ry="6" x="578" y="104" width="21" height="15" class="combo"/>
 <text x="588" y="112" class="combo tap">(</text>
+<text x="588" y="112" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="634" y="112" width="21" height="15" class="combo"/>
 <text x="644" y="119" class="combo tap">)</text>
+<text x="644" y="120" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-21">
 <rect rx="6" ry="6" x="74" y="112" width="21" height="15" class="combo"/>
@@ -972,10 +980,12 @@ text.combo {
 <g class="combo combopos-16">
 <rect rx="6" ry="6" x="578" y="104" width="21" height="15" class="combo"/>
 <text x="588" y="112" class="combo tap">(</text>
+<text x="588" y="112" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-17">
 <rect rx="6" ry="6" x="634" y="112" width="21" height="15" class="combo"/>
 <text x="644" y="119" class="combo tap">)</text>
+<text x="644" y="120" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-18">
 <rect rx="6" ry="6" x="74" y="112" width="21" height="15" class="combo"/>
@@ -1083,8 +1093,8 @@ text.combo {
 </g>
 <g transform="translate(532, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LEFT</text>
-<use href="#mdi:chevron-left" xlink:href="#mdi:chevron-left" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:chevron-left"/>
+<text x="0" y="0" class="key tap">&lt;WORD</text>
+<use href="#mdi:chevron-double-left" xlink:href="#mdi:chevron-double-left" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:chevron-double-left"/>
 </g>
 <g transform="translate(588, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1093,8 +1103,8 @@ text.combo {
 </g>
 <g transform="translate(644, 91)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">RIGHT</text>
-<use href="#mdi:chevron-right" xlink:href="#mdi:chevron-right" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:chevron-right"/>
+<text x="0" y="0" class="key tap">WORD&gt;</text>
+<use href="#mdi:chevron-double-right" xlink:href="#mdi:chevron-double-right" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:chevron-double-right"/>
 </g>
 <g transform="translate(700, 105)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1134,8 +1144,8 @@ text.combo {
 </g>
 <g transform="translate(532, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&lt;WORD</text>
-<use href="#mdi:chevron-double-left" xlink:href="#mdi:chevron-double-left" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:chevron-double-left"/>
+<text x="0" y="0" class="key tap">LEFT</text>
+<use href="#mdi:chevron-left" xlink:href="#mdi:chevron-left" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:chevron-left"/>
 </g>
 <g transform="translate(588, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1144,8 +1154,8 @@ text.combo {
 </g>
 <g transform="translate(644, 147)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">WORD&gt;</text>
-<use href="#mdi:chevron-double-right" xlink:href="#mdi:chevron-double-right" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:chevron-double-right"/>
+<text x="0" y="0" class="key tap">RIGHT</text>
+<use href="#mdi:chevron-right" xlink:href="#mdi:chevron-right" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:chevron-right"/>
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
