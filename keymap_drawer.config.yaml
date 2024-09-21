@@ -127,20 +127,12 @@ parse_config:
       hold: $$mdi:redo$$
 
     # Nawiasy i inne specjalne
-    "&lplt":
-      tap: "(<"
-    "&rpgt":
-      tap: ")>"
-    "&dtcl":
-      tap: ".:"
-    "&csm LALT 0":
-      tap: ",;"
-      hold: LALT
-    "&dcm LWIN 0":
-      tap: ".:"
-      hold: LWIN
-    "&stex":
-      tap: "*!"
+    "&lplt": {tap: "(<"}
+    "&rpgt": {tap: ")>"}
+    "&dtcl": {tap: ".:"}
+    "&csm LALT 0": {tap: ",;", hold: LALT}
+    "&dcm LWIN 0": {tap: ".:", hold: LWIN}
+    "&stex": {tap: "*!"}
 
     # SNIP, PSCRN, ALT+PSCRN
     "&kp SG(S)":
