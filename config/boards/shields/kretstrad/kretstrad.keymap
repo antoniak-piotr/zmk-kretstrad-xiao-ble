@@ -181,9 +181,10 @@
 
         // MINUS, PLUS, DIV and MUL
         plus    {key-positions = <13 14>; bindings = <&kp PLUS>; layers = <DEF COL NUM>; COMBO;};               // +
-        mul     {key-positions = <23 24>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                 // *
+        // mul     {key-positions = <23 24>; bindings = <&kp STAR>; layers = <DEF COL NUM>; COMBO;};                 // *
+        mul     {key-positions = <23 24>; bindings = <&stex>; layers = <DEF COL NUM>; COMBO;};                  // *!
         minus   {key-positions = <15 16>; bindings = <&kp MINUS>; layers = <DEF COL NUM>; COMBO;};              // -_
-        div     {key-positions = <25 26>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};                // /
+        div     {key-positions = <25 26>; bindings = <&kp SLASH>; layers = <DEF COL NUM>; COMBO;};              // /?
 
         // NAV LAYERS COMBOS
         home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
