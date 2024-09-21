@@ -991,9 +991,7 @@ text.combo {
 </g>
 <g transform="translate(476, 42)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ZOOM+</text>
-<text x="0" y="18" class="key hold">EXIT</text>
-<text x="0" y="-18" class="key shifted">ZOOM-</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">&lt;ZOOM&gt;</tspan></text>
 </g>
 <g transform="translate(532, 35)" class="key none keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>

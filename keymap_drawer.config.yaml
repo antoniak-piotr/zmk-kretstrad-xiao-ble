@@ -201,18 +201,21 @@ parse_config:
       hold: LINE
 
     # MAGNIFIER
-    "&kp LG(EQUAL)":
-      tap: ZOOM+
-      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
-    "&kp LG(MINUS)":
-      tap: ZOOM-
-      hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    "&kp LG(ESC)":
-      tap: EXIT
-      # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    "&zoom":                # ZOOM+ / ZOOM- (when SHIFT modifier) on TAP and EXIT (on HOLD)
-      tap: ZOOM
-      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
+    # "&kp LG(EQUAL)":
+    #   tap: ZOOM+
+    #   hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
+    # "&kp LG(MINUS)":
+    #   tap: ZOOM-
+    #   hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    # "&kp LG(ESC)":
+    #   tap: EXIT
+    #   # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
+    # "&zoom":                # ZOOM+ / ZOOM- (when SHIFT modifier) on TAP and EXIT (on HOLD)
+    #   tap: ZOOM
+    #   hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
+    "&zm LG(ESC) 0":
+      tap: "<ZOOM>"
+      hold: ""
 
     # CAPSLOCK, CAPSWORD, NUMWORD
     "&kp CLCK":
