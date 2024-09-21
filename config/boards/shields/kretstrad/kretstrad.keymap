@@ -93,14 +93,14 @@
             >;
         };
 
-        FUN_layer {
-            bindings = <
-                &kp F9          &kp F10         &kp F11         &kp F12         &none                   &none           &none           &none           &none           &none
-                &kp F5          &kp F6          &kp F7          &kp F8          &none                   &none           &none           &none           &none           &kp RSFT
-                &kp F1          &kp F2          &kp F3          &kp F4          &none                   &none           &kp RCTR        &kp LALT        &none           &none
-                                                                &mt LWIN TAB    &trans                  &lt NAV SPACE   &lt NUM ENTER
-            >;
-        };
+        // FUN_layer {
+        //     bindings = <
+        //         &kp F9          &kp F10         &kp F11         &kp F12         &none                   &none           &none           &none           &none           &none
+        //         &kp F5          &kp F6          &kp F7          &kp F8          &none                   &none           &none           &none           &none           &kp RSFT
+        //         &kp F1          &kp F2          &kp F3          &kp F4          &none                   &none           &kp RCTR        &kp LALT        &none           &none
+        //                                                         &mt LWIN TAB    &trans                  &lt NAV SPACE   &lt NUM ENTER
+        //     >;
+        // };
 
         NAV_layer {
             bindings = <
@@ -171,6 +171,9 @@
         nd      {key-positions = <6 16>; bindings = <&kp LS(D)>; layers = <NUM>; COMBO;};                       // D
         ne      {key-positions = <7 17>; bindings = <&kp LS(E)>; layers = <NUM>; COMBO;};                       // E
         nf      {key-positions = <8 18>; bindings = <&kp LS(F)>; layers = <NUM>; COMBO;};                       // F
+
+        // FUNCTION KEYS (CUSTOM)
+
 
         // SYMBOLS
         // s1      {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <NUM>; COMBO;};                        // !
