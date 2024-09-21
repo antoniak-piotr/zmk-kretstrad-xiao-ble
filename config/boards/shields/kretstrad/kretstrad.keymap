@@ -165,12 +165,12 @@
         n0      {key-positions = <9 19>; bindings = <&kp N0>; layers = <DEF COL>; COMBO;};                      // 0
 
         // NUM LAYER
-        na      {key-positions = <16 26>; bindings = <&kp LS(A)>; layers = <DEF COL>; COMBO;};                  // A
-        nb      {key-positions = <17 27>; bindings = <&kp LS(B)>; layers = <DEF COL>; COMBO;};                  // B
-        nc      {key-positions = <18 28>; bindings = <&kp LS(C)>; layers = <DEF COL>; COMBO;};                  // C
-        nd      {key-positions = <6 16>; bindings = <&kp LS(D)>; layers = <DEF COL>; COMBO;};                   // D
-        ne      {key-positions = <7 17>; bindings = <&kp LS(E)>; layers = <DEF COL>; COMBO;};                   // E
-        nf      {key-positions = <8 18>; bindings = <&kp LS(F)>; layers = <DEF COL>; COMBO;};                   // F
+        na      {key-positions = <16 26>; bindings = <&kp LS(A)>; layers = <NUM>; COMBO;};                      // A
+        nb      {key-positions = <17 27>; bindings = <&kp LS(B)>; layers = <NUM>; COMBO;};                      // B
+        nc      {key-positions = <18 28>; bindings = <&kp LS(C)>; layers = <NUM>; COMBO;};                      // C
+        nd      {key-positions = <6 16>; bindings = <&kp LS(D)>; layers = <NUM>; COMBO;};                       // D
+        ne      {key-positions = <7 17>; bindings = <&kp LS(E)>; layers = <NUM>; COMBO;};                       // E
+        nf      {key-positions = <8 18>; bindings = <&kp LS(F)>; layers = <NUM>; COMBO;};                       // F
 
         // SYMBOLS
         // s1      {key-positions = <0 10>; bindings = <&kp EXCL>; layers = <NUM>; COMBO;};                        // !
