@@ -148,28 +148,35 @@ parse_config:
       hold: $$mdi:crop$$ # select$$
 
     # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
-    "&kp CA(UP)":
-      tap: IDEN-
-      hold: $$mdi:tag-outline$$
-      # hold: $$mdi:tag-arrow-up$$
-    "&kp CA(DOWN)":
-      tap: IDEN+
-      hold: $$mdi:tag-outline$$
-      # hold: $$mdi:tag-arrow-down$$
-    "&kp SC(UP)":
-      tap: BOUNC
-      # hold: $$mdi:swap-vertical$$
+    "&di LA(UP) 0":
+      tap: "<IDEN>"
+      hold: DECL
+
+    # "&kp CA(UP)":
+    #   tap: IDEN-
+    #   hold: $$mdi:tag-outline$$
+    #   # hold: $$mdi:tag-arrow-up$$
+    # "&kp CA(DOWN)":
+    #   tap: IDEN+
+    #   hold: $$mdi:tag-outline$$
+    #   # hold: $$mdi:tag-arrow-down$$
+    # "&kp SC(UP)":
+    #   tap: BOUNC
+    #   # hold: $$mdi:swap-vertical$$
 
     # PREV/NEXT/DROP BOOKMARKS (Parnassus)
-    "&kp CA(LEFT)":
-      tap: "BMK-"
-      # hold: $$mdi:bookmark$$
-    "&kp CA(RIGHT)":
-      tap: "BMK+"
-      # hold: $$mdi:bookmark$$
-    "&kp LC(B)":
-      tap: "BMK"
-      # hold: $$mdi:bookmark$$
+    # "&kp CA(LEFT)":
+    #   tap: "BMK-"
+    #   # hold: $$mdi:bookmark$$
+    # "&kp CA(RIGHT)":
+    #   tap: "BMK+"
+    #   # hold: $$mdi:bookmark$$
+    # "&kp LC(B)":
+    #   tap: "BMK"
+    #   # hold: $$mdi:bookmark$$
+    "&db LC(B) 0":
+      tap: "<BMK>"
+      hold: BMK
     "&kp SC(B)":
       tap: "CBMK"       # Caret Bookmark
       # hold: $$mdi:bookmark$$
@@ -186,9 +193,9 @@ parse_config:
       hold: $$mdi:step-forward-2$$
     "&dh":
       tap: <HIST>
-    "&kp LA(UP)":
-      tap: DECL
-      hold: $$mdi:pencil$$
+    # "&kp LA(UP)":
+    #   tap: DECL
+    #   hold: $$mdi:pencil$$
 
     # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
     "&kp LS(LA(S))":
@@ -215,7 +222,7 @@ parse_config:
     #   hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
     "&zm LG(ESC) 0":
       tap: "<ZOOM>"
-      hold: ""
+      hold: "EXIT"
 
     # CAPSLOCK, CAPSWORD, NUMWORD
     "&kp CLCK":
