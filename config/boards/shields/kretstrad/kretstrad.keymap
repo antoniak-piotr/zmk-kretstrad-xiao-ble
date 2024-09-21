@@ -86,8 +86,8 @@
         NAV_layer {
             bindings = <
                 &none           &none           &sw             &none           &mt PSCRN SNIP          &zm LG(ESC) 0   &none           &dh             &none           &none
-                &hl LSFT SC(Z)  &kp SA(S)       &df A T         &mt SC(F) LC(F) &mt LA(G) LC(G)         &di LA(UP) 0    &kp LEFT        &kp UP          &kp RIGHT       &hr RSHF PG_UP
-                &kp LC(Z)       &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &mt SC(B) LS(ESC)       &db LC(B) 0     &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
+                &hl LSFT SC(Z)  &kp SA(S)       &df A T         &mt SC(F) LC(F) &mt LA(G) LC(G)         &di LA(UP) 0    &kp LC(LEFT)    &kp UP          &kp LC(RIGHT)   &hr RSHF PG_UP
+                &kp LC(Z)       &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &mt SC(B) LS(ESC)       &db LC(B) 0     &kp LEFT        &kp DOWN        &kp RIGHT       &kp PG_DN
                                                                 &mt LWIN TAB    &lt NUM ESC             &trans          &mt RALT ENTER
             >;
         };
@@ -162,8 +162,10 @@
         s14     {key-positions = <15 25>; bindings = <&kp DQT>; layers = <NUM>; COMBO;};                        // "
 
         // PAR, BKT
-        lpar    {key-positions = <17 27>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
-        rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
+        // lpar    {key-positions = <17 27>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
+        //  rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
+        lpar    {key-positions = <17 27>; bindings = <&lplt>; layers = <DEF COL NUM>; COMBO;};                  // (<
+        rpar    {key-positions = <18 28>; bindings = <&rpgt>; layers = <DEF COL NUM>; COMBO;};                  // )>
         lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL NUM>; COMBO;};               // [{
         rbkt    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <DEF COL NUM>; COMBO;};               // ]}
         // lbrc    {key-positions = <11 21>; bindings = <&kp LBRC>; layers = <NUM>; COMBO;};                       // {
@@ -189,6 +191,38 @@
      };
 
     behaviors {
+        lplt: lpar_lt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
+        rpgt: rpar_gt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
+        dtcl: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
+        cmsm: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
         sn: smart_num {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
