@@ -136,6 +136,9 @@ parse_config:
     "&csm LALT 0":
       tap: ",;"
       hold: LALT
+    "&dcm LWIN 0":
+      tap: ".:"
+      hold: LWIN
     "&stex":
       tap: "*!"
 
