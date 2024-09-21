@@ -91,7 +91,7 @@ parse_config:
     # CUSTOM FUNCTION KEYS
     "&kp LC(F2)": {tap: RESET}
     "&kp LS(F7)": {tap: LINE}
-    "&kp LS(F8)": {tap: FRET}
+    "&kp LS(F8)": {tap: FUNC}
     "&kp LC(F9)": {tap: COMP}
 
     # SHIFTED KEYS
