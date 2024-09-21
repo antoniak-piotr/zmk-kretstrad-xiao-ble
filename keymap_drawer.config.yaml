@@ -68,10 +68,8 @@ parse_config:
 
     # NUMERIC AND HEX
     "&kp KP_N1": {tap: "1"}
-    # "&kp KP_N2": {tap: "2"}
-    # "&kp KP_N3": {tap: "3"}
-    "KP_N2": {tap: "2"}
-    "KP_N3": {tap: "3"}
+    "&kp KP_N2": {tap: "2"}
+    "&kp KP_N3": {tap: "3"}
     "&kp KP_N4": {tap: "4"}
     "&kp KP_N5": {tap: "5"}
     "&kp KP_N6": {tap: "6"}
@@ -93,7 +91,7 @@ parse_config:
     # SHIFTED KEYS
     "&kp COMMA": {tap: ",<"}
     "&kp DOT": {tap: ".>"}
-    "&kp SLASH": {tap: "/?"}
+    "&kp SLASH": {tap: "/?", hold: ""}
     "&kp BSLH": {tap: "\\|"}
     "&kp LBKT": {tap: "[{"}
     "&kp RBKT": {tap: "]}"}
