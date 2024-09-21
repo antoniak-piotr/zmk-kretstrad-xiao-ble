@@ -119,6 +119,16 @@ parse_config:
       tap: REDO
       hold: $$mdi:redo$$
 
+    # Nawiasy i inne specjalne
+    "&lplt":
+      tap: "(<"
+    "&rpgt":
+      tap: ")>"
+    "&dtcl":
+      tap: ".:"
+    "cmsm":
+      tap: ",;"
+
     # SNIP, PSCRN, ALT+PSCRN
     "&kp SG(S)":
       tap: SNIP
