@@ -57,25 +57,34 @@ parse_config:
     # NUMERIC
     "&kp N1":
       tap: "1!"
+      hold: ""
     "&kp N2":
       tap: "2@"
+      hold: ""
     "&kp N3":
       tap: "3#"
+      hold: ""
     "&kp N4":
       tap: "4$"
+      hold: ""
     "&kp N5":
       tap: "5%"
+      hold: ""
     "&kp N6":
       tap: "6^"
+      hold: ""
     "&kp N7":
       tap: "7&"
+      hold: ""
     "&kp N8":
       tap: "8*"
+      hold: ""
     "&kp N9":
       tap: "9("
+      hold: ""
     "&kp N0":
       tap: "0)"
-
+      hold: ""
     # SHIFTED KEYS
     "&kp COMMA":
       tap: ",<"
