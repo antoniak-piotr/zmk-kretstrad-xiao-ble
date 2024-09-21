@@ -88,6 +88,9 @@ parse_config:
     "&kp KP_DOT": {tap: "."}
     "&kp KP_COMMA": {tap: ","}
 
+    "&hdm": {tap: "#$"}
+
+
     # CUSTOM FUNCTION KEYS
     "&kp LC(F2)": {tap: RESET}
     "&kp LS(F7)": {tap: LINE}
