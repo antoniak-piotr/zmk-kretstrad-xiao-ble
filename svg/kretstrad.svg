@@ -952,11 +952,11 @@ text.combo {
 </g>
 <g class="combo combopos-12">
 <rect rx="6" ry="6" x="120" y="48" width="41" height="15" class="combo"/>
-<text x="140" y="56" class="combo tap"><tspan style="font-size: 83%">RETURN</tspan></text>
+<text x="140" y="56" class="combo tap">FRET</text>
 </g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="176" y="56" width="41" height="15" class="combo"/>
-<text x="196" y="63" class="combo tap"><tspan style="font-size: 71%">COMPILE</tspan></text>
+<text x="196" y="63" class="combo tap">COMP</text>
 </g>
 </g>
 </g>
