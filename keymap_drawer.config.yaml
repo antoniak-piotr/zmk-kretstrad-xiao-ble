@@ -89,10 +89,10 @@ parse_config:
     "&kp KP_COMMA": {tap: ","}
 
     # CUSTOM FUNCTION KEYS
-    "&kp LC(F2)": {tap: RESET}
-    "&kp LS(F7)": {tap: "LINE"}
-    "&kp LS(F8)": {tap: "RETURN"}
-    "&kp LC(F9)": {tap: "COMPILE"}
+    "&kp LC(F2)": {tap: RESET, width: 61}
+    "&kp LS(F7)": {tap: LINE, width: 61}
+    "&kp LS(F8)": {tap: RETURN, width: 61}
+    "&kp LC(F9)": {tap: COMPILE, width: 61}
 
     # SHIFTED KEYS
     "&kp COMMA": {tap: ",<"}
