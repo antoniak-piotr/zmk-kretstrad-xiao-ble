@@ -88,7 +88,7 @@
             bindings = <
                 &none           &kp F7          &kp F8          &kp F9          &kp F10                 &none           &kp KP_N7       &kp KP_N8       &kp KP_N9       &cmsm
                 &kp LSFT        &kp F4          &kp F5          &kp F6          &kp F11                 &kp HASH        &kp KP_N4       &kp KP_N5       &kp KP_N6       &hr RSFT KP_N0
-                &none           &kp F1          &hl LALT F2     &hl LCTL F3     &kp F12                 &kp DLLR        &hr RCTR KP_N1  &hr LALT KP_N2  &kp KP_N3       &&dtcl
+                &none           &kp F1          &hl LALT F2     &hl LCTL F3     &kp F12                 &kp DLLR        &hr RCTR KP_N1  &hr LALT KP_N2  &kp KP_N3       &dtcl
                                                                 &mt LWIN TAB    &lt NUM ESC             &lt NAV SPACE   &trans
             >;
         };
