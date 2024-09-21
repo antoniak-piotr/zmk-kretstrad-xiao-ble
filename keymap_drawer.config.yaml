@@ -11,7 +11,7 @@ draw_config:
 
   arc_radius: 0
   # separate_combo_diagrams: False
-  # draw_key_sides: True
+  draw_key_sides: true
 
   append_colon_to_layer_header: False
 
