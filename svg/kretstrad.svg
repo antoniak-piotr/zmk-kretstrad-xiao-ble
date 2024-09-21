@@ -945,18 +945,22 @@ text.combo {
 <text x="644" y="63" class="combo tap">F</text>
 </g>
 <g class="combo combopos-10">
+<rect rx="6" ry="6" x="466" y="118" width="21" height="15" class="combo"/>
+<text x="476" y="126" class="combo tap">&amp;hdm</text>
+</g>
+<g class="combo combopos-11">
 <rect rx="6" ry="6" x="120" y="104" width="41" height="15" class="combo"/>
 <text x="140" y="112" class="combo tap">RESET</text>
 </g>
-<g class="combo combopos-11">
+<g class="combo combopos-12">
 <rect rx="6" ry="6" x="64" y="56" width="41" height="15" class="combo"/>
 <text x="84" y="63" class="combo tap">LINE</text>
 </g>
-<g class="combo combopos-12">
+<g class="combo combopos-13">
 <rect rx="6" ry="6" x="120" y="48" width="41" height="15" class="combo"/>
 <text x="140" y="56" class="combo tap">FUNC</text>
 </g>
-<g class="combo combopos-13">
+<g class="combo combopos-14">
 <rect rx="6" ry="6" x="176" y="56" width="41" height="15" class="combo"/>
 <text x="196" y="63" class="combo tap">COMP</text>
 </g>

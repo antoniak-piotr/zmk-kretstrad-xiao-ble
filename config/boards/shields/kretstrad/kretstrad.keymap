@@ -390,7 +390,7 @@
 
         hdm: hash_dllr_macro { // hash-dollar macro
             #binding-cells = <0>;
-            compatible = "zmk,behavior-macro-zero-param";
+            compatible = "zmk,behavior-macro";
             bindings = <&macro_tap &kp HASH>, <&macro_tap &kp DLLR>;
         };
     };
