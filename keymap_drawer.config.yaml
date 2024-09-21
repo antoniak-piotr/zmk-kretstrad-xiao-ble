@@ -55,8 +55,8 @@ parse_config:
 
   raw_binding_map:
     # NUMERIC
-    "&kp N1": {tap: "1!", hold: ""}
-    "&kp N2": {tap: "2@", hold: ""}
+    "&kp N1": {tap: "1!", hold: "", shifted: "!"}
+    "&kp N2": {tap: "2@", hold: "", shifted: "@"}
     "&kp N3": {tap: "3#", hold: ""}
     "&kp N4": {tap: "4$", hold: ""}
     "&kp N5": {tap: "5%", hold: ""}
@@ -65,6 +65,14 @@ parse_config:
     "&kp N8": {tap: "8*", hold: ""}
     "&kp N9": {tap: "9(", hold: ""}
     "&kp N0": {tap: "0)", hold: ""}
+
+    # HEX
+    "&kp LS(A)": {tap: "A"}
+    "&kp LS(B)": {tap: "B"}
+    "&kp LS(C)": {tap: "C"}
+    "&kp LS(D)": {tap: "D"}
+    "&kp LS(E)": {tap: "E"}
+    "&kp LS(F)": {tap: "F"}
 
     # SHIFTED KEYS
     "&kp COMMA":
