@@ -55,8 +55,8 @@ parse_config:
 
   raw_binding_map:
     # NUMERIC
-    "&kp N1": {tap: "1!", hold: "", shifted: "!"}
-    "&kp N2": {tap: "2@", hold: "", shifted: "@"}
+    "&kp N1": {tap: "1!"}
+    "&kp N2": {tap: "2@"}
     "&kp N3": {tap: "3#", hold: ""}
     "&kp N4": {tap: "4$", hold: ""}
     "&kp N5": {tap: "5%", hold: ""}
@@ -75,24 +75,15 @@ parse_config:
     "&kp LS(F)": {tap: "F"}
 
     # SHIFTED KEYS
-    "&kp COMMA":
-      tap: ",<"
-    "&kp DOT":
-      tap: ".>"
-    "&kp SLASH":
-      tap: "/?"
-    "&kp BSLH":
-      tap: "\\|"
-    "&kp LBKT":
-      tap: "[{"
-    "&kp RBKT":
-      tap: "]}"
-    "&kp GRAVE":
-      tap: "`~"
-    "&kp APOS":
-      tap: "'\""
-    "&kp SEMI":
-      tap: ";:"
+    "&kp COMMA": {tap: ",<"}
+    "&kp DOT": {tap: ".>"}
+    "&kp SLASH": {tap: "/?"}
+    "&kp BSLH": {tap: "\\|"}
+    "&kp LBKT": {tap: "[{"}
+    "&kp RBKT": {tap: "]}"}
+    "&kp GRAVE": {tap: "`~"}
+    "&kp APOS": {tap: "'\""}
+    "&kp SEMI": {tap: ";:"}
 
     # BSPC, DEL, BSDL, CUT, COPY, PASTE
     "&bsdl":
