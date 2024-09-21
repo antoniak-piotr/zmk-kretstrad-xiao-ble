@@ -257,7 +257,7 @@
             keep-mods = <(MOD_RSFT)>;
         };
 
-        dcm: comma_semi_mod {
+        dcm: dot_colon_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
