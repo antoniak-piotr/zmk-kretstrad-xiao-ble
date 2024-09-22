@@ -249,21 +249,21 @@
             keep-mods = <(MOD_RSFT)>;
         };
 
-        sn: smart_num {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            bindings = <&num_word>, <&kp>;
-        };
+        // sn: smart_num {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     flavor = "balanced";
+        //     tapping-term-ms = <200>;
+        //     quick-tap-ms = <175>;
+        //     bindings = <&num_word>, <&kp>;
+        // };
 
-        nd: num_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&num_word>, <&sl NUM>;  // reverse this for sticky-num on single tap
-        };
+        // nd: num_dance {
+        //     compatible = "zmk,behavior-tap-dance";
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <200>;
+        //     bindings = <&num_word>, <&sl NUM>;  // reverse this for sticky-num on single tap
+        // };
 
         // Obsługa zmiany aplikacji za pomocą Alt+Tab
         apps: windows_application_iterator {       // obsługa Alt+Tab
