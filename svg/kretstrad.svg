@@ -1155,10 +1155,8 @@ text.combo {
 <text x="0" y="0" class="key tap">BT</text>
 <text x="0" y="18" class="key hold">2</text>
 </g>
-<g transform="translate(252, 42)" class="key keypos-4">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BOOT</text>
-<use href="#mdi:cloud-download-outline" xlink:href="#mdi:cloud-download-outline" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:cloud-download-outline"/>
+<g transform="translate(252, 42)" class="key none keypos-4">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(476, 42)" class="key none keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -1175,10 +1173,8 @@ text.combo {
 <g transform="translate(700, 49)" class="key none keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(28, 105)" class="key keypos-10">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BT</text>
-<text x="0" y="18" class="key hold">CLR</text>
+<g transform="translate(28, 105)" class="key none keypos-10">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(84, 91)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1195,10 +1191,8 @@ text.combo {
 <text x="0" y="0" class="key tap">BT</text>
 <text x="0" y="18" class="key hold">5</text>
 </g>
-<g transform="translate(252, 98)" class="key keypos-14">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">RESET</text>
-<use href="#mdi:power" xlink:href="#mdi:power" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:power"/>
+<g transform="translate(252, 98)" class="key none keypos-14">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(476, 98)" class="key none keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -1218,14 +1212,20 @@ text.combo {
 <g transform="translate(28, 161)" class="key none keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(84, 147)" class="key none keypos-21">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(84, 147)" class="key keypos-21">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">BT</text>
+<text x="0" y="18" class="key hold">CLR</text>
 </g>
-<g transform="translate(140, 140)" class="key none keypos-22">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(140, 140)" class="key keypos-22">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">RESET</text>
+<use href="#mdi:power" xlink:href="#mdi:power" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:power"/>
 </g>
-<g transform="translate(196, 147)" class="key none keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(196, 147)" class="key keypos-23">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">BOOT</text>
+<use href="#mdi:cloud-download-outline" xlink:href="#mdi:cloud-download-outline" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:cloud-download-outline"/>
 </g>
 <g transform="translate(252, 154)" class="key none keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>

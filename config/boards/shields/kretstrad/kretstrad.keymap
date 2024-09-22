@@ -94,9 +94,9 @@
 
         CFG_layer {
             bindings = <
-                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader             &none           &none           &none           &none           &none
-                &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &sys_reset              &none           &none           &none           &none           &none
-                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
+                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none                   &none           &none           &none           &none           &none
+                &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none                   &none           &none           &none           &none           &none
+                &none           &bt BT_CLR      &sys_reset      &bootloader     &none                   &none           &none           &none           &none           &none
                                                                 &out OUT_TOG    &tog COL                &none           &none
             >;
         };
