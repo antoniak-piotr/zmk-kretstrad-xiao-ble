@@ -128,6 +128,7 @@ parse_config:
     "&dtcl": {tap: ".:"}
     "&csm LALT 0": {tap: ",;", hold: LALT}
     "&dcm LWIN 0": {tap: ".:", hold: LWIN}
+    "&dcm RSFT 0": {tap: ".:", hold: RSFT}
     "&stex": {tap: "*!"}
 
     # SNIP, PSCRN, ALT+PSCRN
