@@ -10,9 +10,9 @@
 #define NAV 3           // nawigacja
 #define CONF 4          // konfiguracja (np. Bluetooth)
 
-#define LSHF LSHFT
+// #define LSHF LSHFT
+// #define RSHF RSHFT
 #define LCTR LCTRL
-#define RSHF RSHFT
 #define RCTR RCTRL
 
 #define SG(KEY) LS(LG(KEY))
