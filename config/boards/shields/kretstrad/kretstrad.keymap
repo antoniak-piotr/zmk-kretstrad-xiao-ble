@@ -111,8 +111,8 @@
                 ╰────────╯ ╰────────╯         */
 
     // #define COMBO timeout-ms = <100>
-    #define COMBO timeout-ms = <100>
-    #define LCOMBO timeout-ms = <200>
+    #define COMBO timeout-ms = <75>
+    #define LCOMBO timeout-ms = <100>
 
     combos {
         compatible = "zmk,combos";
@@ -163,28 +163,25 @@
 
         // PAR, BKT
         // lpar    {key-positions = <17 27>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
-        //  rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
-        lpar    {key-positions = <17 27>; bindings = <&lplt>; layers = <DEF COL>; COMBO;};                  // (<
-        rpar    {key-positions = <18 28>; bindings = <&rpgt>; layers = <DEF COL>; COMBO;};                  // )>
-        lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL>; COMBO;};               // [{
-        rbkt    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <DEF COL>; COMBO;};               // ]}
-        // lbrc    {key-positions = <11 21>; bindings = <&kp LBRC>; layers = <NUM>; COMBO;};                       // {
-        // rbrc    {key-positions = <12 22>; bindings = <&kp RBRC>; layers = <NUM>; COMBO;};                       // }
+        // rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
+        lpar    {key-positions = <17 27>; bindings = <&lplt>; layers = <DEF COL>; COMBO;};                      // (<
+        rpar    {key-positions = <18 28>; bindings = <&rpgt>; layers = <DEF COL>; COMBO;};                      // )>
+        lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL>; COMBO;};                   // [{
+        rbkt    {key-positions = <12 22>; bindings = <&kp RBKT>; layers = <DEF COL>; COMBO;};                   // ]}
 
         // EQUAL, COLON
-        colon   {key-positions = <13 23>; bindings = <&kp COLON>; layers = <DEF COL>; COMBO;};              // :
-        equal   {key-positions = <16 26>; bindings = <&kp EQUAL>; layers = <DEF COL>; COMBO;};              // =
+        colon   {key-positions = <13 23>; bindings = <&kp COLON>; layers = <DEF COL>; COMBO;};                  // :
+        equal   {key-positions = <16 26>; bindings = <&kp EQUAL>; layers = <DEF COL>; COMBO;};                  // =
 
         // SLASH, BSLH
-        bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL>; LCOMBO;};                  // \|
-        slash   {key-positions = <19 29>; bindings = <&mt LC(SLASH) SLASH>; layers = <DEF COL>; LCOMBO;};       // /?
+        bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL>; COMBO;};                   // \|
+        slash   {key-positions = <19 29>; bindings = <&mt LC(SLASH) SLASH>; layers = <DEF COL>; COMBO;};        // /?
 
         // MINUS, PLUS, DIV and MUL
-        plus    {key-positions = <13 14>; bindings = <&kp PLUS>; layers = <DEF COL>; COMBO;};               // +
-        // mul     {key-positions = <23 24>; bindings = <&kp STAR>; layers = <DEF COL>; COMBO;};                 // *
-        mul     {key-positions = <23 24>; bindings = <&stex>; layers = <DEF COL>; COMBO;};                  // *!
-        minus   {key-positions = <15 16>; bindings = <&kp MINUS>; layers = <DEF COL>; COMBO;};              // -_
-        div     {key-positions = <25 26>; bindings = <&kp SLASH>; layers = <DEF COL>; COMBO;};              // /?
+        plus    {key-positions = <13 14>; bindings = <&kp PLUS>; layers = <DEF COL>; COMBO;};                   // +
+        mul     {key-positions = <23 24>; bindings = <&stex>; layers = <DEF COL>; COMBO;};                      // *!
+        minus   {key-positions = <15 16>; bindings = <&kp MINUS>; layers = <DEF COL>; COMBO;};                  // -_
+        div     {key-positions = <25 26>; bindings = <&kp SLASH>; layers = <DEF COL>; COMBO;};                  // /?
 
         // NAV LAYERS COMBOS
         home    {key-positions = <16 26>; bindings = <&kp HOME>; layers = <NAV>; COMBO;};                       // HOME
