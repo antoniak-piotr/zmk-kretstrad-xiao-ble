@@ -298,22 +298,22 @@
             hold-trigger-on-release;
         };
 
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
-            bindings = <&kp>, <&kp>;
-        };
+        // hm: homerow_mods {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     flavor = "balanced";
+        //     tapping-term-ms = <200>;
+        //     quick-tap-ms = <100>;
+        //     bindings = <&kp>, <&kp>;
+        // };
 
-        bsdl: bspc_del {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
+        // bsdl: bspc_del {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp BSPC>, <&kp DEL>;
+        //     mods = <(MOD_LSFT|MOD_RSFT)>;
+        //     keep-mods = <(MOD_RSFT)>;
+        // };
 
         // Obsługa lupy windowsowej
         za: windows_magnifier_actions { // powiększanie i pomniejszanie (Win++ / Win+-)
