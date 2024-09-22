@@ -15,9 +15,6 @@
 <svg id="mdi:chevron-right">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-right" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
 </svg>
-<svg id="mdi:chevron-triple-down">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-triple-down" viewBox="0 0 24 24"><path d="M7.41,14.58L12,19.17L16.59,14.58L18,16L12,22L6,16L7.41,14.58M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58M7.41,2.58L12,7.17L16.59,2.58L18,4L12,10L6,4L7.41,2.58Z" /></svg>
-</svg>
 <svg id="mdi:chevron-up">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-up" viewBox="0 0 24 24"><path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" /></svg>
 </svg>
@@ -975,7 +972,7 @@ text.combo {
 </g>
 <g transform="translate(140, 28)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">&lt;APPS&gt;</tspan></text>
+<text x="0" y="0" class="key tap">&amp;sw</text>
 </g>
 <g transform="translate(196, 35)" class="key none keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -1078,8 +1075,8 @@ text.combo {
 </g>
 <g transform="translate(476, 154)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&lt;BMK&gt;</text>
-<text x="0" y="18" class="key hold">BMK</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">&lt;BKMK&gt;</tspan></text>
+<text x="0" y="18" class="key hold">BKMK</text>
 </g>
 <g transform="translate(532, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1099,7 +1096,6 @@ text.combo {
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">PGDN</text>
-<use href="#mdi:chevron-triple-down" xlink:href="#mdi:chevron-triple-down" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:chevron-triple-down"/>
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
