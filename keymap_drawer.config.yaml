@@ -106,6 +106,7 @@ parse_config:
     "&kp GRAVE": {tap: "`~"}
     "&kp APOS": {tap: "'\""}
     "&kp SEMI": {tap: ";:"}
+    "&mt LC(SLASH) SLASH": {tap: "/?"}
 
     # BSPC, DEL, BSDL, CUT, COPY, PASTE
     "&kp BSPC": {tap: BSP}
