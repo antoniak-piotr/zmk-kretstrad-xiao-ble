@@ -153,6 +153,7 @@
         ne      {key-positions = <7 17>; bindings = <&kp LS(E)>; layers = <NUM>; COMBO;};                       // E
         nf      {key-positions = <8 18>; bindings = <&kp LS(F)>; layers = <NUM>; COMBO;};                       // F
         nhd     {key-positions = <15 25>; bindings = <&hdm>; layers = <NUM>; COMBO;};                           // #$
+        ncs     {key-positions = <19 29>; bindings = <&cmsm>; layers = <NUM>; COMBO;};                          // ,;
 
         // FUNCTION KEYS (CUSTOM)
         f2     {key-positions = <12 22>; bindings = <&kp LC(F2)>; layers = <NUM>; COMBO;};                      // Ctrl + F2 = Reset
