@@ -66,16 +66,16 @@ parse_config:
     "&kp N0": {tap: "0)"}
 
     # NUMERIC AND HEX
-    "&kp KP_N1": {tap: "1"}
-    "&kp KP_N2": {tap: "2"}
-    "&kp KP_N3": {tap: "3"}
-    "&kp KP_N4": {tap: "4"}
-    "&kp KP_N5": {tap: "5"}
-    "&kp KP_N6": {tap: "6"}
-    "&kp KP_N7": {tap: "7"}
-    "&kp KP_N8": {tap: "8"}
-    "&kp KP_N9": {tap: "9"}
-    "&kp KP_N0": {tap: "0"}
+    # "&kp KP_N1": {tap: "1"}
+    # "&kp KP_N2": {tap: "2"}
+    # "&kp KP_N3": {tap: "3"}
+    # "&kp KP_N4": {tap: "4"}
+    # "&kp KP_N5": {tap: "5"}
+    # "&kp KP_N6": {tap: "6"}
+    # "&kp KP_N7": {tap: "7"}
+    # "&kp KP_N8": {tap: "8"}
+    # "&kp KP_N9": {tap: "9"}
+    # "&kp KP_N0": {tap: "0"}
 
     "&kp LS(A)": {tap: "A"}
     "&kp LS(B)": {tap: "B"}
@@ -84,11 +84,10 @@ parse_config:
     "&kp LS(E)": {tap: "E"}
     "&kp LS(F)": {tap: "F"}
 
-    "&kp KP_DOT": {tap: "."}
-    "&kp KP_COMMA": {tap: ","}
+    # "&kp KP_DOT": {tap: "."}
+    # "&kp KP_COMMA": {tap: ","}
 
     "&hdm": {tap: "#$"}
-
 
     # CUSTOM FUNCTION KEYS
     "&kp LC(F2)": {tap: RESET}
@@ -129,7 +128,12 @@ parse_config:
     "&csm LALT 0": {tap: ",;", hold: LALT}
     "&dcm LWIN 0": {tap: ".:", hold: LWIN}
     "&dcm RSFT 0": {tap: ".:", hold: RSFT}
-    "&stex": {tap: "*!"}
+    # "&stex": {tap: "*!"}
+    "&mul": {tap: "*"}
+    "&div": {tap: "/"}
+    "&slbs": {tap: "/\\"}
+    "&sbm RSFT 0": {tap: "/\\", hold: RSFT}
+    "&n0m RSFT 0": {tap: "0?", hold: RSFT}
 
     # SNIP, PSCRN, ALT+PSCRN
     "&kp SG(S)": {tap: SNIP}      # hold: $$mdi:crop$$ # select-drag$$
@@ -154,7 +158,6 @@ parse_config:
     # "&kp LA(UP)":
     #   tap: DECL
     #   hold: $$mdi:pencil$$
-
 
     # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
     "&kp LS(LA(S))": {tap: GREP}
@@ -234,23 +237,18 @@ parse_config:
     # bsdl: {width: 25}
     bspc: {width: 27}
     del: {width: 27}
-
-    exit: {align: top, offset: 0.15, width: 35}
-
-    menter: {width: 41}
-
     home: {width: 31}
     end: {width: 31}
-
-    bmrk1: {width: 31}
-    bmrk2: {width: 31}
-    bmrk3: {width: 31}
-    bmrk4: {width: 31}
-
-    bounce: {width: 31}
-
     f2: {width: 41}
     f7: {width: 41}
     f8: {width: 41}
     f9: {width: 41}
 
+    exit: {align: top, offset: 0.15, width: 35}
+
+    # bmrk1: {width: 31}
+    # bmrk2: {width: 31}
+    # bmrk3: {width: 31}
+    # bmrk4: {width: 31}
+
+    # bounce: {width: 31}
