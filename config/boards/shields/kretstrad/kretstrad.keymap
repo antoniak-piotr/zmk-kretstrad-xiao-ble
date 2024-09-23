@@ -10,8 +10,6 @@
 #define NAV 3           // nawigacja
 #define CONF 4          // konfiguracja (np. Bluetooth)
 
-// #define LSHF LSHFT
-// #define RSHF RSHFT
 #define LCTR LCTRL
 #define RCTR RCTRL
 
@@ -25,31 +23,6 @@
 #define SNIP SG(S)                  // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
 #define DESK GC(F4)                 // zamyka pulpit wirtualny
 
-&mt {
-    // flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    // quick-tap-ms = <150>;
-    // require-prior-idle-ms = <100>;
-};
-
-&lt {
-    // flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <150>;
-    // require-prior-idle-ms = <100>;
-};
-
-&sl {  // sticky-layer config
-    ignore-modifiers;          // allow chording sticky mods & layers
-};
-
-&caps_word {
-    continue-list = <UNDER N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 BSPC DEL>;
-};
-
-&num_word {
-    layers = <NUM>;
-};
 
 / {
     keymap {
@@ -86,7 +59,7 @@
         NAV_layer {
             bindings = <
                 &none           &none           &apps           &none           &mt PSCRN SNIP          &zm LG(ESC) 0   &none           &dh             &none           &none
-                &hl LSFT SC(Z)  &kp SA(S)       &df A T         &mt LC(F) F3    &mt LA(G) LC(G)         &di LA(UP) 0    &kp LEFT        &kp UP          &kp RIGHT       &hr RSFT PG_UP
+                &hl LSFT SC(Z)  &kp SA(S)       &df A 0         &mt LC(F) F3    &mt LA(G) LC(G)         &di LA(UP) 0    &kp LEFT        &kp UP          &kp RIGHT       &hr RSFT PG_UP
                 &kp LC(Z)       &kp LC(X)       &hl LALT LC(C)  &hl LCTR LC(V)  &mt SC(B) LS(ESC)       &db LC(B) 0     &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &kp PG_DN
                                                                 &mt LWIN ESC    &trans                  &trans          &kp ENTER
             >;
@@ -127,7 +100,6 @@
         tab     {key-positions = <12 13>; bindings = <&kp TAB>; layers = <DEF COL NUM NAV>; COMBO;};            // TAB
         bspc    {key-positions = <16 17>; bindings = <&kp BSPC>; layers = <DEF COL NUM NAV>; COMBO;};           // BSPC
         del     {key-positions = <17 18>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};            // DEL
-        // bsdl    {key-positions = <16 17>; bindings = <&bsdl>; layers = <DEF COL NUM NAV>; COMBO;};              // BSDL
 
         // GRAVE, APOS
         grave1  {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                  // `~
@@ -166,8 +138,6 @@
         f9     {key-positions = <3 13>; bindings = <&kp LC(F9)>; layers = <NUM>; COMBO;};                       // Ctrl + F9 - Compile (Make)
 
         // PAR, BKT
-        // lpar    {key-positions = <17 27>; bindings = <&kp LPAR>; layers = <DEF COL NUM>; COMBO;};               // (
-        // rpar    {key-positions = <18 28>; bindings = <&kp RPAR>; layers = <DEF COL NUM>; COMBO;};               // )
         lpar    {key-positions = <17 27>; bindings = <&lplt>; layers = <DEF COL>; COMBO;};                      // (<
         rpar    {key-positions = <18 28>; bindings = <&rpgt>; layers = <DEF COL>; COMBO;};                      // )>
         lbkt    {key-positions = <11 21>; bindings = <&kp LBKT>; layers = <DEF COL>; COMBO;};                   // [{
@@ -176,10 +146,6 @@
         // EQUAL, COLON
         colon   {key-positions = <13 23>; bindings = <&kp COLON>; layers = <DEF COL>; COMBO;};                  // :
         equal   {key-positions = <16 26>; bindings = <&kp EQUAL>; layers = <DEF COL>; COMBO;};                  // =
-
-        // // SLASH, BSLH
-        // bslh    {key-positions = <10 20>; bindings = <&kp BSLH>; layers = <DEF COL>; COMBO;};                   // \|
-        // slash   {key-positions = <19 29>; bindings = <&mt LC(SLASH) SLASH>; layers = <DEF COL>; COMBO;};        // /?
 
         // MINUS, PLUS, DIV and MUL
         plus    {key-positions = <13 14>; bindings = <&kp PLUS>; layers = <DEF COL>; COMBO;};                   // +
@@ -248,7 +214,6 @@
             #binding-cells = <0>;
             bindings = <&kp STAR>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            // keep-mods = <(MOD_RSFT)>;
         };
 
         div: div_div {              // /
@@ -256,7 +221,6 @@
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp SLASH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            // keep-mods = <(MOD_RSFT)>;
         };
 
         slbs: slash_backslash {     // "/\"
@@ -264,7 +228,6 @@
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp BSLH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            // keep-mods = <(MOD_RSFT)>;
         };
 
         sbm: slash_backslash_mod {  // "MOD /\"
@@ -284,7 +247,6 @@
             #binding-cells = <0>;
             bindings = <&kp N8>, <&kp PIPE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            // keep-mods = <(MOD_RSFT)>;
         };
 
         n9: number_9 {              // /
@@ -292,7 +254,6 @@
             #binding-cells = <0>;
             bindings = <&kp N9>, <&kp UNDER>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            // keep-mods = <(MOD_RSFT)>;
         };
 
         n0: number_0 {              // /
@@ -300,7 +261,6 @@
             #binding-cells = <0>;
             bindings = <&kp N0>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            // keep-mods = <(MOD_RSFT)>;
         };
 
         n0m: number_0_mod {         // MOD 0?
@@ -314,30 +274,6 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
             hold-trigger-on-release;
         };
-
-        // stex: star_excl {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp STAR>, <&kp EXCL>;
-        //     mods = <(MOD_LSFT|MOD_RSFT)>;
-        //     keep-mods = <(MOD_RSFT)>;
-        // };
-
-        // sn: smart_num {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     flavor = "balanced";
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <175>;
-        //     bindings = <&num_word>, <&kp>;
-        // };
-
-        // nd: num_dance {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <200>;
-        //     bindings = <&num_word>, <&sl NUM>;  // reverse this for sticky-num on single tap
-        // };
 
         // Obsługa zmiany aplikacji za pomocą Alt+Tab
         apps: windows_application_iterator {       // obsługa Alt+Tab
@@ -372,23 +308,6 @@
             hold-trigger-on-release;
         };
 
-        // hm: homerow_mods {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     flavor = "balanced";
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <100>;
-        //     bindings = <&kp>, <&kp>;
-        // };
-
-        // bsdl: bspc_del {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp BSPC>, <&kp DEL>;
-        //     mods = <(MOD_LSFT|MOD_RSFT)>;
-        //     keep-mods = <(MOD_RSFT)>;
-        // };
-
         // Obsługa lupy windowsowej
         za: windows_magnifier_actions { // powiększanie i pomniejszanie (Win++ / Win+-)
             compatible = "zmk,behavior-mod-morph";
@@ -405,11 +324,18 @@
         };
 
         // Zawijanie kodu w Delphi
+        dcfm: delphi_code_folding_actions {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&dfm T>, <&dfm R>; // Przełącza zawijanie aktualnego bloku lub (jeśli wciśnięto Shift) zawija wszystkie regiony
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         df: delphi_code_folding {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <400>;
-            bindings = <&dfm>, <&dfm>;
+            bindings = <&dfm>, <&dcfm>;   // To co wyżej lub rozwija cały kod (po przytrzymaniu)
         };
 
         // Iterowanie po kolejnych wystąpieniach identyfikatora + Skok do definicji (po przytrzymaniu klawisza)
@@ -476,4 +402,26 @@
     //         then-layer = <FUN>;
     //     };
     // };
+};
+
+&mt {
+    // flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    // quick-tap-ms = <150>;
+    // require-prior-idle-ms = <100>;
+};
+
+&lt {
+    // flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;
+    // require-prior-idle-ms = <100>;
+};
+
+&caps_word {
+    continue-list = <UNDER N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 BSPC DEL>;
+};
+
+&num_word {
+    layers = <NUM>;
 };
