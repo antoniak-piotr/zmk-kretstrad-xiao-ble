@@ -446,7 +446,7 @@
         dh: delphi_history_iterator {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LC(LEFT)>, <&kp LC(RIGHT)>;
+            bindings = <&kp CA(LEFT)>, <&kp CA(RIGHT)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
