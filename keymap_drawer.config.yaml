@@ -65,27 +65,12 @@ parse_config:
     "&kp N9": {tap: "9("}
     "&kp N0": {tap: "0)"}
 
-    # NUMERIC AND HEX
-    # "&kp KP_N1": {tap: "1"}
-    # "&kp KP_N2": {tap: "2"}
-    # "&kp KP_N3": {tap: "3"}
-    # "&kp KP_N4": {tap: "4"}
-    # "&kp KP_N5": {tap: "5"}
-    # "&kp KP_N6": {tap: "6"}
-    # "&kp KP_N7": {tap: "7"}
-    # "&kp KP_N8": {tap: "8"}
-    # "&kp KP_N9": {tap: "9"}
-    # "&kp KP_N0": {tap: "0"}
-
     "&kp LS(A)": {tap: "A"}
     "&kp LS(B)": {tap: "B"}
     "&kp LS(C)": {tap: "C"}
     "&kp LS(D)": {tap: "D"}
     "&kp LS(E)": {tap: "E"}
     "&kp LS(F)": {tap: "F"}
-
-    # "&kp KP_DOT": {tap: "."}
-    # "&kp KP_COMMA": {tap: ","}
 
     "&hdm": {tap: "#$"}
 
@@ -149,15 +134,6 @@ parse_config:
 
     # PREV/NEXT HISTORY + GOTO DEFINITION (Delphi IDE)
     "&dh": {tap: <HIST>}
-    # "&kp LA(LEFT)":
-    #   tap: <HIST
-    #   hold: $$mdi:step-backward-2$$
-    # "&kp LA(RIGHT)":
-    #   tap: HIST>
-    #   hold: $$mdi:step-forward-2$$
-    # "&kp LA(UP)":
-    #   tap: DECL
-    #   hold: $$mdi:pencil$$
 
     # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
     "&kp LS(LA(S))": {tap: GREP}
@@ -165,18 +141,6 @@ parse_config:
     "&mt LA(G) LC(G)": {tap: GOTO, hold: LINE}
 
     # MAGNIFIER
-    # "&kp LG(EQUAL)":
-    #   tap: ZOOM+
-    #   hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
-    # "&kp LG(MINUS)":
-    #   tap: ZOOM-
-    #   hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    # "&kp LG(ESC)":
-    #   tap: EXIT
-    #   # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    # "&zoom":                # ZOOM+ / ZOOM- (when SHIFT modifier) on TAP and EXIT (on HOLD)
-    #   tap: ZOOM
-    #   hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
     "&zm LG(ESC) 0": {tap: "<ZOOM>", hold: EXIT}
 
     # CAPSLOCK, CAPSWORD, NUMWORD
@@ -206,16 +170,7 @@ parse_config:
     "&kp LC(RIGHT)": {tap: "WORD>", hold: $$mdi:chevron-double-right$$}
 
     # DELPHI MACROS
-    "&df A T": {tap: BTGL, hold: EALL}    # CODE BLOCK FOLD TOGGLE / EXPANDS ALL BLOCKS OF CODE
-    # "&dm T":    # CODE BLOCK FOLD TOGGLE
-    #   tap: TGGL
-    #   hold: $$mdi:unfold-more-vertical$$
-    # "&dm R":    # CODE BLOCK COLLAPSE ALL REGIONS
-    #   tap: CRGN
-    #   hold: $$mdi:unfold-more-vertical$$
-    # "&dm A":    # CODE BLOCK EXPANDS ALL BLOCKS OF CODE
-    #   tap: EALL
-    #   hold: $$mdi:unfold-more-vertical$$
+    "&df A 0": {tap: FOLD, hold: EXPD}   # CODE BLOCK FOLD TOGGLE / EXPANDS ALL BLOCKS OF CODE
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
     "&apps": {tap: <APPS>}        # Przechodzi do następnej aplikacji (okienka)
@@ -245,10 +200,3 @@ parse_config:
     f9: {width: 41}
 
     exit: {align: top, offset: 0.15, width: 35}
-
-    # bmrk1: {width: 31}
-    # bmrk2: {width: 31}
-    # bmrk3: {width: 31}
-    # bmrk4: {width: 31}
-
-    # bounce: {width: 31}
