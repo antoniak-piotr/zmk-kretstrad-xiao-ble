@@ -1177,8 +1177,9 @@ text.combo {
 <text x="0" y="0" class="key tap">BT</text>
 <text x="0" y="18" class="key hold">2</text>
 </g>
-<g transform="translate(252, 42)" class="key none keypos-4">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(252, 42)" class="key keypos-4">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">QWERTY</tspan></text>
 </g>
 <g transform="translate(476, 42)" class="key none keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -1192,8 +1193,10 @@ text.combo {
 <g transform="translate(644, 35)" class="key none keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(700, 49)" class="key none keypos-9">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(700, 49)" class="key keypos-9">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">BAT</text>
+<text x="0" y="18" class="key hold">STATE</text>
 </g>
 <g transform="translate(28, 105)" class="key none keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -1213,8 +1216,9 @@ text.combo {
 <text x="0" y="0" class="key tap">BT</text>
 <text x="0" y="18" class="key hold">5</text>
 </g>
-<g transform="translate(252, 98)" class="key none keypos-14">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(252, 98)" class="key keypos-14">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 71%">COLEMAK</tspan></text>
 </g>
 <g transform="translate(476, 98)" class="key none keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -1228,8 +1232,10 @@ text.combo {
 <g transform="translate(644, 91)" class="key none keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(700, 105)" class="key none keypos-19">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(700, 105)" class="key keypos-19">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">CON</text>
+<text x="0" y="18" class="key hold">STATE</text>
 </g>
 <g transform="translate(28, 161)" class="key none keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
@@ -1272,10 +1278,8 @@ text.combo {
 <text x="0" y="0" class="key tap"><tspan style="font-size: 83%">BT/USB</tspan></text>
 <use href="#mdi:toggle-switch-outline" xlink:href="#mdi:toggle-switch-outline" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:toggle-switch-outline"/>
 </g>
-<g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 71%">COLEMAK</tspan></text>
-<use href="#mdi:toggle-switch-outline" xlink:href="#mdi:toggle-switch-outline" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:toggle-switch-outline"/>
+<g transform="translate(280, 254) rotate(30.0)" class="key none keypos-31">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
 <g transform="translate(448, 254) rotate(-30.0)" class="key none keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>

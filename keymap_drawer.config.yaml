@@ -155,6 +155,10 @@ parse_config:
     "&sys_reset": {tap: RESET, hold: $$mdi:power$$}
     "&bootloader": {tap: BOOT, hold: $$mdi:cloud-download-outline$$}
     "&bt BT_CLR": {tap: BT, hold: CLR}  # $$mdi:bluetooth$$, $$mdi:close-box$$
+    "&df DEF": {tap: QWERTY}
+    "&df COL": {tap: COLEMAK}
+    "&ind_bat": {tap: BAT, hold: STATE}
+    "&ind_con": {tap: CON, hold: STATE}
 
     # nawigacja
     "&kp LEFT": {tap: LEFT, hold: $$mdi:chevron-left$$}
@@ -170,7 +174,7 @@ parse_config:
     "&kp LC(RIGHT)": {tap: "WORD>", hold: $$mdi:chevron-double-right$$}
 
     # DELPHI MACROS
-    "&df A 0": {tap: FOLD, hold: EXPD}   # CODE BLOCK FOLD TOGGLE / EXPANDS ALL BLOCKS OF CODE
+    "&dc A 0": {tap: FOLD, hold: EXPD}   # CODE BLOCK FOLD TOGGLE / EXPANDS ALL BLOCKS OF CODE
 
     # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
     "&apps": {tap: <APPS>}        # Przechodzi do następnej aplikacji (okienka)
