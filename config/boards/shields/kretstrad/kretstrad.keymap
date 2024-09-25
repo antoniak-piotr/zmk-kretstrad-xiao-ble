@@ -3,6 +3,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <behaviors/rgbled_widget.dtsi>
+#include "elpekenin/behaviors.dtsi"
 
 #define DEF 0           // QWERTY
 #define COL 1           // Colemak-DH
@@ -66,10 +68,10 @@
 
         CFG_layer {
             bindings = <
-                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none                   &none           &none           &none           &none           &none
-                &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none                   &none           &none           &none           &none           &none
+                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &df DEF                 &none           &none           &none           &none           &ind_bat
+                &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &df COL                 &none           &none           &none           &none           &ind_con
                 &none           &bt BT_CLR      &sys_reset      &bootloader     &none                   &none           &none           &none           &none           &none
-                                                                &out OUT_TOG    &tog COL                &none           &none
+                                                                &out OUT_TOG    &none                   &none           &none
             >;
         };
     };
@@ -323,18 +325,18 @@
         };
 
         // Zawijanie kodu w Delphi
-        dcfm: delphi_code_folding_actions {
+        dcf: delphi_code_folding {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&dfm T>, <&dfm R>; // Przełącza zawijanie aktualnego bloku lub (jeśli wciśnięto Shift) zawija wszystkie regiony
+            bindings = <&dfm T>, <&dfm R>;      // Przełącza zawijanie aktualnego bloku lub (jeśli wciśnięto Shift) zawija wszystkie regiony
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        df: delphi_code_folding {
+        dc: delphi_code {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <400>;
-            bindings = <&dfm>, <&dcfm>;   // To co wyżej lub rozwija cały kod (po przytrzymaniu)
+            bindings = <&dcfm>, <&dcf>;         // To co wyżej lub rozwija cały kod (po przytrzymaniu)
         };
 
         // Iterowanie po kolejnych wystąpieniach identyfikatora + Skok do definicji (po przytrzymaniu klawisza)
@@ -377,7 +379,7 @@
     };
 
     macros {
-        dfm: delphi_code_folding_macro { // code block folding
+        dcfm: delphi_code_folding_macro { // code block folding
             #binding-cells = <1>;
             compatible = "zmk,behavior-macro-one-param";
             bindings =
