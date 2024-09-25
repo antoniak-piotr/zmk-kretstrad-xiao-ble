@@ -85,8 +85,8 @@
                 ╰────────╯ ╰────────╯         */
 
     // #define COMBO timeout-ms = <100>
-    #define COMBO timeout-ms = <75>
-    #define LCOMBO timeout-ms = <100>
+    #define COMBO timeout-ms = <125>
+    #define LCOMBO timeout-ms = <200>
 
     combos {
         compatible = "zmk,combos";
@@ -103,12 +103,12 @@
         del     {key-positions = <17 18>; bindings = <&kp DEL>; layers = <DEF COL NUM NAV>; COMBO;};            // DEL
 
         // GRAVE, APOS
-        grave1  {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                  // `~
-        apos1   {key-positions = <15 25>; bindings = <&kp APOS>; layers = <DEF COL>; COMBO;};                   // '"
-        grave   {key-positions = <2 3>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                    // `~
-        apos    {key-positions = <6 7>; bindings = <&kp APOS>; layers = <DEF COL>; COMBO;};                     // '"
-        tilde   {key-positions = <1 2>; bindings = <&kp TILDE>; layers = <DEF COL>; COMBO;};                    // ~
-        dqt     {key-positions = <7 8>; bindings = <&kp DQT>; layers = <DEF COL>; COMBO;};                      // "
+        grave   {key-positions = <14 24>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                  // `~
+        apos    {key-positions = <15 25>; bindings = <&kp APOS>; layers = <DEF COL>; COMBO;};                   // '"
+        // grave   {key-positions = <2 3>; bindings = <&kp GRAVE>; layers = <DEF COL>; COMBO;};                    // `~
+        // apos    {key-positions = <6 7>; bindings = <&kp APOS>; layers = <DEF COL>; COMBO;};                     // '"
+        // tilde   {key-positions = <1 2>; bindings = <&kp TILDE>; layers = <DEF COL>; COMBO;};                    // ~
+        // dqt     {key-positions = <7 8>; bindings = <&kp DQT>; layers = <DEF COL>; COMBO;};                      // "
 
         // NUMERICS
         n1      {key-positions = <0 10>; bindings = <&kp N1>; layers = <DEF COL>; COMBO;};                      // 1!
