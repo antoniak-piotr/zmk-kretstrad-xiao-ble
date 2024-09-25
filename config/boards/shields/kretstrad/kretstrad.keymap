@@ -23,7 +23,6 @@
 #define SNIP SG(S)                  // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
 #define DESK GC(F4)                 // zamyka pulpit wirtualny
 
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -281,7 +280,7 @@
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <10 19>;    // Oba SHFT
-            // ignored-key-positions = <LT2>;   // tutaj należałoby dodać pozycję klawisza realizującego LS(TAB)
+            timout-ms = 400;
         };
 
         hl: homerow_mods_left {
