@@ -1264,11 +1264,15 @@ text.combo {
 <g transform="translate(532, 147)" class="key none keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 </g>
-<g transform="translate(588, 140)" class="key none keypos-27">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(588, 140)" class="key keypos-27">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">RESET</text>
+<use href="#mdi:power" xlink:href="#mdi:power" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:power"/>
 </g>
-<g transform="translate(644, 147)" class="key none keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<g transform="translate(644, 147)" class="key keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">BOOT</text>
+<use href="#mdi:cloud-download-outline" xlink:href="#mdi:cloud-download-outline" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:cloud-download-outline"/>
 </g>
 <g transform="translate(700, 161)" class="key none keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>

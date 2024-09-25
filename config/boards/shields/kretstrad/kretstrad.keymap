@@ -70,7 +70,7 @@
             bindings = <
                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &df DEF                 &none           &none           &none           &none           &ind_bat
                 &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &df COL                 &none           &none           &none           &none           &ind_con
-                &none           &bt BT_CLR      &sys_reset      &bootloader     &none                   &none           &none           &none           &none           &none
+                &none           &bt BT_CLR      &sys_reset      &bootloader     &none                   &none           &none           &sys_reset      &bootloader     &none
                                                                 &out OUT_TOG    &none                   &none           &none
             >;
         };
