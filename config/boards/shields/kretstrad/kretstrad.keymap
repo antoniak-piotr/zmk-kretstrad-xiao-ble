@@ -280,7 +280,7 @@
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <10 19>;    // Oba SHFT
-            timout-ms = 400;
+            timout-ms = <400>;
         };
 
         hl: homerow_mods_left {
