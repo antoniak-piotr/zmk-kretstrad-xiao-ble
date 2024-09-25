@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/urob     #   url-base: https://github.com/zmkfirmware
     # - name: elpekenin                           # potrzebowałbym przełącznika (włącz/wyłącz), a ine włącznika (tylko)
     #   url-base: https://github.com/elpekenin
+    - name: caksoylar  # <-- new entry
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: urob                          # remote: zmkfirmware
@@ -15,5 +17,8 @@ manifest:
     # - name: zmk-userspace
     #   remote: elpekenin
     #   revision: main
+    - name: zmk-rgbled-widget  # <-- new entry
+      remote: caksoylar
+      revision: main
   self:
     path: config
