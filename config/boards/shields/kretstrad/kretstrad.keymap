@@ -146,7 +146,7 @@
 
         // EQUAL, COLON
         colon   {key-positions = <13 23>; bindings = <&kp COLON>; layers = <DEF COL>; COMBO;};                  // :
-        equal   {key-positions = <16 26>; bindings = <&kp EQUAL>; layers = <DEF COL>; COMBO;};                  // =
+        equal   {key-positions = <16 26>; bindings = <&equal>; layers = <DEF COL>; COMBO;};                     // = :=
 
         // MINUS, PLUS, DIV and MUL
         plus    {key-positions = <13 14>; bindings = <&kp PLUS>; layers = <DEF COL>; COMBO;};                   // +
@@ -209,6 +209,13 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&cmsm>;
         };
+
+        equal: equal_assign {       // = :=
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&dao>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
 
         mul: star_star {            // *
             compatible = "zmk,behavior-mod-morph";
@@ -394,6 +401,12 @@
             compatible = "zmk,behavior-macro";
             bindings = <&macro_tap &kp HASH>, <&macro_tap &kp DLLR>;
         };
+
+        dao: delphi_assign_operator_macro { // colon-equal operator
+            #binding-cells = <0>;
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp COLON>, <&macro_tap &kp EQUAL>;
+        }
     };
 
     // conditional_layers {
