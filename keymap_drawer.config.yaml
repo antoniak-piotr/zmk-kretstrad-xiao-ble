@@ -109,8 +109,10 @@ parse_config:
     "&kp SC(Z)": {tap: REDO}
 
     # Nawiasy i inne specjalne
-    "&lplt": {tap: "(<"}
-    "&rpgt": {tap: ")>"}
+    "&lpar": {tap: "(< [{"}
+    "&rpar": {tap: ")> }]"}
+    # "&lplt": {tap: "(<"}
+    # "&rpgt": {tap: ")>"}
     "&cmsm": {tap: ",;"}
     "&dtcl": {tap: ".:"}
     "&csm LALT 0": {tap: ",;", hold: LALT}
@@ -194,6 +196,9 @@ parse_config:
     clck: {width: 41}
     cwrd: {width: 41}
     nwrd: {width: 41}
+
+    lpar: {width: 31}
+    rpar: {width: 31}
 
     esc: {width: 27}
     tab: {width: 27}
