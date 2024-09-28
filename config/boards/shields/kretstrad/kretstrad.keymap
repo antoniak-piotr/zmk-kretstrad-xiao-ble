@@ -33,7 +33,7 @@
         DEF_layer {
             bindings = <
                 &lt CONF Q      &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
-                &hl LSFT A      &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &hr RSFT COLON
+                &hl LSFT A      &kp S           &kp D           &kp F           &kp G                   &kp H           &kp J           &kp K           &kp L           &hr RSFT SEMI
                 &kp Z           &kp X           &hl LALT C      &hl LCTR V      &kp B                   &kp N           &hr RCTR M      &csm LALT 0     &dtcl           &slbs
                                                                 &mt LWIN ESC    &lt NAV TAB             &lt NAV SPACE   &lt NUM ENTER
             >;
@@ -41,7 +41,7 @@
 
         COL_layer {
             bindings = <
-                &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp COLON
+                &lt CONF Q      &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
                 &hl LSFT A      &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &hr RSFT O
                 &kp Z           &kp X           &hl LALT C      &hl LCTR D      &kp V                   &kp K           &hr RCTR H      &csm LALT 0     &dtcl           &slbs
                                                                 &mt LWIN ESC    &lt NAV TAB             &lt NAV SPACE   &lt NUM ENTER
