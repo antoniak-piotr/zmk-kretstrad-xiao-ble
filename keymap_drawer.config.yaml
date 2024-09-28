@@ -109,8 +109,8 @@ parse_config:
     "&kp SC(Z)": {tap: REDO}
 
     # Nawiasy i inne specjalne
-    "&lpar": {tap: "(< [{"}
-    "&rpar": {tap: ")> }]"}
+    "&lpar": {tap: "(<[{"}
+    "&rpar": {tap: ")>}]"}
     # "&lplt": {tap: "(<"}
     # "&rpgt": {tap: ")>"}
     "&cmsm": {tap: ",;"}
