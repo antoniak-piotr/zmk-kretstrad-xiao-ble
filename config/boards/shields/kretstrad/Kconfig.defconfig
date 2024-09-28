@@ -13,7 +13,7 @@ endif
 
 if SHIELD_KRETSTRAD_LEFT || SHIELD_KRETSTRAD_RIGHT
 
-config ZMK_SPLITQ
+config ZMK_SPLIT
     default y
 
 endif
