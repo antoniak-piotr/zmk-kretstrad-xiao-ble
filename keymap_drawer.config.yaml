@@ -64,6 +64,9 @@ parse_config:
     "&kp N8": {tap: "8*"}
     "&kp N9": {tap: "9("}
     "&kp N0": {tap: "0)"}
+    "&n8": {tap: "8|"}
+    "&n9": {tap: "9_"}
+    "&n0": {tap: "0?"}    
 
     "&kp LS(A)": {tap: "A"}
     "&kp LS(B)": {tap: "B"}
