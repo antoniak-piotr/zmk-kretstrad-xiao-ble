@@ -184,7 +184,7 @@
             bindings = <&lplt>, <&kp LBKT>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
 
         rpar: rpgt_brc {
             compatible = "zmk,behavior-mod-morph";
@@ -192,7 +192,7 @@
             bindings = <&lpgt>, <&kp RBKT>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
 
         dtcl: dot_colon {
             compatible = "zmk,behavior-mod-morph";
