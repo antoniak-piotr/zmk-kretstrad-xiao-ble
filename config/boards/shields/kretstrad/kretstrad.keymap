@@ -406,7 +406,7 @@
             #binding-cells = <0>;
             compatible = "zmk,behavior-macro";
             bindings = <&macro_tap &kp COLON>, <&macro_tap &kp EQUAL>;
-        }
+        };
     };
 
     // conditional_layers {
