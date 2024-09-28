@@ -215,7 +215,7 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL>, <&dao>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
 
         mul: star_star {            // *
             compatible = "zmk,behavior-mod-morph";
