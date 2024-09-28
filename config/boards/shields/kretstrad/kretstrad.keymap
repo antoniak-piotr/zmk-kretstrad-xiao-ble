@@ -189,7 +189,7 @@
         rpar: rpgt_brc {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lpgt>, <&kp RBKT>;
+            bindings = <&rpgt>, <&kp RBKT>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
