@@ -4,7 +4,7 @@
 config ZMK_KEYBOARD_NAME
     default "Kretstrad"
 
-if SHIELD_KRETSTRAD_LEFT
+if SHIELD_KRETSTRAD_RIGHT
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
