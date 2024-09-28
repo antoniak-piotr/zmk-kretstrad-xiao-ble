@@ -167,7 +167,7 @@
             #binding-cells = <0>;
             bindings = <&kp LPAR>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
+            // keep-mods = <(MOD_RSFT)>;
         };
 
         rpgt: rpar_gt {
@@ -175,23 +175,23 @@
             #binding-cells = <0>;
             bindings = <&kp RPAR>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
+            // keep-mods = <(MOD_RSFT)>;
         };
 
-        lpar: lplt_brc {
+        lpar: lplt_lbkt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&lplt>, <&kp LBKT>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+            // keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        rpar: rpgt_brc {
+        rpar: rpgt_rbkt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&rpgt>, <&kp RBKT>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+            // keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         dtcl: dot_colon {
