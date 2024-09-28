@@ -117,7 +117,7 @@ parse_config:
     "&dcm LWIN 0": {tap: ".:", hold: LWIN}
     "&dcm RSFT 0": {tap: ".:", hold: RSFT}
     # "&stex": {tap: "*!"}
-    "&equal": {tap: "= :="}
+    "&equal": {tap: "="}
     "&mul": {tap: "*"}
     "&div": {tap: "/"}
     "&slbs": {tap: "/\\"}
