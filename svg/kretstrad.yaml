@@ -20,18 +20,18 @@ layers:
   - J
   - K
   - L
-  - ';:'
-  - {t: Z, h: LSHFT}
+  - ;
+  - {t: Z, h: SHIFT}
   - X
-  - {t: C, h: LCTRL}
-  - {t: V, h: LALT}
+  - {t: C, h: CTRL}
+  - {t: V, h: ALT}
   - B
   - N
-  - {t: M, h: LALT}
-  - {t: ',<', h: RCTRL}
-  - .>
+  - {t: M, h: ALT}
+  - {t: ',', h: RCTRL}
+  - .
   - {t: ENTER, h: RSHFT}
-  - {t: TAB, h: LWIN}
+  - {t: TAB, h: '$$mdi:microsoft-windows$$'}
   - {t: ESC, h: NUM}
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
@@ -45,7 +45,7 @@ layers:
   - L
   - U
   - Y
-  - ';:'
+  - ;
   - A
   - R
   - S
@@ -56,17 +56,17 @@ layers:
   - E
   - I
   - O
-  - {t: Z, h: LSHFT}
+  - {t: Z, h: SHIFT}
   - X
-  - {t: C, h: LCTRL}
-  - {t: D, h: LALT}
+  - {t: C, h: CTRL}
+  - {t: D, h: ALT}
   - V
   - K
-  - {t: H, h: LALT}
-  - {t: ',<', h: RCTRL}
-  - .>
+  - {t: H, h: ALT}
+  - {t: ',', h: RCTRL}
+  - .
   - {t: ENTER, h: RSHFT}
-  - {t: TAB, h: LWIN}
+  - {t: TAB, h: '$$mdi:microsoft-windows$$'}
   - {t: ESC, h: NUM}
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
@@ -81,152 +81,148 @@ layers:
   - F8
   - F9
   - F10
-  - 1!
-  - 2@
-  - 3#
-  - 4$
-  - 5%
-  - 6^
-  - 7&
-  - 8*
-  - 9(
-  - 0)
-  - {t: \|, h: LSHFT}
-  - {type: none}
-  - LCTRL
-  - LALT
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: \, h: SHIFT}
+  - ''
+  - CTRL
+  - ALT
   - F11
   - F12
-  - LALT
-  - {t: ',<', h: RCTRL}
-  - .>
-  - {t: '/?', h: RSHFT}
-  - {t: TAB, h: LWIN}
+  - ALT
+  - {t: ',', h: RCTRL}
+  - .
+  - {t: SLASH, h: RSHFT}
+  - {t: TAB, h: '$$mdi:microsoft-windows$$'}
   - {type: held}
   - {t: SPACE, h: NAV}
   - {t: ENTER, h: RALT}
   NAV:
-  - {t: EALL, h: '$$mdi:unfold-more-vertical$$'}
-  - {type: none}
-  - {t: CRGN, h: '$$mdi:unfold-more-vertical$$'}
-  - {t: TGGL, h: '$$mdi:unfold-more-vertical$$'}
-  - {t: SNIP, h: PSCRN}
-  - {t: ZOOM, h: '$$mdi:magnify$$'}
-  - {t: <HIST, h: '$$mdi:step-backward-2$$'}
-  - {t: DECL, h: '$$mdi:pencil$$'}
-  - {t: HIST>, h: '$$mdi:step-forward-2$$'}
-  - {type: none}
-  - {t: REDO, h: '$$mdi:redo$$'}
-  - GREP
-  - {t: DSK+, h: DSK-}
-  - FIND
-  - GOTO
-  - {t: <IDEN, h: '$$mdi:tag-outline$$'}
+  - '&dm(A)'
+  - ''
+  - '&dm(R)'
+  - '&dm(T)'
+  - {t: Sft+Gui+S, h: '$$mdi:monitor-screenshot$$'}
+  - '&zoom'
+  - {t: <BWRD, h: '$$mdi:step-backward$$'}
+  - JUMP
+  - {t: FWRD>, h: '$$mdi:step-forward$$'}
+  - ''
+  - Sft+Ctl+Z
+  - Sft+Alt+S
+  - {t: Gui+D, h: Gui+Ctl+F4}
+  - $$mdi:text-search-variant$$
+  - Ctl+G
+  - {t: Ctl+Alt+UP, h: 'Ctl+Alt+$$mdi:chevron-up$$'}
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
   - {t: RIGHT, h: '$$mdi:chevron-right$$'}
-  - {t: PGUP, h: '$$mdi:chevron-triple-up$$'}
-  - {t: UNDO, h: LSHFT}
-  - {t: CUT, h: '$$mdi:content-cut$$'}
-  - {t: COPY, h: LCTRL}
-  - {t: PASTE, h: LALT}
-  - BMK^
-  - {t: IDEN>, h: '$$mdi:tag-outline$$'}
-  - {t: <WORD, h: '$$mdi:chevron-double-left$$'}
+  - {t: PGUP, h: '$$mdi:transfer-up$$'}
+  - {t: Ctl+Z, h: SHIFT}
+  - $$mdi:content-cut$$
+  - {t: '$$mdi:content-copy$$', h: CTRL}
+  - {t: '$$mdi:content-paste$$', h: ALT}
+  - Sft+Ctl+B
+  - {t: Ctl+Alt+DOWN, h: 'Ctl+Alt+$$mdi:chevron-down$$'}
+  - {t: Ctl+LEFT, h: 'Ctl+$$mdi:chevron-left$$'}
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
-  - {t: WORD>, h: '$$mdi:chevron-double-right$$'}
+  - {t: Ctl+RIGHT, h: 'Ctl+$$mdi:chevron-right$$'}
   - {t: PGDN, h: RSHFT}
-  - {t: TAB, h: LWIN}
-  - {t: ESC, h: NUM}
+  - {t: TAB, h: '$$mdi:microsoft-windows$$'}
+  - {t: ESC, h: NUM, type: held alternate}
   - {type: held}
   - {t: ENTER, h: RALT}
   CFG:
   - {type: held}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
+  - {t: BT, h: '1', s: '$$mdi:bluetooth$$'}
+  - {t: BT, h: '2', s: '$$mdi:bluetooth$$'}
+  - {t: BT, h: '3', s: '$$mdi:bluetooth$$'}
   - {t: BOOT, h: '$$mdi:cloud-download-outline$$'}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {t: BT, h: CLR}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: BT, h: '5'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BT, h: CLEAR, s: '$$mdi:bluetooth-off$$'}
+  - {t: BT, h: '4', s: '$$mdi:bluetooth$$'}
+  - {t: BT, h: '5', s: '$$mdi:bluetooth$$'}
+  - {t: BT, h: '6', s: '$$mdi:bluetooth$$'}
   - {t: RESET, h: '$$mdi:power$$'}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: BT/USB, h: '$$mdi:toggle-switch-outline$$'}
-  - {t: COLEMAK, h: '$$mdi:toggle-switch-outline$$'}
-  - {type: none}
-  - {type: none}
+  - {t: COL, h: toggle}
+  - ''
+  - ''
 combos:
 - p: [3, 6]
   k: CLCK
   l: [DEF, COL]
-  w: 41.0
 - p: [13, 16]
-  k: CWRD
+  k: WORD
   l: [DEF, COL]
-  w: 41.0
 - p: [12, 13]
   k: TAB
   l: [DEF, COL, NUM, NAV]
-  w: 31.0
 - p: [16, 17]
-  k: BSDL
+  k: {t: BSP, s: DEL}
   l: [DEF, COL, NUM, NAV]
-  w: 31.0
 - p: [14, 24]
-  k: '`~'
+  k: '`'
   l: [DEF, COL]
 - p: [15, 25]
-  k: '''"'
+  k: ''''
   l: [DEF, COL]
 - p: [0, 10]
-  k: 1!
+  k: '1'
   l: [DEF, COL]
 - p: [1, 11]
-  k: 2@
+  k: '2'
   l: [DEF, COL]
 - p: [2, 12]
-  k: 3#
+  k: '3'
   l: [DEF, COL]
 - p: [3, 13]
-  k: 4$
+  k: '4'
   l: [DEF, COL]
 - p: [4, 14]
-  k: 5%
+  k: '5'
   l: [DEF, COL]
 - p: [5, 15]
-  k: 6^
+  k: '6'
   l: [DEF, COL]
 - p: [6, 16]
-  k: 7&
+  k: '7'
   l: [DEF, COL]
 - p: [7, 17]
-  k: 8*
+  k: '8'
   l: [DEF, COL]
 - p: [8, 18]
-  k: 9(
+  k: '9'
   l: [DEF, COL]
 - p: [9, 19]
-  k: 0)
+  k: '0'
   l: [DEF, COL]
 - p: [0, 10]
   k: '!'
@@ -250,7 +246,7 @@ combos:
   k: '&'
   l: [NUM]
 - p: [7, 17]
-  k: '*'
+  k: ASTRK
   l: [NUM]
 - p: [10, 20]
   k: '|'
@@ -271,10 +267,10 @@ combos:
   k: )
   l: [DEF, COL, NUM]
 - p: [11, 21]
-  k: '[{'
+  k: '['
   l: [DEF, COL]
 - p: [12, 22]
-  k: ']}'
+  k: ']'
   l: [DEF, COL]
 - p: [11, 21]
   k: '{'
@@ -289,10 +285,10 @@ combos:
   k: ':'
   l: [DEF, COL, NUM]
 - p: [10, 20]
-  k: \|
+  k: \
   l: [DEF, COL]
 - p: [19, 29]
-  k: /?
+  k: SLASH
   l: [DEF, COL]
 - p: [13, 14]
   k: +
@@ -304,35 +300,29 @@ combos:
   k: '-'
   l: [DEF, COL, NUM]
 - p: [25, 26]
-  k: /?
+  k: SLASH
   l: [DEF, COL, NUM]
 - p: [16, 26]
-  k: HOME
+  k: {t: HOME, h: '$$mdi:page-first$$'}
   l: [NAV]
-  w: 31.0
 - p: [18, 28]
-  k: END
+  k: {t: END, h: '$$mdi:page-last$$'}
   l: [NAV]
-  w: 31.0
 - p: [15, 25]
-  k: BOUNC
+  k: {t: Sft+Ctl+UP, h: 'Sft+Ctl+$$mdi:chevron-up$$'}
   l: [NAV]
-  w: 31.0
 - p: [6, 16]
-  k: <BMK
+  k: {t: Ctl+Alt+LEFT, h: 'Ctl+Alt+$$mdi:chevron-left$$'}
   l: [NAV]
-  w: 31.0
 - p: [8, 18]
-  k: BMK>
+  k: {t: Ctl+Alt+RIGHT, h: 'Ctl+Alt+$$mdi:chevron-right$$'}
   l: [NAV]
-  w: 31.0
 - p: [7, 17]
-  k: BMK
+  k: Ctl+B
   l: [NAV]
-  w: 31.0
 - p: [14, 24]
-  k: <BMK>
+  k: Sft+ESC
   l: [NAV]
 - p: [19, 29]
-  k: //
+  k: Ctl+SLASH
   l: [NAV]
