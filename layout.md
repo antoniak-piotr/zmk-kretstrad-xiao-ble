@@ -1,1 +1,1 @@
-![](/svg/kretstrad.svg)
+<img src="svg/hummingbird.svg" width="175%">
