@@ -16,9 +16,7 @@
 # shield: [ "kretstrad_left", "kretstrad_right" ]
 
 include:
-  - board: seeeduino_xiao_ble
-    shield: kretstrad_left
-  - board: seeeduino_xiao_ble
-    shield: kretstrad_right
-#  - board: seeeduino_xiao_ble
-#    shield: settings_reset
+  - board: xiao_ble//zmk
+    shield: kretstrad_left rgbled_adapter
+  - board: xiao_ble//zmk
+    shield: kretstrad_right rgbled_adapter

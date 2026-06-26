@@ -1,10 +1,12 @@
 draw_config:
-  # key_h: 60
+  # key_h: 65
+  # key_w: 65
   combo_w: 21
-  combo_h: 15
-  small_pad: 8
-  shrink_wide_legends: 5
-
+  combo_h: 13
+  key_rx: 4
+  key_ry: 4
+  small_pad: 7.5
+  # shrink_wide_legends: 5
   # glyph_tap_size: 24
   # glyph_hold_size: 10
   # glyph_shifted_size: 10
@@ -12,317 +14,297 @@ draw_config:
   arc_radius: 0
   # separate_combo_diagrams: False
   # draw_key_sides: True
-
   append_colon_to_layer_header: False
+  use_local_cache: False
+  # mark_alternate_layer_activators: True
+  combo_diagrams_scale: 2
 
   svg_extra_style: |
-    .none, .trans, .ghost {
-      opacity: 0.8;
+    .none, .ghost, .trans {
+      opacity: 0.7;
     }
 
-    /* color accent for combo boxes */
-    rect.combo, rect.combo-separate {
-        fill: #CCDDFF;
-        stroke: #99AACC;
+    rect, path {
+      shape-rendering: geometricPrecision;
     }
 
-    /* rect.held, rect.combo.held { */
     .held {
       opacity: 1.0;
-      filter: drop-shadow(0px 0px 6px #4FC0D0);  /* #7979EC); */
+      filter: drop-shadow(0px 0px 6px #4FC0D0);
     }
 
-    text.key.tap {
-      font-size: 16px;
-      /* font-weight: 900; */
+    rect.combo, rect.combo-separate {
+      fill: #CCDDFF;
+      stroke: #99AACC;
     }
 
-    text.hold, text.shifted {
-      /* font-size: 9px; */
-      font-weight: normal;
+    text.combo, text.combo.hold, text.combo.shifted {
+      font-size: 10px;
+      dominant-baseline: central; 
+      alignment-baseline: central; 
     }
 
-    text.combo {
-      /* font-size: 11px; */
-      /* font-weight: bold; */
+    text.combo.tap:has(+ text.combo.shifted) { 
+       text-anchor: end;
+       translate: -0.75px 0;
+    } 
+
+    text.combo.tap + text.combo.shifted {
+      fill: #FF0000;
+      text-anchor: start;
+      translate: 0.75px -1px;
     }
 
 parse_config:
-  # mark_alternate_layer_activators: true
+  mark_alternate_layer_activators: True
   # sticky_label: $$mdi:gesture-tap-hold$$
-  trans_legend:
-    tap: ""
 
-  raw_binding_map:
-    # NUMERIC
-    "&kp N1":
-      tap: "1!"
-    "&kp N2":
-      tap: "2@"
-    "&kp N3":
-      tap: "3#"
-    "&kp N4":
-      tap: "4$"
-    "&kp N5":
-      tap: "5%"
-    "&kp N6":
-      tap: "6^"
-    "&kp N7":
-      tap: "7&"
-    "&kp N8":
-      tap: "8*"
-    "&kp N9":
-      tap: "9("
-    "&kp N0":
-      tap: "0)"
+  trans_legend: {tap: ""}
 
-    # SHIFTED KEYS
-    "&kp COMMA":
-      tap: ",<"
-    "&kp DOT":
-      tap: ".>"
-    "&kp SLASH":
-      tap: "/?"
-    "&kp BSLH":
-      tap: "\\|"
-    "&kp LBKT":
-      tap: "[{"
-    "&kp RBKT":
-      tap: "]}"
-    "&kp GRAVE":
-      tap: "`~"
-    "&kp APOS":
-      tap: "'\""
-    "&kp SEMI":
-      tap: ";:"
+  zmk_remove_keycode_prefix: ["KP_"]
 
-    # BSPC, DEL, BSDL, CUT, COPY, PASTE
-    "&bsdl":
-      tap: BSDL
-      # hold: $$mdi:content-cut$$
+  zmk_keycode_map:
+    LSHFT: "SHIFT"                                        # $$mdi:apple-keyboard-shift$$
+    LCTRL: "CTRL"                                         # $$mdi:apple-keyboard-control$$
+    LALT: "ALT"                                           # $$mdi:apple-keyboard-option$$
+    LWIN: $$mdi:microsoft-windows$$                       # $$mdi:apple-keyboard-command$$
 
-    "&kp LC(X)":
-      tap: CUT
-      hold: $$mdi:content-cut$$
-    "&kp LC(C)":
-      tap: COPY
-      hold: $$mdi:content-copy$$
-    "&kp LC(V)":
-      tap: PASTE
-      hold: $$mdi:content-paste$$
+    UP: {tap: "UP", hold: $$mdi:chevron-up$$}             # $$mdi:arrow-up-bold$$
+    DOWN: {tap: "DOWN", hold: $$mdi:chevron-down$$}       # $$mdi:arrow-down-bold$$
+    LEFT: {tap: "LEFT", hold: $$mdi:chevron-left$$}       # $$mdi:arrow-left-bold$$
+    RIGHT: {tap: "RIGHT", hold: $$mdi:chevron-right$$}    # $$mdi:arrow-right-bold$$
+    HOME: {tap: "HOME", hold: $$mdi:page-first$$}         # $$mdi:transfer-left$$ # $$mdi:chevron-left-circle-outline$$       # {tap: HOME, hold: $$mdi:chevron-left-circle-outline$$}
+    END: {tap: "END", hold: $$mdi:page-last$$}            # $$mdi:chevron-right-circle-outline$$       #{tap: END, hold: $$mdi:chevron-right-circle-outline$$}
+    PG_UP: {tap: "PGUP", hold: $$mdi:transfer-up$$}       # $$mdi:chevron-up-circle-outline$$
+    PG_DN: {tap: "PGDN", hold: $$mdi:transfer-down$$}     # $$mdi:chevron-down-circle-outline$$
 
-    # UNDO, REDO
-    "&kp LC(Z)":
-      tap: UNDO
-      hold: $$mdi:undo$$
-    "&kp LSC(Z)":
-      tap: REDO
-      hold: $$mdi:redo$$
+    GRAVE: "`"
+    TILDE: "~"
+    EXCL: "!"
+    AT: "@"
+    HASH: "#"
+    DLLR: "$"
+    PRCNT: "%"
+    CARET: ^
+    AMPS: "&"
+    STAR: "*"
+    LPAR: "("
+    RPAR: ")"
+    MINUS: "-"
+    UNDER: "_"
+    EQUAL: "="
+    PLUS: "+"
+    LBKT: "["
+    LBRC: "{"
+    RBKT: "]"
+    RBRC: "}"
+    BSLH: "\\"
+    PIPE: "|"
+    SEMI: ";"
+    COLON: ":"
+    APOS: "'" 
+    DQT: "\""
+    COMMA: ","
+    LT: "<"
+    DOT: "."
+    GT: ">"
+    FSLH: "/"
+    QMARK: "?"
+    
 
-    # SNIP, PSCRN
-    "&kp LSG(S)":
-      tap: SNIP
-      hold: $$mdi:crop$$ # select-drag$$
-    "&kp PSCRN":
-      tap: PSCRN
-      hold: $$mdi:crop$$ # select$$
+    # polskie literki
+    LC(LA(A)): "Ą"
+    LC(LA(C)): "Ć"
+    LC(LA(E)): "Ę"
+    LC(LA(L)): "Ł"
+    LC(LA(N)): "Ń"
+    LC(LA(O)): "Ó"
+    LC(LA(S)): "Ś"
+    LC(LA(X)): "Ź"
+    LC(LA(Z)): "Ż"
+
+    # ENTER: $$mdi:keyboard-return$$
+    # ESC: $$mdi:keyboard-esc$$
+    # TAB: $$mdi:keyboard-tab$$
+    # LS(TAB): $$mdi:keyboard-tab-reverse$$
+    # SPACE: $$mdi:keyboard-space$$
+    BSPC: "BSP" # $$mdi:backspace$$
+    # DEL: $$mdi:backspace-reverse-outline$$
+
+    # CUT, COPY, PASTE
+    LC(X): $$mdi:content-cut$$
+    LC(C): $$mdi:content-copy$$
+    LC(V): $$mdi:content-paste$$
+
+    # DELPHI 
+    LA(UP): "JUMP"
+    LA(LEFT): {tap: "<BWRD", hold: $$mdi:step-backward$$}
+    LA(RIGHT): {tap: "FWRD>", hold: $$mdi:step-forward$$}
+
 
     # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
-    "&kp LCA(UP)":
-      tap: <IDEN
-      hold: $$mdi:tag-outline$$
-      # hold: $$mdi:tag-arrow-up$$
-    "&kp LCA(DOWN)":
-      tap: IDEN>
-      hold: $$mdi:tag-outline$$
-      # hold: $$mdi:tag-arrow-down$$
-    "&kp LSC(UP)":
-      tap: BOUNC
-      # hold: $$mdi:swap-vertical$$
+    # "&di LA(UP) 0": {tap: "<IDEN>", hold: JUMP}
+    # LA(UP): $$mdi:tag-arrow-left$$
+    # LC(LA(UP): $$mdi:tag-arrow-right$$
+    # LC(LA(DOWN): $$mdi:tag$$
 
-    # PREV/NEXT/DROP BOOKMARKS (Parnassus)
-    "&kp LCA(LEFT)":
-      tap: "<BMK"
-      # hold: $$mdi:bookmark$$
-    "&kp LCA(RIGHT)":
-      tap: "BMK>"
-      # hold: $$mdi:bookmark$$
-    "&kp LC(B)":
-      tap: "BMK"
-      # hold: $$mdi:bookmark$$
-    "&kp LSC(B)":
-      tap: "BMK^"       # Caret Bookmark
-      # hold: $$mdi:bookmark$$
-    "&kp LS(ESC)":      # Jumps between two caret bookmarks
-      tap: "<BMK>"
-      # hold: $$mdi:bookmark$$
 
-    # PREV/NEXT HISTORY + GOTO DEFINITION (Delphi IDE)
-    "&kp LA(LEFT)":
-      tap: <HIST
-      hold: $$mdi:step-backward-2$$
-    "&kp LA(RIGHT)":
-      tap: HIST>
-      hold: $$mdi:step-forward-2$$
-    "&kp LA(UP)":
-      tap: DECL
-      hold: $$mdi:pencil$$
+  #   # PREV/NEXT/DROP BOOKMARKS (Parnassus)
+  #   "&db LC(B) 0": {tap: "<BMKS>", hold: SET}
+  #   "&mt SC(B) LS(ESC)": {tap: "CBMK"}   # Caret Bookmark
+  #   # "&kp SC(B)": {tap: "BDROP"}   # Caret Bookmark
+  #   # "&kp LS(ESC)": {tap: "BSWAP"} # Jumps between two caret bookmarks
 
-    # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
-    "&kp LS(LA(S))":
-      tap: GREP
-    "&kp LC(F)":
-      tap: FIND
-    "&kp LC(G)":
-      tap: GOTO
+    LC(F): $$mdi:text-search-variant$$
 
-    # MAGNIFIER
-    "&kp LG(EQUAL)":
-      tap: ZOOM+
-      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
-    "&kp LG(MINUS)":
-      tap: ZOOM-
-      hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    "&kp LG(ESC)":
-      tap: EXIT
-      # hold: $$mdi:magnify$$ # $$mdi:magnify-minus-outline$$
-    "&zoom":                # ZOOM+ / ZOOM- (when SHIFT modifier) on TAP and EXIT (on HOLD)
-      tap: ZOOM
-      hold: $$mdi:magnify$$ # $$mdi:magnify-plus-outline$$
+    LG(LA(S)): $$mdi:crop$$     # "SNIP" # $$mdi:crop$$
+    PSCRN: $$mdi:monitor-screenshot$$
 
-    # CAPSLOCK, CAPSWORD
-    "&kp CLCK":
-      tap: CLCK # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
-    "&caps_word":
-      tap: CWRD # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+    BT_CLR: $$mdi:bluetooth-off$$
+    BT_SEL: $$mdi:bluetooth-connect$$
+
+  raw_binding_map:
+    # AUTO LAYERS
+    "&anl NAV": {tap: "NAV"}
+    "&an NAV NAV": {tap: "NAV"}
+    "&afl FNC": {tap: "FNC"}
+    "&af FNC FNC": {tap: "FNC"}
+    "&caps_word": {tap: "WORD"}       # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
+
+    "&hl WIN 0": {hold: $$mdi:microsoft-windows$$}  
+    "&hl SFT 0": {hold: "SHIFT"}      # {hold: $$mdi:apple-keyboard-shift$$}
+    "&hl ALT 0": {hold: "ALT"}        # {hold: $$mdi:apple-keyboard-option$$}
+    "&hl CTL 0": {hold: "CTRL"}       # {hold: $$mdi:apple-keyboard-control$$}
+    "&hr CTL 0": {hold: "CTRL"}       # {hold: $$mdi:apple-keyboard-control$$}
+    "&hr ALT 0": {hold: "ALT"}        # {hold: $$mdi:apple-keyboard-option$$}
+    "&hr SFT 0": {hold: "SHIFT"}      # {hold: $$mdi:apple-keyboard-shift$$}
+
+    "&mt SFT ENTER": {tap: "ENTER", hold: $$mdi:arrow-up-bold$$} # apple-keyboard-shift$$}
+
+    # MOUSE
+    "&mouse MSE": "MOUSE"
+    "&mkp LCLK": {tap: "LMB", hold: $$mdi:mouse-outline$$, shifted: "MOUSE"}
+    "&mkp RCLK": {tap: "RMB", hold: $$mdi:mouse-outline$$, shifted: "MOUSE"}
+    "&mkp MCLK": {tap: "MMB", hold: $$mdi:mouse-outline$$, shifted: "MOUSE"}
+    "&mmv MOVE_UP": {tap: "UP", hold: $$mdi:chevron-up$$, shifted: "MOUSE"}
+    "&mmv MOVE_DOWN": {tap: "DOWN", hold: $$mdi:chevron-down$$, shifted: "MOUSE"}
+    "&mmv MOVE_LEFT": {tap: "LEFT", hold: $$mdi:chevron-left$$, shifted: "MOUSE"}
+    "&mmv MOVE_RIGHT": {tap: "RIGHT", hold: $$mdi:chevron-right$$, shifted: "MOUSE"}
+    "&msc SCRL_UP": {tap: "UP", hold: $$mdi:chevron-triple-up$$, shifted: "WHEEL"}
+    "&msc SCRL_DOWN": {tap: "DOWN", hold: $$mdi:chevron-triple-down$$, shifted: "WHEEL"}
+    "&msc SCRL_LEFT": {tap: "LEFT", hold: $$mdi:chevron-triple-left$$, shifted: "WHEEL"}
+    "&msc SCRL_RIGHT": {tap: "RIGHT", hold: $$mdi:chevron-triple-right$$, shifted: "WHEEL"}
+
+    # APP / WINDOW MANAGEMENT
+    "&kp LG(SPACE)": {tap: "RUN", hold: $$mdi:console$$}
+    "&aswap": {tap: "<APP>", hold: $$mdi:application-outline$$}              
+    "&wswap": {tap: "<WIN>", hold: $$mdi:file-document-outline$$}
+    "&kp LA(F4)": {tap: "CLOSE", hold: $$mdi:window-close$$}
+    # "&kp LG(SPACE)": {tap: "RUN", hold: $$mdi:console$$, shifted: "APP"}
+    # "&aswap": {tap: "<SWAP>", hold: $$mdi:application-outline$$, shifted: "APP"}              
+    # "&wswap": {tap: "<SWAP>", hold: $$mdi:file-document-outline$$, shifted: "WIN"}
+    # "&kp LA(F4)": {tap: "CLOSE", hold: $$mdi:window-close$$, shifted: "WIN"}
+    # "&kp LS(TAB)": {tap: "PREV", hold: $$mdi:page-previous-outline$$, shifted: "APP"}
+    # "&swap": {tap: "NEXT", hold: $$mdi:page-next-outline$$, shifted: "APP"}
+
+    "&leader": "LEAD"
+
+    "&mt GA(S) 0": {tap: "SNAP", hold: $$mdi:crop$$}             
+    "&mt PSCRN 0": {tap: "PRSCR", hold: $$mdi:monitor-screenshot$$}
+
+    "&dcleq": {tap: ":="}
+    "&dlteq": {tap: "<="}
+    "&dgteq": {tap: ">="}
+    "&dltgt": {tap: "<>"}
 
     # systemowe (Bluetooth, przełącznik BLE-USB i QWERTY-COLEMAK)
-    "&out OUT_TOG":
-      tap: BT/USB
-      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
-    "&tog COL":
-      tap: COLEMAK
-      hold: $$mdi:toggle-switch-outline$$ # $$mdi:keyboard-settings-outline$$
+    "&bt BT_SEL 0": {tap: "BT", hold: "1", shifted: $$mdi:bluetooth$$}
+    "&bt BT_SEL 1": {tap: "BT", hold: "2", shifted: $$mdi:bluetooth$$}
+    "&bt BT_SEL 2": {tap: "BT", hold: "3", shifted: $$mdi:bluetooth$$}
+    "&bt BT_SEL 3": {tap: "BT", hold: "4", shifted: $$mdi:bluetooth$$}
+    "&bt BT_SEL 4": {tap: "BT", hold: "5", shifted: $$mdi:bluetooth$$}
+    "&bt BT_SEL 5": {tap: "BT", hold: "6", shifted: $$mdi:bluetooth$$}
+    "&bt BT_CLR": {tap: "BT", hold: "CLEAR", shifted: $$mdi:bluetooth-off$$}                    # hold: CLR}  # $$mdi:bluetooth$$, $$mdi:close-box$$
 
-    "&sys_reset":
-      tap: RESET
-      hold: $$mdi:power$$
-    "&bootloader":
-      tap: BOOT
-      hold: $$mdi:cloud-download-outline$$
+    "&out OUT_TOG": {tap: BT/USB, hold: $$mdi:toggle-switch-outline$$}      # $$mdi:keyboard-settings-outline$$
+    "&sys_reset": {tap: RESET, hold: $$mdi:power$$}
+    "&bootloader": {tap: BOOT, hold: $$mdi:cloud-download-outline$$}
+    "&ind_bat": {tap: BAT, hold: $$mdi:battery-medium$$}                    # hold: STATE}
+    "&ind_con": {tap: CON, hold: $$mdi:bluetooth-connect$$}                 # hold: STATE}
+    "&studio_unlock": {tap: ZMK, hold: $$mdi:keyboard-settings-outline$$}
 
-    "&bt BT_CLR":
-      tap: BT # $$mdi:bluetooth$$
-      hold: CLR # $$mdi:close-box$$
-
-    # nawigacja
-    "&kp LEFT":
-      tap: LEFT
-      hold: $$mdi:chevron-left$$
-    "&kp RIGHT":
-      tap: RIGHT
-      hold: $$mdi:chevron-right$$
-    "&kp UP":
-      tap: UP
-      hold: $$mdi:chevron-up$$
-    "&kp DOWN":
-      tap: DOWN
-      hold: $$mdi:chevron-down$$
-
-    "&kp HOME":
-      tap: HOME
-      # hold: $$mdi:page-first$$
-    "&kp END":
-      tap: END
-      # hold: $$mdi:page-last$$
-
-    "&kp PG_UP":
-      tap: PGUP
-      hold: $$mdi:chevron-triple-up$$
-    "&kp PG_DN":
-      tap: PGDN
-      hold: $$mdi:chevron-triple-down$$
-
-    "&kp LC(LEFT)":
-      tap: "<WORD"
-      hold: $$mdi:chevron-double-left$$
-    "&kp LC(RIGHT)":
-      tap: "WORD>"
-      hold: $$mdi:chevron-double-right$$
-
-    # COMMENT
-    "&kp LC(SLASH)":
-      tap: "//"
-      # hold: //
+    "&hist LA(UP) 0": {tap: "DECL", hold: $$mdi:pan-horizontal$$}
 
     # DELPHI MACROS
-    "&dm(T)":   # CODE BLOCK FOLD TOGGLE
-      tap: TGGL
-      hold: $$mdi:unfold-more-vertical$$
-    "&dm(R)":   # CODE BLOCK COLLAPSE ALL REGIONS
-      tap: CRGN
-      hold: $$mdi:unfold-more-vertical$$
-    "&dm(A)":   # CODE BLOCK EXPANDS ALL BLOCKS OF CODE
-      tap: EALL
-      hold: $$mdi:unfold-more-vertical$$
+  #   "&dc A 0": {tap: FOLD, hold: EXPD}   # CODE BLOCK FOLD TOGGLE / EXPANDS ALL BLOCKS OF CODE
 
-    # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
-    "&kp LG(D)":      # Tworzy nowy pulpit wirtualny (on TAP) lub zamyka aktualny (on HOLD)
-      tap: DSK+
-    "&kp LGC(F4)":    # Tworzy nowy pulpit wirtualny (on TAP) lub zamyka aktualny (on HOLD)
-      tap: DSK-
-    # "&kp LA(TAB)":
-    #   tap: PREV
-    #   hold: $$mdi:page-previous-outline$$
-    # "&prev":
-    #   tap: PREV
-    #   hold: $$mdi:page-previous-outline$$
-    # "&next":
-    #   tap: NEXT
-    #   hold: $$mdi:page-next-outline$$
+  #   # # wirtualne pulpity + przechodzenie pomiędzy aplikacjami
+  #   # "&apps": {tap: <APPS>}        # Przechodzi do następnej aplikacji (okienka)
+  #   # # "&kp LG(D)": {tap: DSK+}      # Tworzy nowy pulpit wirtualny (on TAP) lub zamyka aktualny (on HOLD)
+  #   # # "&kp GC(F4)": {tap: DSK-}     # Tworzy nowy pulpit wirtualny (on TAP) lub zamyka aktualny (on HOLD)
+  #   # # "&kp LA(TAB)": {tap: PREV}    # hold: $$mdi:page-previous-outline$$
+  #   # # "&prev": {tap: PREV}          # hold: $$mdi:page-previous-outline$$
+  #   # # "&next": {tap: NEXT}          # hold: $$mdi:page-next-outline$$
 
-    # "&dlequal":
-    #   tap: "≤"
+  #   # GREP (GExperts), FIND (Delph IDE), GOTO (Parnassus)
+    # "&mt LC(F) F3": {tap: <FIND>, hold: $$mdi:magnify$$}    # hold: FIND}
+    "&df 0 0": {tap: <FIND>, hold: $$mdi:magnify$$}    # hold: FIND}
+  #   # "&kp LS(LA(S))": {tap: GREP}
+  #   "&mt LA(G) LC(G)": {tap: GOTO} #, hold: LINE}
 
-    # "&dequal":
-    #   tap: ":="
+  #   # MAGNIFIER
+  #   "&zm LG(ESC) 0": {tap: "ZOOM", hold: EXIT}
 
-    # "&dgequal":
-    #   tap: "≥"
+    # PREV/NEXT IDENT (GExpert / CnWizards) + DECLARATION/IMPLEMENTATION JUMPS (Delphi IDE?)
+    "&di LA(UP) 0": {tap: "<IDEN>", hold: $$mdi:tag-outline$$}    # hold: JUMP}   # $$mdi:tag-multiple-outline$$ $$mdi:tag-search-outline$$
 
-    "&none":
-      type: none
+    # PREV/NEXT/DROP BOOKMARKS (Parnassus)
+    "&db LC(B) 0": {tap: "<BMKS>", hold: $$mdi:bookmark-outline$$}    # hold: SET}  # $$mdi:bookmark-multiple-outline$$
+  #   "&mt SC(B) LS(ESC)": {tap: "CBMK"}   # Caret Bookmark
+  #   # "&kp SC(B)": {tap: "BDROP"}   # Caret Bookmark
+  #   # "&kp LS(ESC)": {tap: "BSWAP"} # Jumps between two caret bookmarks
 
   zmk_combos:
-    clck:
-      width: 41
-    cwrd:
-      width: 41
+    combo_cwrd: {draw_separate: true}
+    combo_caps: {draw_separate: true}
 
-    tab:
-      width: 31
-    bsdl:
-      width: 31
+    combo_tab: {width: 25}
+    combo_esc: {width: 25}
+    combo_bsp: {width: 25}
+    combo_del: {width: 25}
+    # combo_ent: {width: 33}
 
-    exit:
-      align: top
-      offset: 0.15
-      width: 35
+    combo_nav: {width: 25}
+    combo_fnc: {width: 25, align: bottom, offset: 0.35} 
+    
+    combo_lead: {width: 29}
+    combo_mouse: {width: 35}
 
-    menter:
-      width: 41
 
-    home:
-      width: 31
-    end:
-      width: 31
+    # combo_lbkt: {align: bottom, offset: 0.15, width: 27}
+    # combo_rbkt: {align: bottom, offset: 0.15, width: 27}
+    # combo_lbrc: {align: bottom, offset: 0.15, width: 27}
+    # combo_rbrc: {align: bottom, offset: 0.15, width: 27}
 
-    bmrk1:
-      width: 31
-    bmrk2:
-      width: 31
-    bmrk3:
-      width: 31
+    # combo_dcleq: {align: bottom, offset: 0.1, width: 27}
+    # combo_dlteq: {align: top, offset: 0.5, width: 27}
+    # combo_dgteq: {align: top, offset: 0.1, width: 27}
+    # combo_dcleq: {draw_separate: true}
+    # combo_dlteq: {draw_separate: true}
+    # combo_dgteq: {draw_separate: true}
+    # combo_dltgt: {align: top, offset: 0.1, width: 27}
+    
+    # combo_semi: {align: bottom, offset: 0.1, width: 27}
+    # combo_minus: {align: bottom, offset: 0.1, width: 27}
+    # combo_under: {align: bottom, offset: 0.1, width: 27}
+    # combo_mipl: {align: bottom, offset: 0.1, width: 27}
+    # combo_fsst: {align: bottom, offset: 0.1, width: 27}
+    # combo_colon: {align: bottom, offset: 0.1, width: 27}
 
-    bounce:
-      width: 31
+    # combo_home: {width: 31}
+    # combo_end: {width: 31}
+    # combo_pgup: {width: 31}
+    # combo_pgdn: {width: 31}
+
+    # combo_bmks: {width: 31}
+    # combo_goto: {width: 31}
