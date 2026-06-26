@@ -1,1 +1,1 @@
-<img src="svg/kretstrad.svg" width="150%">
+<img src="svg/kretstrad.svg" width="175%">
