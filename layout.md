@@ -1,1 +1,1 @@
-<img src="svg/kredstrad.svg" width="175%">
+<img src="svg/kretstrad.svg" width="150%">
