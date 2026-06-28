@@ -67,7 +67,7 @@ parse_config:
     LSHFT: "SHIFT"                                        # $$mdi:apple-keyboard-shift$$
     LCTRL: "CTRL"                                         # $$mdi:apple-keyboard-control$$
     LALT: "ALT"                                           # $$mdi:apple-keyboard-option$$
-    LWIN: "WIN"                                           # $$mdi:microsoft-windows$$                       # $$mdi:apple-keyboard-command$$
+    LWIN: $$mdi:microsoft-windows$$                       # $$mdi:apple-keyboard-command$$
 
     UP: {tap: "UP", hold: $$mdi:chevron-up$$}             # $$mdi:arrow-up-bold$$
     DOWN: {tap: "DOWN", hold: $$mdi:chevron-down$$}       # $$mdi:arrow-down-bold$$
@@ -171,7 +171,7 @@ parse_config:
     "&af FNC FNC": {tap: "FNC"}
     "&caps_word": {tap: "WORD"}       # $$mdi:caps-lock$$ # CAPS # hold: $$mdi:close-box$$
 
-    "&hl WIN 0": {hold: $$mdi:microsoft-windows$$}  
+    "&hl WIN 0": {hold: "WIN"}        # {hold: $$mdi:microsoft-windows$$}  
     "&hl SFT 0": {hold: "SHIFT"}      # {hold: $$mdi:apple-keyboard-shift$$}
     "&hl ALT 0": {hold: "ALT"}        # {hold: $$mdi:apple-keyboard-option$$}
     "&hl CTL 0": {hold: "CTRL"}       # {hold: $$mdi:apple-keyboard-control$$}
