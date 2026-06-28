@@ -89,7 +89,7 @@
             bindings = <
                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &sys_reset              &ind_con        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
                 &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &bootloader             &ind_bat        &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none
-                &tog COL        &none           &none           &none           &none                   &none           &none           &none           &none           &none
+                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
                                                                 &out OUT_TOG    &bt BT_CLR              &bt BT_CLR      &none
             >;
         };
