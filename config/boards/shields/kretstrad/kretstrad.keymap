@@ -346,6 +346,34 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; hold-trigger-on-release;
         };
 
+        anl: auto_navigation_layer {
+            compatible = "zmk,behavior-auto-layer"; #binding-cells = <1>;
+            continue-list = <LEFT RIGHT UP DOWN HOME END PG_UP PG_DN>;
+            ignore-modifiers;
+        };
+
+        an: auto_number_layer_smart {
+            compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <250>; quick-tap-ms = <150>; // require-prior-idle-ms = <150>;
+            bindings = <&mo>, <&anl>;
+        };
+
+        afl: auto_function_layer {    // based on num_word behavior
+            compatible = "zmk,behavior-auto-layer"; #binding-cells = <1>;
+            continue-list = <F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12>;
+            ignore-modifiers;
+        };
+
+        af: auto_function_layer_smart {
+            compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <250>; quick-tap-ms = <150>; // require-prior-idle-ms = <150>;
+            bindings = <&mo>, <&afl>; 
+        };
+
+        mouse: auto_mouse_layer_smart {
+            compatible = "zmk,behavior-auto-layer"; #binding-cells = <1>;
+            continue-list = <LCLK RCLK MCLK MOVE_UP MOVE_DOWN MOVE_LEFT MOVE_RIGHT SCRL_UP SCRL_DOWN SCRL_LEFT SCRL_RIGHT>;
+            ignore-modifiers;
+        };
+
         // App / Window swapper
         swap: swapper {
             compatible = "zmk,behavior-tri-state"; #binding-cells = <0>;
