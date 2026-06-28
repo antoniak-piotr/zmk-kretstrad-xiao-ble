@@ -19,7 +19,7 @@ jobs:
     permissions:
       contents: write
     with:
-      keymap_patterns: "config/*.keymap"        
+      keymap_patterns: "config/boards/shields/kretstrad/*.keymap"        
       config_path: "keymap_drawer.config.yaml"  
       output_folder: "svg"                      
       commit_message: "[Draw] ${{ github.event.head_commit.message }} [skip ci]"
