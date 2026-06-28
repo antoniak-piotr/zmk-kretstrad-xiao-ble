@@ -77,9 +77,9 @@
 
         NAV_layer {
             bindings = <
-                &none           &kp LG(SPACE)   &aswap          &wswap          &kp LA(F4)              &none           &df 0 0         &di LA(UP) 0    &db LC(B) 0     &kp LA(LEFT)
-                &hl WIN 0       &hl ALT 0       &hl SFT 0       &hl CTL 0       &none                   &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &kp LA(RIGHT)
-                &none           &none           &none           &none           &none                   &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &none
+                &none           &kp LG(SPACE)   &aswap          &wswap          &kp LA(F4)              &none           &df 0 0         &di LA(UP) 0    &db LC(B) 0     &none
+                &hl WIN 0       &hl ALT 0       &hl SFT 0       &hl CTL 0       &none                   &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &kp LA(LEFT)
+                &none           &none           &none           &none           &none                   &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &kp LA(RIGHT)
                                                                 &mt WIN ESC     &kp SPACE               &kp SPACE       &mt SFT ENTER
             >;
         };        
