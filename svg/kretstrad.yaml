@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: kretstrad}
 layers:
   DEF:
-  - {t: Q, h: FNC}
+  - {t: Q, h: SYS}
   - W
   - F
   - D
@@ -71,7 +71,7 @@ layers:
   - {t: SPACE, h: EXT, type: held alternate}
   - {t: ENTER, h: '$$mdi:arrow-up-bold$$'}
   FNC:
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -176,7 +176,7 @@ layers:
   - {t: LMB, h: '$$mdi:mouse-outline$$', s: MOUSE}
   - {t: RMB, h: '$$mdi:mouse-outline$$', s: MOUSE}
   SYS:
-  - ''
+  - {type: held}
   - {t: BT, h: '1', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '2', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '3', s: '$$mdi:bluetooth$$'}
