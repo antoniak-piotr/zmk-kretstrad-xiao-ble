@@ -384,7 +384,7 @@ text.combo.tap + text.combo.shifted {
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ESC</text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
+<text x="0" y="18" class="key hold">WIN</text>
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -543,7 +543,7 @@ text.combo.tap + text.combo.shifted {
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ESC</text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
+<text x="0" y="18" class="key hold">WIN</text>
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key held keypos-31">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key held"/>
@@ -676,7 +676,7 @@ text.combo.tap + text.combo.shifted {
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ESC</text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
+<text x="0" y="18" class="key hold">WIN</text>
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -827,7 +827,7 @@ text.combo.tap + text.combo.shifted {
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ESC</text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
+<text x="0" y="18" class="key hold">WIN</text>
 </g>
 <g transform="translate(280, 254) rotate(30.0)" class="key keypos-31">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>

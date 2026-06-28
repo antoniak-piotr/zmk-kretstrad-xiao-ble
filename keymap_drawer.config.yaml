@@ -67,7 +67,7 @@ parse_config:
     LSHFT: "SHIFT"                                        # $$mdi:apple-keyboard-shift$$
     LCTRL: "CTRL"                                         # $$mdi:apple-keyboard-control$$
     LALT: "ALT"                                           # $$mdi:apple-keyboard-option$$
-    LWIN: $$mdi:microsoft-windows$$                       # $$mdi:apple-keyboard-command$$
+    LWIN: "WIN"                                           # $$mdi:microsoft-windows$$                       # $$mdi:apple-keyboard-command$$
 
     UP: {tap: "UP", hold: $$mdi:chevron-up$$}             # $$mdi:arrow-up-bold$$
     DOWN: {tap: "DOWN", hold: $$mdi:chevron-down$$}       # $$mdi:arrow-down-bold$$
