@@ -275,8 +275,8 @@ text.combo.tap + text.combo.shifted {
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Q</text>
-<a href="#FNC">
-<text x="0" y="18" class="key hold layer-activator">FNC</text>
+<a href="#SYS">
+<text x="0" y="18" class="key hold layer-activator">SYS</text>
 </a></g>
 <g transform="translate(84, 35)" class="key keypos-1">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -582,8 +582,8 @@ text.combo.tap + text.combo.shifted {
 <g transform="translate(30, 697)" class="layer-FNC">
 <text x="0" y="28" class="label" id="FNC">FNC</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key held keypos-0">
-<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(28, 49)" class="key keypos-0">
+<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(84, 35)" class="key keypos-1">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -754,8 +754,6 @@ text.combo.tap + text.combo.shifted {
 </g>
 <g transform="translate(700, 49)" class="key keypos-9">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&lt;BWRD</text>
-<use href="#mdi:step-backward" xlink:href="#mdi:step-backward" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:step-backward"/>
 </g>
 <g transform="translate(28, 105)" class="key keypos-10">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -798,8 +796,8 @@ text.combo.tap + text.combo.shifted {
 </g>
 <g transform="translate(700, 105)" class="key keypos-19">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">FWRD&gt;</text>
-<use href="#mdi:step-forward" xlink:href="#mdi:step-forward" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:step-forward"/>
+<text x="0" y="0" class="key tap">&lt;BWRD</text>
+<use href="#mdi:step-backward" xlink:href="#mdi:step-backward" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:step-backward"/>
 </g>
 <g transform="translate(28, 161)" class="key keypos-20">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -838,6 +836,8 @@ text.combo.tap + text.combo.shifted {
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">FWRD&gt;</text>
+<use href="#mdi:step-forward" xlink:href="#mdi:step-forward" x="-6" y="6" height="12" width="12.0" class="key hold glyph mdi:step-forward"/>
 </g>
 <g transform="translate(221, 228) rotate(15.0)" class="key keypos-30">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1008,8 +1008,8 @@ text.combo.tap + text.combo.shifted {
 <g transform="translate(30, 1743)" class="layer-SYS">
 <text x="0" y="28" class="label" id="SYS">SYS</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key keypos-0">
-<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(28, 49)" class="key held keypos-0">
+<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(84, 35)" class="key keypos-1">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>

@@ -115,7 +115,7 @@ layers:
   - {t: <FIND>, h: '$$mdi:magnify$$'}
   - {t: <IDEN>, h: '$$mdi:tag-outline$$'}
   - {t: <BMKS>, h: '$$mdi:bookmark-outline$$'}
-  - {t: <BWRD, h: '$$mdi:step-backward$$'}
+  - ''
   - {h: WIN}
   - {h: ALT}
   - {h: SHIFT}
@@ -125,7 +125,7 @@ layers:
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
   - {t: RIGHT, h: '$$mdi:chevron-right$$'}
-  - {t: FWRD>, h: '$$mdi:step-forward$$'}
+  - {t: <BWRD, h: '$$mdi:step-backward$$'}
   - ''
   - ''
   - ''
@@ -135,7 +135,7 @@ layers:
   - {t: HOME, h: '$$mdi:page-first$$'}
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
   - {t: END, h: '$$mdi:page-last$$'}
-  - ''
+  - {t: FWRD>, h: '$$mdi:step-forward$$'}
   - {t: ESC, h: '$$mdi:microsoft-windows$$'}
   - SPACE
   - SPACE

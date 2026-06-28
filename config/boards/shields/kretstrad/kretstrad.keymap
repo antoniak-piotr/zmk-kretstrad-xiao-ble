@@ -114,7 +114,6 @@
         ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
                     ╰────────╯ ╰────────╯         */
 
-
         combo_caps  {key-positions = <10 19>; bindings = <&kp CAPS>; layers = <DEF EXT>; timeout-ms = <100>;};
         combo_cwrd  {key-positions = <12 17>; bindings = <&caps_word>; layers = <DEF EXT>; timeout-ms = <100>;};
         combo_nav   {key-positions = <31 32>; bindings = <&an NAV NAV>; layers = <DEF EXT>; timeout-ms = <100>;};
