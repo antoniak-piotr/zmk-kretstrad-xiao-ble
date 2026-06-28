@@ -1,11 +1,11 @@
-name: CI build
+name: build
 
 on:
+  workflow_dispatch:
   push:
     paths-ignore: ['keymap_drawer.config.yaml', 'svg/**']
   pull_request:
     paths-ignore: ['keymap_drawer.config.yaml', 'svg/**']
-  workflow_dispatch:
 
 jobs:
   build:

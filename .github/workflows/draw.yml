@@ -1,27 +1,41 @@
-name: Draw ZMK keymaps
+name: draw
 
 on:
-  workflow_dispatch:  # can be triggered manually
-  workflow_run: # only trigger, when the build workflow succeeded
-    workflows: ["CI build"]
-    types:
-      - completed 
+  workflow_dispatch:  
+
+  workflow_run:       # only trigger, when the build workflow succeeded
+    workflows: [build]
+    types: [completed]
+    branches: [main_v.2]
+
   push:               # automatically run on changes to following paths
-    paths:
-    #   - "config/*.keymap"
-    #   - "config/*.dtsi"
-    #   - "config/boards/shields/kretstrad/*.keymap"
-    #   - "config/boards/shields/kretstrad/*.dtsi"
-      - "keymap_drawer.config.yaml"
+    paths: [keymap_drawer.config.yaml]
 
 jobs:
   draw:
+    # Uruchom jeśli to nie jest workflow_run (np. ręczny start) LUB jeśli workflow_run zakończył się sukcesem
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
     with:
-      keymap_patterns: "config/boards/shields/kretstrad/*.keymap"        # path to the keymaps to parse
-      config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
-      output_folder: "svg"                      # path to save produced SVG and keymap YAML files
-      amend_commit: true                        # whether to amend the commit or create a new one
-      install_branch: main                      # trying new features: svg_extra_style
+      keymap_patterns: "config/*.keymap"        
+      config_path: "keymap_drawer.config.yaml"  
+      output_folder: "svg"                      
+      commit_message: "[Draw] ${{ github.event.head_commit.message }} [skip ci]"
+    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+
+    # uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    # permissions:
+    #   contents: write
+    # with:
+    #   keymap_patterns: "config/boards/shields/kretstrad/*.keymap"        # path to the keymaps to parse
+    #   config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
+    #   output_folder: "svg"                      # path to save produced SVG and keymap YAML files
+    #   amend_commit: true                        # whether to amend the commit or create a new one
+    #   install_branch: main                      # trying new features: svg_extra_style
