@@ -300,6 +300,17 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>; hold-trigger-on-release;
         };
 
+        // App / Window swapper
+        swap: swapper {
+            compatible = "zmk,behavior-tri-state"; #binding-cells = <0>;
+            bindings = <&kt ALT>, <&kp TAB>, <&kt ALT>;
+            ignored-key-positions = <29>;   
+        };
+
+        aswap: application_swap {
+            compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&swap>, <&kp LS(TAB)>;
+        };
 
         // prev: prev_app_or_desktop {
         //     compatible = "zmk,behavior-mod-morph";
