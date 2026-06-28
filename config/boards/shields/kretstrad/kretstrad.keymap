@@ -21,15 +21,11 @@
 // #define CONF 4          // konfiguracja (np. Bluetooth)
 
 #define DEF 0           // DEFAULT
-#define COL 1           // DEFAULT
-// #define EXT 2           // ACCENTED LETTERS
+#define EXT 1           // ACCENTED LETTERS
 // #define FNC 3           // FUNCTIONS
 // #define NAV 4           // NAVIGATION
 // #define MSE 5           // MOUSE
 #define SYS 2           // SYSTEM (Bluetooth configuration, etc.)
-
-
-
 
 #define SFT LSHFT
 #define CTL LCTRL
@@ -44,21 +40,8 @@
 #define GA(KEY) LG(LA(KEY))
 #define SCA(KEY) LS(LC(LA(KEY)))
 
-// To będzie do wywalenia
-#define LSHF LSHFT
-#define LCTR LCTRL
-#define RSHF RSHFT
-#define RCTR RCTRL
-
-#define LSG(KEY) LS(LG(KEY))
-#define LSA(KEY) LS(LA(KEY))
-#define LSC(KEY) LS(LC(KEY))
-#define LCA(KEY) LC(LA(KEY))
-#define LSCA(KEY) LS(LC(LA(KEY)))
-#define LGC(KEY) LG(LC(KEY))
-
 #define SNIP LSG(S)                 // wykonuje zrzut ekranu za pomocą narzędzia SNIP (Win+Shift+S)
-#define DESK LGC(F4)                // zamyka pulpit wirtualny
+// #define DESK LGC(F4)                // zamyka pulpit wirtualny
 
 / {
     keymap {
@@ -67,19 +50,19 @@
             //  |       0       |       1       |       2       |       3       |       4       |       |       5       |       6       |       7       |       8       |       9       |
         DEF_layer {
             bindings = <
-                &lt SYS Q       &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P
-                &kp A           &hl ALT S       &hl SFT D       &hl CTL F       &kp G                   &kp H           &hr CTL J       &hr SFT K       &hr ALT L       &kp SEMI
-                &kp Z           &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp DOT         &kp ENTER
-                                                                &mt WIN ESC     &lt 0 SPACE             &lt 0 SPACE     &mt SFT ENTER
+                &lt SFT Q       &kp W           &kp F           &kp D           &kp V                   &kp J           &kp H           &kp U           &kp Y           &kp P
+                &kp A           &hl ALT R       &hl SFT S       &hl CTL T       &kp G                   &kp B           &hr CTL N       &hr SFT E       &hr ALT I       &kp O
+                &none           &kp Z           &kp C           &kp X           &none                   &none           &kp M           &kp K           &kp L           &none
+                                                                &mt WIN TAB     &lt 0 ESC               &lt 0 SPACE     &mt RALT ENTER
             >;
         };
 
-        COL_layer {
+        EXT_layer {
             bindings = <
-                &lt SFT Q       &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
-                &kp A           &hl ALT R       &hl SFT S       &hl CTL T       &kp G                   &kp M           &hr CTL N       &hr SFT E       &hr ALT I       &kp O
-                &kp Z           &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp ENTER
-                                                                &mt WIN TAB     &lt 0 ESC               &lt 0 SPACE     &mt RALT ENTER
+                &n1             &n2             &n3             &n4             &n5                     &n6             &n7             &n8             &n9             &n0
+                &kp CA(A)       &hl ALT 0       &hl SFT CA(S)   &hl CTL 0       &mt GA(S) 0             &mt SCR 0       &hr CTL CA(N)   &hr SFT CA(E)   &hr ALT 0       &kp CA(O)
+                &none           &mt LC(X) CA(Z) &mt LC(C) CA(C) &mt LC(V) CA(X) &none                   &none           &none           &none           &kp CA(L)       &none
+                                                                &mt WIN ESC     &lt EXT SPACE           &lt EXT SPACE   &mt SFT ENTER
             >;
         };
 
