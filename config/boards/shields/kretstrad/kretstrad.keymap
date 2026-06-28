@@ -22,10 +22,10 @@
 
 #define DEF 0           // DEFAULT
 #define EXT 1           // ACCENTED LETTERS
-// #define FNC 3           // FUNCTIONS
-// #define NAV 4           // NAVIGATION
-// #define MSE 5           // MOUSE
-#define SYS 2           // SYSTEM (Bluetooth configuration, etc.)
+#define FNC 3           // FUNCTIONS
+#define NAV 4           // NAVIGATION
+#define MSE 5           // MOUSE
+#define SYS 6           // SYSTEM (Bluetooth configuration, etc.)
 
 #define SFT LSHFT
 #define CTL LCTRL
