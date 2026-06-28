@@ -104,7 +104,7 @@
     };
 
     combos {
-        // compatible = "zmk,combos";
+        compatible = "zmk,combos";
     
         /*                KEY POSITIONS
         ╭────────────────────╮ ╭────────────────────╮
