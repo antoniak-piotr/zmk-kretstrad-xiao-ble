@@ -76,7 +76,7 @@
         COL_layer {
             bindings = <
                 &lt SFT Q       &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
-                &kp A           &hl ALT R       &hl SFT S       &hl CTL T       &kp G                   &kp M           &hr CTL N       &hr SFT E       &HR ALT I       &kp O
+                &kp A           &hl ALT R       &hl SFT S       &hl CTL T       &kp G                   &kp M           &hr CTL N       &hr SFT E       &hr ALT I       &kp O
                 &kp Z           &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp ENTER
                                                                 &mt WIN TAB     &lt 0 ESC               &lt 0 SPACE     &mt RALT ENTER
             >;
@@ -104,7 +104,7 @@
         SYS_layer {
             bindings = <
                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &sys_reset              &ind_con        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
-                &none          &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &bootloader             &ind_bat        &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none
+                &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &bootloader             &ind_bat        &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none
                 &tog COL        &none           &none           &none           &none                   &none           &none           &none           &none           &none
                                                                 &out OUT_TOG    &bt BT_CLR              &bt BT_CLR      &none
             >;
