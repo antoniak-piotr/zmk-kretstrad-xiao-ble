@@ -128,6 +128,48 @@
         combo_lead  {key-positions = <0 10>; bindings = <&leader>; layers = <DEF>; timeout-ms = <100>;};
         combo_mouse {key-positions = <9 19>; bindings = <&mouse MSE>; layers = <DEF>; timeout-ms = <100>;};
 
+        // TOP-MIDDLE ROW
+        combo_grave {key-positions = <2 3>; bindings = <&grave>; layers = <DEF>; timeout-ms = <100>;};
+        combo_apos  {key-positions = <6 7>; bindings = <&apos>; layers = <DEF>; timeout-ms = <100>;};
+        combo_tilde {key-positions = <2 3>; bindings = <&kp TILDE>; layers = <EXT>; timeout-ms = <100>;};
+        combo_dqt   {key-positions = <6 7>; bindings = <&kp DQT>; layers = <EXT>; timeout-ms = <100>;};
+
+        combo_lbkt  {key-positions = <1 11>; bindings = <&lbkt>; layers = <DEF>; timeout-ms = <100>;};
+        combo_rbkt  {key-positions = <2 12>; bindings = <&rbkt>; layers = <DEF>; timeout-ms = <100>;};
+        combo_bslh  {key-positions = <3 13>; bindings = <&bslh>; layers = <DEF>; timeout-ms = <100>;};
+        combo_plus  {key-positions = <4 14>; bindings = <&plpe>; layers = <DEF>; timeout-ms = <100>;};
+        combo_star  {key-positions = <5 15>; bindings = <&stun>; layers = <DEF>; timeout-ms = <100>;};
+        combo_fslh  {key-positions = <6 16>; bindings = <&fslh>; layers = <DEF>; timeout-ms = <100>;};
+        combo_lpar  {key-positions = <7 17>; bindings = <&lpar>; layers = <DEF>; timeout-ms = <100>;};
+        combo_rpar  {key-positions = <8 18>; bindings = <&rpar>; layers = <DEF>; timeout-ms = <100>;};
+
+        combo_lbrc  {key-positions = <1 11>; bindings = <&kp LBRC>; layers = <EXT>; timeout-ms = <100>;};
+        combo_rbrc  {key-positions = <2 12>; bindings = <&kp RBRC>; layers = <EXT>; timeout-ms = <100>;};
+        combo_excl  {key-positions = <3 13>; bindings = <&kp EXCL>; layers = <EXT>; timeout-ms = <100>;};
+        combo_qmark {key-positions = <6 16>; bindings = <&kp QMARK>; layers = <EXT>; timeout-ms = <100>;};
+        combo_lt    {key-positions = <7 17>; bindings = <&kp LT>; layers = <EXT>; timeout-ms = <100>;};
+        combo_gt    {key-positions = <8 18>; bindings = <&kp GT>; layers = <EXT>; timeout-ms = <100>;};
+
+        // MIDDLE-BOTTOM ROW
+        combo_colon {key-positions = <11 20>; bindings = <&colon>; layers = <DEF>; timeout-ms = <100>;};
+        combo_semi  {key-positions = <12 21>; bindings = <&semi>; layers = <DEF>; timeout-ms = <100>;};
+        combo_equal {key-positions = <13 22>; bindings = <&equal>; layers = <DEF>; timeout-ms = <100>;};
+        combo_minus {key-positions = <16 23>; bindings = <&minus>; layers = <DEF>; timeout-ms = <100>;};
+        combo_comma {key-positions = <17 24>; bindings = <&comma>; layers = <DEF>; timeout-ms = <100>;};
+        combo_dot   {key-positions = <18 25>; bindings = <&dot>; layers = <DEF>; timeout-ms = <100>;};
+        // combo_under {key-positions = <24 25>; bindings = <&under>; layers = <DEF>; timeout-ms = <100>;};
+
+        combo_at    {key-positions = <11 20>; bindings = <&kp AT>; layers = <EXT>; timeout-ms = <100>;};
+        combo_hash  {key-positions = <12 21>; bindings = <&kp HASH>; layers = <EXT>; timeout-ms = <100>;};
+        combo_dllr  {key-positions = <13 22>; bindings = <&kp DLLR>; layers = <EXT>; timeout-ms = <100>;};
+        combo_prcnt {key-positions = <4 14>; bindings = <&kp PRCNT>; layers = <EXT>; timeout-ms = <100>;};
+        combo_under {key-positions = <5 15>; bindings = <&kp UNDER>; layers = <EXT>; timeout-ms = <100>;};
+        combo_caret {key-positions = <16 23>; bindings = <&kp CARET>; layers = <EXT>; timeout-ms = <100>;};
+        combo_amps  {key-positions = <17 24>; bindings = <&kp AMPS>; layers = <EXT>; timeout-ms = <100>;};
+        combo_pipe  {key-positions = <18 25>; bindings = <&kp PIPE>; layers = <EXT>; timeout-ms = <100>;};
+        // combo_prcnt {key-positions = <24 25>; bindings = <&kp PRCNT>; layers = <EXT>; timeout-ms = <100>;};
+        
+        
         // // CAPSLOCK, CAPSWORD
         // clck    {key-positions = <3 6>; bindings = <&kp CLCK>; layers = <DEF COL>; COMBO;};                     // CAPSLOCK
         // cwrd    {key-positions = <13 16>; bindings = <&caps_word>; layers = <DEF COL>; COMBO;};                 // CAPSWORD
@@ -232,32 +274,32 @@
             flavor = "balanced"; \
         };
 
-        // SMORPH(tab,     &kp TAB,    &kp ESC)
-        // SMORPH(bsp,     &kp BSPC,   &kp DEL)
+        SMORPH(tab,     &kp TAB,    &kp ESC)
+        SMORPH(bsp,     &kp BSPC,   &kp DEL)
 
-        // SMORPH(lpar,    &kp LPAR,   &kp LT)
-        // SMORPH(rpar,    &kp RPAR,   &kp GT)
-        // SMORPH(lbkt,    &kp LBKT,   &kp LBRC)
-        // SMORPH(rbkt,    &kp RBKT,   &kp RBRC)
+        SMORPH(lpar,    &kp LPAR,   &kp LT)
+        SMORPH(rpar,    &kp RPAR,   &kp GT)
+        SMORPH(lbkt,    &kp LBKT,   &kp LBRC)
+        SMORPH(rbkt,    &kp RBKT,   &kp RBRC)
 
-        // SMORPH(grave,   &kp GRAVE,  &kp TILDE)
-        // SMORPH(apos,    &kp APOS,   &kp DQT)
+        SMORPH(grave,   &kp GRAVE,  &kp TILDE)
+        SMORPH(apos,    &kp APOS,   &kp DQT)
 
-        // SMORPH(bslh,    &kp BSLH,   &kp EXCL)
-        // SMORPH(fslh,    &kp FSLH,   &kp QMARK)
+        SMORPH(bslh,    &kp BSLH,   &kp EXCL)
+        SMORPH(fslh,    &kp FSLH,   &kp QMARK)
 
-        // SMORPH(plpe,    &kp PLUS,   &kp PRCNT)
-        // SMORPH(stun,    &kp STAR,   &kp UNDER)
-        // SMORPH(mipl,    &kp MINUS,  &kp PLUS)
-        // SMORPH(fsst,    &kp FSLH,   &kp STAR)
+        SMORPH(plpe,    &kp PLUS,   &kp PRCNT)
+        SMORPH(stun,    &kp STAR,   &kp UNDER)
+        SMORPH(mipl,    &kp MINUS,  &kp PLUS)
+        SMORPH(fsst,    &kp FSLH,   &kp STAR)
 
-        // SMORPH(colon,   &kp COLON,  &kp AT)
-        // SMORPH(semi,    &kp SEMI,   &kp HASH)
-        // SMORPH(equal,   &kp EQUAL,  &kp DLLR)
-        // SMORPH(minus,   &kp MINUS,  &kp CARET)
-        // SMORPH(comma,   &kp COMMA,  &kp AMPS)
-        // SMORPH(dot,     &kp DOT,    &kp PIPE)
-        // SMORPH(under,   &kp UNDER,  &kp PRCNT)
+        SMORPH(colon,   &kp COLON,  &kp AT)
+        SMORPH(semi,    &kp SEMI,   &kp HASH)
+        SMORPH(equal,   &kp EQUAL,  &kp DLLR)
+        SMORPH(minus,   &kp MINUS,  &kp CARET)
+        SMORPH(comma,   &kp COMMA,  &kp AMPS)
+        SMORPH(dot,     &kp DOT,    &kp PIPE)
+        SMORPH(under,   &kp UNDER,  &kp PRCNT)
 
         SMORPH(n1,      &kp N1,     &kp N1)
         SMORPH(n2,      &kp N2,     &kp N2)
@@ -270,9 +312,9 @@
         SMORPH(n9,      &kp N9,     &kp N9)
         SMORPH(n0,      &kp N0,     &kp N0)
 
-        // // Obsługa lupy windowsowej
-        // SMORPH(zma,     &kp LG(EQUAL), &kp LG(MINUS))
-        // HOLD(zm,        &kp, &zma)
+        // Obsługa lupy windowsowej
+        SMORPH(zma,     &kp LG(EQUAL), &kp LG(MINUS))
+        HOLD(zm,        &kp, &zma)
 
         // Iterowanie po kolejnych wystąpieniach identyfikatora + Skok do definicji (po przytrzymaniu klawisza)
         SMORPH(dii,     &kp CA(DOWN), &kp CA(UP))
@@ -287,9 +329,9 @@
         SMORPH(dfs,     &kp LC(F), &kp LC(G))       // Search (Ctrl+F) or Goto (Ctrl+G) from Parnassus Navigator
         HOLD(df,        &dfs, &dfi)
 
-        // // Przejście po historycznych położęniach kursora (BACKWARD / FORWARD) + skok do deklaracji
-        // SMORPH(hst,     &kp LA(LEFT), &kp LA(RIGHT))
-        // HOLD(hist,      &kp, &hst)
+        // Przejście po historycznych położęniach kursora (BACKWARD / FORWARD) + skok do deklaracji
+        SMORPH(hst,     &kp LA(LEFT), &kp LA(RIGHT))
+        HOLD(hist,      &kp, &hst)
 
         // Home row mods
         hl: homerow_mods_left {
