@@ -111,7 +111,7 @@ layers:
   - {t: <APP>, h: '$$mdi:application-outline$$'}
   - {t: <WIN>, h: '$$mdi:file-document-outline$$'}
   - {t: CLOSE, h: '$$mdi:window-close$$'}
-  - {t: PGUP, h: '$$mdi:transfer-up$$'}
+  - ''
   - {t: <FIND>, h: '$$mdi:magnify$$'}
   - {t: <IDEN>, h: '$$mdi:tag-outline$$'}
   - {t: <BMKS>, h: '$$mdi:bookmark-outline$$'}
@@ -121,32 +121,67 @@ layers:
   - {h: SHIFT}
   - {h: CTRL}
   - ''
-  - {t: PGDN, h: '$$mdi:transfer-down$$'}
-  - {t: HOME, h: '$$mdi:page-first$$'}
+  - {t: PGUP, h: '$$mdi:transfer-up$$'}
+  - {t: LEFT, h: '$$mdi:chevron-left$$'}
   - {t: UP, h: '$$mdi:chevron-up$$'}
-  - {t: END, h: '$$mdi:page-last$$'}
+  - {t: RIGHT, h: '$$mdi:chevron-right$$'}
   - {t: FWRD>, h: '$$mdi:step-forward$$'}
   - ''
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - {t: LEFT, h: '$$mdi:chevron-left$$'}
+  - {t: PGDN, h: '$$mdi:transfer-down$$'}
+  - {t: HOME, h: '$$mdi:page-first$$'}
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
-  - {t: RIGHT, h: '$$mdi:chevron-right$$'}
+  - {t: END, h: '$$mdi:page-last$$'}
   - ''
   - {t: ESC, h: '$$mdi:microsoft-windows$$'}
   - SPACE
   - SPACE
   - {t: ENTER, h: '$$mdi:arrow-up-bold$$'}
+  MSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {h: WIN}
+  - {h: ALT}
+  - {h: SHIFT}
+  - {h: CTRL}
+  - ''
+  - {t: UP, h: '$$mdi:chevron-triple-up$$', s: WHEEL}
+  - {t: LEFT, h: '$$mdi:chevron-left$$', s: MOUSE}
+  - {t: UP, h: '$$mdi:chevron-up$$', s: MOUSE}
+  - {t: RIGHT, h: '$$mdi:chevron-right$$', s: MOUSE}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: DOWN, h: '$$mdi:chevron-triple-down$$', s: WHEEL}
+  - {t: LEFT, h: '$$mdi:chevron-triple-left$$', s: WHEEL}
+  - {t: DOWN, h: '$$mdi:chevron-down$$', s: MOUSE}
+  - {t: RIGHT, h: '$$mdi:chevron-triple-right$$', s: WHEEL}
+  - ''
+  - {t: ESC, h: '$$mdi:microsoft-windows$$'}
+  - {t: MMB, h: '$$mdi:mouse-outline$$', s: MOUSE}
+  - {t: LMB, h: '$$mdi:mouse-outline$$', s: MOUSE}
+  - {t: RMB, h: '$$mdi:mouse-outline$$', s: MOUSE}
   SYS:
   - ''
   - {t: BT, h: '1', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '2', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '3', s: '$$mdi:bluetooth$$'}
-  - {t: RESET, h: '$$mdi:power$$'}
-  - {t: CON, h: '$$mdi:bluetooth-connect$$'}
+  - ''
+  - ''
   - {t: BT, h: '1', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '2', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '3', s: '$$mdi:bluetooth$$'}
@@ -155,8 +190,8 @@ layers:
   - {t: BT, h: '4', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '5', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '6', s: '$$mdi:bluetooth$$'}
-  - {t: BOOT, h: '$$mdi:cloud-download-outline$$'}
-  - {t: BAT, h: '$$mdi:battery-medium$$'}
+  - {t: RESET, h: '$$mdi:power$$'}
+  - {t: CON, h: '$$mdi:bluetooth-connect$$'}
   - {t: BT, h: '4', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '5', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '6', s: '$$mdi:bluetooth$$'}
@@ -165,8 +200,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {t: BOOT, h: '$$mdi:cloud-download-outline$$'}
+  - {t: BAT, h: '$$mdi:battery-medium$$'}
   - ''
   - ''
   - ''

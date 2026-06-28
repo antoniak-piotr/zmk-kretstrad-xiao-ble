@@ -77,37 +77,27 @@
 
         NAV_layer {
             bindings = <
-                &none           &kp LG(SPACE)   &aswap          &wswap          &kp LA(F4)              &kp PG_UP       &df 0 0         &di LA(UP) 0    &db LC(B) 0     &kp LA(LEFT)
-                &hl WIN 0       &hl ALT 0       &hl SFT 0       &hl CTL 0       &none                   &kp PG_DN       &kp HOME        &kp UP          &kp END         &kp LA(RIGHT)
-                &none           &none           &none           &none           &none                   &none           &kp LEFT        &kp DOWN        &kp RIGHT       &none
+                &none           &kp LG(SPACE)   &aswap          &wswap          &kp LA(F4)              &none           &df 0 0         &di LA(UP) 0    &db LC(B) 0     &kp LA(LEFT)
+                &hl WIN 0       &hl ALT 0       &hl SFT 0       &hl CTL 0       &none                   &kp PG_UP       &kp LEFT        &kp UP          &kp RIGHT       &kp LA(RIGHT)
+                &none           &none           &none           &none           &none                   &kp PG_DN       &kp HOME        &kp DOWN        &kp END         &none
                                                                 &mt WIN ESC     &kp SPACE               &kp SPACE       &mt SFT ENTER
             >;
         };        
 
-        // NUM_layer {
-        //     bindings = <
-        //         &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
-        //         &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-        //         &hm LSHF BSLH   &none           &kp LCTR        &kp LALT        &kp F11                 &kp F12         &kp LALT        &hm RCTR COMMA  &kp DOT         &hm RSHF SLASH
-        //                                                         &mt LWIN TAB    &trans                  &lt NAV SPACE   &mt RALT ENTER
-        //     >;
-        // };
-
-        //         &none           &kp LG(MINUS)   &kp LG(EQUAL)   &dm(T)          &mt PSCRN SNIP          &zoom           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
-        // NAV_layer {
-        //     bindings = <
-        //         &dm(A)          &none           &dm(R)          &dm(T)          &mt PSCRN SNIP          &zoom           &kp LA(LEFT)    &kp LA(UP)      &kp LA(RIGHT)   &none
-        //         &kp LSC(Z)      &kp LSA(S)      &mt DESK LG(D)  &kp LC(F)       &kp LC(G)               &kp LCA(UP)     &kp LEFT        &kp UP          &kp RIGHT       &kp PG_UP
-        //         &hm LSHF LC(Z)  &kp LC(X)       &hm LCTR LC(C)  &hm LALT LC(V)  &kp LSC(B)              &kp LCA(DOWN)   &kp LC(LEFT)    &kp DOWN        &kp LC(RIGHT)   &hm RSHF PG_DN
-        //                                                         &mt LWIN TAB    &lt NUM ESC             &trans          &mt RALT ENTER
-        //     >;
-        // };
+        MSE_layer {
+            bindings = <
+                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
+                &hl WIN 0       &hl ALT 0       &hl SFT 0       &hl CTL 0       &none                   &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT &none
+                &none           &none           &none           &none           &none                   &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT &none
+                                                                &mt WIN ESC     &mkp MCLK               &mkp LCLK       &mkp RCLK
+            >;
+        };
 
         SYS_layer {
             bindings = <
-                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &sys_reset              &ind_con        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
-                &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &bootloader             &ind_bat        &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none
-                &none           &none           &none           &none           &none                   &none           &none           &none           &none           &none
+                &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none                   &none           &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
+                &none           &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &sys_reset              &ind_con        &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &none
+                &none           &none           &none           &none           &bootloader             &ind_bat        &none           &none           &none           &none
                                                                 &out OUT_TOG    &bt BT_CLR              &bt BT_CLR      &none
             >;
         };
