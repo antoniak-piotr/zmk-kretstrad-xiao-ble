@@ -1,165 +1,165 @@
 layout: {zmk_keyboard: kretstrad}
 layers:
   DEF:
-  - {t: Q, h: CFG}
+  - {t: Q, h: FNC}
   - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - A
-  - S
+  - F
   - D
-  - F
-  - G
+  - V
+  - J
   - H
-  - J
-  - K
-  - L
-  - ;
-  - {t: Z, h: SHIFT}
-  - X
-  - {t: C, h: CTRL}
-  - {t: V, h: ALT}
-  - B
-  - N
-  - {t: M, h: ALT}
-  - {t: ',', h: RCTRL}
-  - .
-  - {t: ENTER, h: RSHFT}
-  - {t: TAB, h: '$$mdi:microsoft-windows$$'}
-  - {t: ESC, h: NUM}
-  - {t: SPACE, h: NAV}
-  - {t: ENTER, h: RALT}
-  COL:
-  - {t: Q, h: CFG}
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
   - U
   - Y
-  - ;
+  - P
   - A
-  - R
-  - S
-  - T
+  - {t: R, h: ALT}
+  - {t: S, h: SHIFT}
+  - {t: T, h: CTRL}
   - G
-  - M
-  - N
-  - E
-  - I
+  - B
+  - {t: N, h: CTRL}
+  - {t: E, h: SHIFT}
+  - {t: I, h: ALT}
   - O
-  - {t: Z, h: SHIFT}
+  - ''
+  - Z
+  - C
   - X
-  - {t: C, h: CTRL}
-  - {t: D, h: ALT}
-  - V
+  - ''
+  - ''
+  - M
   - K
-  - {t: H, h: ALT}
-  - {t: ',', h: RCTRL}
-  - .
-  - {t: ENTER, h: RSHFT}
-  - {t: TAB, h: '$$mdi:microsoft-windows$$'}
-  - {t: ESC, h: NUM}
-  - {t: SPACE, h: NAV}
-  - {t: ENTER, h: RALT}
-  NUM:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
+  - L
+  - ''
+  - {t: ESC, h: '$$mdi:microsoft-windows$$'}
+  - {t: SPACE, h: EXT}
+  - {t: SPACE, h: EXT}
+  - {t: ENTER, h: '$$mdi:arrow-up-bold$$'}
+  EXT:
+  - {t: '1', s: '1'}
+  - {t: '2', s: '2'}
+  - {t: '3', s: '3'}
+  - {t: '4', s: '4'}
+  - {t: '5', s: '5'}
+  - {t: '6', s: '6'}
+  - {t: '7', s: '7'}
+  - {t: '8', s: '8'}
+  - {t: '9', s: '9'}
+  - {t: '0', s: '0'}
+  - Ą
+  - {h: ALT}
+  - {t: Ś, h: SHIFT}
+  - {h: CTRL}
+  - {t: SNAP, h: '$$mdi:crop$$'}
+  - {t: PRSCR, h: '$$mdi:monitor-screenshot$$'}
+  - {t: Ń, h: CTRL}
+  - {t: Ę, h: SHIFT}
+  - {h: ALT}
+  - Ó
+  - ''
+  - {t: Ż, h: '$$mdi:content-cut$$'}
+  - {t: Ć, h: '$$mdi:content-copy$$'}
+  - {t: Ź, h: '$$mdi:content-paste$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ł
+  - ''
+  - {t: ESC, h: '$$mdi:microsoft-windows$$'}
+  - {t: SPACE, h: EXT, type: held}
+  - {t: SPACE, h: EXT, type: held alternate}
+  - {t: ENTER, h: '$$mdi:arrow-up-bold$$'}
+  FNC:
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - F12
   - F7
   - F8
   - F9
-  - F10
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: \, h: SHIFT}
   - ''
-  - CTRL
-  - ALT
+  - {h: '$$mdi:microsoft-windows$$'}
+  - {h: ALT}
+  - {h: SHIFT}
+  - {h: CTRL}
+  - ''
   - F11
-  - F12
-  - ALT
-  - {t: ',', h: RCTRL}
-  - .
-  - {t: SLASH, h: RSHFT}
-  - {t: TAB, h: '$$mdi:microsoft-windows$$'}
-  - {type: held}
-  - {t: SPACE, h: NAV}
-  - {t: ENTER, h: RALT}
-  NAV:
-  - '&dm(A)'
+  - F4
+  - F5
+  - F6
+  - F10
   - ''
-  - '&dm(R)'
-  - '&dm(T)'
-  - {t: Sft+Gui+S, h: '$$mdi:monitor-screenshot$$'}
-  - '&zoom'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - ''
+  - {t: ESC, h: '$$mdi:microsoft-windows$$'}
+  - SPACE
+  - SPACE
+  - {t: ENTER, h: '$$mdi:arrow-up-bold$$'}
+  NAV:
+  - ''
+  - {t: RUN, h: '$$mdi:console$$'}
+  - {t: <APP>, h: '$$mdi:application-outline$$'}
+  - {t: <WIN>, h: '$$mdi:file-document-outline$$'}
+  - {t: CLOSE, h: '$$mdi:window-close$$'}
+  - {t: PGUP, h: '$$mdi:transfer-up$$'}
+  - {t: <FIND>, h: '$$mdi:magnify$$'}
+  - {t: <IDEN>, h: '$$mdi:tag-outline$$'}
+  - {t: <BMKS>, h: '$$mdi:bookmark-outline$$'}
   - {t: <BWRD, h: '$$mdi:step-backward$$'}
-  - JUMP
+  - {h: '$$mdi:microsoft-windows$$'}
+  - {h: ALT}
+  - {h: SHIFT}
+  - {h: CTRL}
+  - ''
+  - {t: PGDN, h: '$$mdi:transfer-down$$'}
+  - {t: HOME, h: '$$mdi:page-first$$'}
+  - {t: UP, h: '$$mdi:chevron-up$$'}
+  - {t: END, h: '$$mdi:page-last$$'}
   - {t: FWRD>, h: '$$mdi:step-forward$$'}
   - ''
-  - Sft+Ctl+Z
-  - Sft+Alt+S
-  - {t: Gui+D, h: Gui+Ctl+F4}
-  - $$mdi:text-search-variant$$
-  - Ctl+G
-  - {t: Ctl+Alt+UP, h: 'Ctl+Alt+$$mdi:chevron-up$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: LEFT, h: '$$mdi:chevron-left$$'}
-  - {t: UP, h: '$$mdi:chevron-up$$'}
-  - {t: RIGHT, h: '$$mdi:chevron-right$$'}
-  - {t: PGUP, h: '$$mdi:transfer-up$$'}
-  - {t: Ctl+Z, h: SHIFT}
-  - $$mdi:content-cut$$
-  - {t: '$$mdi:content-copy$$', h: CTRL}
-  - {t: '$$mdi:content-paste$$', h: ALT}
-  - Sft+Ctl+B
-  - {t: Ctl+Alt+DOWN, h: 'Ctl+Alt+$$mdi:chevron-down$$'}
-  - {t: Ctl+LEFT, h: 'Ctl+$$mdi:chevron-left$$'}
   - {t: DOWN, h: '$$mdi:chevron-down$$'}
-  - {t: Ctl+RIGHT, h: 'Ctl+$$mdi:chevron-right$$'}
-  - {t: PGDN, h: RSHFT}
-  - {t: TAB, h: '$$mdi:microsoft-windows$$'}
-  - {t: ESC, h: NUM, type: held alternate}
-  - {type: held}
-  - {t: ENTER, h: RALT}
-  CFG:
-  - {type: held}
+  - {t: RIGHT, h: '$$mdi:chevron-right$$'}
+  - ''
+  - {t: ESC, h: '$$mdi:microsoft-windows$$'}
+  - SPACE
+  - SPACE
+  - {t: ENTER, h: '$$mdi:arrow-up-bold$$'}
+  SYS:
+  - ''
   - {t: BT, h: '1', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '2', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '3', s: '$$mdi:bluetooth$$'}
-  - {t: BOOT, h: '$$mdi:cloud-download-outline$$'}
+  - {t: RESET, h: '$$mdi:power$$'}
+  - {t: CON, h: '$$mdi:bluetooth-connect$$'}
+  - {t: BT, h: '1', s: '$$mdi:bluetooth$$'}
+  - {t: BT, h: '2', s: '$$mdi:bluetooth$$'}
+  - {t: BT, h: '3', s: '$$mdi:bluetooth$$'}
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - {t: BT, h: CLEAR, s: '$$mdi:bluetooth-off$$'}
   - {t: BT, h: '4', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '5', s: '$$mdi:bluetooth$$'}
   - {t: BT, h: '6', s: '$$mdi:bluetooth$$'}
-  - {t: RESET, h: '$$mdi:power$$'}
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: BOOT, h: '$$mdi:cloud-download-outline$$'}
+  - {t: BAT, h: '$$mdi:battery-medium$$'}
+  - {t: BT, h: '4', s: '$$mdi:bluetooth$$'}
+  - {t: BT, h: '5', s: '$$mdi:bluetooth$$'}
+  - {t: BT, h: '6', s: '$$mdi:bluetooth$$'}
   - ''
   - ''
   - ''
@@ -172,157 +172,6 @@ layers:
   - ''
   - ''
   - {t: BT/USB, h: '$$mdi:toggle-switch-outline$$'}
-  - {t: COL, h: toggle}
+  - {t: BT, h: CLEAR, s: '$$mdi:bluetooth-off$$'}
+  - {t: BT, h: CLEAR, s: '$$mdi:bluetooth-off$$'}
   - ''
-  - ''
-combos:
-- p: [3, 6]
-  k: CLCK
-  l: [DEF, COL]
-- p: [13, 16]
-  k: WORD
-  l: [DEF, COL]
-- p: [12, 13]
-  k: TAB
-  l: [DEF, COL, NUM, NAV]
-- p: [16, 17]
-  k: {t: BSP, s: DEL}
-  l: [DEF, COL, NUM, NAV]
-- p: [14, 24]
-  k: '`'
-  l: [DEF, COL]
-- p: [15, 25]
-  k: ''''
-  l: [DEF, COL]
-- p: [0, 10]
-  k: '1'
-  l: [DEF, COL]
-- p: [1, 11]
-  k: '2'
-  l: [DEF, COL]
-- p: [2, 12]
-  k: '3'
-  l: [DEF, COL]
-- p: [3, 13]
-  k: '4'
-  l: [DEF, COL]
-- p: [4, 14]
-  k: '5'
-  l: [DEF, COL]
-- p: [5, 15]
-  k: '6'
-  l: [DEF, COL]
-- p: [6, 16]
-  k: '7'
-  l: [DEF, COL]
-- p: [7, 17]
-  k: '8'
-  l: [DEF, COL]
-- p: [8, 18]
-  k: '9'
-  l: [DEF, COL]
-- p: [9, 19]
-  k: '0'
-  l: [DEF, COL]
-- p: [0, 10]
-  k: '!'
-  l: [NUM]
-- p: [1, 11]
-  k: '@'
-  l: [NUM]
-- p: [2, 12]
-  k: '#'
-  l: [NUM]
-- p: [3, 13]
-  k: $
-  l: [NUM]
-- p: [4, 14]
-  k: '%'
-  l: [NUM]
-- p: [5, 15]
-  k: ^
-  l: [NUM]
-- p: [6, 16]
-  k: '&'
-  l: [NUM]
-- p: [7, 17]
-  k: ASTRK
-  l: [NUM]
-- p: [10, 20]
-  k: '|'
-  l: [NUM]
-- p: [19, 29]
-  k: '?'
-  l: [NUM]
-- p: [14, 24]
-  k: '~'
-  l: [NUM]
-- p: [15, 25]
-  k: '"'
-  l: [NUM]
-- p: [17, 27]
-  k: (
-  l: [DEF, COL, NUM]
-- p: [18, 28]
-  k: )
-  l: [DEF, COL, NUM]
-- p: [11, 21]
-  k: '['
-  l: [DEF, COL]
-- p: [12, 22]
-  k: ']'
-  l: [DEF, COL]
-- p: [11, 21]
-  k: '{'
-  l: [NUM]
-- p: [12, 22]
-  k: '}'
-  l: [NUM]
-- p: [13, 23]
-  k: '='
-  l: [DEF, COL, NUM]
-- p: [16, 26]
-  k: ':'
-  l: [DEF, COL, NUM]
-- p: [10, 20]
-  k: \
-  l: [DEF, COL]
-- p: [19, 29]
-  k: SLASH
-  l: [DEF, COL]
-- p: [13, 14]
-  k: +
-  l: [DEF, COL, NUM]
-- p: [23, 24]
-  k: '*'
-  l: [DEF, COL, NUM]
-- p: [15, 16]
-  k: '-'
-  l: [DEF, COL, NUM]
-- p: [25, 26]
-  k: SLASH
-  l: [DEF, COL, NUM]
-- p: [16, 26]
-  k: {t: HOME, h: '$$mdi:page-first$$'}
-  l: [NAV]
-- p: [18, 28]
-  k: {t: END, h: '$$mdi:page-last$$'}
-  l: [NAV]
-- p: [15, 25]
-  k: {t: Sft+Ctl+UP, h: 'Sft+Ctl+$$mdi:chevron-up$$'}
-  l: [NAV]
-- p: [6, 16]
-  k: {t: Ctl+Alt+LEFT, h: 'Ctl+Alt+$$mdi:chevron-left$$'}
-  l: [NAV]
-- p: [8, 18]
-  k: {t: Ctl+Alt+RIGHT, h: 'Ctl+Alt+$$mdi:chevron-right$$'}
-  l: [NAV]
-- p: [7, 17]
-  k: Ctl+B
-  l: [NAV]
-- p: [14, 24]
-  k: Sft+ESC
-  l: [NAV]
-- p: [19, 29]
-  k: Ctl+SLASH
-  l: [NAV]
