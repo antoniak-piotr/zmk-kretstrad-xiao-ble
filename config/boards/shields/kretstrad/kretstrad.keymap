@@ -270,18 +270,18 @@
         // SMORPH(zma,     &kp LG(EQUAL), &kp LG(MINUS))
         // HOLD(zm,        &kp, &zma)
 
-        // // Iterowanie po kolejnych wystąpieniach identyfikatora + Skok do definicji (po przytrzymaniu klawisza)
-        // SMORPH(dii,     &kp CA(DOWN), &kp CA(UP))
-        // HOLD(di,        &kp, &dii)
+        // Iterowanie po kolejnych wystąpieniach identyfikatora + Skok do definicji (po przytrzymaniu klawisza)
+        SMORPH(dii,     &kp CA(DOWN), &kp CA(UP))
+        HOLD(di,        &kp, &dii)
 
-        // // Iterowanie po kolejnych zakładkach + Dodawanie / Usuwanie nowej zakładki (wymaga Parnassus Bookmarks)
-        // SMORPH(dbi,     &kp CA(RIGHT), &kp CA(LEFT))
-        // HOLD(db,        &kp, &dbi)
+        // Iterowanie po kolejnych zakładkach + Dodawanie / Usuwanie nowej zakładki (wymaga Parnassus Bookmarks)
+        SMORPH(dbi,     &kp CA(RIGHT), &kp CA(LEFT))
+        HOLD(db,        &kp, &dbi)
 
-        // // Wyszukiwanie (DELPHI)
-        // SMORPH(dfi,     &kp F3, &kp LS(F3))         // Search next or serch prev (if SHIFT is pressed)
-        // SMORPH(dfs,     &kp LC(F), &kp LC(G))       // Search (Ctrl+F) or Goto (Ctrl+G) from Parnassus Navigator
-        // HOLD(df,        &dfs, &dfi)
+        // Wyszukiwanie (DELPHI)
+        SMORPH(dfi,     &kp F3, &kp LS(F3))         // Search next or serch prev (if SHIFT is pressed)
+        SMORPH(dfs,     &kp LC(F), &kp LC(G))       // Search (Ctrl+F) or Goto (Ctrl+G) from Parnassus Navigator
+        HOLD(df,        &dfs, &dfi)
 
         // // Przejście po historycznych położęniach kursora (BACKWARD / FORWARD) + skok do deklaracji
         // SMORPH(hst,     &kp LA(LEFT), &kp LA(RIGHT))
