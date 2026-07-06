@@ -1,13 +1,13 @@
 layout: {zmk_keyboard: kretstrad}
 layers:
   DEF:
-  - {t: Q, h: SYS}
+  - {t: B, h: SYS}
   - W
-  - F
+  - G
   - D
-  - V
+  - Q
+  - X
   - J
-  - H
   - U
   - Y
   - P
@@ -15,8 +15,8 @@ layers:
   - {t: R, h: ALT}
   - {t: S, h: SHIFT}
   - {t: T, h: CTRL}
-  - G
-  - B
+  - F
+  - H
   - {t: N, h: CTRL}
   - {t: E, h: SHIFT}
   - {t: I, h: ALT}
@@ -24,7 +24,7 @@ layers:
   - ''
   - Z
   - C
-  - X
+  - V
   - ''
   - ''
   - M
