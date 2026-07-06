@@ -50,9 +50,9 @@
             //  |       0       |       1       |       2       |       3       |       4       |       |       5       |       6       |       7       |       8       |       9       |
         DEF_layer {
             bindings = <
-                &lt SYS Q       &kp W           &kp F           &kp D           &kp V                   &kp J           &kp H           &kp U           &kp Y           &kp P
-                &kp A           &hl ALT R       &hl SFT S       &hl CTL T       &kp G                   &kp B           &hr CTL N       &hr SFT E       &hr ALT I       &kp O
-                &none           &kp Z           &kp C           &kp X           &none                   &none           &kp M           &kp K           &kp L           &none
+                &lt SYS B       &kp W           &kp G           &kp D           &kp Q                   &kp X           &kp J           &kp U           &kp Y           &kp P
+                &kp A           &hl ALT R       &hl SFT S       &hl CTL T       &kp F                   &kp H           &hr CTL N       &hr SFT E       &hr ALT I       &kp O
+                &none           &kp Z           &kp C           &kp V           &none                   &none           &kp M           &kp K           &kp L           &none
                                                                 &mt WIN ESC     &lt EXT SPACE           &lt EXT SPACE   &mt SFT ENTER
             >;
         };
